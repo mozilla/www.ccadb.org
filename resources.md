@@ -1,4 +1,4 @@
-## Useful Resources ##
+# Useful Resources #
 
 ### Mozilla ###
 
