@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+![CCADB](images/big-logo.png){:width="200px" style="float: right" }
 
-You can use the [editor on GitHub](https://github.com/mozilla/www.ccadb.org/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+The Common CA Database (CCADB) is a repository of information about
+Certificate Authorities (CAs), and their root and intermediate certificates
+that are used in the WebPKI - the publicly-trusted system which underpins
+secure connections on the Web. The CCADB is used by a number of different
+trust store operators to manage their trust stores, but it is run by Mozilla.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### About Mozilla
 
-### Markdown
+[Mozilla](https://mozilla.org/) is the non-profit organization behind the
+popular Web browser, Firefox. We work to ensure the Web stays open by building
+products, technologies and programs that put people in control of their online
+lives and contribute to a healthier Internet.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mozilla/www.ccadb.org/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+We [believe](https://www.mozilla.org/about/manifesto/) the Internet should be
+a global public resource, open and accessible to all. We believe in our ability
+to maintain and expand this accessibility. This is the change we work to enact.
