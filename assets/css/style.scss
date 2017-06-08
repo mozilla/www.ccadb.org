@@ -1,0 +1,30 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+td {
+  text-align: left;
+  padding: 0.5em 1em 0.5em 1em;
+  border: 1px black solid;
+}
+
+th {
+ font-weight: bold;
+}
+
+td ul {
+  margin-top: 1em;
+}
+
+ul > li {
+  list-style: circle;
+}
+
+li {
+  margin-left: 1em;
+}
+
+ol ul, ul ul {
+  margin-bottom: 0px;
+}
