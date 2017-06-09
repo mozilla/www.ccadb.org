@@ -25,7 +25,8 @@ annual update into the CCADB.
      even if there are no other changes.
 3. Links to 3 Test websites (valid, expired, and revoked) for each root
    certificate that has the TLS/SSL trust bit enabled.
-   * The existence of these websites is a requirement of the BRs, section 2.2.
+   * The existence of these websites is a requirement of the [BRs][BRs],
+     section 2.2.
    * valid = unexpired and unrevoked
    * expired = notAfter less than the current day, and unrevoked
    * revoked = unexpired, but present in either/both of the CRL and OCSP
@@ -37,6 +38,9 @@ All audit, CP and CPS documents must:
   pick up the new version of the files.
 * Be PDF files smaller than 25MB.
 * Be in English.
+
+If you don't have a good place to put audit, CP and CPS documents, you can
+use [Bugzilla](fields#uploading-documents).
 
 ## Instructions ##
 
@@ -183,3 +187,5 @@ In the updated root certificate records, each time an audit statement link is
 changed, the corresponding audit archive status is changed to "Not Processed".
 The next time the File Archive program is run, the audit statement will be
 imported and saved in the CCADB.
+
+[BRs]: https://cabforum.org/baseline-requirements-documents/
