@@ -1,7 +1,7 @@
 # Field Types and Valid Values #
 
-This document explains what information needs to go in each field of the
-various records and sections in the CCADB.
+This document explains how the various records and sections in the CCADB are
+best filled out, with some advice on how to create or obtain the data.
 
 ## Policies and Practices Information ##
 
@@ -137,8 +137,28 @@ validates the data to be included in certificates signed by this issuer.</td>
 
 <br>
 If you need help finding a suitable URL to demonstrate the qualifications of
-your auditor, try [this list][WT-Auditors] for WebTrust, or see the links in
-section 5 of [this document][ETSI-Auditors] for ETSI.
+your auditor, try [this list][WT-Auditors] for WebTrust, or see one of
+[these][ETSI-Auditors1] [three][ETSI-Auditors2] [sites][ETSI-Auditors3] for
+ETSI.
+
+## PEM Data ##
+
+The CCADB accepts certificate information in the [PEM][PEM] format. PEM is a
+container format defined in RFCs [1421][RFC-1421] to [1424][RFC-1424]. PEM
+actually means Privacy Enhanced Mail, but the container format it uses is a
+Base64 translation of [X.509][X509] [ASN.1][ASN1] keys.
+
+[Mozilla's TLS Observatory Certificate Explainer][Certsplainer] may be used to
+convert a certificate in any other format into PEM, as follows:
+
+* Visit the [Certificate Explainer][Certsplainer].
+* In the 'Post a certificate' section click on the 'Browse...' button to
+  select a .cer, .crt, .cert, or .pem file.
+* Check the top of the window to make sure there are no errors listed, and
+  that the desired certificate has been found.
+* The data in the text box in the 'Post a certificate' section is the PEM.
+* Copy and paste the entire PEM blob, which starts with "-----BEGIN
+  CERTIFICATE-----" and ends with "-----END CERTIFICATE-----", into the CCADB.
 
 ## Uploading Documents ##
 
@@ -164,8 +184,16 @@ the CCADB as follows:
    the CCADB.
 6. Repeat steps 4 and 5 as needed, using the same Bugzilla bug.
 
-[WT-Auditors]:    http://www.webtrust.org/licensed-webtrust-practitions-international/item64419.aspx
-[ETSI-Auditors]:  https://portal.etsi.org/TBSiteMap/ESI/TrustServiceProviders.aspx
+[WT-Auditors]:    http://www.webtrust.org/licensed-webtrust-practitioners-international/item64419.aspx
+[ETSI-Auditors1]: http://www.dakks.de/en/content/accredited-bodies-dakks
+[ETSI-Auditors2]: https://www.acab-c.com/accredited-bodies/
+[ETSI-Auditors3]: https://www.ukas.com/
+[PEM]:            https://en.wikipedia.org/wiki/X.509#Certificate_filename_extensions
+[RFC-1421]:       https://tools.ietf.org/html/rfc1421
+[RFC-1424]:       https://tools.ietf.org/html/rfc1424
+[X509]:           https://en.wikipedia.org/wiki/X.509
+[ASN1]:           https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+[Certsplainer]:   https://tls-observatory.services.mozilla.com/static/certsplainer.html
 [BZ-Create-Acct]: https://bugzilla.mozilla.org/createaccount.cgi
-[BZ-Doc-Bugs]: https://bugzilla.mozilla.org/buglist.cgi?&query_format=advanced&component=CA%20Certificate%20Root%20Program&product=NSS&status_whiteboard_type=allwordssubstr&status_whiteboard=ca-audit
+[BZ-Doc-Bugs]:    https://bugzilla.mozilla.org/buglist.cgi?&query_format=advanced&component=CA%20Certificate%20Root%20Program&product=NSS&status_whiteboard_type=allwordssubstr&status_whiteboard=ca-audit
 [BZ-Create-Bug]:  https://bugzilla.mozilla.org/enter_bug.cgi?&component=CA%20Certificate%20Root%20Program&product=NSS&bug_severity=enhancement

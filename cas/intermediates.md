@@ -29,9 +29,9 @@ intermediate certificates are required to be added to the CCADB.
    for an intermediate cert chaining up to the certificate record you were just
    viewing.
 3. Click on the "Add/Update PEM Info" button.
-4. Copy and paste the PEM data for the intermediate certificate into the
-   resulting window. PEM data starts with ''-----BEGIN CERTIFICATE-----'' and
-   ends with ''-----END CERTIFICATE-----''
+4. Copy and paste the [PEM data](fields#pem-data) for the intermediate
+   certificate into the resulting window. PEM data starts with
+   ''-----BEGIN CERTIFICATE-----'' and ends with ''-----END CERTIFICATE-----''.
 5. Click on "Validate PEM Info" button. This will invoke a program that will
    try to parse the PEM data and extract certain information.
 6.  If the cert check is successful, then click on the "Update Intermediate
@@ -48,9 +48,10 @@ intermediate certificates are required to be added to the CCADB.
    not be extra characters before or after the PEM, and the PEM data should not
    have extra line feeds in it. You may go through the "Add/Update PEM Info"
    process as many times as needed.
-8. Fill in the information in the "Audit Information" and "Policies and
-   Practices Information" sections. The audits and policies must cover the
-   intermediate certificate.
+8. Fill in the information in the "[Audit
+   Information](fields#audit-information)" and "[Policies and Practices
+   Information](fields#policies-and-practices-information)" sections. The
+   audits and policies must cover the intermediate certificate.
     * If the information is the **same as for the issuing (parent)
       certificate**, then click on the "Edit" button, and check on the **"...
       Same as Parent" check-boxes** ("CP/CPS Same as Parent" and "Audits Same
