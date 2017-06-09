@@ -1,6 +1,6 @@
 # Root Store Operators: Why Use the CCADB? #
 
-While maintaining an up-to-date root store containing only trustworthy CAs is
+While maintaining an up-to-date root store containing only credible CAs is
 important and necessary for many organizations to help keep their end users
 safe, it is usually not done for profit and is not a strategic area for core
 business. Much of the data that root store operators maintain for their CA
@@ -31,6 +31,8 @@ Root Store Members can:
 * Access the CCADB.
 * Independently operate and make decisions on root inclusion/change requests,
   and verify audit data for their root stores.
+* Send email to all CAs in their program according to specified criteria.
+* Automate sending reminders to CAs about when periodic updates are due.
 * Share their findings in verifying data related to root and intermediate
   certificates; including annual audits, policy documentation, contact
   information, etc.
