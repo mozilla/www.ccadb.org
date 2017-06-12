@@ -19,8 +19,8 @@ those audit statements apply to.
 Please have the following information prepared before you begin entering your
 annual update into the CCADB.
 
-1. Links to your audit statements.
-2. Links to your CP/CPS documents.
+1. Links to your audit statements in PDF format.
+2. Links to your CP/CPS documents in PDF format.
    * CP/CPS documents must be updated each year, with a revised version number
      even if there are no other changes.
 3. Links to 3 Test websites (valid, expired, and revoked) for each root
