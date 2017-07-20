@@ -65,6 +65,9 @@ use [Bugzilla](fields#uploading-documents).
    * The 'Subject' will be automatically filled in when you click on the
      'Submit' button, so leave it blank to begin with. You can change it later
      if needed.
+   * The 'Recognized CAA Domains' and 'Problem Reporting Mechanism' fields will
+     be automatically filled in when you click on the 'Submit' button, so leave
+     them blank to begin with. You can change them later if needed.
 4. Click on the 'Edit' button and enter the audit and CP/CPS information, then
    click on the 'Submit' button. You may click on 'Edit' and 'Submit' as many
    times as you need to get all of your information entered.
@@ -101,15 +104,24 @@ use [Bugzilla](fields#uploading-documents).
     to also provide the URLs to the test websites. If the root certificate is
     enabled for EV treatment, then the TLS/SSL certs for the test websites must
     also be EV.
-   * Click on the 'Edit' button in the Root Case
-   * Enter the URLs to the test websites (valid, expired, and revoked)
-   * Click on the 'Save' button
-   * You may click on the 'Edit' and 'Save' buttons as many times as you need
+    * Click on the 'Edit' button in the Root Case
+    * Enter the URLs to the test websites (valid, expired, and revoked)
+    * Click on the 'Save' button
+    * You may click on the 'Edit' and 'Save' buttons as many times as you need
     to get the necessary information filled in.
 13. Click on the 'Case No' to go back to the main 'Audit Case' page.
 14. Click on the 'Add Root Cert For This Audit Info' button and repeat the
     above steps to add as many Root Cases as needed, corresponding to the root
     certificates that are covered in the audit statements.
+15. Check that the information in the 'Recognized CAA Domains' and 'Problem
+    Reporting Mechanism' fields is current and of the correct format.
+    * 'Recognized CAA Domains' should be a comma-separated list of domain names
+      recognized in a CAA record's 'issue' and 'issuewild' property tags as
+      permitting issuance under this root certificate.
+    * 'Problem Reporting Mechanism' should provide brief instructions for
+      reporting suspected misissuance, private key compromise, information
+      inaccuracy or other types of problem relating to certificates issued under
+      this root certificate.
 
 Helpful Hints:
 
