@@ -120,8 +120,8 @@ use [Bugzilla](fields#uploading-documents).
       permitting issuance under this root certificate.
     * 'Problem Reporting Mechanism' should provide brief instructions for
       reporting suspected misissuance, private key compromise, information
-      inaccuracy or other types of problem relating to certificates issued under
-      this root certificate.
+      inaccuracy or other types of problem relating to certificates issued
+      under this root certificate.
 
 Helpful Hints:
 
