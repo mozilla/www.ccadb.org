@@ -1,7 +1,13 @@
 # Submitting Annual Updates #
 
 All CAs are required to update the audit, CP, CPS and test website information
-for their certificate hierarchies at least annually.
+for their certificate hierarchies at least annually. CAs are expected to
+maintain their [**intermediate**](intermediates) certificate records themselves
+and to directly enter the corresponding [updated audit
+statements](fields#audit-information). However, **root** certificate data
+cannot be self-maintained. This page describes the process for providing annual
+updates for root certificates, where a CA submits data and it is validated by
+a root store operator.
 
 CAs in the CCADB are organized into hierarchies. Each CA Owner has children
 nodes that are Root Certificate records, Root Certificate records have children
