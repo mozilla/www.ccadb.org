@@ -27,6 +27,9 @@ Common CA Database as follows:
 
 Upon initial login you will see a row with six tabs: "Home", "CA
 Owners/Certificates", "Contacts", "Cases", "CA Communications" and "Reports".
+** The View in every tab and search defaults to recently viewed items only.
+You must select the View or start the search and click on the 'Go!' button to
+see the full set of data you are looking for.**
 
 **CA Owners/Certificates**: Click on the "CA Owners/Certificates" tab, then in
 "View:" select "Community User's CA Owners/Root Certs" and click on "Go!".

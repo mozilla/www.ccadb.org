@@ -93,9 +93,9 @@ use [Bugzilla](fields#uploading-documents).
    audit statements. You will need to create a new Root Case for each root
    certificate that is covered by the audit statements.
    * Click on the search icon next to the 'Included Certificate' field.
-     * Default list in Search shows recently viewed records. Be sure to enter
-       the beginning of your cert name followed by asterisk (e.g. A*), and
-       click on the 'Go!' button.
+     * **Default list in Search shows recently viewed records. Be sure to enter
+       the beginning of your cert name followed by asterisk (e.g. A\*), and
+       click on the 'Go!' button.**
      * Alternatively, you can type one of the words in the name of the root
        certificate, and click on the 'Go!' button.
      * You will only be able to find root certificate records that chain up to
