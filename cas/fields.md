@@ -53,6 +53,8 @@ been audited according to one of:
 <ul>
 <li>ETSI TS 101 456 V1.4.3 or later (only applicable to non-SSL certs)</li>
 <li>ETSI TS 102 042 V2.3.1 or later</li>
+<li>ETSI EN 319 411-1 v1.1.1 or later</li>
+<li>ETSI EN 319 411-2 v2.1.1 or later</li>
 <li>WebTrust Principles and Criteria for Certification Authorities v2.0 or
 later</li>
 </ul>
@@ -67,6 +69,18 @@ later</li>
 <li>ETSI TS 101 456</li>
 <li>ETSI TS 102 042</li>
 </ul>
+</td>
+</tr>
+<tr valign="top">
+<td>Standard Audit Period </td>
+<td>For each Audit Statement provide the Audit Period Start Date and Audit
+Period End Date. In a period‐of‐time audit, the Audit Period is the period
+between the first day (start) and the last day of operations (end) covered by
+the auditors in their engagement.
+
+The period during which the CA issues Certificates SHALL be divided into an
+unbroken sequence of audit periods. An audit period MUST NOT exceed one year
+in duration.
 </td>
 </tr>
 <tr valign="top">
