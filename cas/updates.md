@@ -12,13 +12,15 @@ a root store operator.
 CAs in the CCADB are organized into hierarchies. Each CA Owner has children
 nodes that are Root Certificate records, Root Certificate records have children
 nodes that are Intermediate Certificate records, and Intermediate Certificate
-records have children nodes that are Intermediate Certificate records.
+records have children nodes that are Intermediate Certificate records. Records
+and Cases are also organized in hierarchies, similar in concept to the CA
+hierarchies.
 
-Records and Cases are also organized in hierarchies, similar in concept to the
-CA hierarchies. CAs will create an Audit Case for a particular set of audits
-(e.g. WebTrust CA, WebTrust BR, and WebTrust EV). Then the CA will create
-corresponding Root Cases to tell the CCADB which Root Certificate records
-those audit statements apply to.
+The process for submitting an annual update is as follows: **CAs will create a
+single Audit Case for a particular set of audits (e.g. WebTrust CA, WebTrust
+BR, and WebTrust EV). Then the CA will create a set of corresponding Root
+Cases, one per root, to tell the CCADB which Root Certificate records the
+audit statements in that Audit Case apply to.**
 
 ## Information Required ##
 
