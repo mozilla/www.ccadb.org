@@ -60,5 +60,5 @@ CCADB:
 * Documents, e.g. PDFs, spreadsheets, word processing documents
 * Pictures, e.g. GIFs, PNGs, JPEGs
 
-[CCADB-Agreement]: ./mozilla-ccadb-agreement.pdf
+[CCADB-Agreement]: http://www.ccadb.org/rootstores/mozilla-ccadb-agreement.pdf
 [CCADB-Github]:    https://github.com/CACommunity/Salesforce
