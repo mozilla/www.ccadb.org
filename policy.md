@@ -1,6 +1,6 @@
 # Common CCADB Policy #
 
-*Version 1.0.1*
+*Version 1.0.2*
 
 Several Web PKI root store operators (“Stores”) have collaborated to create
 the Common Certificate Authority Database (CCADB), a data repository of
@@ -48,9 +48,10 @@ other POCs may also apply to a Store to be issued one. Those Primary POCs with
 a CA Community license are ultimately responsible for keeping CCADB data
 up-to-date for their CA.
 
-Notification of security and audit-related issues will be emailed to all POCs
-and the email aliases; CAs are advised to supply sufficient POCs that will
-enable them to respond to an issue promptly.
+Notification of security and audit-related issues will be emailed to all
+Primary POCs and the first email alias. CAs are advised to make sure those
+addresses reach sufficient people such that they can respond to an issue
+in an appropriate timeframe.
 
 If POC or email alias information needs to be updated, the CA should notify one
 of the Stores containing their root certificates, because this information may
