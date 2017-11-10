@@ -81,15 +81,15 @@ use [Bugzilla](fields#uploading-documents).
    times as you need to get all of your information entered.
 5. After you have provided the audit and CP/CPS information, you will need to
    tell us which root certificates are covered by these audits.
-6. In the 'Audit Case' page, scroll down to the 'Custom Links' section and
-   click on "List All Root Certs for This CA". That will pop up another window
-   that you may find useful for the next steps. Drag the window to the side,
-   and continue with the next step.
+6. In the ‘Audit Case’ page, in the ‘Custom Links’ section and click on “List
+   All Root Certs for This CA”. This information will be helpful while you
+   create Root Cases to indicate which root certificates were in scope of your
+   audit statements.
 7. In the 'Audit Case' page, scroll down to the 'Root Cases' section.
    * At the top of the page, just above the 'Edit' button there are links to
      each of the sections, so you can click on the "Root Cases" link to go to
      that section.
-8. Click on the 'Add Root Cert For This Audit Info' button to start a new Root
+8. Click on the 'Add Root Case' button to start a new Root
    Case.
 9. In the Root Case page, identify a root certificate that is covered in the
    audit statements. You will need to create a new Root Case for each root
@@ -118,7 +118,7 @@ use [Bugzilla](fields#uploading-documents).
     * You may click on the 'Edit' and 'Save' buttons as many times as you need
     to get the necessary information filled in.
 13. Click on the 'Case No' to go back to the main 'Audit Case' page.
-14. Click on the 'Add Root Cert For This Audit Info' button and repeat the
+14. Click on the 'Add Root Case' button and repeat the
     above steps to add as many Root Cases as needed, corresponding to the root
     certificates that are covered in the audit statements.
 15. Check that the information in the 'Recognized CAA Domains' and 'Problem
