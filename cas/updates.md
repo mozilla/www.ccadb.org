@@ -81,47 +81,21 @@ use [Bugzilla](fields#uploading-documents).
    times as you need to get all of your information entered.
 5. After you have provided the audit and CP/CPS information, you will need to
    tell us which root certificates are covered by these audits.
-6. In the ‘Audit Case’ page, in the ‘Custom Links’ section and click on “List
-   All Root Certs for This CA”. This information will be helpful while you
-   create Root Cases to indicate which root certificates were in scope of your
-   audit statements.
-7. In the 'Audit Case' page, scroll down to the 'Root Cases' section.
-   * At the top of the page, just above the 'Edit' button there are links to
-     each of the sections, so you can click on the "Root Cases" link to go to
-     that section.
-8. Click on the 'Add Root Case' button to start a new Root
-   Case.
-9. In the Root Case page, identify a root certificate that is covered in the
-   audit statements. You will need to create a new Root Case for each root
-   certificate that is covered by the audit statements.
-   * Click on the search icon next to the 'Included Certificate' field.
-     * **Default list in Search shows recently viewed records. Be sure to enter
-       the beginning of your cert name followed by asterisk (e.g. A\*), and
-       click on the 'Go!' button.**
-     * Alternatively, you can type one of the words in the name of the root
-       certificate, and click on the 'Go!' button.
-     * You will only be able to find root certificate records that chain up to
-       your CA Owner record.
-   * Select one of the root certificates that is covered by the audit
-     statements.
-10. In the 'Select all that apply to the included Root' section, click on the
-    appropriate boxes to show which audit statements cover the selected root
-    certificate.
-11. Click on the 'Save' button.
-12. If the root certificate can validate TLS/SSL certificates, then you need
-    to also provide the URLs to the test websites. If the root certificate is
-    enabled for EV treatment, then the TLS/SSL certs for the test websites must
-    also be EV.
-    * Click on the 'Edit' button in the Root Case
+6. Click on the ‘Add/Update Root Cases’ button to indicate which root
+   certificates are covered in the audit statements. For each covered root
+   certificate, check the boxes corresponding to the audit statements that
+   apply. Then click on the "Apply Changes" button. This will create
+   corresponding Root Cases.
+7. If any of the root certificates covered by these audit statements can
+   validate TLS/SSL certificates, then you need to also provide the URLs to
+   the test websites. If the root certificate is enabled for EV treatment,
+   then the TLS/SSL certs for the test websites must also be EV.
+    * Scroll down to the "Root Cases" section, or click on the "Root Cases"
+      link near the top of the page.
+    * Click on the "Edit" link for the Root Case to modify.
     * Enter the URLs to the test websites (valid, expired, and revoked)
-    * Click on the 'Save' button
-    * You may click on the 'Edit' and 'Save' buttons as many times as you need
-    to get the necessary information filled in.
-13. Click on the 'Case No' to go back to the main 'Audit Case' page.
-14. Click on the 'Add Root Case' button and repeat the
-    above steps to add as many Root Cases as needed, corresponding to the root
-    certificates that are covered in the audit statements.
-15. Check that the information in the 'Recognized CAA Domains' and 'Problem
+    * Click on the ‘Save’ button
+8.  Check that the information in the 'Recognized CAA Domains' and 'Problem
     Reporting Mechanism' fields is current and of the correct format.
     * 'Recognized CAA Domains' should be a comma-separated list of domain names
       recognized in a CAA record's 'issue' and 'issuewild' property tags as
