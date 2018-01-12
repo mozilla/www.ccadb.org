@@ -90,11 +90,7 @@ use [Bugzilla](fields#uploading-documents).
    validate TLS/SSL certificates, then you need to also provide the URLs to
    the test websites. If the root certificate is enabled for EV treatment,
    then the TLS/SSL certs for the test websites must also be EV.
-    * Scroll down to the "Root Cases" section, or click on the "Root Cases"
-      link near the top of the page.
-    * Click on the "Edit" link for the Root Case to modify.
-    * Enter the URLs to the test websites (valid, expired, and revoked)
-    * Click on the ‘Save’ button
+    * Click on the 'Edit Test Websites' button, update the URLs to the 3 test websites for each root certificate, and click on 'Apply Changes'.
 8.  Check that the information in the 'Recognized CAA Domains' and 'Problem
     Reporting Mechanism' fields is current and of the correct format.
     * 'Recognized CAA Domains' should be a comma-separated list of domain names
