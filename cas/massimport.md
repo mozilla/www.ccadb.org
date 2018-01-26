@@ -16,7 +16,7 @@ For each of the errors, the CA will be responsible for entering the [intermediat
 File Format: CSV or Excel Worksheet
 
 ## Required Columns
-<table width="500px">
+<table width="806px">
 
 <tr>
 <th> Column/Field Name </th>
@@ -47,7 +47,7 @@ File Format: CSV or Excel Worksheet
 
 
 ## Optional Columns
-<table width="500px">
+<table width="806px">
 <tr>
 <th> Column/Field Name </th>
 <th> Valid Values </th>
