@@ -16,13 +16,42 @@ For each of the errors, the CA will be responsible for entering the [intermediat
 File Format: CSV or Excel Worksheet
 
 ## Required Columns
+<table class="wikitable">
+
+<tr>
+<th> Column/Field Name </th>
+<th> Valid Values </th>
+<th> Rules/Notes
+</th></tr>
+<tr>
+<td> PEM </td>
+<td>  "-----BEGIN CERTIFICATE----- <br /> &lt;cert PEM data&gt; <br /> -----END CERTIFICATE-----" </td>
+<td> Cert PEM data must be enclosed in begin and end tags, and double quotes.
+</td></tr>
+<tr>
+<td> CA Owner/Certificate Name </td>
+<td> Certificate Subject Common Name </td>
+<td> Max 80 characters allowed. <br />  If the certificate does not have a Subject CN, then use the certificate Subject Organization. <br />  Note: A few additional characters may be added at the end of the name, for clarification purposes, but must be kept consistent within the hierarchy.
+</td></tr>
+<tr>
+<td> Parent CA Owner/Certificate </td>
+<td> Certificate Issuer Common Name or Issuer Field </td>
+<td> Max 80 characters allowed.
+</td></tr>
+<tr>
+<td> Parent Certificate's SHA-256 Fingerprint </td>
+<td> Issuer Cert's SHA-256 Fingerprint </td>
+<td> Required. Use this format: 74:F8:A3:C3:EF:E7:B3:90:06:4B:83:90:3C:21:64:60:20:E5:DF:CE
+</td></tr>
+</table>
+
 | Column/Field Name | Valid Values | Rules/Notes |
 | --- | --- | --- |
 |PEM|"-----BEGIN CERTIFICATE-----  <cert PEM data>  -----END CERTIFICATE-----"|Cert PEM data must be enclosed in begin and end tags, and double quotes.|
 |CA Owner/Certificate Name|Certificate Subject Common Name|Max 80 characters allowed.   If the certificate does not have a Subject CN, then use the certificate Subject Organization.   Note: A few additional characters may be added at the end of the name, for clarification purposes, but must be kept consistent within the hierarchy.|
 |Parent CA Owner/Certificate|Certificate Issuer Common Name or Issuer Field|Max 80 characters allowed.|
 |Parent Certificate's SHA-256 Fingerprint|Issuer Cert's SHA-256 Fingerprint|Required. Use this format: 74:F8:A3:C3:EF:E7:B3:90:06:4B:83:90:3C:21:64:60:20:E5:DF:CE|
-
+  
 ## Optional Columns
 | Column/Field Name | Valid Values | Rules/Notes|
 |--- |--- |--- |
