@@ -16,7 +16,7 @@ For each of the errors, the CA will be responsible for entering the [intermediat
 File Format: CSV or Excel Worksheet
 
 ## Required Columns
-<table class="wikitable">
+<table>
 
 <tr>
 <th> Column/Field Name </th>
@@ -44,36 +44,122 @@ File Format: CSV or Excel Worksheet
 <td> Required. Use this format: 74:F8:A3:C3:EF:E7:B3:90:06:4B:83:90:3C:21:64:60:20:E5:DF:CE
 </td></tr>
 </table>
-
-| Column/Field Name | Valid Values | Rules/Notes |
-| --- | --- | --- |
-|PEM|"-----BEGIN CERTIFICATE-----  <cert PEM data>  -----END CERTIFICATE-----"|Cert PEM data must be enclosed in begin and end tags, and double quotes.|
-|CA Owner/Certificate Name|Certificate Subject Common Name|Max 80 characters allowed.   If the certificate does not have a Subject CN, then use the certificate Subject Organization.   Note: A few additional characters may be added at the end of the name, for clarification purposes, but must be kept consistent within the hierarchy.|
-|Parent CA Owner/Certificate|Certificate Issuer Common Name or Issuer Field|Max 80 characters allowed.|
-|Parent Certificate's SHA-256 Fingerprint|Issuer Cert's SHA-256 Fingerprint|Required. Use this format: 74:F8:A3:C3:EF:E7:B3:90:06:4B:83:90:3C:21:64:60:20:E5:DF:CE|
   
 ## Optional Columns
-| Column/Field Name | Valid Values | Rules/Notes|
-|--- |--- |--- |
-|Revocation Status|<blank>  Revoked|Leave blank if not revoked. If this column and the other revocation-related columns are missing, then it will be assumed that the certs are not revoked.|
-|Date of Revocation|<blank>  MM/DD/YYYY|Leave blank if not revoked|
-|RFC 5280 Revocation Reason Code|<blank>  (0) unspecified  (1) keyCompromise  (2) cACompromise  (3) affiliationChanged  (4) superseded  (5) cessationOfOperation  (6) certificateHold  (8) removeFromCRL  (9) privilegeWithdrawn  (10) aACompromise|Leave blank if not revoked|
-|Audits Same as Parent|TRUE  FALSE|TRUE if this certificate has the same audit information as the issuing certificate (or a subset). If TRUE, then leave the other audit-related columns empty. If this column and the other audit-related columns are missing, then it will be assumed that this value is TRUE.|
-|Standard Audit|<blank>  URL to audit statement|Leave blank if 'Audits Same as Parent' is TRUE.  Max 255 characters allowed|
-|Standard Audit Type|<blank>  WebTrust  ETSI TS 102 042  ETSI TS 101 456|Leave blank if 'Audits Same as Parent' is TRUE|
-|Standard Audit Statement Date|<blank>  MM/DD/YYYY|Leave blank if 'Audits Same as Parent' is TRUE. Date that the audit statement was signed.|
-|BR Audit|<blank>  URL to BR audit statement|Leave blank if 'Audits Same as Parent' is TRUE, or if Websites Trust Bit not enabled for the root, or cert not capable of issuing SSL/TLS certs.|
-|BR Audit Type|<blank>  WebTrust  ETSI TS 102 042|Leave blank if 'Audits Same as Parent' is TRUE|
-|BR Audit Statement Date|<blank>  MM/DD/YYYY|Leave blank if 'Audits Same as Parent' is TRUE. Date that the BR audit statement was signed.|
-|EV Audit|<blank>  URL to EV audit statement|Leave blank if 'Audits Same as Parent' is TRUE, or if Websites Trust Bit not enabled for the root, or if this cert is not capable of issuing EV SSL/TLS certs.|
-|EV Audit Type|<blank>  WebTrust  ETSI TS 102 042|Leave blank if 'Audits Same as Parent' is TRUE|
-|EV Audit Statement Date|<blank>  MM/DD/YYYY|Leave blank if 'Audits Same as Parent' is TRUE. Date that the EV audit statement was signed.|
-|Auditor|<blank>  Auditor's name|Leave blank if 'Audits Same as Parent' is TRUE. Max 100 characters allowed|
-|Auditor Website|<blank>  URL to the auditor's website, or a site showing their affiliation, accreditation, or qualifications|Leave blank if 'Audits Same as Parent' is TRUE. Max 300 characters allowed|
-|Auditor Qualifications|<blank>  URL to an attestation of the auditor's qualifications|Leave blank if 'Audits Same as Parent' is TRUE. Max 255 characters allowed|
-|CP/CPS Same as Parent|TRUE  FALSE|TRUE if this certificate has the same policy documentation as the issuing certificate (or a subset). If TRUE, then leave the other policy-related columns empty. If this column and the other CP/CPS columns are missing, then it will be assumed that this value is TRUE.|
-|Policy Documentation|<blank>  Notes about the documentation, such as which language the documents are in, or additional documents that need to be listed.|Leave blank if 'CP/CPS Same as Parent' is TRUE. Max 1000 characters allowed|
-|CA Document Repository|<blank>  URL to the document repository pertaining to this certificate.|Leave blank if 'CP/CPS Same as Parent' is TRUE. Max 255 characters allowed|
-|Certificate Policy (CP)|<blank>  URL to the Certificate Policy (CP) pertaining to this certificate.|Leave blank if 'CP/CPS Same as Parent' is TRUE. Max 300 characters allowed|
-|Certification Practice Statement (CPS)|<blank>  URL to the Certificate Practice Statement (CPS) pertaining to this certificate.|Leave blank if 'CP/CPS Same as Parent' is TRUE. Max 300 characters allowed|
-|Public Comments|<blank>  Any necessary additional information about the cert, audits, or CP/CPS|Max 2000 characters allowed|
+<table>
+<tr>
+<th> Column/Field Name </th>
+<th> Valid Values </th>
+<th> Rules/Notes
+</th></tr>
+<tr>
+<td> Revocation Status </td>
+<td> &lt;blank&gt; <br /> Revoked </td>
+<td> Leave blank if not revoked. If this column and the other revocation-related columns are missing, then it will be assumed that the certs are not revoked.
+</td></tr>
+<tr>
+<td> Date of Revocation </td>
+<td> &lt;blank&gt; <br /> MM/DD/YYYY </td>
+<td> Leave blank if not revoked
+</td></tr>
+<tr>
+<td> <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc5280">RFC 5280</a> Revocation Reason Code </td>
+<td> &lt;blank&gt; <br /> (0) unspecified <br /> (1) keyCompromise <br /> (2) cACompromise <br /> (3) affiliationChanged <br /> (4) superseded <br /> (5) cessationOfOperation <br /> (6) certificateHold <br /> (8) removeFromCRL <br /> (9) privilegeWithdrawn <br /> (10) aACompromise </td>
+<td> Leave blank if not revoked
+</td></tr>
+<tr>
+<td> Audits Same as Parent </td>
+<td> TRUE <br /> FALSE </td>
+<td> TRUE if this certificate has the same audit information as the issuing certificate (or a subset). If TRUE, then leave the other audit-related columns empty. If this column and the other audit-related columns are missing, then it will be assumed that this value is TRUE.
+</td></tr>
+<tr>
+<td> Standard Audit </td>
+<td> &lt;blank&gt; <br /> URL to audit statement </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE. <br /> Max 255 characters allowed
+</td></tr>
+<tr>
+<td> Standard Audit Type </td>
+<td> &lt;blank&gt; <br /> WebTrust <br /> ETSI TS 102 042 <br /> ETSI TS 101 456 </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE
+</td></tr>
+<tr>
+<td> Standard Audit Statement Date </td>
+<td> &lt;blank&gt; <br /> MM/DD/YYYY </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE. Date that the audit statement was signed.
+</td></tr>
+<tr>
+<td> BR Audit </td>
+<td> &lt;blank&gt; <br /> URL to BR audit statement  </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE, or if Websites Trust Bit not enabled for the root, or cert not capable of issuing SSL/TLS certs.
+</td></tr>
+<tr>
+<td> BR Audit Type </td>
+<td> &lt;blank&gt; <br /> WebTrust <br /> ETSI TS 102 042 </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE
+</td></tr>
+<tr>
+<td> BR Audit Statement Date </td>
+<td> &lt;blank&gt; <br /> MM/DD/YYYY </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE. Date that the BR audit statement was signed.
+</td></tr>
+<tr>
+<td> EV Audit </td>
+<td> &lt;blank&gt; <br /> URL to EV audit statement </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE, or if Websites Trust Bit not enabled for the root, or if this cert is not capable of issuing EV SSL/TLS certs.
+</td></tr>
+<tr>
+<td> EV Audit Type </td>
+<td> &lt;blank&gt; <br /> WebTrust <br /> ETSI TS 102 042 </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE
+</td></tr>
+<tr>
+<td> EV Audit Statement Date </td>
+<td> &lt;blank&gt; <br /> MM/DD/YYYY </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE. Date that the EV audit statement was signed.
+</td></tr>
+<tr>
+<td> Auditor </td>
+<td> &lt;blank&gt; <br /> Auditor's name  </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE. Max 100 characters allowed
+</td></tr>
+<tr>
+<td> Auditor Website </td>
+<td> &lt;blank&gt; <br /> URL to the auditor's website, or a site showing their affiliation, accreditation, or qualifications  </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE. Max 300 characters allowed
+</td></tr>
+<tr>
+<td> Auditor Qualifications </td>
+<td> &lt;blank&gt; <br /> URL to an attestation of the auditor's qualifications </td>
+<td> Leave blank if 'Audits Same as Parent' is TRUE. Max 255 characters allowed
+</td></tr>
+<tr>
+<td> CP/CPS Same as Parent </td>
+<td> TRUE <br /> FALSE </td>
+<td> TRUE if this certificate has the same policy documentation as the issuing certificate (or a subset). If TRUE, then leave the other policy-related columns empty. If this column and the other CP/CPS columns are missing, then it will be assumed that this value is TRUE.
+</td></tr>
+<tr>
+<td> Policy Documentation </td>
+<td> &lt;blank&gt; <br /> Notes about the documentation, such as which language the documents are in, or additional documents that need to be listed.  </td>
+<td> Leave blank if 'CP/CPS Same as Parent' is TRUE. Max 1000 characters allowed
+</td></tr>
+<tr>
+<td> CA Document Repository </td>
+<td> &lt;blank&gt; <br /> URL to the document repository pertaining to this certificate.  </td>
+<td> Leave blank if 'CP/CPS Same as Parent' is TRUE. Max 255 characters allowed
+</td></tr>
+<tr>
+<td> Certificate Policy (CP) </td>
+<td> &lt;blank&gt; <br /> URL to the Certificate Policy (CP) pertaining to this certificate.  </td>
+<td> Leave blank if 'CP/CPS Same as Parent' is TRUE. Max 300 characters allowed
+</td></tr>
+<tr>
+<td> Certification Practice Statement (CPS) </td>
+<td> &lt;blank&gt; <br /> URL to the Certificate Practice Statement (CPS) pertaining to this certificate.  </td>
+<td> Leave blank if 'CP/CPS Same as Parent' is TRUE. Max 300 characters allowed
+</td></tr>
+<tr>
+<td> Public Comments </td>
+<td> &lt;blank&gt; <br /> Any necessary additional information about the cert, audits, or CP/CPS </td>
+<td> Max 2000 characters allowed
+</td></tr>
+</table>
