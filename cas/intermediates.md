@@ -83,6 +83,10 @@ use the "Clone" button to save time. The recommended procedure is as follows:
    Owner/Certificate" to the correct value (which you can copy from the Cert
    Issuer Common Name field in the page), and click on the "Save" button.
 
+### Mass Import ###
+
+CAs who have a large number of intermediate certificates to add to the CCADB may request that their data be mass imported from a spreadsheet or CSV file, by sending email to their root store operator. Doing the [mass import process](massimport) involves a significant amount of manual work, so if you have less than 20 intermediate certificates please enter them by hand.
+
 ## Mass Update of Audit/CP/CPS Data ##
 
 The "Mass Update Audit/CP/CPS Data" button may be used to apply a particular
