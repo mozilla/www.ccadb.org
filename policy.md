@@ -1,6 +1,6 @@
 # Common CCADB Policy #
 
-*Version 1.0*
+*Version 1.0.3*
 
 Several Web PKI root store operators (“Stores”) have collaborated to create
 the Common Certificate Authority Database (CCADB), a data repository of
@@ -30,12 +30,17 @@ confidential. However, Stores are not obliged to publish any CCADB information.
 
 ## 2. Contact Information ##
 
-CAs are required to provide the name, email address and an office-hours phone
-number of a Primary Point of Contact (POC), and at least one other POC, who may
-or may not be Primary. CAs may optionally designate further POCs, supplying at
-least one contact method for each. CAs must also supply one or two non-personal
-contact email aliases which are more likely to continue working as personnel
-change; these are maintained as part of the CA’s organizational entry.
+CAs are required to provide the following information for a Primary Point of
+Contact (POC), and at least one other POC, who may or may not be Primary:
+
+* Name
+* Office email address
+* Office hours phone number
+
+CAs may optionally designate further POCs, supplying at least one contact
+method for each. CAs must also supply one or two non-personal contact email
+aliases which are more likely to continue working as personnel change; these
+are maintained as part of the CA’s organizational entry.
 
 All Primary POCs should be authorized to speak for and to bind the CA that they
 represent. At least one of the Primary POCs will hold a CA Community license;
@@ -43,9 +48,10 @@ other POCs may also apply to a Store to be issued one. Those Primary POCs with
 a CA Community license are ultimately responsible for keeping CCADB data
 up-to-date for their CA.
 
-Notification of security and audit-related issues will be emailed to all POCs
-and the email aliases; CAs are advised to supply sufficient POCs that will
-enable them to respond to an issue promptly.
+Notification of security and audit-related issues will be emailed to all
+Primary POCs and the first email alias. CAs are advised to make sure those
+addresses reach sufficient people such that they can respond to an issue
+in an appropriate timeframe.
 
 If POC or email alias information needs to be updated, the CA should notify one
 of the Stores containing their root certificates, because this information may
@@ -59,40 +65,26 @@ certificates, which a CA designates as a trust anchor. It will usually be
 self-signed. CAs are required to maintain correct and current information about
 their root certificates.
 
-If root certificate information, including audit information, needs to be
-updated, the CA should notify one of the Stores containing the certificate,
-because this information may only be edited by Stores. See the Store policy
-documents for Store contact information.
+If root certificate information needs to be updated, the CA should notify one of 
+the Stores containing the certificate, because this information may only be edited 
+by Stores. See the Store policy documents for Store contact information.
+
+To update audit information for a root certificate, create an [Audit Case][CCADB-Audit-Case].
 
 ## 4. Intermediate Certificates ##
 
 An intermediate certificate is a certificate capable of issuing new
-certificates that is not a root certificate. Intermediate certificates that
-chain up to root certificate(s) in the CCADB and that are not exempt must be
-entered into the database. This includes certificates that are revoked. For
+certificates that is not a root certificate. To determine which intermediate 
+certificates must be entered into the CCADB, refer to the individual Store policy 
+documents. This includes certificates that are revoked. For
 newly-created intermediate certificates, this must happen before the
 certificate begins issuing publicly-trusted certificates.
 
-Intermediate certificates are exempt from being added to the CCADB if at least
-one of the following is true:
+Each instance (i.e. PEM data) of an intermediate certificate only needs to be 
+included in the CCADB once, even if it chains up to two root certificates.
 
-* The certificate has the Extended Key Usage (EKU) extension and the EKU does
-  not include the anyExtendedKeyUsage or id-kp-serverAuth KeyPurposeIds; or
-* The certificate has the Extended Key Usage (EKU) extension and the EKU
-  includes the anyExtendedKeyUsage or id-kp-serverAuth KeyPurposeIds, and the
-  certificate is name constrained as described in section 7.1.5 of the
-  [CA/Browser Forum's Baseline
-  Requirements](https://cabforum.org/baseline-requirements-documents/); or
-* The root certificate(s) to which the certificate chains up is/are not trusted
-  for server authentication by any Store; or
-* The certificate has expired.
-
-When an intermediate certificate chains up to two included root certificates,
-each instance (i.e. PEM data) of the certificate only needs to be included in
-the CCADB once.
-
-If an intermediate certificate is revoked, the CCADB must be updated to mark it
-as revoked, giving the reason why, within 24 hours for a security incident, and
+If an intermediate certificate is revoked, the CCADB must be updated to mark it 
+as revoked, giving the reason why, within 24 hours for a security incident, and 
 within 7 days for any other reason.
 
 ## 5. Policies, Practices and Audit Information ##
@@ -121,14 +113,14 @@ URLs for the following documents are required for each certificate:
 * Standard audit (WebTrust or ETSI)
 * Baseline Requirements (BR) audit (if the certificate is capable of issuing
   TLS/SSL server certificates)
-* Extended Validation (EV) audit (if applicable)
+* Extended Validation (EV) SSL and/or Code Signing audit (if applicable)
 
-As of June 1 2017, CAs must provide English versions of any Certificate Policy
-and Certification
-Practice Statement documents which are not originally in English, with version
-numbers matching the document they are a translation of. The English version is
-not required to be authoritative in all cases of dispute, but the CA must
-attest that the translation is not materially different to the original.
+CAs must provide English versions of any Certificate Policy, Certification
+Practice Statement and Audit documents which are not originally in English,
+with version numbers matching the document they are a translation of. The
+English version is not required to be authoritative in all cases of dispute,
+but the CA must attest that the translation is not materially different to the
+original.
 
 ## 6. Mailshots ##
 
@@ -142,3 +134,5 @@ defined by the Store sending the information.
 Any copyright in this document is
 [dedicated to the Public
 Domain](http://creativecommons.org/publicdomain/zero/1.0/).
+
+[CCADB-Audit-Case]:    https://ccadb.org/cas/updates

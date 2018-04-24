@@ -53,4 +53,4 @@ determination on whether to include your organization as a Root Store Member
 and communicate its determination to you, along with any information about your
 membership and participation.
 
-[CCADB-Agreement]: ./mozilla-ccadb-agreement.pdf
+[CCADB-Agreement]: http://www.ccadb.org/rootstores/mozilla-ccadb-agreement.pdf

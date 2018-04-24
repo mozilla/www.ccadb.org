@@ -1,8 +1,9 @@
 # CCADB Root Store Member Usage Terms #
 
-As permitted by section 4.1 (b) of the Common CA Database Agreement, and in
-addition to any other requirements set out therein, Mozilla sets some usage
-terms and rules for Root Store Members using the CCADB, as follows.
+As permitted by section 4.1 (b) of the [Common CA Database
+Agreement][CCADB-Agreement], and in addition to any other requirements set out
+therein, Mozilla sets some usage terms and rules for Root Store Members using
+the CCADB, as follows.
 
 ## Meetings ##
 
@@ -33,7 +34,7 @@ a sandbox environment before applying them to the production instance of the
 CCADB.
 
 The customizations that Mozilla has applied to the CCADB are
-available on [https://github.com/CACommunity/Salesforce GitHub].
+available on [GitHub][CCADB-Github].
 
 ## Appropriate Data ##
 
@@ -41,12 +42,13 @@ Root Store Members may store the following types of data in the Common CA
 Database, as it pertains to the management of their root store programs:
 
 * CA and subordinate CA certificate data;
-* Contact information for CA Owners (Name, Phone Number, Email Address,
-  Physical Address, etc.);
+* Contact information for CA Owners (name, phone number, email address,
+  physical address, etc.);
+* Contact information for Auditors;
 * URLs to public-facing sites and documents;
 * URLs to internal-facing sites and documents (provided the URLs are not
   confidential);
-* Root store specific status and decisions regarding root inclusion/change
+* Root-store-specific status and decisions regarding root inclusion/change
   requests;
 * Dates and comments relating to root and intermediate certificates.
 
@@ -54,5 +56,9 @@ Root Store Members shall **not** store the following types of data in the
 CCADB:
 
 * Confidential data
+* Personal (as opposed to business) contact information for individuals
 * Documents, e.g. PDFs, spreadsheets, word processing documents
 * Pictures, e.g. GIFs, PNGs, JPEGs
+
+[CCADB-Agreement]: http://www.ccadb.org/rootstores/mozilla-ccadb-agreement.pdf
+[CCADB-Github]:    https://github.com/CACommunity/Salesforce
