@@ -12,6 +12,26 @@ store operator.
 CAs should consult the [Common CCADB Policy](/policy) to know which
 intermediate certificates are required to be added to the CCADB.
 
+## Updating Audit Statements ##
+
+All CAs are required to update the audit and CP/CPS information for their 
+certificate hierarchies at least annually. CAs are expected to maintain their 
+intermediate certificate records themselves and to directly enter the 
+corresponding updated audit statements via the following instructions. 
+Audit information for root certificate records must be provided via an Audit Case.
+
+Note: If the audit statements for an intermediate certificate are the 
+same as the certificate that signed it, then check the "Audits Same as Parent" 
+checkbox instead of providing separate audit information.
+
+1. [Login to the CCADB](https://ccadb.org/cas/getting-started).
+2. Navigate to the intermediate certificate record. Here are some ways to do that:
+   * The "My Outdated Audit Statements for ICs" report has links to the intermediate certificate records. The report is available in the 'Reports' tab in the 'CA Community Reports' folder.
+   * Enter the name or SHA-256 fingerprint of the intermediate certificate into the 'Search' at the top of the window in the CCADB.
+   * Click on 'CA Owners/Certificates' tab, then in 'View:' select “Community User’s Intermediate Certs” and click on 'Go'.
+3. Click on the 'Edit' button and enter the audit and CP/CPS information, then click on the 'Save' button.
+4. Click on the 'Mass Update Audit/CP/CPS Data' button to apply changes to other intermediate certificates in the same hierarchy, if applicable.
+
 ## Adding Intermediate Certificate Data ##
 
 1. Find the root or intermediate certificate that signed the intermediate
