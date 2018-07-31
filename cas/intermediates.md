@@ -20,7 +20,7 @@ intermediate certificate records themselves and to directly enter the
 corresponding updated audit statements via the following instructions. 
 Audit information for root certificate records must be provided via an Audit Case.
 
-Note: If the audit statements for an intermediate certificate are the 
+**Note:** If the audit statements for an intermediate certificate are the 
 same as the certificate that signed it, then check the "Audits Same as Parent" 
 checkbox instead of providing separate audit information.
 
