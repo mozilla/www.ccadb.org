@@ -4,6 +4,8 @@
 
 * [Root Program Documentation](https://wiki.mozilla.org/CA)
 * [Root Store Policy](https://www.mozilla.org/about/governance/policies/security-group/certs/policy/)
+* [CA Communications](https://wiki.mozilla.org/CA/Communications)
+* [CA Incident Dashboard](https://wiki.mozilla.org/CA/Incident_Dashboard)
 
 ### Microsoft ###
 
