@@ -22,6 +22,18 @@ BR, and WebTrust EV). Then the CA will create a set of corresponding Root
 Cases, one per root, to tell the CCADB which Root Certificate records the
 audit statements in that Audit Case apply to.**
 
+## Audit Case Workflow ##
+
+To provide annual audit statements, the CA does the following:
+
+1. Create an Audit Case in the CCADB - one Audit Case per set of audit statements.
+2. Fill in the Auditor, Audit Information, and CP/CPS Information sections.
+3. Click on the ‘Add/Update Root Cases’ button to indicate which root certificates are covered in the audit statements, and which audit statements apply to each of those roots.
+4. Click on the ‘Edit Test Websites’ button to make sure the test websites are correct.
+5. Click on the ‘Audit Letter Validation (ALV)’ button, and work with your auditor to resolve all problems.
+
+After ALV is run, the Audit Case gets automatically assigned to a Root Store Operator for review and final processing.
+
 ## Information Required ##
 
 Please have the following information prepared before you begin entering your
