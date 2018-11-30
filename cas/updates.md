@@ -34,6 +34,16 @@ To provide annual audit statements, the CA does the following:
 
 After ALV is run, the Audit Case gets automatically assigned to a Root Store Operator for review and final processing.
 
+## Test Preliminary Audit Statements ##
+
+To test that preliminary audit statements will pass ‘Audit Letter Validation (ALV)’, the CA may do the following:
+
+1. Attach the audit statements to a [Bugzilla Bug](fields#uploading-documents), indicating that they are preliminary.
+2. Create an Audit Case in the CCADB, providing links to the audit statements that were attached to the Bugzilla Bug.
+3. Add a Case Comment to the Audit Case that says: "Preliminary Audit Reports".
+4. Follow the rest of the [Audit Case Workflow] (updates#audit-case-workflow) to run ALV on the preliminary audit statements.
+5. When the audit statements are finalized, update the links, re-run ALV, and add a Case Comment that says: "Final Audit Reports".
+
 ## Information Required ##
 
 Please have the following information prepared before you begin entering your
