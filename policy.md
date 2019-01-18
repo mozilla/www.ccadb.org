@@ -136,6 +136,6 @@ defined by the Store sending the information.
 
 Any copyright in this document is
 [dedicated to the Public
-Domain](http://creativecommons.org/publicdomain/zero/1.0/).
+Domain](https://creativecommons.org/publicdomain/zero/1.0/).
 
 [CCADB-Audit-Case]:    https://ccadb.org/cas/updates
