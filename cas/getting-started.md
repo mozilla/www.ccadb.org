@@ -1,17 +1,5 @@
 # Getting Started with the CCADB #
 
-## Requesting a License ##
-
-To get access to the CCADB, you need a "CA Community License". These usage
-licenses are granted to any CA participating in at least one of the root store
-programs of the participating root store operators. You only need one CA
-Community License to access the CCADB data relating to all participating root
-store programs.
-
-If you believe that you should have a CCADB license but you have not received
-one, then please send email to support@ccadb.org with your name and the name
-of the CA you represent.
-
 ## Logging In ##
 
 After you receive email with your CA Community License, you may login to the
