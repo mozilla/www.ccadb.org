@@ -109,7 +109,8 @@ need to be duplicated from the parent cert. However, the intermediate
 certificate must be specifically listed in the audit statements of the parent
 certificate.
 
-URLs for the following documents are required for each certificate:
+URLs for the following documents are required for each certificate, 
+unless the exceptions below apply:
 
 * Certificate Policy (CP)
 * Certificate Practice Statement (CPS)
@@ -117,6 +118,17 @@ URLs for the following documents are required for each certificate:
 * Baseline Requirements (BR) audit (if the certificate is capable of issuing
   TLS/SSL server certificates)
 * Extended Validation (EV) SSL and/or Code Signing audit (if applicable)
+
+Exceptions to providing audit information:
+
+* The SHA-256 fingerprint of the certificate is specifically listed as in scope 
+in the audit statements of the parent certificate, and the 
+"Audits Same as Parent" checkbox is checked; or
+* The certificate has expired; or
+* The certificate is technically-constrained as described in section 7.1.5 
+of the CA/Browser Forum Baseline Requirements, or
+* The certificate has been revoked, and the corresponding record in the CCADB 
+has been updated with the correct revocation status.
 
 CAs must provide English versions of any Certificate Policy, Certification
 Practice Statement and Audit documents which are not originally in English,
