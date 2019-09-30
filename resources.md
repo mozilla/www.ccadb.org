@@ -9,9 +9,8 @@
 
 ### Microsoft ###
 
-* [Trusted Root Program Portal](https://social.technet.microsoft.com/wiki/contents/articles/33315.microsoft-trusted-root-certificate-program-portal.aspx)
-* [Trusted Root Program Requirements](https://social.technet.microsoft.com/wiki/contents/articles/31633.microsoft-trusted-root-program-requirements.aspx)
-* [Trusted Root Certificate Program Updates](https://social.technet.microsoft.com/wiki/contents/articles/31680.microsoft-trusted-root-certificate-program-updates.aspx)
+* [Trusted Root Program Requirements](https://aka.ms/RootCert)
+* [Trusted Root Certificate Program Updates](https://aka.ms/rootupdates)
 * [Trusted Root Audit Requirements](http://aka.ms/auditreqs)
 
 ### General ###
