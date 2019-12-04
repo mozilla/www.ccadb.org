@@ -1,6 +1,6 @@
 # Common CCADB Policy #
 
-*Version 1.0.5*
+*Version 1.1*
 
 Several Web PKI root store operators (“Stores”) have collaborated to create
 the Common Certificate Authority Database (CCADB), a data repository of
@@ -136,6 +136,44 @@ with version numbers matching the document they are a translation of. The
 English version is not required to be authoritative in all cases of dispute,
 but the CA must attest that the translation is not materially different to the
 original.
+
+### 5.1 Audit Statement Content ###
+
+CCADB uses an Audit Letter Validation (ALV) tool to automatically parse and validate audit statements. This system eliminates manual processing, but it requires audit statements to follow some basic rules in order to function properly. If the audit statement fails to meet any of the following requirements, the CA will be asked to work with their auditor to provide an audit statement that passes ALV.
+
+Audit statements listed in the CCADB must contain at least the following clearly-labelled information in English:
+
+1. Name and address of the organization performing the audit;
+1. Full name of the CA that was audited;
+1. SHA-256 fingerprint of each root and intermediate certificate that was in scope of the audit (see format specifications below);
+1. List of the CA policy documents (with version numbers) referenced during the audit;
+1. Whether the audit is for a period of time or a point in time;
+1. Date the audit statement was written, which will necessarily be after the audit period end date or point-in-time date (see date format specifications below);
+1. Start date and end date of the period that was audited, for those that cover a period of time (this is not the period the auditor was on-site);
+1. Point-in-time date, for those that are for a point in time;
+1. Full names and version numbers of the audit standards that were used during the audit; and
+1. For ETSI, a statement to indicate if the audit was a full audit, and which parts of the criteria were applied, e.g. DVCP, OVCP, NCP, NCP+, LCP, EVCP, EVCP+, QCP-w, Part1 (General Requirements), and/or Part 2 (Requirements for trust service providers).
+
+Audits based on ETSI CPs: Audits conducted by accredited conformity assessment bodies (CAB) must have their Audit Attestation Letter (AAL) uploaded to the CAB’s website. CAs provide the URL to the AAL on the CAB’s website, and ALV will verify those URLs against a known list of AAL locations.
+
+* When an ETSI Certificate cannot be issued, the CA must still provide an AAL such that there are no gaps between audit periods for consecutive audits. The CA may post the AAL on their own website or attach the attestation report to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. Additionally, the CA needs to provide an explanation about the problems and time frame for resolution of the problems.
+
+WebTrust Audits: Audits conducted by licensed WebTrust practitioners must have a WebTrust Seal. CAs enter the URL to the WebTrust Seal into the CCADB, and upon saving of the record, the CCADB automatically converts the URL to point to the corresponding PDF file via integration with CPA Canada.
+
+* For qualified WebTrust audits, the CA may post the audit statements on their own website or attach the audit statement to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. Additionally, the CA needs to provide an explanation about the findings and time frame for resolution of the findings.
+
+Format Specifications for SHA-256 Fingerprints:
+
+* MUST: No colons, no spaces, and no line feeds
+* MUST: Uppercase letters
+* SHOULD: be encoded in the document (PDF) as select-able text, not an image
+
+Format Specifications for Dates: The following formats are accepted by ALV
+* Month DD, YYYY example: May 7, 2016
+* DD Month YYYY example: 7 May 2016
+* YYYY-MM-DD example: 2016-05-07
+* Month names in English
+* No extra text within the date, such as “7th” or “the”
 
 ## 6. Mailshots ##
 
