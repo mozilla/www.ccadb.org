@@ -1,7 +1,7 @@
 # CCADB Root Store Member Usage Terms #
 
-As permitted by section 4.1 (b) of the [Common CA Database
-Agreement][CCADB-Agreement], and in addition to any other requirements set out
+As permitted by section 4 of the [Common CA Database
+Agreement](mozilla-ccadb-agreement.pdf), and in addition to any other requirements set out
 therein, Mozilla sets some usage terms and rules for Root Store Members using
 the CCADB, as follows.
 
@@ -39,12 +39,15 @@ available on [GitHub][CCADB-Github].
 ## Appropriate Data ##
 
 Root Store Members may store the following types of data in the Common CA
-Database, as it pertains to the management of their root store programs:
+Database, as it pertains to the management of their root store programs.
+Aside from contact information, data uploaded to the Common CA Database is 
+made generally available to the public,
 
 * CA and subordinate CA certificate data;
-* Contact information for CA Owners (name, phone number, email address,
-  physical address, etc.);
-* Contact information for Auditors;
+* CA Owner information (CA name, company website, physical address, etc.);
+* Contact information for CA Points of Contact (name, business email address, business phone number);
+* Auditor information (Auditor name and location, auditor qualifications);
+* Contact information for Auditors (name, business email address, business phone number);
 * URLs to public-facing sites and documents;
 * URLs to internal-facing sites and documents (provided the URLs are not
   confidential);
@@ -57,8 +60,5 @@ CCADB:
 
 * Confidential data
 * Personal (as opposed to business) contact information for individuals
-* Documents, e.g. PDFs, spreadsheets, word processing documents
-* Pictures, e.g. GIFs, PNGs, JPEGs
 
-[CCADB-Agreement]: http://www.ccadb.org/rootstores/mozilla-ccadb-agreement.pdf
-[CCADB-Github]:    https://github.com/CACommunity/Salesforce
+[CCADB-Github]:    https://github.com/CCADB
