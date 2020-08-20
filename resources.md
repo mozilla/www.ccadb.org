@@ -23,3 +23,4 @@
 * [Certificate Explainer](https://tls-observatory.services.mozilla.com/static/certsplainer.html)
 * [dev-security-policy WebPKI Forum](https://www.mozilla.org/about/forums/#dev-security-policy)
 * [Trust Service Provider Technical Best Practices](/documents/TSP_Technical_Best_Practices_eIDAS.pdf)
+* [Qualified Website Authentication Certificates (QWACs) Interoperability](/documents/Qualified_Website_Authentication_Certificates_Interoperability.pdf)
