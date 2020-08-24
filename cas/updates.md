@@ -46,24 +46,28 @@ To test preliminary audit statements with ‘Audit Letter Validation (ALV)’:
    * Audit statements must meet the requirements listed in
     [section 5.1 of the Common CCADB Policy](https://www.ccadb.org/policy#51-audit-statement-content)
     * CCADB automatically converts WebTrust Seal URLs into PDF URLs when you click on 'Submit'
-    * When there are findings that prevent getting an ETSI Certifiate or WebTrust Seal, you may 
+    * When there are findings that prevent getting an ETSI Certificate or WebTrust Seal, you may 
     upload the document to [Bugzilla](fields#uploading-documents)
 9. Click on the 'Add/Update Root Cases' button to indicate which root certificates are covered in the audit statements.
     * For each root certificate in the audit statements, check the boxes corresponding 
       to the audit statements that apply. 
       * Click on the 'Apply Changes' button
-10. Click on the 'Edit' button and enter the CP/CPS information, then 
-    click on the 'Submit' button. 
-11.  Click on the 'Test Websites Validation' button if any of the root certificates covered 
-     by these audit statements can validate TLS/SSL certificates
+10. Click on the 'Update Policy Documents' button to provide current CP/CPS information. 
+    * Click on the 'Help' button in the 'Add Policy Documents' page for instructions
+    * Update existing policy document information, or add new policy documents via the 'Add Policy Document' button
+    * Click on the checkmark to save each set of changes before clicking on the 'Go Back' button to return to the Case
+11. Click on 'Edit Test Websites' button to update test website URLs  if any of the root certificates 
+covered by these audit statements can validate TLS/SSL certificates.
+12.  Click on the 'Test Websites Validation' button if any of the root certificates covered 
+by these audit statements can validate TLS/SSL certificates.
      * Resolve all failures, then click on 'Re-run Validaton'
-12.  Confirm that the information in the 'Recognized CAA Domains' and 'Problem Reporting Mechanism' fields is current and of the correct format
+13.  Confirm that the information in the 'Recognized CAA Domains' and 'Problem Reporting Mechanism' fields is current and of the correct format.
      * 'Recognized CAA Domains' should be a comma-separated list of domain names
        recognized in a CAA record's 'issue' and 'issuewild' property tags as
        permitting issuance under this CA's root certificates
      * 'Problem Reporting Mechanism' should be an email address or URL for 
        reporting suspected private key compromise or certificate mis-issuance
-13. Click on the 'Audit Letter Validation [ALV]' button and resolve any issues
+14. Click on the 'Audit Letter Validation [ALV]' button and resolve any issues.
       
 
 Helpful Hint: Before starting this process, it may be helpful to open another window
