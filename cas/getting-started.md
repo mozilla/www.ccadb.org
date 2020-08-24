@@ -13,11 +13,16 @@ Common CA Database as follows:
 
 ## Navigating the Interface ##
 
-Upon initial login you will see a row with six tabs: "Home", "CA
+Upon initial login you will see a row with seven tabs: "Home", "My CA", "CA
 Owners/Certificates", "Contacts", "Cases", "CA Communications" and "Reports".
-** The View in every tab and search defaults to recently viewed items only.
-You must select the View or start the search and click on the 'Go!' button to
-see the full set of data you are looking for.**
+
+Important: The View in tabs and search defaults to recently viewed items only.
+You must select a View or start a search and click on the 'Go!' button to
+see the full set of data you are looking for.
+
+**My CA**: Click on the "My CA" tab to see the information that is in the CCADB
+for your CA, a hierarachy of root certiicates and intermediate certificates,
+and who the Points of Contact are for your CA.
 
 **CA Owners/Certificates**: Click on the "CA Owners/Certificates" tab, then in
 "View:" select "Community User's CA Owners/Root Certs" and click on "Go!".
@@ -60,7 +65,5 @@ Important Notes:
   and Contact. Only the Root Store Members can modify these records.
 * CA Community Users can only modify the intermediate certificate records for
   their CA.
-* When PEM data is provided, the certificate details in the record may not be
-  modified.
 
 [CCADB-Login]: https://ccadb.force.com/
