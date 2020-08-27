@@ -32,7 +32,7 @@ To test preliminary audit statements with ‘Audit Letter Validation (ALV)’:
 5. When the audit statements are finalized, update the audit links in the Audit Case, re-run ALV, and add a Case Comment that says: "Final Audit Reports"
 
 ## Instructions ##
-
+[Video: How to Create an Audit Case ](https://drive.google.com/file/d/16MzR6Rdc-WpYm-YImyRaKG1USY_sT5TS/view?usp=sharing)
 1. [Login to the CCADB](getting-started)
 2. Click on the 'My CA' tab
 3. Scroll down to the 'Cases' section
