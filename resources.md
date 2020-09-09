@@ -18,6 +18,7 @@
 * [All certs (root and intermediate) in CCADB](http://ccadb-public.secure.force.com/ccadb/AllCertificateRecordsCSVFormat) (CSV)
 * [List of CA problem reporting mechanisms (email, etc.)](https://ccadb-public.secure.force.com/ccadb/AllProblemReportingMechanismsReport) (use this to report a certificate problem directly to the CA)
 * [List of CAA Identifiers](https://ccadb-public.secure.force.com/ccadb/AllCAAIdentifiersReport) (used to restrict issuance of certificates to specific CAs via a [DNS Certification Authority Authorization Resource Record](https://tools.ietf.org/html/rfc6844))
+    * [CSV List of CAA Identifiers](https://ccadb-public.secure.force.com/ccadb/AllCAAIdentifiersReportCSV) 
 * [crt.sh Certificate Search](https://crt.sh/)
 * [Censys Certificate Search](https://censys.io/)
 * [Certificate Explainer](https://tls-observatory.services.mozilla.com/static/certsplainer.html)
