@@ -5,6 +5,27 @@ Agreement](mozilla-ccadb-agreement.pdf), and in addition to any other requiremen
 therein, Mozilla sets some usage terms and rules for Root Store Members using
 the CCADB, as follows.
 
+## CCADB Data Usage Terms ##
+
+Redistribution and use of this data is permitted provided that neither the name 
+and trademarks of Mozilla Corporation nor the names and trademarks of any 
+Common CA Database contributor may be used to endorse or promote products 
+derived from this data without specific prior written permission.
+
+THIS DATA IS PROVIDED BY MOZILLA CORPORATION AND COMMON CA 
+DATABASE CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED 
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL MOZILLA CORPORATION AND COMMON 
+CA DATABASE CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE 
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DATA, EVEN 
+IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 ## Meetings ##
 
 Root Store Members of the CCADB may meet by teleconference or
