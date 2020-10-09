@@ -13,8 +13,8 @@ Common CA Database as follows:
 
 ## Navigating the Interface ##
 
-Upon initial login you will see a row with seven tabs: "Home", "My CA", "CA
-Owners/Certificates", "Contacts", "Cases", "CA Communications" and "Reports".
+Upon initial login you will see a row with six tabs: "Home", "My CA", "CA
+Owners/Certificates", "Cases", "CA Communications", and "Reports".
 
 Important: The View in tabs and search defaults to recently viewed items only.
 You must select a View or start a search and click on the 'Go!' button to
@@ -31,9 +31,6 @@ your account. Click on the "CA Owner/Certificate Name" to view each record.
 Within the record you will see an Account Hierarchy section, where you can
 click on each root or intermediate certificate record to view the certificate
 data.
-
-**Contacts**: Click on the "Contacts" tab, then in "View:" select "All
-Contacts" and click on "Go!". Click on the Name to view each contact record.
 
 **Cases**: This tab is used to create and update Audit Cases for submitting
 [annual updates](updates).
@@ -67,3 +64,4 @@ Important Notes:
   their CA.
 
 [CCADB-Login]: https://ccadb.force.com/
+

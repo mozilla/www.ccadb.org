@@ -166,7 +166,7 @@ Format Specifications for SHA-256 Fingerprints:
 
 * MUST: No colons, no spaces, and no line feeds
 * MUST: Uppercase letters
-* SHOULD: be encoded in the document (PDF) as select-able text, not an image
+* MUST: be encoded in the document (PDF) as text searchable, not an image
 
 Format Specifications for Dates: The following formats are accepted by ALV
 * Month DD, YYYY example: May 7, 2016
