@@ -32,20 +32,20 @@ To test preliminary audit statements with ‘Audit Letter Validation (ALV)’:
 5. When the audit statements are finalized, update the audit links in the Audit Case, re-run ALV, and add a Case Comment that says: "Final Audit Reports"
 
 ## Instructions ##
-[Video: How to Create an Audit Case ](https://drive.google.com/file/d/16MzR6Rdc-WpYm-YImyRaKG1USY_sT5TS/view?usp=sharing)
+
 1. [Login to the CCADB](getting-started)
 2. Click on the 'My CA' tab
-3. Scroll down to the 'Cases' section
-4. Click on the 'New Case' button
-5. Select 'CA Audit Update Request' (default), and click on 'Continue'
-6. Click on the 'Submit' button to create the new Audit Case with a default Subject
-   * For our use, the 'Submit' button is the 'Save' button. You may click on 'Edit' and 'Submit' as many
-   times as you need to get all of your information entered.
+3. Click on the 'CASES' tab under the CA Owner's name, near the top left corner of the page
+4. Click on the 'NEW' button, which is on the right side of the page, below the 'GET URLs' button
+5. Select 'CA Audit Update Request' (default), and click on 'Next'
+6. Click on the 'Save' button. 
+    * There will be a green bar shown across the top of the page, which says “Case ###### was created. Click on the number in that green bar to view the new Case.
+    * Otherwise go back to the 'CASES' tab in 'My CA', and click on the number in the top row of the 'Case' column.
 7. The Instructions section and Case Progress bar towards the top of the page will indicate what you need to do.
-8. Click on the 'Edit' button, enter the Auditor and Audit statement information, then click on the 'Submit' button.
+8. Click on the 'Edit' button, enter the Auditor and Audit statement information, then click on the 'Save' button.
    * Audit statements must meet the requirements listed in
     [section 5.1 of the Common CCADB Policy](https://www.ccadb.org/policy#51-audit-statement-content)
-    * CCADB automatically converts WebTrust Seal URLs into PDF URLs when you click on 'Submit'
+    * CCADB automatically converts WebTrust Seal URLs into PDF URLs when you click on 'Save'
     * When there are findings that prevent getting an ETSI Certificate or WebTrust Seal, you may 
     upload the document to [Bugzilla](fields#uploading-documents)
 9. Click on the 'Add/Update Root Cases' button to indicate which root certificates are covered in the audit statements.
@@ -56,9 +56,9 @@ To test preliminary audit statements with ‘Audit Letter Validation (ALV)’:
     * Click on the 'Help' button in the 'Add Policy Documents' page for instructions
     * Update existing policy document information, or add new policy documents via the 'Add Policy Document' button
     * Click on the checkmark to save each set of changes before clicking on the 'Go Back' button to return to the Case
-11. Click on 'Edit Test Websites' button to update test website URLs  if any of the root certificates 
+11. Click on 'Edit Test Websites' button (which may be in the button overflow -- upside down triangle) to update test website URLs  if any of the root certificates 
 covered by these audit statements can validate TLS/SSL certificates.
-12.  Click on the 'Test Websites Validation' button if any of the root certificates covered 
+12.  Click on the 'Test Websites Validation' button (which may be in the button overflow -- upside down triangle) if any of the root certificates covered 
 by these audit statements can validate TLS/SSL certificates.
      * Resolve all failures, then click on 'Re-run Validaton'
 13.  Confirm that the information in the 'Recognized CAA Domains' and 'Problem Reporting Mechanism' fields is current and of the correct format.
@@ -67,14 +67,13 @@ by these audit statements can validate TLS/SSL certificates.
        permitting issuance under this CA's root certificates
      * 'Problem Reporting Mechanism' should be an email address or URL for 
        reporting suspected private key compromise or certificate mis-issuance
-14. Click on the 'Audit Letter Validation [ALV]' button and resolve any issues.
+14. Click on the 'Audit Letter Validation [ALV]' button  (which may be in the button overflow -- upside down triangle) and resolve any issues.
       
 
 Helpful Hint: Before starting this process, it may be helpful to open another window
-  showing your CA's Account Hierarchy, so you can easily see which root
+  showing your CA's Hierarchy, so you can easily see which root
   certificates need to be accounted for in the audit statements. Click on the 
-  'My CA' tab, scroll down to the 'Account Hierarchy' section, then right-click 
-  on any of the record names to 'Open Link in New Window'.
+  'My CA' tab, and then the 'CA HIERARCHY' tab.
 
 ## What Happens Next? ##
 

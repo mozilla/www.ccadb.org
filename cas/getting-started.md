@@ -13,55 +13,40 @@ Common CA Database as follows:
 
 ## Navigating the Interface ##
 
-Upon initial login you will see a row with six tabs: "Home", "My CA", "CA
-Owners/Certificates", "Cases", "CA Communications", and "Reports".
+Upon initial login you will see a row of tabs along the top 
+of the window, next to the CCADB logo. The number of tabs that you
+see depends on the width of your window, and a 'More' tab will
+be shown when all of the tabs cannot be displayed. The tabs are:
+'Home', 'My CA', 'CA Owners/Certificates', 'Cases', 'CA Communications', 
+and 'Reports'.
 
-Important: The View in tabs and search defaults to recently viewed items only.
-You must select a View or start a search and click on the 'Go!' button to
-see the full set of data you are looking for.
+**Home**: The home page is the initial page that you see when you login.
+It provides contact information for root store members of the CCADB,
+your CA's task list, and reports that you can expand when any of your task list
+items are not 0.
 
-**My CA**: Click on the "My CA" tab to see the information that is in the CCADB
+**My CA**: Click on the 'My CA' tab to see the information that is in the CCADB
 for your CA, a hierarachy of root certiicates and intermediate certificates,
 and who the Points of Contact are for your CA.
 
-**CA Owners/Certificates**: Click on the "CA Owners/Certificates" tab, then in
-"View:" select "Community User's CA Owners/Root Certs" and click on "Go!".
-This will list the CA Owner and all of the root certificates associated with
-your account. Click on the "CA Owner/Certificate Name" to view each record.
-Within the record you will see an Account Hierarchy section, where you can
-click on each root or intermediate certificate record to view the certificate
-data.
+**CA Owners/Certificates**: Click on the 'CA Owners/Certificates' tab 
+(which may be under the 'More' tab), then click on 'Recently Viewed' in 
+the upper left corner. Select 'Community User's CA Owners/Root Certs'
+then click on the thumb tack icon to pin this view as your default for this tab.
 
-**Cases**: This tab is used to create and update Audit Cases for submitting
-[annual updates](updates).
+**Cases**: Click on the 'Cases' tab (which may be under the 'More' tab), then 
+click on 'Recently Viewed' in the upper left corner. Select 'My Cases'
+then click on the thumb tack icon to pin this view as your default for this tab.
+Audit Cases are used for submitting [annual updates](updates).
 
-**CA Communications**: The "CA Communications" tab may be used when a root
+**CA Communications**: The 'CA Communications' tab may be used when a root
 store operator polls their CA members for information. You may ignore this tab
 until you receive email from a root store operator asking you to respond to
 such a poll.
 
-**Reports**: Click on the "Reports" tab, then click on the "CA Community
-Reports" link along the left column, then click on one of the reports in the
-list. Whenever you click on the "Reports" tab it will list the reports that
-you have recently viewed. You will need to click on the "CA Community Reports"
-link to see all of the reports that are available to you.
-
-Important Notes:
-
-* Each Owner/Certificate record has a "CA Owner/Certificate Name" field. For a
-  certificate record, the value of this field is usually the Certificate
-  **Subject** Common Name of the certificate. For a CA Owner record, this
-  field displays the CA's name. It is unfortunately not possible to
-  contextually change the title of the field in the page.
-* Each Certificate record has a "Parent CA Owner/Certificate" field. For an
-  intermediate certificate record the value of the field should be the
-  Certificate **Issuer** Common Name. For a root certificate record the value
-  of the field will be the name of the CA owner. It is unfortunately not
-  possible to contextually change the title of the field in the page.
-* CA Community Users cannot modify the records for Owner, Root Certificate,
-  and Contact. Only the Root Store Members can modify these records.
-* CA Community Users can only modify the intermediate certificate records for
-  their CA.
+**Reports**: Click on the 'Reports' tab (which may be under the 'More' tab), 
+then click on 'All Folders' along the left column, and then click on 
+'CA Community Reports'.
 
 [CCADB-Login]: https://ccadb.force.com/
 
