@@ -14,10 +14,10 @@ best filled out, with some advice on how to create or obtain the data.
 in the 'Custom Links' section in any Root Certificate, Intermediate Certiifcate, 
 or Case page. Contact your root store operator if your auditor is not in this list. 
 <br>
-To fill in the auditor's name, click on the Edit button, then on the 
-search icon (magnifying glass) next to the 'Auditor' field. Then enter the 
-first letter of the auditor's name and an asterisk (e.g. B*), then click on 
-the 'Go!' button. 
+To fill in the auditor's name, click on the pencil icon in the 'Auditor' field, 
+then enter a string of two or more characters that you expect to be in your 
+auditor's name and hit 'Return'. Click on your auditor's name, then
+click on the 'Save' button. 
 </td>
 </tr>
 <tr valign="top">
@@ -26,10 +26,11 @@ the 'Go!' button.
 in the 'Custom Links' section in any Root Certificate, Intermediate Certiifcate, 
 or Case page. Contact your root store operator if your auditor's location is not in this list. 
 <br>
-To fill in the auditor's location, click on the Edit button, and first fill in the Auditor.
-Then click on the search icon (magnifying glass) next to the 'Auditor Location' field, enter the 
-first letter of the auditor's location and an asterisk (e.g. S*), then click on 
-the 'Go!' button. </td>
+To fill in the auditor's location, click on the pencil icon in the 'Auditor Location' field,
+then enter a string of two or more characters that you expect to be in your 
+auditor's location and hit 'Return'. Click on your auditor's location, then
+click on the 'Save' button. 
+ </td>
 </tr>
 </table>
 
@@ -75,7 +76,7 @@ WebTrust Seals: Enter the WebTrust Seal URL into this field. When you save your 
 </tr>
 <tr valign="top">
 <td>Audit Type </td>
-<td> Choose of the provided options that most closely aligns with the type of audit;
+<td> Choose one of the provided options that most closely aligns with the type of audit;
 e.g. WebTrust or ETSI EN 319 411.
 </td>
 </tr>
@@ -141,7 +142,7 @@ container format defined in RFCs [1421][RFC-1421] to [1424][RFC-1424]. PEM
 actually means Privacy Enhanced Mail, but the container format it uses is a
 Base64 translation of [X.509][X509] [ASN.1][ASN1] keys.
 
-[Mozilla's TLS Observatory Certificate Explainer][Certsplainer] may be used to
+[Certificate Explainer][Certsplainer] may be used to
 convert a certificate in any other format into PEM, as follows:
 
 * Visit the [Certificate Explainer][Certsplainer].
