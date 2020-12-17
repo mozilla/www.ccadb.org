@@ -33,6 +33,8 @@ To test preliminary audit statements with ‘Audit Letter Validation (ALV)’:
 
 ## Instructions ##
 
+**Video:** [How to Create an Audit Case](https://drive.google.com/file/d/1t5juvsotFexIb6Db1iYWVn6SPwqXTcqC/view?usp=sharing)
+
 1. [Login to the CCADB](getting-started)
 2. Click on the 'My CA' tab
 3. Click on the 'CASES' tab under the CA Owner's name, near the top left corner of the page
