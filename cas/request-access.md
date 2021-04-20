@@ -16,6 +16,8 @@ Some of the Root Store Members of the CCADB require contractual agreements with 
 
 If your CA is new to the CCADB, then [submit this form](https://ccadb-public.secure.force.com/ccadb/AccessRequestForm) to request access.
 
+The CCADB is a highly customized instance of Salesforce, so in the access request form you must confirm that you can abide by the [Salesforce Terms of Service](https://www.salesforce.com/company/legal/sfdc-website-terms-of-service/). Note that Salesforce prevents access in [some global regions](https://trust.salesforce.com/en/blocked/) as indicated in section 14.1 of the [Salesforce Master Subscription Agreement](https://a.sfdcstatic.com/content/dam/www/ocms-backup/assets/pdf/misc/salesforce_MSA.pdf).
+
 If there are any questions about the completeness of your application, we will get back to you. Otherwise, once we have received this information, we will make a determination on whether your organization is sponsored by a Root Store Member of the CCADB to receive access to the CCADB. If it is determined that your CA may receive access to the CCADB, then a CCADB CA Community license will be issued to the CA’s representative’s email address provided in the form, and that individual will receive an email with further instructions.
 
 ## Changing CCADB Licenses ##
