@@ -135,6 +135,57 @@ certificate.</td>
 
 <br>
 
+## Revocation Information ##
+### Revocation Information For This Certificate ###
+
+<table border="1">
+<tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
+<tr valign="top">
+<td>Revocation Status </td>
+<td> The Common CCADB Policy, says “If an intermediate certificate is revoked, the CCADB must be updated to mark it as revoked, giving the reason why, within 24 hours for a security incident, and within 7 days for any other reason.” 
+</td>
+</tr>
+<tr valign="top">
+<td>Date of Revocation </td>
+<td> Must match the revocation date indicated in the CRL.
+ </td>
+</tr>
+<tr valign="top">
+<td>RFC 5280 Revocation Reason Code</td>
+<td> Must match the revocation reason code indicated in the CRL.
+ </td>
+</tr>
+<tr valign="top">
+<td>Alternate CRL</td>
+<td> Only fill in this field when this certificate does not contain a CRL URL. Note that the BRs now require intermediate certificates to contain CRL URLs.
+ </td>
+</tr>
+</table>
+
+<br>
+
+### Pertaining to Certificates Issued by this CA ###
+<table border="1">
+<tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
+<tr valign="top">
+<td>Full CRL Issued By This CA</td>
+<td> Enter the URL to the full CRL for certificates issued by this CA.
+</td>
+</tr>
+<tr valign="top">
+<td>JSON Array of Partitioned CRLs</td>
+<td> When there is no full CRL for certificates issued by this CA, provide a JSON array whose elements are URLs of partitioned, DER-encoded CRLs that when combined are the equivalent of a full CRL. The JSON array may omit obsolete partitioned CRLs whose scopes only include expired certificates.
+<br><br>
+Example:
+<br>
+&#91; "http://cdn.example/crl-1.crl", "http://cdn.example/crl-2.crl" &#93;
+<br>
+ </td>
+</tr>
+</table>
+
+<br>
+
 ## PEM Data ##
 
 The CCADB accepts certificate information in the [PEM][PEM] format. PEM is a
