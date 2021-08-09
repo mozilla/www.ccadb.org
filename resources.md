@@ -3,8 +3,8 @@
 ### CCADB Data ###
 * [CCADB Data Usage Terms](rootstores/usage#ccadb-data-usage-terms) 
 * Code Signing Root Certificates
-  * [PEM of Root Certificates in Microsoft's Root Store with Code Signing EKU (TXT)](https://ccadb-public.secure.force.com/microsoft/IncludedRootsPEMTxtForMSFT?TrustBitsInclude=Code%20Signing)
-  * [PEM of Root Certificates in Microsoft's Root Store with Code Signing EKU (CSV)](https://ccadb-public.secure.force.com/microsoft/IncludedRootsPEMCSVForMSFT?TrustBitsInclude=Code%20Signing)
+  * [PEM of Root Certificates in Microsoft's Root Store with Code Signing EKU (TXT)](https://ccadb-public.secure.force.com/microsoft/IncludedRootsPEMTxtForMSFT?MicrosoftEKUs=Code%20Signing)
+  * [PEM of Root Certificates in Microsoft's Root Store with Code Signing EKU (CSV)](https://ccadb-public.secure.force.com/microsoft/IncludedRootsPEMCSVForMSFT?MicrosoftEKUs=Code%20Signing)
 * Email (S/MIME) Root Certificates
   * [PEM of Root Certificates in Mozilla's Root Store with the Email (S/MIME) Trust Bit Enabled (TXT)](https://ccadb-public.secure.force.com/mozilla/IncludedRootsPEMTxt?TrustBitsInclude=Email)
   * [PEM of Root Certificates in Mozilla's Root Store with the Email (S/MIME) Trust Bit Enabled (CSV)](https://ccadb-public.secure.force.com/mozilla/IncludedRootsDistrustSMIMEPEMCSV?TrustBitsInclude=Email)
