@@ -164,17 +164,17 @@ certificate.</td>
 
 <br>
 
-### Pertaining to Non-TLS Certificates Issued by this CA ###
+### Pertaining to Certificates Issued by this CA ###
 <table border="1">
 <tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
 <tr valign="top">
 <td>Full CRL Issued By This CA</td>
-<td> Enter the URL to the full CRL for non-TLS certificates issued by this CA.
+<td> Enter the URL to the full CRL for certificates issued by this CA.
 </td>
 </tr>
 <tr valign="top">
 <td>JSON Array of Partitioned CRLs</td>
-<td> When there is no full CRL for non-TLS certificates issued by this CA, provide a JSON array whose elements are URLs of partitioned, DER-encoded CRLs that when combined are the equivalent of a full CRL for non-TLS certificates issued by this CA. The JSON array may omit obsolete partitioned CRLs whose scopes only include expired certificates.
+<td> When there is no full CRL for certificates issued by this CA, provide a JSON array whose elements are URLs of partitioned, DER-encoded CRLs that when combined are the equivalent of a full CRL for certificates issued by this CA. The JSON array may omit obsolete partitioned CRLs whose scopes only include expired certificates.
 <br><br>
 Example:
 <br>
