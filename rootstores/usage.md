@@ -1,9 +1,4 @@
-# CCADB Root Store Member Usage Terms #
-
-As permitted by section 4 of the [Common CA Database
-Agreement](mozilla-ccadb-agreement.pdf), and in addition to any other requirements set out
-therein, Mozilla sets some usage terms and rules for Root Store Members using
-the CCADB, as follows.
+# CCADB Usage Terms #
 
 ## CCADB Data Usage Terms ##
 
@@ -26,7 +21,13 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DATA, EVEN 
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-## Meetings ##
+## CCADB Root Store Member Usage Terms ##
+As permitted by section 4 of the [Common CA Database
+Agreement](mozilla-ccadb-agreement.pdf), and in addition to any other requirements set out
+therein, Mozilla sets some usage terms and rules for Root Store Members using
+the CCADB, as follows.
+
+### Meetings ###
 
 Root Store Members of the CCADB may meet by teleconference or
 at face-to-face meetings for the purpose of discussing improvements or changes
@@ -34,7 +35,7 @@ to the operation of the CCADB. Such discussions should not include
 competitively-sensitive information. Mozilla shall not be responsible for the
 expenses of any such teleconferences or meetings.
 
-## Customizing the CCADB ##
+### Customizing the CCADB ###
 
 A Root Store Member may make customization changes that only impact itself.
 Before being applied to the production instance of the CCADB,
@@ -57,7 +58,7 @@ CCADB.
 The customizations that Mozilla has applied to the CCADB are
 available on [GitHub][CCADB-Github].
 
-## Appropriate Data ##
+### Appropriate Data ###
 
 Root Store Members may store the following types of data in the Common CA
 Database, as it pertains to the management of their root store programs.
