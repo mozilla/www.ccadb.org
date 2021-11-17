@@ -5,6 +5,5 @@
 * [Getting Started](getting-started)
 * [Field Types and Valid Values](fields)
 * [Managing Intermediate Certificates](intermediates)
+* [Updating Audit Statements, Data, and Policy Documents](updates)
 * [Viewing Reports](reports)
-* [Submitting Annual Updates](updates)
-
