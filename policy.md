@@ -175,6 +175,19 @@ Format Specifications for Dates: The following formats are accepted by ALV
 * Month names in English
 * No extra text within the date, such as “7th” or “the”
 
+ALV supports the following format for specifying audit period date ranges:
+<br>
+```<date><space><splitter><space><date>```
+<br>
+Where splitter must be one of the following:
+* to
+* through
+* until
+* and
+* \-
+* \~
+
+
 ## 6. Mailshots ##
 
 From time to time, a Store may use the CCADB to send information to CAs.
