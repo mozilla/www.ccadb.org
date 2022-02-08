@@ -1,44 +1,18 @@
 # Field Types and Valid Values #
 
-This document explains how the various records and sections in the CCADB are
+This page explains how the various records and sections in the CCADB are
 best filled out, with some advice on how to create or obtain the data.
-
-## Auditor Information ##
-
-<table border="1">
-<tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
-
-<tr valign="top">
-<td>Auditor </td>
-<td> Find all Auditors known to the CCADB by clicking on the 'Auditors' report
-in the 'Custom Links' section in any Root Certificate, Intermediate Certiifcate, 
-or Case page. Contact your root store operator if your auditor is not in this list. 
-<br>
-To fill in the auditor's name, click on the pencil icon in the 'Auditor' field, 
-then enter a string of two or more characters that you expect to be in your 
-auditor's name and hit 'Return'. Click on your auditor's name, then
-click on the 'Save' button. 
-</td>
-</tr>
-<tr valign="top">
-<td>Auditor Location </td>
-<td> Find all Auditor Locations known to the CCADB by clicking on the 'Auditors' report
-in the 'Custom Links' section in any Root Certificate, Intermediate Certiifcate, 
-or Case page. Contact your root store operator if your auditor's location is not in this list. 
-<br>
-To fill in the auditor's location, click on the pencil icon in the 'Auditor Location' field,
-then enter a string of two or more characters that you expect to be in your 
-auditor's location and hit 'Return'. Click on your auditor's location, then
-click on the 'Save' button. 
- </td>
-</tr>
-</table>
-
-<br>
-Auditor qualifications are verified and entered into the CCADB by a root store operator. 
-For example, Mozilla re-verifies auditor qualifications annually as described
- [here][Auditor-Qualifications].
-
+<br><br>
+Table of Contents:
+<ol>
+<li> Audit Information </li>
+<li> Auditor Information </li>
+<li> Forumula Fields </li>
+<li> PEM Data </li>
+<li> Policies and Practices Information </li>
+<li> Revocation Information </li>
+<li> Uploading Documents </li>
+</ol>
 
 ## Audit Information ##
 
@@ -101,6 +75,105 @@ in duration.
 </table>
 
 <br>
+
+## Auditor Information ##
+
+<table border="1">
+<tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
+
+<tr valign="top">
+<td>Auditor </td>
+<td> Find all Auditors known to the CCADB by clicking on the 'Auditors' report
+in the 'Custom Links' section in any Root Certificate, Intermediate Certiifcate, 
+or Case page. Contact your root store operator if your auditor is not in this list. 
+<br>
+To fill in the auditor's name, click on the pencil icon in the 'Auditor' field, 
+then enter a string of two or more characters that you expect to be in your 
+auditor's name and hit 'Return'. Click on your auditor's name, then
+click on the 'Save' button. 
+</td>
+</tr>
+<tr valign="top">
+<td>Auditor Location </td>
+<td> Find all Auditor Locations known to the CCADB by clicking on the 'Auditors' report
+in the 'Custom Links' section in any Root Certificate, Intermediate Certiifcate, 
+or Case page. Contact your root store operator if your auditor's location is not in this list. 
+<br>
+To fill in the auditor's location, click on the pencil icon in the 'Auditor Location' field,
+then enter a string of two or more characters that you expect to be in your 
+auditor's location and hit 'Return'. Click on your auditor's location, then
+click on the 'Save' button. 
+ </td>
+</tr>
+</table>
+
+<br>
+Auditor qualifications are verified and entered into the CCADB by a root store operator. 
+For example, Mozilla re-verifies auditor qualifications annually as described
+ [here][Auditor-Qualifications].
+
+
+## Formula Fields ##
+These are some of the fields that are automatically filled in by the CCADB and cannot be manually edited.
+
+<table border="1">
+<tr valign="top"><th>Field Name</th><th>Logic</th><th>Updates</th></tr>
+<tr valign="top">
+<td>Derived Trust Bits </td>
+<td>
+<ul>
+<li>TO DO </li>
+</ul>
+</td>
+<td> TO DO </td> 
+</tr>
+<tr valign="top">
+<td>EV SSL Capable </td>
+<td> 
+<ol>
+For an intermediate certificate to be considered technically capable of issuing EV SSL certificates, all of the following have to be true for that certificate as well as the intermediate certificates that it chains up to.
+<li> The certificate is not revoked and not expired.</li>
+<li> "Derived Trust Bits" field contains "Server Authentication" </li>
+<li> The root certificate that it chains up to is enabled for EV by at least one of the root stores that it is included in. </li>
+<li> "Policy Identifiers" field contains one or more of 2.23.140.1.1, 2.5.29.32.0, or any of the values in the ExtendedValidation.cpp OIDs field of the root certificate. </li>
+</ol> 
+If the above check fails for a parent intermediate certificate, then look for doppelganger (same Subject+SPKI, not expired, not revoked) certificates and perform the check on any that are found.
+</td>
+<td> TO DO </td> 
+</tr>
+<tr valign="top">
+<td>Technically Constrained </td>
+<td> This is set based on mozillaPolicyV2_5.isTechnicallyConstrained from extracted PEM result.  </td>
+<td> Set when certificate PEM is imported into the CCADB. </td> 
+</tr>
+<tr valign="top">
+<td>Has Non-constrained Doppelganger?</td>
+<td>This field is set to TRUE when its "Technically Constrained" field is set to TRUE and there are doppelganger (same Subject+SPKI, not expired, not revoked) intermediate certificates that have Technically Constrained == FALSE. </td>
+<td> A batch program runs once per day to update this flag. </td> 
+</tr>
+
+</table>
+
+<br>
+ 
+## PEM Data ##
+
+The CCADB accepts certificate information in the [PEM][PEM] format. PEM is a
+container format defined in RFCs [1421][RFC-1421] to [1424][RFC-1424]. PEM
+actually means Privacy Enhanced Mail, but the container format it uses is a
+Base64 translation of [X.509][X509] [ASN.1][ASN1] keys.
+
+[Certificate Explainer][Certsplainer] may be used to
+convert a certificate in any other format into PEM, as follows:
+
+* Visit the [Certificate Explainer][Certsplainer].
+* In the 'Post a certificate' section click on the 'Browse...' button to
+  select a .cer, .crt, .cert, or .pem file.
+* Check the top of the window to make sure there are no errors listed, and
+  that the desired certificate has been found.
+* The data in the text box in the 'Post a certificate' section is the PEM.
+* Copy and paste the entire PEM blob, which starts with "-----BEGIN
+  CERTIFICATE-----" and ends with "-----END CERTIFICATE-----", into the CCADB.
 
 ## Policies and Practices Information ##
 
@@ -186,26 +259,6 @@ Example:
 
 <br>
 
-## PEM Data ##
-
-The CCADB accepts certificate information in the [PEM][PEM] format. PEM is a
-container format defined in RFCs [1421][RFC-1421] to [1424][RFC-1424]. PEM
-actually means Privacy Enhanced Mail, but the container format it uses is a
-Base64 translation of [X.509][X509] [ASN.1][ASN1] keys.
-
-[Certificate Explainer][Certsplainer] may be used to
-convert a certificate in any other format into PEM, as follows:
-
-* Visit the [Certificate Explainer][Certsplainer].
-* In the 'Post a certificate' section click on the 'Browse...' button to
-  select a .cer, .crt, .cert, or .pem file.
-* Check the top of the window to make sure there are no errors listed, and
-  that the desired certificate has been found.
-* The data in the text box in the 'Post a certificate' section is the PEM.
-* Copy and paste the entire PEM blob, which starts with "-----BEGIN
-  CERTIFICATE-----" and ends with "-----END CERTIFICATE-----", into the CCADB.
-
-<br>
 
 ## Uploading Documents ##
 
