@@ -4,15 +4,13 @@ This page explains how the various records and sections in the CCADB are
 best filled out, with some advice on how to create or obtain the data.
 <br><br>
 Table of Contents:
-<ol>
-<li> Audit Information </li>
-<li> Auditor Information </li>
-<li> Forumula Fields </li>
-<li> PEM Data </li>
-<li> Policies and Practices Information </li>
-<li> Revocation Information </li>
-<li> Uploading Documents </li>
-</ol>
+1. [Audit Information](fields#audit-information)
+2. [Auditor Information](fields#auditor-information)
+3. [Formula Fields](fields#formula-fields)
+4. [PEM Data](fields#pem-data)
+5. [Policies and Practices Information](fields#policies-and-practices-information)
+6. [Revocation Information](fields#revocation-information)
+7. [Uploading Documents](fields#uploading-documents)
 
 ## Audit Information ##
 
@@ -122,10 +120,26 @@ These are some of the fields that are automatically filled in by the CCADB and c
 <td>Derived Trust Bits </td>
 <td>
 <ul>
-<li>TO DO </li>
+<li>Set to empty when the certificate is expired or revoked.</li>
+<li>Directly map to Extended Key Usage (EKU) values when the certificate's EKU is present and not empty. </li>
+ <li> If the EKU is empty or not present, then set "Derived Trust Bits" to the union of the trust-bits/EKUs that are on the parent root certificate for each root store that it is included in. 
+ <ul>
+ <li> Check for doppelganger (same Subject+SPKI) root certificates, and if found, update the union to add the trust-bits/EKUs that are on the parent root certificate for each root store that it is included in (if not already in the union). </li>
+</ul>
+</li>
+ </ul>
+ <ul>
+ <li> If this certificate has an intermediate certificate as its parent in the CCADB, then:
+ <ul>
+ <li> Create "List2" that consists of the parent certificate’s "Derived Trust Bits" unioned with the "Derived Trust Bits" of all of the parent certificate’s unexpired unrevoked doppelganger (same Subject+SPKI) certificates. </li>
+ <li> Remove anything from this certificate's "Derived Trust Bits" that is not in "List2".</li>
+ </ul>
+ </li>
 </ul>
 </td>
-<td> TO DO </td> 
+<td> 
+A batch program runs once per day to update this field.
+ </td> 
 </tr>
 <tr valign="top">
 <td>EV SSL Capable </td>
@@ -139,11 +153,17 @@ For an intermediate certificate to be considered technically capable of issuing 
 </ol> 
 If the above check fails for a parent intermediate certificate, then look for doppelganger (same Subject+SPKI, not expired, not revoked) certificates and perform the check on any that are found.
 </td>
-<td> TO DO </td> 
+<td> A batch program runs once per day to update this flag.</td> 
 </tr>
 <tr valign="top">
 <td>Technically Constrained </td>
-<td> This is set based on mozillaPolicyV2_5.isTechnicallyConstrained from extracted PEM result.  </td>
+<td> 
+<ul>
+<li> Set to FALSE if the certificate does not contain an Extended Key Usage (EKU) extension. </li>
+<li> Set to TRUE if the EKU does not contain id‐kp‐serverAuth or anyExtendedKeyUsage. </li>
+<li> If the EKU contains id‐kp‐serverAuth, then set to TRUE if the certificate includes the Name Constraints X.509v3 extension with constraints on dNSName, iPAddress and DirectoryName. Otherwise set to FALSE. </li>
+</ul>
+  </td>
 <td> Set when certificate PEM is imported into the CCADB. </td> 
 </tr>
 <tr valign="top">
