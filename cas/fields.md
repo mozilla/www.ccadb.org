@@ -138,7 +138,7 @@ These are some of the fields that are automatically filled in by the CCADB and c
 </ul>
 </td>
 <td> 
-A batch program runs once per day to update this field.
+When related fields are updated on a root or intermediate certificate record, a trigger method launches an asynchronous process that updates this field (if needed) for every certificate within that record's CCADB hierarchy.
  </td> 
 </tr>
 <tr valign="top">
@@ -153,7 +153,9 @@ For an intermediate certificate to be considered technically capable of issuing 
 </ol> 
 If the above check fails for a parent intermediate certificate, then look for doppelganger (same Subject+SPKI, not expired, not revoked) certificates and perform the check on any that are found.
 </td>
-<td> A batch program runs once per day to update this flag.</td> 
+<td>
+When related fields are updated on a root or intermediate certificate record, a trigger method launches an asynchronous process that updates this field (if needed) for every certificate within that record's CCADB hierarchy.
+</td> 
 </tr>
 <tr valign="top">
 <td>Technically Constrained </td>
