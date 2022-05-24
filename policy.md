@@ -2,6 +2,15 @@
 
 *Version 1.1*
 
+1. [General Provisions](policy#1-general-provisions)
+2. [Contact Information](policy#2-contact-information)
+3. [Root Certificates](policy#3-root-certificates)
+4. [Intermediate Certificates](policy#4-intermediate-certificates)
+5. [Policies, Practices, and Audit Information](policy#5-policies-practices-and-audit-information) 
+<br>
+5.1 [Audit Statement Content](policy#51-audit-statement-content)
+6. [Mailshots](policy#6-mailshots)
+
 Several Web PKI root store operators (“Stores”) have collaborated to create
 the Common Certificate Authority Database (CCADB), a data repository of
 certificate and Certificate Authority (CA) information. CAs who wish to be

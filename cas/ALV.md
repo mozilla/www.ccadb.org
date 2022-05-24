@@ -2,17 +2,23 @@
 
 The CCADB uses an Audit Letter Validation (ALV) tool that is provided by Microsoft to automatically parse and validate audit statements. The ALV eliminates manual processing, but it requires audit statements to follow some basic rules in order to function properly. If an audit statement fails to meet any of the [Audit Statement Requirements and Format Rules](../policy#51-audit-statement-content), the CA will be asked to work with their auditor to provide an audit statement that passes ALV.
 
+Table of Contents:
+1. [Root Certificates](ALV#root-certificates)
+2. [Intermediate Certificates](ALV#intermediate-certificates)
+3. [Common ALV Findings](ALV#common-alv-findings)
+
 ## Root Certificates ##
 
 CAs are required to update the audit, CP, CPS and test website information for their certificate hierarchies at least annually. To provide this information for root certificates, create one [Audit Case](updates#audit-case-workflow) in the CCADB for a particular set of audits (e.g. Standard Audit, BR audit, EV SSL Audit, Code Signing Audit).
 * [Update audit, CP, CPS, and testwebsite information in the CCADB ](updates)
-* [Common ALV Findings](ALV#common-alv-findings)
 
 ## Intermediate Certificates ##
 
-Subordinate CAs who operate non-technically-constrained intermediate certificates have the keys to the internet just as much as the CAs who have root certificates directly included in a browser root store. Meaning that such subordinate CAs can also issue TLS certificates for any website or domain, so it is imperative that the same rules are being followed by all subordinate CAs operating non-technically-constrained intermediate certificates. There are currently about 150 root certificates in browser root stores, which leads to about 3,000 intermediate certificates that are trusted by browser root stores. To help enforce the rules at the intermediate certificate level, CCADB participants require disclosure of non-technically-constrained intermediate certificates. CCADB automatically runs ALV on the intermediate certificate records and reports the results to CAs and root store operators in their CCADB home pages.
+Subordinate CAs who operate non-technically-constrained intermediate certificates have the keys to the internet just as much as the CAs who have root certificates directly included in a browser root store. Meaning that such subordinate CAs can also issue TLS certificates for any website or domain, so it is imperative that the same rules are being followed by all subordinate CAs operating non-technically-constrained intermediate certificates. There are currently about 150 root certificates in browser root stores, which leads to about 3,000 intermediate certificates that are trusted by browser root stores. 
 
-CAs are required to annually update the audit and CP/CPS for their non-technically-constrained intermediate certificates chaining to root certificates included in browser root stores. To provide this information for intermediate certificates, directly update the corresponding record in the CCADB then click on the "Audit Letter Validation [ALV]" button. 
+To help enforce the rules at the intermediate certificate level, CCADB participants require [disclosure of intermediate certificates](/policy#4-intermediate-certificates). CCADB automatically runs ALV on the intermediate certificate records and reports the results to CAs and root store operators in their CCADB home pages.
+
+CAs are required to annually update the audit and CP/CPS for their non-technically-constrained intermediate certificates chaining to root certificates included in browser root stores. To provide this information for intermediate certificates, directly [update the corresponding record](intermediates#updating-audit-statements) in the CCADB then click on the "Audit Letter Validation [ALV]" button. 
 
 When the audit statements for an intermediate certificate are the same as the certificate that signed it, check the “Audits Same as Parent” checkbox instead of providing separate audit information. When the "Audits Same as Parent" field is checked for an intermediate certificate record, the CCADB will look up the parent chain until audit statements are found, and then run ALV using those audit statements. When the "Audits Same as Parent" field is not checked, the CCADB will directly pass the audit statements in the intermediate certificate record into ALV.
 

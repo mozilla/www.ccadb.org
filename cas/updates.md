@@ -1,4 +1,4 @@
-# Updating Audit Statements, Data, and Policy Documents #
+# Updating Audit Statements, Policy Documents, and Other Data #
 
 CAs in the CCADB are organized into hierarchies. Each CA Owner has children
 nodes that are Root Certificate records, Root Certificate records have children
