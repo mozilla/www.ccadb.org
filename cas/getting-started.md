@@ -23,14 +23,17 @@ for your CA, a hierarachy of root certiicates and intermediate certificates,
 and who the Points of Contact are for your CA.
 
 **CA Owners/Certificates**: Click on the 'CA Owners/Certificates' tab 
-(which may be under the 'More' tab), then click on 'Recently Viewed' in 
-the upper left corner. Select 'Community User's CA Owners/Root Certs'
+(which may be under the 'More' tab) to see lists of certificates. 
+* Click on 'Recently Viewed' in the upper left corner. 
+* Select 'Community User's CA Owners/Root Certs'
 then click on the thumb tack icon to pin this view as your default for this tab.
 
-**Cases**: Click on the 'Cases' tab (which may be under the 'More' tab), then 
-click on 'Recently Viewed' in the upper left corner. Select 'My Cases'
+**Cases**: Click on the 'Cases' tab (which may be under the 'More' tab) to see 
+lists of Cases.
+* Click on 'Recently Viewed' in the upper left corner. 
+* Select 'My Cases'
 then click on the thumb tack icon to pin this view as your default for this tab.
-Audit Cases are used for submitting [annual updates](updates).
+    * Audit Cases are used for submitting [annual updates](updates).
 
 **CA Communications**: The 'CA Communications' tab may be used when a root
 store operator polls their CA members for information. You may ignore this tab
