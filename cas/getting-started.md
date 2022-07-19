@@ -1,19 +1,7 @@
 # Getting Started with the CCADB #
 
-## Logging In ##
-
-After you receive email with your CA Community License, you may login to the
-Common CA Database as follows:
-
-1. Browse to [the Login page][CCADB-Login]
-2. Enter your Username (the email address for which your CA Community License
-   was issued)
-3. Enter the Password that you set up during first access
-4. Click on the "Log In" button
-
-## Navigating the Interface ##
-
-Upon initial login you will see a row of tabs along the top 
+When you [login](https://docs.google.com/document/d/18mgBGq15xSwaRpR_LhuHPUKQqG6L4__n6j_pi_yOuTk/edit#bookmark=id.rogrb9nhp5xs) 
+to the CCADB you will see a row of tabs along the top 
 of the window, next to the CCADB logo. The number of tabs that you
 see depends on the width of your window, and a 'More' tab will
 be shown when all of the tabs cannot be displayed. The tabs are:
@@ -21,9 +9,14 @@ be shown when all of the tabs cannot be displayed. The tabs are:
 and 'Reports'.
 
 **Home**: The home page is the initial page that you see when you login.
-It provides contact information for root store members of the CCADB,
-your CA's task list, and reports that you can expand when any of your task list
-items are not 0.
+It provides your CA's task list which is a set of reports that may be openned
+by clicking on their title.
+* Open Cases
+* Root Certificates with Outdated Audit Statements
+* Intermediate Certificate with Outdated Audit Statements
+* Intermediate Certificates with Missing Information
+* Intermediate Certificates with Failed ALV Results
+* etc.
 
 **My CA**: Click on the 'My CA' tab to see the information that is in the CCADB
 for your CA, a hierarachy of root certiicates and intermediate certificates,
