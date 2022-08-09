@@ -14,8 +14,8 @@ cannot be self-maintained, because root store operators must verify the data
 before the CA Owner or Root Certificate records are modified.
 
 Instructions for requesting updates to CA Owner and Root Certificate records:
-* [Create an Audit Case](https://docs.google.com/document/d/1n-qNSlG7sPrLhkTUiRhiY-rnsN0H6rX0Zs5xdsVI0bo/edit?usp=sharing)
+* [Create an Audit Case](https://docs.google.com/document/d/1tVsWCHmpaizpOAgYc_xYDBMq_RBzWPjD_sP6FqNX5y0/edit?usp=sharing)
      * This Case type is used to provide audit statements for root certificates.
-     * Video: [How to Create an Audit Case](https://drive.google.com/file/d/1t5juvsotFexIb6Db1iYWVn6SPwqXTcqC/view?usp=sharing)
+
 * [Create an Information Update Request (Non-Audit) Case](https://docs.google.com/document/d/14znpyOxbMN-itMhTCV5PxbzqmyNlmpqVZvvXjT8exk8/edit?usp=sharing)
      * This Case type is used for updating data in CA Owner and Root Certificate records between annual audit updates. 
