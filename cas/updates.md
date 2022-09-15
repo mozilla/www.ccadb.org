@@ -1,7 +1,17 @@
 # Updating Audit Statements, Policy Documents, and Other Data #
 
+Instructions for requesting updates to CA Owner and Root Certificate records:
+* [Create an Add/Update Root Request](https://docs.google.com/document/d/1ttmeeqO6WxDWe_deDNsGUgDO_LpsvoduFNZeHHMw_f8/edit?usp=sharing)
+
+The "Add/Update Root Request" is used to provide updates to CA Owner and Root Certificate records, and to request that new root certificate records be added to the CCADB. The request case contains the following tabs, and you may choose which tabs to make updates in. For example, if you are providing policy document updates inbetween annual audits, then you may only want to update the POLICY DOCUMENTS tab.
+* CA OWNER
+* AUDITS
+* POLICY DOCUMENTS
+* ROOT INFORMATION
+* TEST WEBSITES
+
 CAs in the CCADB are organized into hierarchies. Each CA Owner has children
-nodes that are Root Certificate records, Root Certificate records have children
+nodes that are Root Certificate records, and Root Certificate records have children
 nodes that are Intermediate Certificate records, and Intermediate Certificate
 records have children nodes that are Intermediate Certificate records. 
 
@@ -13,9 +23,5 @@ statements](fields#audit-information). However, **root** certificate data
 cannot be self-maintained, because root store operators must verify the data 
 before the CA Owner or Root Certificate records are modified.
 
-Instructions for requesting updates to CA Owner and Root Certificate records:
-* [Create an Audit Case](https://docs.google.com/document/d/1tVsWCHmpaizpOAgYc_xYDBMq_RBzWPjD_sP6FqNX5y0/edit?usp=sharing)
-     * This Case type is used to provide audit statements for root certificates.
 
-* [Create an Information Update Request (Non-Audit) Case](https://docs.google.com/document/d/14znpyOxbMN-itMhTCV5PxbzqmyNlmpqVZvvXjT8exk8/edit?usp=sharing)
-     * This Case type is used for updating data in CA Owner and Root Certificate records between annual audit updates. 
+
