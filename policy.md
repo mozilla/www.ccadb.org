@@ -20,11 +20,11 @@ This policy does not cover how to obtain write access to the CCADB or how to use
 
 ## 1. General Provisions ##
 
-Regardless of more specific provisions in these requirements, CAs have an overarching responsibility to keep the information in the CCADB about themselves, their operations and their certificates accurate, and to make updates in a timely fashion. Minimally, CAs with certificates included in a participating Store must ensure their information stored in the CCADB is reviewed monthly and updated when changes occur. When a timeline is not defined for a requirement specified within this policy, updates must be submitted to the CCADB within 14 calendar days of being completed.
+Regardless of more specific provisions in these requirements, CAs have an overarching responsibility to keep the information in the CCADB about themselves, their operations and their certificates accurate, and to make updates in a timely fashion. Minimally, CAs with certificates included in a participating Store must ensure their information stored in the CCADB is kept up to date as changes occur. When a timeline is not defined for a requirement specified within this policy, updates must be submitted to the CCADB within 14 calendar days of being completed.
 
 All data in the CCADB may be made public or semi-public in a variety of forms; CAs should not place any information in the CCADB which they wish to keep confidential. However, Stores are not obliged to publish any CCADB information.
 
-All client devices that are used to download Personally Identifiable Information from the CCADB should employ disk based encryption.
+All client devices that are used to download Personally Identifiable Information from the CCADB should employ disk-based encryption.
 
 ## 2. Contact Information ##
 
@@ -33,9 +33,9 @@ CAs must provide the following information for a Primary Point of Contact (POC),
 * Name
 * Office email address
 
-CAs may optionally designate further POCs, supplying at least one contact method for each. CAs must also supply one or two non-personal contact email aliases which are more likely to continue working as personnel change; these are maintained as part of the CA’s organizational entry.
+CAs may optionally designate further POCs, supplying an email address for each. CAs must also supply one or two non-personal contact email aliases which are more likely to continue working as personnel change; these are maintained as part of the CA’s organizational entry.
 
-All Primary POCs should be authorized to speak for and enter binding commitments on behalf of the CA that they represent. At least one of the Primary POCs must hold a [CA Community license](https://www.ccadb.org/cas/request-access#:~:text=CCADB%2C%20then%20a-,CCADB%20CA%20Community%20license,-will%20be%20issued); other POCs may also apply to a Store to be issued one. Those Primary POCs with a CA Community license are ultimately responsible for keeping CCADB data up-to-date for their CA.
+All Primary POCs should be authorized to speak for and enter binding commitments on behalf of the CA that they represent. At least one of the Primary POCs must hold a [CA Community license](https://www.ccadb.org/cas/request-access#application-for-ccadb-access); other POCs may also apply to a Store to be issued one. Those Primary POCs with a CA Community license are ultimately responsible for keeping CCADB data up-to-date for their CA.
 
 Notification of security and audit-related issues will be emailed to all Primary POCs and the first email alias. CAs are advised to make sure those addresses reach sufficient people such that they can respond to an issue in an appropriate timeframe.
 
@@ -49,7 +49,7 @@ If root certificate information needs to be updated, the CA must submit an [Add/
 
 ## 4. Subordinate Certificates ##
 
-An subordinate CA certificate is a certificate signed by a root CA or another subordinate CA. All subordinate CA certificates capable of chaining to a root CA certificate included in at least one participating Store must be added to CCADB within seven calendar days of issuance. This includes certificates that are revoked. 
+A subordinate CA certificate is a certificate signed by a root CA or another subordinate CA. All subordinate CA certificates capable of chaining to a root CA certificate included in at least one participating Store must be added to CCADB within seven calendar days of issuance. This includes certificates that are revoked. 
 
 Each instance (i.e. PEM data) of a subordinate certificate only needs to be included in the CCADB once.
 
@@ -76,11 +76,13 @@ Exceptions to providing audit information:
 
 CAs must provide English versions of any CP, CPS and Audit documents which are not originally in English, with version numbers matching the document they are a translation of. The English version is not required to be authoritative in all cases of dispute, but the CA must attest that the translation is not materially different to the original.
 
-CAs must submit an [Add/Update Root Request Case](https://docs.google.com/document/d/1ttmeeqO6WxDWe_deDNsGUgDO_LpsvoduFNZeHHMw_f8/edit) to add or update audit information stored in the CCADB.
+CAs must submit an [Add/Update Root Request Case](https://docs.google.com/document/d/1ttmeeqO6WxDWe_deDNsGUgDO_LpsvoduFNZeHHMw_f8/edit) to add or update audit information for root CA certificates stored in the CCADB.
+
+CAs must add or update audit information for subordinate CA certificates directly on the record in CCADB.
 
 ### 5.1 Audit Statement Content ###
 
-CCADB uses an Audit Letter Validation (ALV) tool to automatically parse and validate audit statements. This system eliminates manual processing, but it requires audit statements to follow some basic rules in order to function properly. If the audit statement fails to meet any of the following requirements, the CA must work with their auditor to provide an audit statement that passes ALV.
+CCADB uses an Audit Letter Validation (ALV) tool to automatically parse and validate audit statements. If the audit statement fails to meet any of the following requirements, the CA must work with their auditor to provide an audit statement that passes ALV.
 
 Audit statements listed in the CCADB must contain at least the following clearly-labeled information in English:
 
@@ -98,9 +100,9 @@ Audit statements listed in the CCADB must contain at least the following clearly
 
 #### 5.1.1 ETSI 
 
-Audits conducted by accredited CAB must have their AAL uploaded to the CAB’s website. CAs provide the URL to the AAL on the CAB’s website, and ALV will verify those URLs against a known list of AAL locations.
+Audits conducted by an accredited Conformity Assessment Body (CAB) must have their Audit Attestation Letter (AAL) uploaded to the CAB’s website. CAs provide the URL to the AAL on the CAB’s website, and ALV will verify those URLs against a known list of AAL locations.
 
-When an ETSI Certificate cannot be issued, the CA must still provide an AAL such that there are no gaps between audit periods for consecutive audits. The CA may post the AAL on their own website or attach the attestation report to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. Additionally, the CA must provide an incident report for each audit finding (i.e., non-conformity),  and/or problem resulting in the failure of the ETSI Certificate’s issuance, in a Bugzilla Bug within seven calendar days of the audit attestation letter’s issuance date.
+When an ETSI Certificate cannot be issued, the CA must still provide an AAL such that there are no gaps between audit periods for consecutive audits. The CA may post the AAL on their own website or attach the attestation report to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. Additionally, the CA must provide an incident report for each audit finding (i.e., non-conformity), and/or problem resulting in the failure of the ETSI Certificate’s issuance, in a Bugzilla Bug within seven calendar days of the audit attestation letter’s issuance date.
 
 #### 5.1.2 WebTrust
 
@@ -113,7 +115,7 @@ For qualified WebTrust audits, the CA may post the audit statements on their own
 Format Specifications for SHA-256 Fingerprints:
 * MUST: No colons, no spaces, and no line feeds
 * MUST: Uppercase letters
-* MUST: be encoded in the document (PDF) as text searchable, not an image
+* MUST: Be encoded in the document (PDF) as text searchable, not an image
 
 Format Specifications for Dates: The following formats are accepted by ALV
 * Month DD, YYYY example: May 7, 2016
@@ -136,11 +138,11 @@ Where splitter must be one of the following:
 
 ### 5.2 Auditor Qualifications ###
 
-CAs must submit a summary of the Audit Team's qualifications and experience as outlined below with respect to the audit. The information can also be provided as part of the audit result documentation, like the [ETSI Audit Attestation Letter (AAL)](https://www.acab-c.com/downloads/), or as a supplement to the WebTrust Assurance Report.
+CAs must submit a summary of the Audit Team's qualifications and experience as outlined below with respect to the audit. The information can also be provided as part of the audit result documentation, like the [ETSI AAL](https://www.acab-c.com/downloads/), or as a supplement to the WebTrust Assurance Report.
 
 * Date that the audit report was signed,
 * Full name of the CA that was audited,
-* Name and address of the audit firm or Conformity Assessment Body (CAB),
+* Name and address of the audit firm or CAB,
 * Audit Criteria, e.g. ETSI / WebTrust,
 * Name of Lead Auditor (except where prohibited by law, otherwise, we ask that you not provide any personally identifiable information),
 * For the Audit Team and the Audit Quality Reviewer, qualification information such as:
