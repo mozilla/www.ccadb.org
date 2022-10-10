@@ -53,7 +53,7 @@ A subordinate CA certificate is a certificate signed by a root CA or another sub
 
 Each instance (i.e. PEM data) of a subordinate certificate only needs to be included in the CCADB once.
 
-If a subordinate certificate is revoked, the CCADB must be updated to mark it as revoked, giving the reason why within seven calendar days.
+If a subordinate certificate is revoked, the CCADB must be updated to mark it as revoked, including the reason for revocation, within seven calendar days of revocation.
 
 ## 5. Policies, Audits, and Practices ##
 
@@ -71,7 +71,6 @@ URLs for the following documents are required for each certificate, unless the e
 Exceptions to providing audit information:
 * The SHA-256 fingerprint of the certificate is specifically listed as in scope in the audit statements of the parent certificate, and the “Audits Same as Parent” checkbox is checked; or
 * The certificate has expired; or
-* The certificate is technically-constrained as described in section 7.1.5 of the CA/Browser Forum Baseline Requirements, or
 * The certificate has been revoked, and the corresponding record in the CCADB has been updated with the correct revocation status.
 
 CAs must provide English versions of any CP, CPS and Audit documents which are not originally in English, with version numbers matching the document they are a translation of. The English version is not required to be authoritative in all cases of dispute, but the CA must attest that the translation is not materially different to the original.
@@ -102,13 +101,13 @@ Audit statements listed in the CCADB must contain at least the following clearly
 
 Audits conducted by an accredited Conformity Assessment Body (CAB) must have their Audit Attestation Letter (AAL) uploaded to the CAB’s website. CAs provide the URL to the AAL on the CAB’s website, and ALV will verify those URLs against a known list of AAL locations.
 
-When an ETSI Certificate cannot be issued, the CA must still provide an AAL such that there are no gaps between audit periods for consecutive audits. The CA may post the AAL on their own website or attach the attestation report to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. Additionally, the CA must provide an incident report for each audit finding (i.e., non-conformity), and/or problem resulting in the failure of the ETSI Certificate’s issuance, in a Bugzilla Bug within seven calendar days of the audit attestation letter’s issuance date.
+When an ETSI Certificate cannot be issued, the CA must still provide an AAL such that there are no gaps between audit periods for consecutive audits. The CA may post the AAL on their own website or attach the attestation report to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. Additionally, the CA must provide an incident report for each audit finding (i.e., non-conformity), and/or problem resulting in the failure of the ETSI Certificate’s issuance, in a Bugzilla Bug prior to or within seven calendar days of the audit attestation letter’s issuance date.
 
 #### 5.1.2 WebTrust
 
 Audits conducted by licensed WebTrust practitioners must have a WebTrust Seal. CAs enter the URL to the WebTrust Seal into the CCADB, and upon saving of the record, the CCADB automatically converts the URL to point to the corresponding PDF file via integration with CPA Canada.
 
-For qualified WebTrust audits, the CA may post the audit statements on their own website or attach the audit statement to a Bugzilla Bug and provide that URL. Additionally, the CA must provide an incident report for each audit finding (i.e., qualification) in a Bugzilla Bug within seven days of the audit letter’s issuance date.
+For qualified WebTrust audits, the CA may post the audit statements on their own website or attach the audit statement to a Bugzilla Bug and provide that URL. Additionally, the CA must provide an incident report for each audit finding (i.e., qualification) in a Bugzilla Bug prior to or within seven days of the audit letter’s issuance date.
 
 #### 5.1.3 ALV Formatting
 
@@ -179,9 +178,7 @@ Additionally, when the intent to issue a new or replacement cross-certificate in
 ## 6. Mailshots ##
 
 From time to time, a Store may use the CCADB to send information to CAs.
-Mailshots will be sent to at least the Primary POC and the email aliases, and
-may also go to one or more of the other POCs; the exact recipient list is
-defined by the Store sending the information.
+Mailshots will be sent to at least the Primary POC and the email aliases, and may also go to one or more of the other POCs; the exact recipient list is defined by the Store sending the information.
 
 -----
 
