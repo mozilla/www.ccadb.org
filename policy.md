@@ -49,7 +49,7 @@ If root certificate information needs to be updated, the CA must submit an [Add/
 
 ## 4. Subordinate Certificates ##
 
-A subordinate CA certificate is a certificate signed by a root CA or another subordinate CA. All subordinate CA certificates capable of chaining to a root CA certificate included in at least one participating Store must be added to CCADB within seven calendar days of issuance. This includes certificates that are revoked. 
+A subordinate CA certificate is a certificate signed by a root CA or another subordinate CA. The CCADB considers the terms “intermediate” and “subordinate” synonymous. All subordinate CA certificates capable of chaining to a root CA certificate included in at least one participating Store must be added to CCADB within seven calendar days of issuance. This includes certificates that are revoked. 
 
 Each instance (i.e. PEM data) of a subordinate certificate only needs to be included in the CCADB once.
 
@@ -57,7 +57,9 @@ If a subordinate certificate is revoked, the CCADB must be updated to mark it as
 
 ## 5. Policies, Audits, and Practices ##
 
-In the records for both root certificates and subordinate certificates, CAs must provide details of the Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents relating to that certificate, and also statements of attestation of their conformance to various requirements and other operational criteria (“audits”), those statements being made by a competent independent party or parties. These documents are hosted elsewhere and the URLs are stored in the CCADB. The URLs to such CPs, CPSes and audits, and any metadata about them such as the name of the auditor or the date of the audit, must be updated as new information becomes available. For technical reasons, URLs to audit statements must point to a PDF file.
+In the records for both root certificates and subordinate certificates, CAs must provide the Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents relating to that certificate, along with any documentation published by the CA and referenced within either of the precding documents. CAs must also provide statements of attestation of their conformance to various requirements and other operational criteria (“audits”), those statements being made by a competent independent party or parties. 
+
+These documents are hosted elsewhere and the URLs are stored in the CCADB. The URLs to such CPs, CPSes and audits, and any metadata about them such as the name of the auditor or the date of the audit, must be updated as new information becomes available. For technical reasons, URLs to audit statements must point to a PDF file.
 
 The entry for each subordinate certificate has “Audits Same as Parent” and “CP/CPS Same as Parent” checkboxes. When those are checked, the details do not need to be duplicated from the parent certificate. However, the subordinate certificate must be specifically listed in the audit statements of the parent certificate.
 
