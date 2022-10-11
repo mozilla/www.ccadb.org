@@ -57,7 +57,7 @@ If a subordinate certificate is revoked, the CCADB must be updated to mark it as
 
 ## 5. Policies, Audits, and Practices ##
 
-In the records for both root certificates and subordinate certificates, CAs must provide the Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents relating to that certificate, along with any documentation published by the CA and referenced within either of the precding documents. CAs must also provide statements of attestation of their conformance to various requirements and other operational criteria (“audits”), those statements being made by a competent independent party or parties. 
+In the records for both root certificates and subordinate certificates, CAs must provide the Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents relating to that certificate, along with any documentation published by the CA and referenced within either of the preceding documents. CAs must also provide statements of attestation of their conformance to various requirements and other operational criteria (“audits”), those statements being made by a competent independent party or parties. 
 
 These documents are hosted elsewhere and the URLs are stored in the CCADB. The URLs to such CPs, CPSes and audits, and any metadata about them such as the name of the auditor or the date of the audit, must be updated as new information becomes available. For technical reasons, URLs to audit statements must point to a PDF file.
 
