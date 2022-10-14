@@ -96,7 +96,7 @@ Audit statements listed in the CCADB must contain at least the following clearly
 7. Start date and end date of the period that was audited, for those that cover a period of time (this is not the period the auditor was on-site);
 8. Point-in-time date, for those that are for a point in time;
 9. Full names and version numbers of the audit standards that were used during the audit; 
-10. All incidents disclosed by the CA Owner, discovered by an auditor, or reported by a third party, that, at any time during the audit period, occurred, were open in Bugzilla, or were reported to a Store; and
+10. All incidents disclosed by the CA Owner, or reported by a third party, and all findings reported by an auditor, that, at any time during the audit period, occurred, were open in Bugzilla, or were reported to a Store; and
 11. For ETSI, a statement to indicate if the audit was a full audit, and which parts of the criteria were applied, e.g. DVCP, OVCP, NCP, NCP+, LCP, EVCP, EVCP+, QCP-w, Part1 (General Requirements), and/or Part 2 (Requirements for trust service providers).
 
 #### 5.1.1 ETSI 
