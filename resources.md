@@ -27,6 +27,10 @@
 * [Trusted Root Certificate Program Updates](https://aka.ms/rootupdates)
 * [Trusted Root Audit Requirements](http://aka.ms/auditreqs)
 
+### Google Chrome ###
+* [Chrome Root Program Policy](https://g.co/chrome/root-policy)
+* [Chrome Root Store & Certificate Verifier FAQ](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md)
+
 ### General ###
 * [crt.sh Certificate Search](https://crt.sh/)
 * [Censys Certificate Search](https://censys.io/)
