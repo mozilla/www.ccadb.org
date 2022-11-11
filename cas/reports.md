@@ -1,4 +1,4 @@
-# Viewing Reports #
+# Viewing CCADB Reports #
 
 After logging in to the CCADB, click on the 'Reports' tab 
 (which may be under the 'More' tab), then click on 'All Folders' 
