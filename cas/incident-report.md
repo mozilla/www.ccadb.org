@@ -1,15 +1,15 @@
 # Incidents # 
 Incidents happen. Things do not always go as planned, and that can be okay. However, when incidents occur, the underlying issue (i.e., root cause) should be identified and remediated to discourage the incident from occurring again. Formally documenting the incident in a report encourages an understanding of all contributing root cause(s), and it presents the opportunity to clearly communicate a remediation plan to reduce the probability of its reoccurrence. 
 
-Depending on the root programs a CA participates in, it may be required to:
+Depending on the root programs in which a CA Owner participates, it may be required to:
 * create [Audit Incident Reports](incident-report#audit-incident-reports) when audits have non-conformities, qualifications, or modified opinions.
 * create [Incident Reports](incident-report#incident-reports) for all other incidents.
 
-These reports provide lessons learned and transparency about the steps the CA takes to address the immediate issue and prevent future issues, both caused by the subject of the original report and other potential issues that might share a similar root cause. Additionally, incident reports help the Web PKI ecosystem as a whole because they promote continuous improvement, information sharing, and highlight opportunities to define and adopt improved practices, policies, and controls.
+These reports provide lessons learned and transparency about the steps the CA takes to address the immediate issue and prevent future issues. If the underlying problem goes unfixed, then other issues that share the same root cause will subsequently surface. Additionally, incident reports help the Web PKI ecosystem as a whole because they promote continuous improvement, information sharing, and highlight opportunities to define and adopt improved practices, policies, and controls.
 
 ## Incident Reports ##
 
-The purpose of incident reporting is to help us work together to build a more secure web. Therefore, the incident report should share lessons learned that could be helpful to all CA Owners in building better systems. The incident report should explain how systems or processes failed, how the mis-issuance or incident was made possible, and why the problem was not detected earlier. In addition to the timeline of responding to and resolving the incident, the incident report should explain how the CA Owners' systems or processes will be made more robust, and how other CAs may learn from the incident.
+The purpose of incident reporting is to help us work together to build a more secure web. Therefore, the incident report should share lessons learned that could be helpful to all CA Owners in building better systems. The incident report should explain how systems or processes failed, how the mis-issuance or incident was made possible, and why the problem was not detected earlier. In addition to the timeline of responding to and resolving the incident, the incident report should explain how the CA Owner's systems or processes will be made more robust, and how other CAs may learn from the incident.
 
 Incident reports are created as a bug in [Bugzilla](https://bugzilla.mozilla.org/buglist.cgi?product=NSS&component=CA%20Certificate%20Compliance&resolution=---&list_id=16285934) under the CA Program:CA Certificate Compliance component.
 
@@ -39,7 +39,7 @@ Incident reports should be updated when:
 
 It should be expected that the incident reports provide sufficient detail about the root cause, and the remediation, that would allow other CAs or members of the public to implement an equivalent solution.
 
-For example, it’s not sufficient to say that “human error” of “lack of training” was a root cause for the incident, nor that “training has been improved” as a solution. While a lack of training may have contributed to the issue, it’s also possible that error-prone tools or practices were required, and making those tools less reliant on training is the correct solution. When training or a process is improved, the CA Owner is expected to provide specific details about the original and corrected material, and specifically detail the changes that were made, and how they tie to the issue. Training alone should not be seen as a sufficient mitigation, and focus should be made on removing error-prone manual steps from the system entirely.
+For example, it's not sufficient to say that "human error" of "lack of training" was a root cause for the incident, nor that "training has been improved" as a solution. While a lack of training may have contributed to the issue, it's also possible that error-prone tools or practices were required, and making those tools less reliant on training is the correct solution. When training or a process is improved, the CA Owner is expected to provide specific details about the original and corrected material, and specifically detail the changes that were made, and how they tie to the issue. Training alone should not be seen as a sufficient mitigation, and focus should be made on removing error-prone manual steps from the system entirely.
 
 Here are some examples of good practice, where a CA did most or all of the things recommended above:
 * [Failure to provide OCSP Responses for some certificates](https://bugzilla.mozilla.org/show_bug.cgi?id=1753123)
@@ -53,7 +53,7 @@ When audits are performed, an Audit Attestation Letter (AAL) may document qualif
 3. Root Cause of Issue:
 4. Remediation Plan for this Issue:
 
-The remediation plan includes the action(s) for resolving the issue, the status of each action, and the date each action will be completed. The audit incident report summary in Bugzilla should include the CA Owner name and “Findings in 20XX Audit”, where XX is the year the audit period or point-in-time ended (e.g., CA ABC: Findings in 2022 Audit). 
+The remediation plan includes the action(s) for resolving the issue, the status of each action, and the date each action will be completed. The audit incident report summary in Bugzilla should include the CA Owner name and "Findings in 20XX Audit", where XX is the year the audit period or point-in-time ended (e.g., CA ABC: Findings in 2022 Audit). 
 
 Audit incident reports should be updated when:
 * Identifying changes to the presented issue remediation plan(s),
