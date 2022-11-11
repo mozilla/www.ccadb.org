@@ -9,5 +9,6 @@
 * [Managing Intermediate Certificates](intermediates)
 * [Updating Audit Statements, Data, and Policy Documents](updates)
 * [Audit Letter Validation (ALV)](ALV)
-* [Viewing Reports](reports)
+* [Incident Reports](incident-report)
+* [Viewing CCADB Reports](reports)
 * [CCADB Public Discussion](public-group)
