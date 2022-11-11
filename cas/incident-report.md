@@ -1,14 +1,15 @@
 # Incidents # 
-Incidents happen. Things do not always go as planned, and that can be okay. However, when incidents occur, the underlying issue (i.e., root cause) should be fixed to discourage the incident from occurring again. Formally documenting the incident in a report encourages an understanding of all contributing root cause(s) and an effective remediation plan to reduce reoccurrence. 
+Incidents happen. Things do not always go as planned, and that can be okay. However, when incidents occur, the underlying issue (i.e., root cause) should be identified and remediated to discourage the incident from occurring again. Formally documenting the incident in a report encourages an understanding of all contributing root cause(s) and an effective remediation plan to reduce the probability of its reoccurrence. 
 
-* Create [Audit Incident Reports](incident-report#audit-incident-reports) when audits have non-conformities, qualifications, or modified opinions.
-* Create [Incident Reports](incident-report#incident-reports) for all other incidents.
+Depending on the root programs a CA participates in, it may be required to:
+* create [Audit Incident Reports](incident-report#audit-incident-reports) when audits have non-conformities, qualifications, or modified opinions.
+* create [Incident Reports](incident-report#incident-reports) for all other incidents.
 
-These reports provide lessons learned and transparency about the steps the CA takes to address the immediate issue and prevent future issues, both the issue that originally led to the report and other potential issues that might share a similar root cause. Additionally, they exist to help the CA community as a whole learn from potential incidents, and adopt and improve practices and controls, to protect all CAs better. 
+These reports provide lessons learned and transparency about the steps the CA takes to address the immediate issue and prevent future issues, both caused by the subject of the original report and other potential issues that might share a similar root cause. Additionally, incident reports help the Web PKI ecosystem as a whole because they promote continuous improvement, information sharing, and highlight opportunities to define and adopt improved practices, policies, and controls.
 
 ## Incident Reports ##
 
-The purpose of incident reporting is to help us work together to build a more secure web. Therefore, the incident report should share lessons learned that could be helpful to all CA Owners in building better systems. The incident report should explain how the systems failed, how the mis-issuance or incident was possible, and why the problem was not detected earlier. In addition to the timeline of responding to and resolving the incident, the incident report should explain how the CA Owners' systems will be made more robust, and how other CAs may learn from the incident.
+The purpose of incident reporting is to help us work together to build a more secure web. Therefore, the incident report should share lessons learned that could be helpful to all CA Owners in building better systems. The incident report should explain how systems or processes failed, how the mis-issuance or incident was made possible, and why the problem was not detected earlier. In addition to the timeline of responding to and resolving the incident, the incident report should explain how the CA Owners' systems or processes will be made more robust, and how other CAs may learn from the incident.
 
 Incident reports are created as a bug in [Bugzilla](https://bugzilla.mozilla.org/buglist.cgi?product=NSS&component=CA%20Certificate%20Compliance&resolution=---&list_id=16285934) under the CA Program:CA Certificate Compliance component.
 
