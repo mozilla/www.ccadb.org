@@ -285,9 +285,8 @@ Example:
 ## Uploading Documents ##
 
 Many CCADB fields require URLs to documents. In general, CP/CPS and Audit
-information for publicly-disclosed and audited intermediate certificates
-should be provided on the subordinate CA's website, or the CA's website.
-However, if for some reason this is not possible, you can use Mozilla's
+information should be provided on the CA's website, subordinate CA's website, or the auditor's website.
+However, if for some reason this is not possible, you can use the
 Bugzilla bug-tracking system to store the documents and get a URL for use in
 the CCADB as follows:
 
@@ -296,11 +295,10 @@ the CCADB as follows:
 2. [Search][BZ-Doc-Bugs] to see if there is already a Bugzilla Bug for your CA
    that you can attach your documents to.
 3. If one does not exist for your CA, [create one][BZ-Create-Bug].
-   * Enter Summary as: "Documents for &lt;your CA's name&gt; intermediate
-     certificates"
+   * Enter Summary as: "Documents for &lt;your CA's name&gt;"
    * Enter Description as: "The purpose of this bug is to store documents
-     related to the publicly disclosed and audited intermediate certificates
-     chaining up to &lt;your CA's name&gt; root certificates."
+     related to the root and intermediate certificates
+     for &lt;your CA's name&gt;."
 4. Attach the document to the bug using the attachment mechanism.
 5. Copy and paste the link to the attachment into the corresponding field in
    the CCADB.
@@ -316,5 +314,5 @@ the CCADB as follows:
 [ASN1]:           https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 [Certsplainer]:   https://tls-observatory.services.mozilla.com/static/certsplainer.html
 [BZ-Create-Acct]: https://bugzilla.mozilla.org/createaccount.cgi
-[BZ-Doc-Bugs]:    https://bugzilla.mozilla.org/buglist.cgi?&query_format=advanced&component=CA%20Certificate%20Root%20Program&product=NSS&status_whiteboard_type=allwordssubstr&status_whiteboard=ca-audit
-[BZ-Create-Bug]:  https://bugzilla.mozilla.org/enter_bug.cgi?&component=CA%20Certificate%20Root%20Program&product=NSS&bug_severity=enhancement
+[BZ-Doc-Bugs]:    https://bugzilla.mozilla.org/buglist.cgi?&query_format=advanced&component=CA%20Documents&product=CA%20Program
+[BZ-Create-Bug]:  https://bugzilla.mozilla.org/enter_bug.cgi?&component=CA%20Documents&product=CA%20Program
