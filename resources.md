@@ -21,6 +21,7 @@
 * [Root Store Policy](https://www.mozilla.org/about/governance/policies/security-group/certs/policy/)
 * [CA Communications](https://wiki.mozilla.org/CA/Communications)
 * [CA Incident Dashboard](https://wiki.mozilla.org/CA/Incident_Dashboard)
+* [dev-security-policy WebPKI Forum](https://groups.google.com/a/mozilla.org/g/dev-security-policy)
 
 ### Microsoft ###
 * [Trusted Root Program Requirements](https://aka.ms/RootCert)
@@ -35,6 +36,6 @@
 * [crt.sh Certificate Search](https://crt.sh/)
 * [Censys Certificate Search](https://censys.io/)
 * [Certificate Explainer](https://tls-observatory.services.mozilla.com/static/certsplainer.html)
-* [dev-security-policy WebPKI Forum](https://groups.google.com/a/mozilla.org/g/dev-security-policy )
+* [public@ccadb.org WebPKI Forum](https://groups.google.com/a/ccadb.org/g/public)
 * [Trust Service Provider Technical Best Practices](/documents/TSP_Technical_Best_Practices_eIDAS.pdf)
 * [Qualified Website Authentication Certificates (QWACs) Interoperability](/documents/Qualified_Website_Authentication_Certificates_Interoperability.pdf)
