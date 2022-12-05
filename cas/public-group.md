@@ -1,6 +1,8 @@
 # CCADB Public Group #
 
-The public@ccadb.org group exists to discuss topics related to Certification Authorities (CAs) and Root Store Programs who use the Common CA Database (CCADB). This page details the process and procedures for conducting discussion within the group as defined by the CCADB Steering Committee.
+The public@ccadb.org [group](https://groups.google.com/a/ccadb.org/g/public) exists to discuss topics related to Certification Authorities (CAs) and Root Store Programs who use the Common CA Database (CCADB). The CCADB Steering Committee was established to provide governance and is committed to fostering a diverse, equitable, inclusive, and welcoming community. This [code of conduct](https://docs.google.com/document/d/19ALqEvHtTE6OUTz2FaOXrU9gruIdvia5EDh3hXeGpZA/edit) aids in achieving that commitment and applies to the public@ccadb.org group, as well as any private communication initiated in the context of this group. Everyone contributing to the CCADB public group must follow this code of conduct, regardless of affiliation or position.
+
+This page details the process and procedures for conducting discussion within the group as defined by the CCADB Steering Committee. 
 
 ## CCADB Updates ##
 An update to CCADB may include the addition of new functionality, the removal of previous functionality, or changes to the general availability of the system. A Root Store Member can post a message to public@ccadb.org to describe the type of update being made to CCADB.
