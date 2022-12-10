@@ -2,7 +2,7 @@
 
 * [Login to CCADB](https://ccadb.force.com/CustomLogin)
     * [Request Access](request-access)
-    * [New User & Password Reset](https://docs.google.com/document/d/18mgBGq15xSwaRpR_LhuHPUKQqG6L4__n6j_pi_yOuTk/edit?usp=sharing)
+    * [New User & Password Reset](https://docs.google.com/document/d/1MuszDO2o-es_6-FwNCDWZ2TC979F8eil5bBQGKjaWRc/edit#heading=h.q7a023qr7pxz)
     * [Getting Started](getting-started)
 * [Add a Root Certificate Record](updates)
 * [Field Types and Valid Values](fields)

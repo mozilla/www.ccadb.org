@@ -1,7 +1,7 @@
 # Add and Update Root Certificate Records #
 
 The "Add/Update Root Request" case is used to request that Root Certificate records be added to the CCADB, and to request updates to CA Owner and Root Certificate records such as policy and audit updates.
-* Instructions: [Create an Add/Update Root Request](https://docs.google.com/document/d/1ttmeeqO6WxDWe_deDNsGUgDO_LpsvoduFNZeHHMw_f8/edit?usp=sharing)
+* Instructions: [Create an Add/Update Root Request](https://docs.google.com/document/d/1AUbwbyqCq3jR7wP0fSWjL1us9s4sZIbXGRyo_ko77QM/edit)
 
 The "Add/Update Root Request" case contains the following tabs, and you may choose which tabs to make updates in. For example, if you are providing policy document updates inbetween annual audits, then you may only want to update the POLICY DOCUMENTS tab. 
 
