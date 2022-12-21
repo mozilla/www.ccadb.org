@@ -58,7 +58,7 @@ If a subordinate CA certificate is revoked, the CCADB must be updated to mark it
 
 CCADB enables associating Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents in the records for both root CA certificates and subordinate CA certificates. CCADB also enables associating statements of attestation of CA Owner conformance to various requirements and other operational criteria (“audits”).
 
-These documents are hosted elsewhere and the URLs are stored in the CCADB. The URLs to such CPs, CPSes and audits, and any metadata about them such as the name of the auditor or the date of the audit, must be updated as new information becomes available. For technical reasons, URLs to audit statements must point to a PDF file that conforms to ALV and either WebTrust or ACAB’c formatting standards.
+These documents are hosted elsewhere and the URLs are stored in the CCADB. The URLs to such CPs, CPSes and audits, and any metadata about them such as the name of the auditor or the date of the audit, must be updated as new information becomes available. For technical reasons, URLs to audit statements must point to a PDF file that conforms to ALV and either WebTrust or Accredited Conformity Assessment Bodies’ Council (ACAB'c) formatting standards.
 
 The entry for each subordinate CA certificate has "Audits Same as Parent" and "CP/CPS Same as Parent" checkboxes. When those are checked, the details do not need to be duplicated from the parent certificate. However, the subordinate CA certificate must be specifically listed in the audit statements of the parent certificate.
 
@@ -102,7 +102,7 @@ Audit statements listed in the CCADB must contain at least the following clearly
 
 #### 5.1.1 ETSI ####
 
-Audits conducted by an accredited Conformity Assessment Body (CAB) must have their Audit Attestation Letter (AAL) uploaded to the CAB’s website. CA Owners provide the URL to the AAL on the CAB’s website, and ALV will verify those URLs against a list of approved CAB websites. ETSI AALs must follow the latest version of the AAL template on the Accredited Conformity Assessment Bodies’ Council (ACAB'c) [website](https://www.acab-c.com/downloads/).
+Audits conducted by an accredited Conformity Assessment Body (CAB) must have their Audit Attestation Letter (AAL) uploaded to the CAB’s website. CA Owners provide the URL to the AAL on the CAB’s website, and ALV will verify those URLs against a list of approved CAB websites. ETSI AALs must follow the latest version of the AAL template on the ACAB'c [website](https://www.acab-c.com/downloads/).
 
 CCADB warns root store operators when the audit periods are not consecutive.
 
