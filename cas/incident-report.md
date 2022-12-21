@@ -47,7 +47,7 @@ Here are some examples of good practice, where a CA did most or all of the thing
 
 ## Audit Incident Reports ##
 
-When audits are performed, an Audit Attestation Letter (AAL) may document qualifications or non-conformities (i.e., findings) that were identified during the audit. Audit incident reports are created as a bug in Bugzilla under the CA Program:CA Certificate Compliance component and should include at least the following topics:
+When audits are performed, an audit statement may document qualifications or non-conformities (i.e., findings) that were identified during the audit. Audit incident reports are created as a bug in Bugzilla under the CA Program:CA Certificate Compliance component and should include at least the following topics:
 1. Issue # (where each non-conformity, qualification, and/or modified opinion is represented as a separate issue):
 2. Issue Description:
 3. Root Cause of Issue:
