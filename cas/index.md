@@ -12,3 +12,4 @@
 * [Audit Letter Validation (ALV)](ALV)
 * [Viewing Reports](reports)
 * [CCADB Public Discussion](public-group)
+* [CCADB Self Assessment](self-assessment)
