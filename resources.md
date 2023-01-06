@@ -11,7 +11,7 @@
 * Server Authentication (SSL/TLS) Root Certificates
   * [PEM of Root Certificates in Mozilla's Root Store with the Websites (TLS/SSL) Trust Bit Enabled (TXT)](https://ccadb-public.secure.force.com/mozilla/IncludedRootsPEMTxt?TrustBitsInclude=Websites)
   * [PEM of Root Certificates in Mozilla's Root Store with the Websites (TLS/SSL) Trust Bit Enabled (CSV)](https://ccadb-public.secure.force.com/mozilla/IncludedRootsDistrustTLSSSLPEMCSV?TrustBitsInclude=Websites)
-* [All certs (root and intermediate) in CCADB](http://ccadb-public.secure.force.com/ccadb/AllCertificateRecordsCSVFormat) (CSV)
+* [All certs (root and intermediate) in CCADB](https://ccadb-public.secure.force.com/ccadb/AllCertificateRecordsCSVFormat) (CSV)
 * [List of CA problem reporting mechanisms (email, etc.)](https://ccadb-public.secure.force.com/ccadb/AllProblemReportingMechanismsReport) (use this to report a certificate problem directly to the CA)
 * [List of CAA Identifiers](https://ccadb-public.secure.force.com/ccadb/AllCAAIdentifiersReport) (used to restrict issuance of certificates to specific CAs via a [DNS Certification Authority Authorization Resource Record](https://tools.ietf.org/html/rfc6844))
     * [CSV List of CAA Identifiers](https://ccadb-public.secure.force.com/ccadb/AllCAAIdentifiersReportCSV) 
@@ -26,7 +26,7 @@
 ### Microsoft ###
 * [Trusted Root Program Requirements](https://aka.ms/RootCert)
 * [Trusted Root Certificate Program Updates](https://aka.ms/rootupdates)
-* [Trusted Root Audit Requirements](http://aka.ms/auditreqs)
+* [Trusted Root Audit Requirements](https://aka.ms/auditreqs)
 
 ### Google Chrome ###
 * [Chrome Root Program Policy](https://g.co/chrome/root-policy)
