@@ -34,7 +34,7 @@ Prior to a Root Store Member initiating a CCADB root inclusion public discussion
         * The intended use cases (i.e. EKUs) to be served under the CA hierarchy,
         * The CA/Browser Forum Certificate Policy Identifiers included in certificates below the CA (if applicable), and
         * The TLS certificate validation methods that are available for use for certificates below the CA (if applicable).
-    * A link to a completed [self-assessment](https://docs.google.com/spreadsheets/d/1NrfbvnY-oekGQeO9HqkzbcUAGO6HbAwTvZbsclAi4yI/edit#gid=0) for the CA.
+    * A link to a completed [self assessment](https://www.ccadb.org/cas/self-assessment) for the CA.
     * A link to a Key Generation Audit Report for the CA.
 3. A 'Root Inclusion Request' case must have been submitted in CCADB, and one or more Root Store Members must be selected for inclusion.
 
