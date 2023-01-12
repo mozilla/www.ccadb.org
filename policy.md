@@ -8,7 +8,6 @@
 4. [Subordinate CA Certificates](policy#4-subordinate-ca-certificates)
 5. [Policies, Audits, and Audit Practices](policy#5-policies-audits-and-practices) <br>
 5.1 [Audit Statement Content](policy#51-audit-statement-content) <br>
-5.2 [Auditor Qualifications](policy#52-auditor-qualifications)
 6. [Mailshots](policy#6-mailshots)
 
 Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
