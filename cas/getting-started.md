@@ -33,7 +33,7 @@ lists of Cases.
 * Click on 'Recently Viewed' in the upper left corner. 
 * Select 'My Cases'
 then click on the thumb tack icon to pin this view as your default for this tab.
-    * Audit Cases are used for submitting [annual updates](updates).
+    * Add/Update Root Request Cases are used for submitting [annual updates](updates).
 
 **CA Communications**: The 'CA Communications' tab may be used when a root
 store operator polls their CA members for information. You may ignore this tab
