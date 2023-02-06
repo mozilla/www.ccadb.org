@@ -4,7 +4,7 @@ CAs can view root and intermediate certificate data for all of the CAs in
 CCADB. However, CAs may only directly modify the intermediate certificate
 records for certificates chaining up to root certificates owned by their CA.
 
-CAs should consult the [Common CCADB Policy](/policy#4-intermediate-certificates)
+CAs should consult the [CCADB Policy](/policy#4-intermediate-certificates)
 about the requirements for disclosing intermediate certificate data 
 in the CCADB.
 
@@ -25,7 +25,7 @@ certificate hierarchies at least annually. CAs are expected to maintain their
 intermediate certificate records themselves and to directly enter the 
 corresponding updated audit statements via the following instructions. 
 Audit information for root certificate records must be provided via an 
-[Audit Case](updates).
+[Add/Update Root Request Case](updates).
 
 **Important:** If the audit statements for an intermediate certificate are the 
 same as the certificate that signed it, then check the 'Audits Same as Parent' 
