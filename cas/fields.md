@@ -36,14 +36,14 @@ There are 5 audit statements that may be provided:
 </ol>
 For each applicable audit, the following information must be provided, and must meet 
 the root store requirements and the requirements of 
-[section 5.1 of the Common CCADB Policy][CCADB-Policy].
+[section 5.1 of the CCADB Policy][CCADB-Policy].
 <table border="1">
 <tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
 
 <tr valign="top">
 <td>Audit</td>
 <td>URL to the audit statement PDF. <br>
-WebTrust Seals: Enter the WebTrust Seal URL into this field. When you save your changes, the CCADB will automatically convert the Seal URL to  the URL of the corresponding audit statement PDF.
+WebTrust Seals: Enter the WebTrust Seal URL into this field. When you save your changes, the CCADB will automatically convert the Seal URL to the URL of the corresponding audit statement PDF.
 </td>
 </tr>
 <tr valign="top">
@@ -237,7 +237,7 @@ certificate.</td>
 <tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
 <tr valign="top">
 <td>Revocation Status </td>
-<td> The Common CCADB Policy, says “If an intermediate certificate is revoked, the CCADB must be updated to mark it as revoked, giving the reason why, within 24 hours for a security incident, and within 7 days for any other reason.” 
+<td> The CCADB Policy, says “If a subordinate CA certificate is revoked, the CCADB must be updated to mark it as revoked, including the reason for revocation, within seven calendar days of revocation.” 
 </td>
 </tr>
 <tr valign="top">
