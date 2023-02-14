@@ -2,7 +2,7 @@
 
 If you are a browser manufacturer or developer of software that includes
 a trusted root certificate store that you actively manage, you may wish to
-consider joining the CCADB as a Root Store Member.
+consider joining the CCADB as a Root Store Operator.
 
 ## Membership Requirements ##
 
@@ -15,10 +15,10 @@ Applicants for membership must:
 * Comply with [Mozilla's terms](usage) governing usage of the CCADB.
 
 In addition, participation in the CCADB is at Mozilla’s
-discretion. Mozilla reserves the right not to include a particular root store
-operator in the CCADB, and not to issue a license to the Common
+discretion. Mozilla reserves the right not to include a particular Root Store
+Operator in the CCADB, and not to issue a license to the Common
 CA Database for any or no reason, including without limitation cases where we
-believe that including or issuing a license to a root store operator would
+believe that including or issuing a license to a Root Store Operator would
 interfere with the operation or security of the CCADB, or would
 breach our agreements with the underlying CRM.
 
@@ -49,7 +49,7 @@ application:
 
 If there are any questions about your application, we will get back to you.
 Otherwise, once we have received this information, Mozilla will make a
-determination on whether to include your organization as a Root Store Member
+determination on whether to include your organization as a Root Store Operator
 and communicate its determination to you, along with any information about your
 membership and participation.
 
