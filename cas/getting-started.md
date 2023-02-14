@@ -18,6 +18,8 @@ by clicking on their title.
 * Intermediate Certificates with Failed ALV Results
 * etc.
 
+Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
+
 **My CA**: Click on the 'My CA' tab to see the information that is in the CCADB
 for your CA, a hierarachy of root certiicates and intermediate certificates,
 and who the Points of Contact are for your CA.
@@ -33,11 +35,11 @@ lists of Cases.
 * Click on 'Recently Viewed' in the upper left corner. 
 * Select 'My Cases'
 then click on the thumb tack icon to pin this view as your default for this tab.
-    * Add/Update Root Request Cases are used for submitting [annual updates](updates).
+    * 'Add/Update Root Request' cases are used for submitting [annual updates](updates).
 
-**CA Communications**: The 'CA Communications' tab may be used when a root
-store operator polls their CA members for information. You may ignore this tab
-until you receive email from a root store operator asking you to respond to
+**CA Communications**: The 'CA Communications' tab may be used when a Root
+Store Operator polls CA Owners included in their program for information. You may ignore this tab
+until you receive email from a Root Store Operator asking you to respond to
 such a poll.
 
 **Reports**: Click on the 'Reports' tab (which may be under the 'More' tab), 
