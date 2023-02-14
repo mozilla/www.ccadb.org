@@ -1,10 +1,12 @@
 # Managing Intermediate Certificates #
 
-CAs can view root and intermediate certificate data for all of the CAs in
-CCADB. However, CAs may only directly modify the intermediate certificate
-records for certificates chaining up to root certificates owned by their CA.
+CA Owners can view root and intermediate certificate data for all of the CAs in
+CCADB. However, CA Owners may only directly modify the intermediate certificate
+records for certificates chaining up to root certificates they own.
 
-CAs should consult the [CCADB Policy](/policy#4-intermediate-certificates)
+Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
+
+CA Owners should consult the [CCADB Policy](/policy#4-intermediate-certificates)
 about the requirements for disclosing intermediate certificate data 
 in the CCADB.
 
@@ -20,8 +22,8 @@ Table of Contents:
 
 ## Updating Audit Statements ##
 
-All CAs are required to update the audit and CP/CPS information for their 
-certificate hierarchies at least annually. CAs are expected to maintain their 
+All CA Owners are required to update the audit and CP/CPS information for their 
+certificate hierarchies at least annually. CA Owners are expected to maintain their 
 intermediate certificate records themselves and to directly enter the 
 corresponding updated audit statements via the following instructions. 
 Audit information for root certificate records must be provided via an 
@@ -108,10 +110,10 @@ use the 'Clone' button to save time. The recommended procedure is as follows:
 ## API ##
 
 [CCADB APIs](https://github.com/mozilla/CCADB-Tools/tree/master/API_AddUpdateIntermediateCert) 
-have been developed to enable CAs to automate retrieving and updating intermediate 
+have been developed to enable CA Owners to automate retrieving and updating intermediate 
 certificate data in the CCADB. This service is only available 
-to CAs whose root certificates are included within the root stores 
-of CCADB root store members.
+to CA Owners whose root certificates are included within the root stores 
+of CCADB Root Store Operators.
 * GetCertificateIdAPI: Returns the root or intermediate certificate record Id (Salesforce Id) in the CCADB.
 * AddUpdateIntermediateCertAPI: Add or update an intermediate certificate record in the CCADB.
 
