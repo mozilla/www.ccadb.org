@@ -35,7 +35,7 @@ There are 5 audit statements that may be provided:
 <li>EV Code Signing Audit</li>
 </ol>
 For each applicable audit, the following information must be provided, and must meet 
-the root store requirements and the requirements of 
+the individual Root Store requirements and the requirements of 
 [section 5.1 of the CCADB Policy][CCADB-Policy].
 <table border="1">
 <tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
@@ -61,10 +61,10 @@ e.g. WebTrust or ETSI EN 319 411.
 Audit Period End Date</td>
 <td>In a period‐of‐time audit, the Audit Period is the period
 between the first day (start) and the last day of operations (end) covered by
-the auditors in their engagement.  (This is not the same as the period of time 
+the auditors in their engagement. (This is not the same as the period of time 
 when the auditors are on-site at the CA.)
 <br>
-The period during which the CA issues Certificates SHALL be divided into an
+The period during which the CA issues certificates SHALL be divided into an
 unbroken sequence of audit periods. An audit period MUST NOT exceed one year
 in duration.
 </td>
@@ -82,8 +82,8 @@ in duration.
 <tr valign="top">
 <td>Auditor </td>
 <td> Find all Auditors known to the CCADB by clicking on the 'Auditors' report
-in the 'Custom Links' section in any Root Certificate, Intermediate Certiifcate, 
-or Case page. Contact your root store operator if your auditor is not in this list. 
+in the 'Custom Links' section in any root certificate, intermediate certiifcate, 
+or case page. Contact your Root Store Operator if your auditor is not in this list. 
 <br>
 To fill in the auditor's name, click on the pencil icon in the 'Auditor' field, 
 then enter a string of two or more characters that you expect to be in your 
@@ -94,8 +94,8 @@ click on the 'Save' button.
 <tr valign="top">
 <td>Auditor Location </td>
 <td> Find all Auditor Locations known to the CCADB by clicking on the 'Auditors' report
-in the 'Custom Links' section in any Root Certificate, Intermediate Certiifcate, 
-or Case page. Contact your root store operator if your auditor's location is not in this list. 
+in the 'Custom Links' section in any root certificate, intermediate certiifcate, 
+or case page. Contact your Root Store Operator if your auditor's location is not in this list. 
 <br>
 To fill in the auditor's location, click on the pencil icon in the 'Auditor Location' field,
 then enter a string of two or more characters that you expect to be in your 
@@ -106,10 +106,11 @@ click on the 'Save' button.
 </table>
 
 <br>
-Auditor qualifications are verified and entered into the CCADB by a root store operator. 
+Auditor qualifications are verified and entered into the CCADB by a Root Store Operator. 
 For example, Mozilla re-verifies auditor qualifications annually as described
  [here][Auditor-Qualifications].
-
+ 
+ Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
 
 ## Formula Fields ##
 These are some of the fields that are automatically filled in by the CCADB and cannot be manually edited.
@@ -252,7 +253,7 @@ certificate.</td>
 </tr>
 <tr valign="top">
 <td>Alternate CRL</td>
-<td> Only fill in this field when this certificate does not contain a CRL URL. Note that the BRs now require intermediate certificates to contain CRL URLs.
+<td> Only fill in this field when this certificate does not contain a CRL URL. Note that the BRs require intermediate certificates to contain CRL URLs.
  </td>
 </tr>
 </table>
@@ -285,7 +286,7 @@ Example:
 ## Uploading Documents ##
 
 Many CCADB fields require URLs to documents. In general, CP/CPS and Audit
-information should be provided on the CA's website, subordinate CA's website, or the auditor's website.
+information should be provided on the CA Owner's website, subordinate CA Owner's website, or the auditor's website.
 However, if for some reason this is not possible, you can use the
 Bugzilla bug-tracking system to store the documents and get a URL for use in
 the CCADB as follows:
