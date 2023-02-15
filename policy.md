@@ -77,7 +77,7 @@ Exceptions to providing audit information:
 
 CA Owners must provide English versions of any CP, CPS, and Audit documents which are not originally in English, with version numbers matching the document they are a translation of. The English version is not required to be authoritative in all cases of dispute, but the CA Owner must attest that the translation is not materially different to the original.
 
-CA Owners must submit an [Add/Update Root Request Case](https://docs.google.com/document/d/1ttmeeqO6WxDWe_deDNsGUgDO_LpsvoduFNZeHHMw_f8/edit) to add or update audit information for root CA certificates stored in the CCADB.
+CA Owners must submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) to add or update audit information for root CA certificates stored in the CCADB.
 
 CA Owners must add or update audit information for subordinate CA certificates directly on the record in CCADB (unless the exception for “Audits Same as Parent” mentioned above applies).
 
