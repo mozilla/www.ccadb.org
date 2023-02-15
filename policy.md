@@ -83,21 +83,47 @@ CA Owners must add or update audit information for subordinate CA certificates d
 
 ### 5.1 Audit Statement Content ###
 
-CCADB uses an application called Audit Letter Validation (ALV) to automatically parse and validate audit statements. This system eliminates manual processing, but it requires audit statements to follow some basic rules in order to function properly. If the audit statement fails to meet any of the following requirements, the CA Owner must work with their auditor to provide an audit statement that passes ALV.
+An authoritative English language version of publicly available audit information must be uploaded to the CCADB no later than three months after the end of the audit period. In the event of a delay greater than three months, the CA Owner must provide an explanatory letter signed by the Qualified Auditor. 
 
-Audit statements listed in the CCADB must contain at least the following clearly-labeled information in English:
+Reports uploaded to CCADB must be publicly available and contain at least the following clearly-labeled information: 
 
-1. Name and address of the organization performing the audit;
-1. Full name of the CA Owner that was audited;
-1. SHA-256 fingerprint of each root and subordinate CA certificate that was in scope of the audit (see format specifications below);
-1. List of the CA Owner's applicable policy documents (with version numbers) referenced during the audit;
-1. Whether the audit is for a period of time or a point in time;
-1. Date the audit statement was written, which will necessarily be after the audit period end date or point-in-time date (see date format specifications below);
-1. Start date and end date of the period that was audited, for those that cover a period of time (this is not the period the auditor was on-site);
-1. Point-in-time date, for those that are for a point in time;
-1. Full names and version numbers of the audit standards that were used during the audit;
-1. All incidents disclosed by the CA Owner, or reported by a third party, and all findings reported by an auditor, that, at any time during the audit period, occurred, were open in Bugzilla, or were reported to a Store; and
-1. For ETSI, a statement to indicate if the audit was a full audit, and which parts of the criteria were applied, e.g. DVCP, OVCP, NCP, NCP+, LCP, EVCP, EVCP+, QCP-w, Part1 (General Requirements), and/or Part 2 (Requirements for trust service providers).
+1. Full name of the CA Owner or corresponding Affiliate (e.g., organization providing external RA services) that was audited;
+2. Name and address of the organization performing the audit;
+3. SHA-256 fingerprint of each root and subordinate CA certificate that was in scope of the audit (see format specifications below);
+4. Full names and version numbers of the audit standards that were used during the audit;
+5. List of the CA Owner's applicable policy documents (with version numbers and publication dates) referenced during the audit;
+6. Whether the audit is for a period of time or a point in time;
+7. Start date and end date of the period that was audited, for those that cover a period of time (this is not the period the auditor was on-site);
+8. Point-in-time date, for those that are for a point in time;
+9. Date the audit statement was written, which will necessarily be after the audit period end date or point-in-time date (see date format specifications below);
+10. For ETSI, a statement to indicate if the audit was a full audit, and which parts of the criteria were applied, e.g. DVCP, OVCP, NCP, NCP+, LCP, EVCP, EVCP+, QCP-w, Part1 (General Requirements), and/or Part 2 (Requirements for trust service providers), and a statement to indicate that the auditor referenced the applicable CA/Browser Forum criteria and the version used;
+11. All incidents disclosed by the CA Owner, or reported by a third party, and all findings reported by an auditor, that, at any time during the audit period, occurred, were open in Bugzilla, or were reported to a Store; and
+12. An explicit statement indicating the audit covers the relevant systems and processes used in the issuance of all Certificates that assert one or more of the policy identifiers listed below:
+
+For hierarchies used to issue TLS certificates:
+- 2.23.140.1.2.1
+- 2.23.140.1.2.2
+- 2.23.140.1.2.3
+- 2.23.140.1.1
+
+For hierarchies used to issue Code Signing certificates:
+- 2.23.140.1.4.1
+- 2.23.140.1.4.2
+- 2.23.140.1.3
+
+For hierarchies used to issue S/MIME certificates:
+- 2.23.140.1.5.1.1
+- 2.23.140.1.5.1.2
+- 2.23.140.1.5.1.3
+- 2.23.140.1.5.2.1
+- 2.23.140.1.5.2.2
+- 2.23.140.1.5.2.3
+- 2.23.140.1.5.3.1
+- 2.23.140.1.5.3.2
+- 2.23.140.1.5.3.3
+- 2.23.140.1.5.4.1
+- 2.23.140.1.5.4.2
+- 2.23.140.1.5.4.3
 
 #### 5.1.1 ETSI ####
 
@@ -118,6 +144,8 @@ For qualified WebTrust audits, the CA Owner may post the audit statements on the
 Additionally, if required by the individual Store policy, any qualification and/or modified opinion may be considered an incident and have an Audit Incident Report created in a Bugzilla Bug prior to or within seven calendar days of the audit statement’s issuance date. 
 
 #### 5.1.3 ALV Formatting ####
+
+CCADB uses an application called Audit Letter Validation (ALV) to automatically parse and validate audit statements. This system eliminates manual processing, but it requires audit statements to follow some basic rules in order to function properly. If the audit statement fails to meet any of the following requirements, the CA Owner must work with their auditor to provide an audit statement that passes ALV.
 
 Format Specifications for SHA-256 Fingerprints:
 
