@@ -133,7 +133,7 @@ CCADB warns root store operators when the audit periods are not consecutive.
 
 When the AAL cannot be posted on the CAB's website, the CA Owner may post the AAL on their own website or attach the attestation report to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. The authenticity of the AAL will still need to be established by the CAB. 
 
-Additionally, if required by the individual Store policy, any non-conformity and/or problem resulting in the failure of the ETSI Certificate’s issuance may be considered an incident and have an Audit Incident Report created in a Bugzilla Bug prior to or within seven calendar days of the AAL’s issuance date.
+Additionally, if required by the individual Store policy, any non-conformity and/or problem resulting in the failure of the ETSI Certificate’s issuance may be considered an incident and have an [Audit Incident Report](https://www.ccadb.org/cas/incident-report) created in a Bugzilla Bug prior to or within seven calendar days of the AAL’s issuance date.
 
 #### 5.1.2 WebTrust ####
 
@@ -141,7 +141,7 @@ Unqualified WebTrust audit statements provided by licensed WebTrust practitioner
 
 For qualified WebTrust audits, the CA Owner may post the audit statements on their own website or attach the audit statement to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. The authenticity of any WebTrust audit not provided with a seal by CPA Canada will still need to be established with the auditor.
 
-Additionally, if required by the individual Store policy, any qualification and/or modified opinion may be considered an incident and have an Audit Incident Report created in a Bugzilla Bug prior to or within seven calendar days of the audit statement’s issuance date. 
+Additionally, if required by the individual Store policy, any qualification and/or modified opinion may be considered an incident and have an [Audit Incident Report](https://www.ccadb.org/cas/incident-report) created in a Bugzilla Bug prior to or within seven calendar days of the audit statement’s issuance date. 
 
 #### 5.1.3 ALV Formatting ####
 
