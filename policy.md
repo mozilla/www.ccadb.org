@@ -43,7 +43,7 @@ If POC or email alias information needs to be updated, the POC should email supp
 
 A root CA certificate is a self-signed certificate issued by the root CA to identify itself and to facilitate verification of certificates issued to its subordinate CAs. CA Owners are responsible for maintaining correct and current information about their root CA certificates.
 
-If root CA certificate information needs to be updated, the CA Owner must submit an [Add/Update Root Request Case](https://docs.google.com/document/d/1ttmeeqO6WxDWe_deDNsGUgDO_LpsvoduFNZeHHMw_f8/edit).
+If root CA certificate information needs to be updated, the CA Owner must submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates).
 
 ## 4. Subordinate CA Certificates ##
 
