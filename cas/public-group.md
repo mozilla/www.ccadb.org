@@ -14,7 +14,7 @@ The corresponding Root Store Operator may post announcements related to their pr
 The CCADB [policy](https://www.ccadb.org/policy) may be updated by the CCADB Steering Committee. A Root Store Operator may post an update to the policy in the public@ccadb.org group. The Root Store Operator may describe what is changing or has changed with the CCADB policy, link to supporting documentation, and state the effective date of the change.
 
 ## Lessons Learned from CA Incident Reports ##
-An important goal of incident reporting is to help all of us work together to build a more secure web. Therefore, [incident reports](https://wiki.mozilla.org/CA/Incident_Dashboard) should include lessons learned that could be helpful to all CAs to build better systems, and those lessons learned should be shared in the public@ccadb.org group.
+An important goal of incident reporting is to help all of us work together to build a more secure web. Therefore, [Incident Reports](https://www.ccadb.org/cas/incident-report) should include lessons learned that could be helpful to all CAs to build better systems, and those lessons learned should be shared in the public@ccadb.org group.
 
 ## Root Inclusion Public Discussion ##
 For those Root Stores that have public discussion, public@ccadb.org enables a single, shared public discussion phase for a CA Owner applying to such Root Store Programs. The CCADB root inclusion public discussion process promotes openness and transparency for applicants to public Root Stores. However, Root Store Programs will make final inclusion decisions independently, on their own timelines, and based on each Root Store Operator’s inclusion criteria.
