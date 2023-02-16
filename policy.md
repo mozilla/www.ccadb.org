@@ -1,6 +1,6 @@
 # CCADB Policy #
 
-*Version 1.3, Effective: February 28, 2023*
+*Version 1.2.1, Effective: February 28, 2023*
 
 1. [General Provisions](policy#1-general-provisions)
 2. [Contact Information](policy#2-contact-information)
