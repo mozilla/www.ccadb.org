@@ -1,6 +1,6 @@
 # CCADB Policy #
 
-*Version 1.2, Effective: February 15, 2023*
+*Version 1.3, Effective: February 28, 2023*
 
 1. [General Provisions](policy#1-general-provisions)
 2. [Contact Information](policy#2-contact-information)
@@ -55,7 +55,9 @@ If a subordinate CA certificate is revoked, the CCADB must be updated to mark it
 
 ## 5. Policies, Audits, and Practices ##
 
-CCADB enables associating Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents in the records for both root CA certificates and subordinate CA certificates. CCADB also enables associating statements of attestation of CA Owner conformance to various requirements and other operational criteria (“audits”).
+CCADB enables associating Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents in the records for both root CA certificates and subordinate CA certificates. CA Owners must provide English versions of any CP, CPS, or combined CP/CPS which are not originally in English, with version numbers matching the document they are a translation of. The English version is not required to be authoritative in all cases of dispute, but the CA Owner must attest that the translation is not materially different to the original.
+
+CCADB also enables associating statements of attestation of CA Owner conformance to various requirements and other operational criteria (“audits”).
 
 These documents are hosted elsewhere and the URLs are stored in the CCADB. The URLs to such CPs, CPSes and audits, and any metadata about them such as the name of the auditor or the date of the audit, must be updated as new information becomes available. For technical reasons, URLs to audit statements must point to a PDF file that conforms to ALV and either WebTrust or Accredited Conformity Assessment Bodies’ Council (ACAB'c) formatting standards.
 
@@ -74,8 +76,6 @@ Exceptions to providing audit information:
 * The SHA-256 fingerprint of the certificate is specifically listed as in scope in the audit statements of the parent certificate, and the "Audits Same as Parent" checkbox is checked; or
 * The certificate has expired; or
 * The certificate has been revoked, and the corresponding record in the CCADB has been updated with the correct revocation status.
-
-CA Owners must provide English versions of any CP, CPS, and Audit documents which are not originally in English, with version numbers matching the document they are a translation of. The English version is not required to be authoritative in all cases of dispute, but the CA Owner must attest that the translation is not materially different to the original.
 
 CA Owners must submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) to add or update audit information for root CA certificates stored in the CCADB.
 
