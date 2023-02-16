@@ -41,7 +41,7 @@ When ALV returns FAIL for "Standard Audit ALV Found Cert", "Code Signing Audit A
 * If the SHA-256 fingerprint is listed in the audit statement, then make sure that it meets the [format specifications](../policy#51-audit-statement-content), such as no colons, no spaces, no line feeds.
 * Have your auditor provide an updated audit statement that follows the [formatting requirements](../policy#51-audit-statement-content) for the SHA-256 Fingerprints.
 * If you do not agree with the ALV results, add comments to the "Standard Audit ALV Comments", "Code Signing Audit ALV Comments", "BR Audit ALV Comments", or "EV SSL Audit ALV Comments" fields to indicate that the SHA-256 fingerprint is listed correctly in the audit statement.
-* If the audit statement is indeed missing the SHA-256 fingerprint for the certificate, then file an [Incident Report](https://wiki.mozilla.org/CA/Incident_Dashboard), and add the link to the Incident Report to one of the "...ALV Comments" fields.
+* If the audit statement is indeed missing the SHA-256 fingerprint for the certificate, then file an [Incident Report](https://www.ccadb.org/cas/incident-report), and add the link to the Incident Report to one of the "...ALV Comments" fields.
 
 Important clarifications:
 
@@ -54,10 +54,10 @@ Important clarifications:
 
 Acceptable remediation:
 * Have your auditor issue a revised report that includes the intermediate certificate.
-    * If the certificate has been in existence for past audit periods, then you must also file an [Incident Report](https://wiki.mozilla.org/CA/Incident_Dashboard).
+    * If the certificate has been in existence for past audit periods, then you must also file an [Incident Report](https://www.ccadb.org/cas/incident-report).
     * An Incident Report may not be needed if the certificate is self-signed and has the same Subject + SPKI as other certificates listed in the audit statement. For example, this can happen when a Root Store includes one version of a root certificate, but another version of the root certificate can be part of a valid chain constructed as: leaf --> untrusted root --> trusted root.
 * Revoke the intermediate certificate in accordance with Root Store policies and the BRs.
-    * If your CA decides not to revoke the certificate within the timeline specified by section 4.9 of the BRs, then that is another incident, which must be addressed in a separate [Incident Report](https://wiki.mozilla.org/CA/Incident_Dashboard). 
+    * If your CA decides not to revoke the certificate within the timeline specified by section 4.9 of the BRs, then that is another incident, which must be addressed in a separate [Incident Report](https://www.ccadb.org/cas/incident-report). 
 
 ## Common ALV Findings ##
 ALV formatting requirements are specified in 
