@@ -4,6 +4,21 @@ Self assessments are valuable. They allow CA Owners to reflect and make objectiv
 
 Some Root Store policies may require the completion of a self assessment using the CCADB template at various times to evaluate the conformance of the CA Owner's policies against industry policies and practices. 
 
-* Template: [CCADB Self Assessment](https://docs.google.com/spreadsheets/d/1ahHjFP74rgrNJExTd1molihw6UBJ0zAVs12hNGKG56g/edit?usp=sharing)
+
+<table border="1">
+<tr valign="top"><th>Version</th><th>Effective Date</th></tr>
+<tr valign="top">
+<td> <a href=https://docs.google.com/spreadsheets/d/1bCpWvg2Sfza3qlI1XGQVms0Qo41QrUJWEAnKaKhTjkY/edit?usp=sharing>1.1 (Latest)</a>
+</td>
+<td> March 3, 2023
+</td>
+</tr>
+<tr valign="top">
+<td> <a href=https://docs.google.com/spreadsheets/d/1ahHjFP74rgrNJExTd1molihw6UBJ0zAVs12hNGKG56g/edit?usp=sharing>1.0</a>
+</td>
+<td> January 5, 2023
+</td>
+</tr>
+</table>
 
 The CCADB Steering Committee maintains and updates the template whenever a corresponding set of policies is updated.
