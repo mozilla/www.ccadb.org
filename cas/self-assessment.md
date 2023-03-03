@@ -8,7 +8,7 @@ Some Root Store policies may require the completion of a self assessment using t
 <table border="1">
 <tr valign="top"><th>Version</th><th>Effective Date</th></tr>
 <tr valign="top">
-<td> <a href=https://docs.google.com/spreadsheets/d/1bCpWvg2Sfza3qlI1XGQVms0Qo41QrUJWEAnKaKhTjkY/edit?usp=sharing>1.1</a>
+<td> <a href=https://docs.google.com/spreadsheets/d/1bCpWvg2Sfza3qlI1XGQVms0Qo41QrUJWEAnKaKhTjkY/edit?usp=sharing>1.1 (Latest)</a>
 </td>
 <td> March 3, 2023
 </td>
