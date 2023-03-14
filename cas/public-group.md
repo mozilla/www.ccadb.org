@@ -41,7 +41,7 @@ Prior to a Root Store Operator initiating a CCADB root inclusion public discussi
 ### Initiation ###
 No more than three concurrent CCADB root inclusion public discussions shall take place at any given time. If more than three 'Root Inclusion Request' cases have been submitted in CCADB, any requests for replacing an existing root CA certificate in CCADB will be prioritized for public discussion. Otherwise, CCADB public discussion will generally occur on a first-ready, first-out basis (to be ready for discussion). 
 
-A Root Store Operator will initiate a six-week CCADB root inclusion public discussion in the public@ccadb.org group and provide information about the inclusion request from CCADB.
+A Root Store Operator will initiate a six-week CCADB root inclusion public discussion in the public@ccadb.org group and provide information about the inclusion request from CCADB. The discussion period will be carried out over six contiguous weeks and will not be paused at any point.
 
 A CA Owner is expected to respond to questions and concerns posted during the public discussion of their root CA certificate(s) inclusion request.
 
