@@ -36,6 +36,6 @@ CAs in the CCADB are organized into hierarchies. Each CA Owner has children node
 
 Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
 
-All CAs are required to update the audit, CP, CPS and test website information for their certificate hierarchies at least annually. CAs are expected to maintain their [**intermediate**](intermediates) certificate records themselves and to directly enter the corresponding [updated audit statements](fields#audit-information). However, **root** certificate data cannot be self-maintained, because root store operators must verify the data before the CA Owner or Root Certificate records are modified.
+All CAs are required to update the audit, CP, CPS and test website information for their certificate hierarchies at least annually. CAs are expected to maintain their [**intermediate**](intermediates) certificate records themselves and to directly enter the corresponding [updated audit statements](fields#audit-information). However, **root** certificate data cannot be self-maintained, because Root Store Operators must verify the data before the CA Owner or Root Certificate records are modified.
 
-
+CA Owners may want to [test preliminary audit statements](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#bookmark=id.n8g8lgkwb4co) before receiving and uploading the final audit statements from their auditor to ensure the documents will pass ALV.
