@@ -37,7 +37,7 @@ Incident reports should be updated when:
 * Completion of a resolution step, or
 * Delays in completing a resolution step.
 
-If the bug is still open, then you should also provide updates at least every week giving your progress, until you confirm that the remediation steps have been completed, unless a root store representative has agreed to a different schedule by setting a “Next Update” date in the “Whiteboard” field of the bug or has announced they consider closing the bug and no further comments have been posted.
+If the bug is still open, then you should also provide updates at least every week giving your progress, until you confirm that the resolution steps have been completed, unless a Root Store Operator has agreed to a different schedule by setting a “Next Update” date in the “Whiteboard” field of the bug or has announced they consider closing the bug and no further comments have been posted.
 
 It should be expected that the incident reports provide sufficient detail about the root cause, and the remediation, that would allow other CAs or members of the public to implement an equivalent solution.
 
