@@ -37,6 +37,8 @@ Incident reports should be updated when:
 * Completion of a resolution step, or
 * Delays in completing a resolution step.
 
+If the bug is still open, then you should also provide updates at least every week giving your progress, until you confirm that the remediation steps have been completed, unless a root store representative has agreed to a different schedule by setting a “Next Update” date in the “Whiteboard” field of the bug or has announced they consider closing the bug and no further comments have been posted.
+
 It should be expected that the incident reports provide sufficient detail about the root cause, and the remediation, that would allow other CAs or members of the public to implement an equivalent solution.
 
 For example, it's not sufficient to say that "human error" or "lack of training" was a root cause for the incident, nor that "training has been improved" as a solution. While a lack of training may have contributed to the issue, it's also possible that error-prone tools or practices were required, and making those tools less reliant on training is the correct solution. When training or a process is improved, the CA Owner is expected to provide specific details about the original and corrected material, and specifically detail the changes that were made, and how they tie to the issue. Training alone should not be seen as a sufficient mitigation, and focus should be made on removing error-prone manual steps from the system entirely.
