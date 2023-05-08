@@ -6,7 +6,7 @@
     * [Getting Started](getting-started)
 * [Add or Update Root Certificates, Audit Statements, Policy Documents, or Other Data](updates)
 * [Submit a Root Inclusion Request](inclusion)
-* [Add a Contact](contacts)
+* [Add or Update Contacts](contacts)
 * [Field Types and Valid Values](fields)
 * [Managing Intermediate Certificates](intermediates)
 * [Audit Letter Validation (ALV)](ALV)
