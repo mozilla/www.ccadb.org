@@ -13,6 +13,7 @@
   * [PEM of Root Certificates in Mozilla's Root Store with the Websites (TLS/SSL) Trust Bit Enabled (CSV)](https://ccadb.my.salesforce-sites.com/mozilla/IncludedRootsDistrustTLSSSLPEMCSV?TrustBitsInclude=Websites)
 * [All Certificate Information (root and intermediate) in CCADB](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormat) (CSV)
 * [All Certificate PEMs (root and intermediate) in CCADB](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificatePEMsCSVFormat) (CSV)
+* [All Included Root Certificate Trust Bit Settings](https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV) (CSV)
 * [List of CA problem reporting mechanisms (email, etc.)](https://ccadb.my.salesforce-sites.com/ccadb/AllProblemReportingMechanismsReport) (use this to report a certificate problem directly to the CA)
 * [List of CAA Identifiers](https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReport) (used to restrict issuance of certificates to specific CAs via a [DNS Certification Authority Authorization Resource Record](https://tools.ietf.org/html/rfc6844))
     * [CSV List of CAA Identifiers](https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReportCSV) 
