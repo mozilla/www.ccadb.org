@@ -1,6 +1,6 @@
 # CCADB Policy #
 
-*Version 1.2.1, Effective: February 17, 2023*
+*Version 1.2.2, Effective: May 11, 2023*
 
 1. [General Provisions](policy#1-general-provisions)
 2. [Contact Information](policy#2-contact-information)
@@ -33,11 +33,11 @@ CA Owners must provide the following information for a Primary Point of Contact 
 
 CA Owners may optionally designate further POCs, supplying an email address for each. CA Owners must also supply at least one non-personal contact email aliases which are more likely to continue working as personnel change; these are maintained as part of the CA’s organizational entry.
 
-All Primary POCs should be authorized to speak for and enter into binding commitments on behalf of the CA(s) that they represent. The Primary POC will be issued a [CA Community license](https://www.ccadb.org/cas/request-access#application-for-ccadb-access) and may request additional licenses for other POCs. Primary POCs are responsible for keeping CCADB data accurate for their CA(s).
+All Primary POCs should be authorized to speak for and enter into binding commitments on behalf of the CA(s) that they represent. The Primary POC will be issued a [CA Community license](https://www.ccadb.org/cas/request-access#application-for-ccadb-access) and may request additional licenses for other Primary POCs. Primary POCs are responsible for keeping CCADB data accurate for their CA(s).
 
 Notification of security and audit-related issues will be emailed to all Primary POCs and the first non-personal contact email alias. CA Owners are advised to make sure those addresses reach sufficient people such that they can respond to an issue in an appropriate timeframe.
 
-If POC or email alias information needs to be updated, the POC should email support@ccadb.org.
+If POC information needs to be updated, the CA Owner must submit an [Add/Update Contacts Case](https://www.ccadb.org/cas/contacts).
 
 ## 3. Root CA Certificates ##
 

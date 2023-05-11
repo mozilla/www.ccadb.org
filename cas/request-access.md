@@ -22,4 +22,4 @@ If there are any questions about the completeness of your application, we will g
 
 ## Changing CCADB Licenses ##
 
-CA representatives who already have access to the CCADB may request changes to their CCADB licenses by sending email to [support@ccadb.org](mailto:support@ccadb.org).
+CAs who already have access to the CCADB may request changes to their CCADB licenses by submitting an [Add/Update Contacts Case](https://www.ccadb.org/cas/contacts).
