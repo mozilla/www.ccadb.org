@@ -4,7 +4,7 @@
     * [Request Access](request-access)
     * [New User & Password Reset](https://docs.google.com/document/d/1MuszDO2o-es_6-FwNCDWZ2TC979F8eil5bBQGKjaWRc/edit#heading=h.q7a023qr7pxz)
     * [Getting Started](getting-started)
-* [Add or Update Root Certificates, Audit Statements, Policy Documents, or Other Data](updates)
+* [Add or Update Roots, Audit Statements, Policy Documents, or Other Data](updates)
 * [Submit a Root Inclusion Request](inclusion)
 * [Add or Update Contacts](contacts)
 * [Field Types and Valid Values](fields)
