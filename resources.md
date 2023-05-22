@@ -12,11 +12,19 @@
   * [PEM of Root Certificates in Mozilla's Root Store with the Websites (TLS/SSL) Trust Bit Enabled (TXT)](https://ccadb.my.salesforce-sites.com/mozilla/IncludedRootsPEMTxt?TrustBitsInclude=Websites)
   * [PEM of Root Certificates in Mozilla's Root Store with the Websites (TLS/SSL) Trust Bit Enabled (CSV)](https://ccadb.my.salesforce-sites.com/mozilla/IncludedRootsDistrustTLSSSLPEMCSV?TrustBitsInclude=Websites)
 * [All Certificate Information (root and intermediate) in CCADB](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormat) (CSV)
-* [All Certificate PEMs (root and intermediate) in CCADB](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificatePEMsCSVFormat) (CSV)
 * [All Included Root Certificate Trust Bit Settings](https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV) (CSV)
 * [List of CA problem reporting mechanisms (email, etc.)](https://ccadb.my.salesforce-sites.com/ccadb/AllProblemReportingMechanismsReport) (use this to report a certificate problem directly to the CA)
 * [List of CAA Identifiers](https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReport) (used to restrict issuance of certificates to specific CAs via a [DNS Certification Authority Authorization Resource Record](https://tools.ietf.org/html/rfc6844))
     * [CSV List of CAA Identifiers](https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReportCSV) 
+    
+### All Certificate PEMs ###
+The AllCertificatePEMsCSVFormat report accepts one of the following two parameters: NotBeforeYear or NotBeforeDecade.
+
+Examples:
+* https://ccadb.my.salesforce-sites.com/ccadb/AllCertificatePEMsCSVFormat?NotBeforeYear=1999
+   * Provides the certificate PEMs for which the CCADB record has a ‘Valid From (GMT)’ field that contains 1999.
+* https://ccadb.my.salesforce-sites.com/ccadb/AllCertificatePEMsCSVFormat?NotBeforeDecade=2010
+   * Provides the certificate PEMs for which the CCADB record has a ‘Valid From (GMT)’ field that contains 201.
 
 ### Mozilla ###
 * [Root Program Documentation](https://wiki.mozilla.org/CA)

@@ -1,0 +1,112 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-markdown@3.3.6",
+        "scope": null,
+        "escapedName": "primer-markdown",
+        "name": "primer-markdown",
+        "rawSpec": "3.3.6",
+        "spec": "3.3.6",
+        "type": "version"
+      },
+      "/Users/benbalter/projects/primer"
+    ]
+  ],
+  "_from": "primer-markdown@3.3.6",
+  "_id": "primer-markdown@3.3.6",
+  "_inCache": true,
+  "_location": "/primer-markdown",
+  "_nodeVersion": "7.7.3",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/primer-markdown-3.3.6.tgz_1490129607035_0.2747260727919638"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-markdown@3.3.6",
+    "scope": null,
+    "escapedName": "primer-markdown",
+    "name": "primer-markdown",
+    "rawSpec": "3.3.6",
+    "spec": "3.3.6",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-markdown/-/primer-markdown-3.3.6.tgz",
+  "_shasum": "0a5e24fe4ffa8ff23671522099b86e2c0471acb2",
+  "_shrinkwrap": null,
+  "_spec": "primer-markdown@3.3.6",
+  "_where": "/Users/benbalter/projects/primer",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/primer-markdown/issues"
+  },
+  "dependencies": {
+    "primer-support": "*"
+  },
+  "description": "GitHub stylesheets for rendering markdown.",
+  "devDependencies": {
+    "primer-module-build": "*",
+    "stylelint": "*",
+    "stylelint-config-primer": "*"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "0a5e24fe4ffa8ff23671522099b86e2c0471acb2",
+    "tarball": "https://registry.npmjs.org/primer-markdown/-/primer-markdown-3.3.6.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "gitHead": "992f5af41b198112476c8a2d7d6bed83ab1fcbc6",
+  "homepage": "https://github.com/primer/primer-markdown",
+  "keywords": [
+    "github",
+    "markdown",
+    "css",
+    "scss",
+    "primer",
+    "style",
+    "stylesheets",
+    "md"
+  ],
+  "license": "MIT",
+  "main": "build/index.js",
+  "maintainers": [
+    {
+      "name": "broccolini",
+      "email": "diana.mounter@gmail.com"
+    },
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-markdown",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/primer-markdown.git"
+  },
+  "scripts": {
+    "build": "primer-module-build index.scss",
+    "prepublish": "npm run build",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "style": "index.scss",
+  "version": "3.3.6"
+}

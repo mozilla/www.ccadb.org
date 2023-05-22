@@ -1,0 +1,108 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-utilities@4.1.1",
+        "scope": null,
+        "escapedName": "primer-utilities",
+        "name": "primer-utilities",
+        "rawSpec": "4.1.1",
+        "spec": "4.1.1",
+        "type": "version"
+      },
+      "/Users/benbalter/projects/primer"
+    ]
+  ],
+  "_from": "primer-utilities@4.1.1",
+  "_id": "primer-utilities@4.1.1",
+  "_inCache": true,
+  "_location": "/primer-utilities",
+  "_nodeVersion": "7.7.3",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/primer-utilities-4.1.1.tgz_1490129583996_0.49141979264095426"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-utilities@4.1.1",
+    "scope": null,
+    "escapedName": "primer-utilities",
+    "name": "primer-utilities",
+    "rawSpec": "4.1.1",
+    "spec": "4.1.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.1.1.tgz",
+  "_shasum": "f02d8168c7c30aa4419114e0abe4259c90e1542f",
+  "_shrinkwrap": null,
+  "_spec": "primer-utilities@4.1.1",
+  "_where": "/Users/benbalter/projects/primer",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/primer-utilities/issues"
+  },
+  "dependencies": {
+    "primer-support": "*"
+  },
+  "description": "Immutable, atomic CSS classes to rapidly build product",
+  "devDependencies": {
+    "primer-module-build": "*",
+    "stylelint": "*",
+    "stylelint-config-primer": "*"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "f02d8168c7c30aa4419114e0abe4259c90e1542f",
+    "tarball": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.1.1.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "gitHead": "a181db1e19879e12cc99069a9a444e3adbbee7a3",
+  "homepage": "http://primercss.io/",
+  "keywords": [
+    "primer",
+    "css",
+    "github",
+    "primercss"
+  ],
+  "license": "MIT",
+  "main": "build/index.js",
+  "maintainers": [
+    {
+      "name": "broccolini",
+      "email": "diana.mounter@gmail.com"
+    },
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-utilities",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/primer-utilities.git"
+  },
+  "scripts": {
+    "build": "primer-module-build index.scss",
+    "prepublish": "npm run build",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "style": "index.scss",
+  "version": "4.1.1"
+}
