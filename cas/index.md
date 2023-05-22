@@ -1,6 +1,6 @@
 # Information for CAs #
 
-* [Login to CCADB](https://ccadb.force.com/CustomLogin)
+* [Login to CCADB](https://ccadb.my.site.com/CustomLogin)
     * [Request Access](request-access)
     * [New User & Password Reset](https://docs.google.com/document/d/1MuszDO2o-es_6-FwNCDWZ2TC979F8eil5bBQGKjaWRc/edit#heading=h.q7a023qr7pxz)
     * [Getting Started](getting-started)
