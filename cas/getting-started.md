@@ -23,7 +23,7 @@ Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
 * Select 'My Cases', then click on the thumbtack icon to pin this view as your default for this tab.
     * '[Add/Update Root Request](updates)' cases are used for adding new root CA certificates or submitting annual updates.
     * '[Root Inclusion Request](inclusion)' cases are used for submitting requests for inclusion to Root Store Programs.
-    * '[Add/Update Contacts](contacts)' cases are used to add or udpate POC information. 
+    * '[Add/Update Contacts](contacts)' cases are used to add or update POC information. 
 
 **Reports**: Click on the 'Reports' tab (which may be under the 'More' tab), then click on 'All Folders' along the left column, and then click on 'CA Community Reports'.
 
