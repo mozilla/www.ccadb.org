@@ -12,7 +12,7 @@ When you [login](https://docs.google.com/document/d/1MuszDO2o-es_6-FwNCDWZ2TC979
 
 Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
 
-**My CA**: Click on the 'My CA' tab to see your CA information that is in the CCADB (including Points of Contact), a hierarachy of root certiicates and intermediate certificates, and all cases, reports, and communications for your CA.
+**My CA**: Click on the 'My CA' tab to see your CA information in the CCADB (including Points of Contact), a hierarchy of root certificates and intermediate certificates, and all cases, reports, and communications for your CA.
 
 **CA Owners/Certificates**: Click on the 'CA Owners/Certificates' tab  (which may be under the 'More' tab) to see lists of certificates. 
 * Click on 'Recently Viewed' in the upper left corner. 
