@@ -16,7 +16,7 @@ Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
 
 **CA Owners/Certificates**: Click on the 'CA Owners/Certificates' tab (which may be under the 'More' tab) to see lists of certificates. 
 * Click on 'Recently Viewed' in the upper left corner. 
-* Select 'Community User's CA Owners/Root Certs' then click on the thumb tack icon to pin this view as your default for this tab.
+* Select 'Community User's CA Owners/Root Certs', then click on the thumbtack icon to pin this view as your default for this tab.
 
 **Cases**: Click on the 'Cases' tab (which may be under the 'More' tab) to see  lists of Cases.
 * Click on 'Recently Viewed' in the upper left corner. 
