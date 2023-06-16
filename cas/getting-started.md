@@ -25,7 +25,7 @@ Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
     * '[Root Inclusion Request](inclusion)' cases are used for submitting requests for inclusion to Root Store Programs.
     * '[Add/Update Contacts](contacts)' cases are used to add or update POC information. 
 
-**Reports**: Click on the 'Reports' tab (which may be under the 'More' tab), then click on 'All Folders' along the left column, and then click on 'CA Community Reports'.
+**Reports**: Click on the 'Reports' tab (which may be under the 'More' tab), then click 'All Folders' along the left column, and then click 'CA Community Reports'.
 
 [CCADB-Login]: https://ccadb.force.com/
 
