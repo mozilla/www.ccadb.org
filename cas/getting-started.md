@@ -1,6 +1,6 @@
 # Getting Started with the CCADB #
 
-When you [login](https://docs.google.com/document/d/1MuszDO2o-es_6-FwNCDWZ2TC979F8eil5bBQGKjaWRc/edit#heading=h.xpgou83dsc4m) to the CCADB you will see a row of tabs along the top  of the window, next to the CCADB logo. The number of tabs that you see depends on the width of your window, and a 'More' tab will be shown when all of the tabs cannot be displayed. The tabs are: 'Home', 'My CA', 'CA Owners/Certificates', 'Cases', and 'Reports'.
+When you [login](https://docs.google.com/document/d/1MuszDO2o-es_6-FwNCDWZ2TC979F8eil5bBQGKjaWRc/edit#heading=h.xpgou83dsc4m) to the CCADB you will see a row of tabs along the top of the window, next to the CCADB logo. The number of tabs that you see depends on the width of your window, and a 'More' tab will be shown when all of the tabs cannot be displayed. The tabs are: 'Home', 'My CA', 'CA Owners/Certificates', 'Cases', and 'Reports'.
 
 **Home**: The home page is the initial page that you see when you login. It provides your CA's task list which is a set of reports that may be openned by clicking on their title.
 * Open Cases
