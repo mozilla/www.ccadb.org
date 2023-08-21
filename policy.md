@@ -9,9 +9,9 @@
 |[1.0.3](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0_3.md)|May 3, 2018|
 |[1.0.4](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0_4.md)|July 16, 2018|
 |[1.0.5](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0_5.md)|September 17, 2018|
-|[1.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_1.md)]|May 23, 2022|
-|[1.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2.md)]|February 15, 2023|
-|[1.2.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_1.md)]|February 17, 2023|
+|[1.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_1.md)|May 23, 2022|
+|[1.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2.md)|February 15, 2023|
+|[1.2.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_1.md)|February 17, 2023|
 |[1.2.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_2.md)|May 15, 2023|
 |[1.2.3](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_3.md)|July 19, 2023|
 
