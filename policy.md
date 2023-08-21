@@ -1,6 +1,15 @@
 # CCADB Policy #
 
+*Version 1.2.3, Effective: July 19, 2023*
 
+## Introduction
+Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
+
+Stores may have their own additional CCADB-related requirements. For each root certificate, CA Owners must comply with the additional requirements pertaining to the Stores which contain that certificate. Additional information on Store requirements can be found [here](https://www.ccadb.org/resources).
+
+This policy does not cover how to obtain write access to the CCADB or how to use the CCADB’s web interface. Additional information covering these topics is available [here](https://www.ccadb.org/cas/).
+
+## Change History
 |Version|Effective Date|
 |-|-|
 |[1.0](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0.md)|May 23, 2017|
@@ -13,8 +22,9 @@
 |[1.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2.md)|February 15, 2023|
 |[1.2.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_1.md)|February 17, 2023|
 |[1.2.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_2.md)|May 15, 2023|
-|[1.2.3](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_3.md)|July 19, 2023|
+|1.2.3 (current)|July 19, 2023|
 
+## Table of Contents
 1. [General Provisions](policy#1-general-provisions)
 2. [Contact Information](policy#2-contact-information)
 3. [Root CA Certificates](policy#3-root-ca-certificates)
@@ -23,11 +33,6 @@
 5.1 [Audit Statement Content](policy#51-audit-statement-content) <br>
 6. [Mailshots](policy#6-mailshots)
 
-Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
-
-Stores may have their own additional CCADB-related requirements. For each root certificate, CA Owners must comply with the additional requirements pertaining to the Stores which contain that certificate. Additional information on Store requirements can be found [here](https://www.ccadb.org/resources).
-
-This policy does not cover how to obtain write access to the CCADB or how to use the CCADB’s web interface. Additional information covering these topics is available [here](https://www.ccadb.org/cas/).
 
 ## 1. General Provisions ##
 
