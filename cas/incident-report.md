@@ -11,7 +11,9 @@ These reports provide lessons learned and transparency about the steps the CA Ow
 
 The purpose of incident reporting is to help us work together to build a more secure web. Therefore, the incident report should share lessons learned that could be helpful to all CA Owners in building better systems. The incident report should explain how systems or processes failed, how the mis-issuance or incident was made possible, and why the problem was not detected earlier. In addition to the timeline of responding to and resolving the incident, the incident report should explain how the CA Owner's systems or processes will be made more robust, and how others may learn from the incident.
 
-Each incident should result in an incident report written as soon as the problem is fully diagnosed and (temporary or permanent) measures have been put in place to ensure it will not reoccur. If the permanent fix will take significant time to implement, you should not wait until this is done before issuing the report. Incident reports should be published as soon as possible, and certainly within two weeks of the initial issue being reported. 
+Each incident should result in a report written as soon as the problem is fully diagnosed and (temporary or permanent) measures have been put in place to ensure it will not reoccur. If the permanent fix will take significant time to implement, you should not wait until this is done before issuing the report.
+
+An initial report should be filed within 72 hours of being made aware of the incident. If a full incident report is not yet ready, CA Owners should provide a preliminary report containing an executive summary of the incident and a date by which the full report will be posted. The full incident report must be posted within two weeks of the incident. Once the report is posted, CA Owners should respond promptly to questions that are asked, and in no circumstances should a question linger without a response for more than one week, even if the response is only to acknowledge the question and provide a later date when an answer will be delivered. 
 
 There should be a single incident report for each distinct matter, and CA Owners should submit an additional, separate incident report when:
 
@@ -30,8 +32,6 @@ Open incident reports should be updated:
 ### Creating an Incident Report
 
 Create a new Bugzilla issue by filling out the Summary and Description fields of [this form](https://bugzilla.mozilla.org/enter_bug.cgi?format=__default__&product=CA%20Program&component=CA%20Certificate%20Compliance&bug_type=task). If a Bugzilla issue has already been created for this incident (e.g. by an external security researcher) you may skip this step.
-
-An initial report should be filed within 48 hours of being made aware of the incident. If a full incident report is not yet ready, CA Owners should provide a preliminary report containing an executive summary of the incident and a date by which the full report will be posted. The full incident report must be posted within two weeks of the incident. Once the report is posted, CA Owners should respond promptly to questions that are asked, and in no circumstances should a question linger without a response for more than one week, even if the response is only to acknowledge the question and provide a later date when an answer will be delivered.
 
 To create the full incident report, copy the markdown template below and fill out each section according to the following instructions and requirements:
 
