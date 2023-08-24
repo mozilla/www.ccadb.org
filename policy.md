@@ -10,6 +10,7 @@ Stores may have their own additional CCADB-related requirements. For each root c
 This policy does not cover how to obtain write access to the CCADB or how to use the CCADB’s web interface. Additional information covering these topics is available [here](https://www.ccadb.org/cas/).
 
 ## Change History
+
 |Version|Effective Date|
 |-|-|
 |[1.0](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0.md)|May 23, 2017|
