@@ -1,30 +1,14 @@
+# Archive Notice
+**IMPORTANT:** This page is retained for historical purposes only.
+
+For the latest version of the CCADB Policy, see https://www.ccadb.org/policy.
+
+----
+
 # CCADB Policy #
 
-*Version 1.2.3, Effective: July 19, 2023*
+*Version 1.2.1, Effective: February 17, 2023*
 
-## Introduction
-Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
-
-Stores may have their own additional CCADB-related requirements. For each root certificate, CA Owners must comply with the additional requirements pertaining to the Stores which contain that certificate. Additional information on Store requirements can be found [here](https://www.ccadb.org/resources).
-
-This policy does not cover how to obtain write access to the CCADB or how to use the CCADB’s web interface. Additional information covering these topics is available [here](https://www.ccadb.org/cas/).
-
-## Change History
-|Version|Effective Date|
-|-|-|
-|[1.0](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0.md)|May 23, 2017|
-|[1.0.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0_1.md)|May 3, 2018|
-|[1.0.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0_2.md)|May 3, 2018|
-|[1.0.3](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0_3.md)|May 3, 2018|
-|[1.0.4](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0_4.md)|July 16, 2018|
-|[1.0.5](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_0_5.md)|September 17, 2018|
-|[1.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_1.md)|December 6, 2021|
-|[1.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2.md)|February 15, 2023|
-|[1.2.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_1.md)|February 17, 2023|
-|[1.2.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_2.md)|May 11, 2023|
-|1.2.3 (current)|July 19, 2023|
-
-## Table of Contents
 1. [General Provisions](policy#1-general-provisions)
 2. [Contact Information](policy#2-contact-information)
 3. [Root CA Certificates](policy#3-root-ca-certificates)
@@ -33,6 +17,11 @@ This policy does not cover how to obtain write access to the CCADB or how to use
 5.1 [Audit Statement Content](policy#51-audit-statement-content) <br>
 6. [Mailshots](policy#6-mailshots)
 
+Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
+
+Stores may have their own additional CCADB-related requirements. For each root certificate, CA Owners must comply with the additional requirements pertaining to the Stores which contain that certificate. Additional information on Store requirements can be found [here](https://www.ccadb.org/resources).
+
+This policy does not cover how to obtain write access to the CCADB or how to use the CCADB’s web interface. Additional information covering these topics is available [here](https://www.ccadb.org/cas/).
 
 ## 1. General Provisions ##
 
@@ -51,11 +40,11 @@ CA Owners must provide the following information for a Primary Point of Contact 
 
 CA Owners may optionally designate further POCs, supplying an email address for each. CA Owners must also supply at least one non-personal contact email aliases which are more likely to continue working as personnel change; these are maintained as part of the CA’s organizational entry.
 
-All Primary POCs should be authorized to speak for and enter into binding commitments on behalf of the CA(s) that they represent. The Primary POC will be issued a [CA Community license](https://www.ccadb.org/cas/request-access#application-for-ccadb-access) and may request additional licenses for other Primary POCs. Primary POCs are responsible for keeping CCADB data accurate for their CA(s).
+All Primary POCs should be authorized to speak for and enter into binding commitments on behalf of the CA(s) that they represent. The Primary POC will be issued a [CA Community license](https://www.ccadb.org/cas/request-access#application-for-ccadb-access) and may request additional licenses for other POCs. Primary POCs are responsible for keeping CCADB data accurate for their CA(s).
 
 Notification of security and audit-related issues will be emailed to all Primary POCs and the first non-personal contact email alias. CA Owners are advised to make sure those addresses reach sufficient people such that they can respond to an issue in an appropriate timeframe.
 
-If POC information needs to be updated, the CA Owner must submit an [Add/Update Contacts Case](https://www.ccadb.org/cas/contacts).
+If POC or email alias information needs to be updated, the POC should email support@ccadb.org.
 
 ## 3. Root CA Certificates ##
 
@@ -155,9 +144,9 @@ Additionally, if required by the individual Store policy, any non-conformity and
 
 #### 5.1.2 WebTrust ####
 
-Unqualified WebTrust audit statements provided by licensed WebTrust practitioners must have a WebTrust Seal. Qualified WebTrust audit statements provided by licensed WebTrust practitioners should have a WebTrust Seal. Whether unqualified or qualified, CAs enter the URL of the WebTrust Seal into the CCADB, and upon saving the record, the CCADB automatically converts the URL to point to the corresponding PDF file via integration with CPA Canada.
+Unqualified WebTrust audit statements provided by licensed WebTrust practitioners must have a WebTrust Seal. CAs enter the URL to the WebTrust Seal into the CCADB, and upon saving of the record, the CCADB automatically converts the URL to point to the corresponding PDF file via integration with CPA Canada.
 
-For qualified WebTrust audits, if a Seal is not obtained from CPA Canada, then the CA Owner must post the audit statement on their own website or attach the audit statement to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. The authenticity of any WebTrust audit statement not provided with a Seal from CPA Canada will still need to be established with the auditor.
+For qualified WebTrust audits, the CA Owner may post the audit statements on their own website or attach the audit statement to a [Bugzilla Bug](https://www.ccadb.org/cas/fields#uploading-documents) and provide that URL. The authenticity of any WebTrust audit not provided with a seal by CPA Canada will still need to be established with the auditor.
 
 Additionally, if required by the individual Store policy, any qualification and/or modified opinion may be considered an incident and have an [Audit Incident Report](https://www.ccadb.org/cas/incident-report) created in a Bugzilla Bug prior to or within seven calendar days of the audit statement’s issuance date. 
 
