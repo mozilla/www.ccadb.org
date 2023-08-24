@@ -25,6 +25,8 @@ This policy does not cover how to obtain write access to the CCADB or how to use
 |[1.2.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_2.md)|May 11, 2023|
 |1.2.3 (current)|July 19, 2023|
 
+<br>
+
 ## Table of Contents
 1. [General Provisions](policy#1-general-provisions)
 2. [Contact Information](policy#2-contact-information)
