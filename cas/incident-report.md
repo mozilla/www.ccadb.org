@@ -126,7 +126,7 @@ To create the full audit incident report, copy the markdown template below and f
    - A classification of whether the action will help _Prevent_ future incidents, _Mitigate_ the impact of future incidents, or _Detect_ future incidents. CA Owners are encouraged to propose action items in all three categories, with an emphasis on prevention and mitigation.
    - A date by which the action item was or will be completed.
 
-If the audit includes multiple findings, the audit incident report should include a separate Finding, Root Cause Analysis, and Action Items sections. 
+If the audit includes multiple findings, the audit incident report should include a separate Finding, Root Cause Analysis, and Action Items section for each finding. 
 
 ### Audit Incident Report Template
 
