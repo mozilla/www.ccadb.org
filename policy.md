@@ -24,7 +24,7 @@ This policy does not cover how to obtain write access to the CCADB or how to use
 |[1.2.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_1.md)|February 17, 2023|
 |[1.2.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_2.md)|May 11, 2023|
 |[1.2.3](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_3.md)|July 19, 2023|
-|1.3.0 (current)|September 29, 2023|
+|1.3 (current)|September 29, 2023|
 
 <br>
 
