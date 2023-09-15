@@ -1,6 +1,6 @@
 # CCADB Policy #
 
-*Version 1.2.3, Effective: July 19, 2023*
+*Version 1.3.0, Effective: September 29, 2023*
 
 ## Introduction
 Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
@@ -23,7 +23,8 @@ This policy does not cover how to obtain write access to the CCADB or how to use
 |[1.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2.md)|February 15, 2023|
 |[1.2.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_1.md)|February 17, 2023|
 |[1.2.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_2.md)|May 11, 2023|
-|1.2.3 (current)|July 19, 2023|
+|1.2.3|July 19, 2023|
+|1.3.0 (current)|September 29, 2023|
 
 <br>
 
@@ -76,13 +77,13 @@ If a subordinate CA certificate is revoked, the CCADB must be updated to mark it
 
 ## 5. Policies, Audits, and Practices ##
 
-CCADB enables associating Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents in the records for both root CA certificates and subordinate CA certificates. CA Owners must provide English versions of any CP, CPS, or combined CP/CPS which are not originally in English, with version numbers matching the document they are a translation of. The English version is not required to be authoritative in all cases of dispute, but the CA Owner must attest that the translation is not materially different to the original.
+CCADB enables associating Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents in the records for both root CA certificates and subordinate CA certificates. CA Owners must provide at least an authoritative English version of any CP, CPS, or combined CP/CPS which are not originally in English, with version numbers matching the document they are a translation of.
 
 CCADB also enables associating statements of attestation of CA Owner conformance to various requirements and other operational criteria (“audits”).
 
 These documents are hosted elsewhere and the URLs are stored in the CCADB. The URLs to such CPs, CPSes and audits, and any metadata about them such as the name of the auditor or the date of the audit, must be updated as new information becomes available. For technical reasons, URLs to audit statements must point to a PDF file that conforms to ALV and either WebTrust or Accredited Conformity Assessment Bodies’ Council (ACAB'c) formatting standards.
 
-The entry for each subordinate CA certificate has "Audits Same as Parent" and "CP/CPS Same as Parent" checkboxes. When those are checked, the details do not need to be duplicated from the parent certificate. However, the subordinate CA certificate must be specifically listed in the audit statements of the parent certificate.
+The entry for each subordinate CA certificate has checkboxes to indicate "Audits Same as Parent" and "CP/CPS Same as Parent". When those are checked, the details do not need to be duplicated from the parent certificate. However, the subordinate CA certificate must be specifically listed in the audit statements of the parent certificate.
 
 URLs for the following documents are required for each certificate, unless the exceptions below apply:
 
@@ -92,34 +93,36 @@ URLs for the following documents are required for each certificate, unless the e
 * Baseline Requirements (BR) audit (if the certificate is capable of issuing TLS/SSL server certificates)
 * Extended Validation (EV) SSL and/or Code Signing audit (if applicable)
 
-Exceptions to providing audit information:
+Exceptions to providing these documents:
 
 * The SHA-256 fingerprint of the certificate is specifically listed as in scope in the audit statements of the parent certificate, and the "Audits Same as Parent" checkbox is checked; or
+* The certificate is issued and managed under the same CP, CPS, or CP/CPS and the “CP/CPS Same as Parent” checkbox is checked; or
 * The certificate has expired; or
 * The certificate has been revoked, and the corresponding record in the CCADB has been updated with the correct revocation status.
 
-CA Owners must submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) to add or update audit information for root CA certificates stored in the CCADB.
+CA Owners must submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) to add or update these documents for root CA certificates stored in the CCADB.
 
-CA Owners must add or update audit information for subordinate CA certificates directly on the record in CCADB (unless the exception for “Audits Same as Parent” mentioned above applies).
+CA Owners must add or update these documents for subordinate CA certificates directly on the record in CCADB (unless the exceptions stated above apply).
 
 ### 5.1 Audit Statement Content ###
 
 An authoritative English language version of publicly available audit information must be uploaded to the CCADB no later than three months after the end of the audit period. In the event of a delay greater than three months, the CA Owner must provide an explanatory letter signed by the Qualified Auditor. 
 
-Reports uploaded to CCADB must be publicly available and contain at least the following clearly-labeled information: 
+Reports uploaded to the CCADB must be publicly available and contain at least the following clearly-labeled text-searchable information: 
 
 1. Full name of the CA Owner or corresponding Affiliate (e.g., organization providing external RA services) that was audited;
 2. Name and address of the organization performing the audit;
-3. SHA-256 fingerprint of each root and subordinate CA certificate that was in scope of the audit (see format specifications below);
-4. Full names and version numbers of the audit standards that were used during the audit;
-5. List of the CA Owner's applicable policy documents (with version numbers and publication dates) referenced during the audit;
-6. Whether the audit is for a period of time or a point in time;
-7. Start date and end date of the period that was audited, for those that cover a period of time (this is not the period the auditor was on-site);
-8. Point-in-time date, for those that are for a point in time;
-9. Date the audit statement was written, which will necessarily be after the audit period end date or point-in-time date (see date format specifications below);
-10. For ETSI, a statement to indicate if the audit was a full audit, and which parts of the criteria were applied, e.g. DVCP, OVCP, NCP, NCP+, LCP, EVCP, EVCP+, QCP-w, Part1 (General Requirements), and/or Part 2 (Requirements for trust service providers), and a statement to indicate that the auditor referenced the applicable CA/Browser Forum criteria and the version used;
-11. All incidents disclosed by the CA Owner, or reported by a third party, and all findings reported by an auditor, that, at any time during the audit period, occurred, were open in Bugzilla, or were reported to a Store; and
-12. An explicit statement indicating the audit covers the relevant systems and processes used in the issuance of all Certificates that assert one or more of the policy identifiers listed below:
+3. Qualifications of the team performing the audit;
+4. SHA-256 fingerprint of each root and subordinate CA certificate that was in scope of the audit (see format specifications below);
+5. Full names and version numbers of the audit standards that were used during the audit;
+6. List of the CA Owner's applicable policy documents (with version numbers and publication dates) referenced during the audit;
+7. Whether the audit is for a period of time or a point in time;
+8. Start date and end date of the period that was audited, for those that cover a period of time (this is not the period the auditor was on-site);
+9. Point-in-time date, for those that are for a point in time;
+10. Date the audit statement was written, which will necessarily be after the audit period end date or point-in-time date (see date format specifications below);
+11. For ETSI, a statement to indicate if the audit was a full audit, and which parts of the criteria were applied, e.g. DVCP, OVCP, NCP, NCP+, LCP, EVCP, EVCP+, QCP-w, Part1 (General Requirements), and/or Part 2 (Requirements for trust service providers), and a statement to indicate that the auditor referenced the applicable CA/Browser Forum criteria and the version used;
+12. All incidents disclosed by the CA Owner, or reported by a third party, and all findings reported by an auditor, that, at any time during the audit period, occurred, were open in Bugzilla, or were reported to a Store; and
+13. An explicit statement indicating the audit covers the relevant systems and processes used in the issuance of all Certificates that assert one or more of the policy identifiers listed below:
 
 For hierarchies used to issue TLS certificates:
 - 2.23.140.1.2.1
@@ -172,7 +175,7 @@ Format Specifications for SHA-256 Fingerprints:
 
 * MUST: No colons, no spaces, and no line feeds
 * MUST: Uppercase letters
-* MUST: be encoded in the document (PDF) as text searchable, not an image
+* MUST: Be encoded in the document (PDF) as text searchable, not an image
 
 Format Specifications for Dates: The following formats are accepted by ALV
 * Month DD, YYYY example: May 7, 2016
@@ -193,6 +196,67 @@ Where splitter must be one of the following:
 * \-
 * \~
 
+### 5.2 Audit Firm and Auditor Team Qualifications ###
+
+CA Owners must ensure audits used to comply with this policy are performed by entities licensed or otherwise permitted to provide assurance services in the country(ies) where the assessment is performed, for the entirety of the audit engagement’s duration.
+
+#### 5.2.1 Audit Firm Qualifications ####
+
+For audits conducted under the WebTrust scheme,
+* Firms must:
+    - be enrolled in the WebTrust Program (managed by CPA Canada);
+    - be registered as a legal entity in good standing;
+    - be registered as an accountancy or auditing firm in good standing with a corresponding national accounting body, which is a member of IFAC; and
+    - have no outstanding legal or professional indicators that an audit could not be performed.
+* Signing Partners and QA Partners must:
+    - be members in good standing with a national accounting body, which is a member of IFAC;
+    - have experience in the entire process of CA assessment; and
+    - have up-to-date knowledge in PKI, Information Security Management, and management system assessment.
+* Field staff should be members in good standing with a national accounting body, which is a member of IFAC and must:
+    - maintain IT specialist certification (e.g., CISA, CISM, etc.); and 
+    - be familiar with the requirements established by the CA/Browser Forum and the WebTrust Principles and Criteria associated with the assessment being performed.
+
+For audits conducted under the ETSI scheme, 
+* CABs must be accredited for the certification of trust services according to:
+    - "EN ISO/IEC 17065"; and
+    - "ETSI EN 319 403 V2.2.2 (2015-08)" or "ETSI EN 319 403-1 V.2.3.1 (2020-06)" or later.
+* Audits must be performed and audit reports written taking into consideration:
+    - "ETSI TS 119 403-2 V1.2.4 (2020-11)" or later; and
+    - requirements established by the CA/Browser Forum associated with the assessment being performed.
+* Auditors and all personnel performing audits, reviews, or certification decisions must be:
+    - registered members of the CAB in their specific role; and
+    - familiar with the requirements established by the CA/Browser Forum associated with the assessment being performed.
+
+#### 5.2.2 Audit Team Qualifications ####
+
+Each audit statement must be accompanied by documentation of the audit team qualifications sufficient to determine the competence, experience, and independence of the auditor. This documentation may be part of the audit statement, or may be provided as a separate text-searchable PDF file, and must contain the following information:
+
+* Date that the audit report was signed;
+* Full name of the CA Owner that was audited;
+* Name and address of the audit firm or CAB;
+* Audit criteria (e.g., ETSI / WebTrust);
+* Proof of audit firm or CAB Accreditation URL (e.g., the auditor is listed in [CPA Canada's Licensed WebTrust practitioners web page](https://www.cpacanada.ca/en/business-and-accounting-resources/audit-and-assurance/overview-of-webtrust-services/licensed-webtrust-practitioners-international) or the CAB’s name and [Accreditation Attestation](https://european-accreditation.org/ea-%20members/directory-of-ea-members-and-mla-signatories/) are listed in the [ACAB'c CAB-member List](https://www.acab-c.com/members/));
+* Name of Lead Auditor or Signing Partner (except where prohibited by law or other public policy, in which case, we ask that you not provide any personally identifiable information in the document);
+* For the audit team and the audit Quality Reviewer or QA Partner, qualification information such as:
+    - Number of audit team members;
+    - Academic qualifications or professional training received;
+    - Average years of auditing experience auditing trust services or similar information systems;
+    - Experience, special skills, and qualifications (e.g., audit/assessment principles and functions, information technology, software development, trust services, public key infrastructure, CA operations, and information security including risk assessment/management, network security, physical security, etc.); and
+    - Credentials, designations, or certifications (e.g., CPA, CISA, CITP, CISSP, CCSP/CCA/CCP, etc.).
+* How the audit team and team members are bound by law, regulation or professional standards to render an independent assessment of the CA (e.g., https://pub.aicpa.org/codeofconduct/Ethics.aspx# 0.300.050 Objectivity and Independence; CPA Canada, Rule 204; or Annex A of ETSI EN 319 403/403-1, respectively); and
+* Whether the audit team relied on any third-party specialists or affiliate audit firms, and if so, their names and where they performed services.
+
+### 5.3 Annual CCADB Self-Assessments ###
+
+Some Store policies may require the completion of an annual [self-assessment](https://www.ccadb.org/cas/self-assessment) using the CCADB template at various times to evaluate the conformance of the CA Owner’s policies against industry policies and practices.
+
+If an annual CCADB self-assessment is required by the individual Store policy, a single self-assessment may cover multiple CAs operating under both the same CP and CPS(s), or combined CP/CPS. CAs not operated under the same CP and CPS(s) or combined CP/CPS must be covered in a separate self-assessment.
+
+The self-assessment submission date is determined by the earliest appearing “BR Audit Period End Date” field specified in any of the CA Owner’s “CA Owner/Certificate” CCADB root records that are included in one or more Stores. 
+
+An annual self-assessment must be completed and submitted to the CCADB within 92 calendar days from the CA Owner's earliest appearing root record “BR Audit Period End Date” that is after December 31, 2023. CA Owners should submit the self-assessment to the CCADB at the same time as uploading audit reports.
+
+CA Owners should always use the latest available version of the self-assessment template. CA Owners must not use a version of the self-assessment template that has been superseded by more than 90 calendar days before their submission.
 
 ## 6. Mailshots ##
 
