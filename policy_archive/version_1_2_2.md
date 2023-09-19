@@ -17,38 +17,38 @@ For the latest version of the CCADB Policy, see https://www.ccadb.org/policy.
 5.1 [Audit Statement Content](policy#51-audit-statement-content) <br>
 6. [Mailshots](policy#6-mailshots)
 
-Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
+Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA who are required by Store policy to use the CCADB.
 
-Stores may have their own additional CCADB-related requirements. For each root certificate, CA Owners must comply with the additional requirements pertaining to the Stores which contain that certificate. Additional information on Store requirements can be found [here](https://www.ccadb.org/resources).
+Stores may have their own additional CCADB-related requirements. For each root certificate, CA must comply with the additional requirements pertaining to the Stores which contain that certificate. Additional information on Store requirements can be found [here](https://www.ccadb.org/resources).
 
 This policy does not cover how to obtain write access to the CCADB or how to use the CCADB’s web interface. Additional information covering these topics is available [here](https://www.ccadb.org/cas/).
 
 ## 1. General Provisions ##
 
-Regardless of more specific provisions in these requirements, CA Owners have an overarching responsibility to keep the information in the CCADB about themselves, their operations and their certificates accurate, and to make updates in a timely fashion. Minimally, CA Owners with certificates included in a participating Store must ensure their information stored in the CCADB is kept up to date as changes occur.
+Regardless of more specific provisions in these requirements, CA have an overarching responsibility to keep the information in the CCADB about themselves, their operations and their certificates accurate, and to make updates in a timely fashion. Minimally, CA with certificates included in a participating Store must ensure their information stored in the CCADB is kept up to date as changes occur.
 
-All data in the CCADB may be made public or semi-public in a variety of forms; CA Owners should not place any information in the CCADB which they wish to keep confidential. Stores are not obliged to publish any CCADB information.
+All data in the CCADB may be made public or semi-public in a variety of forms; CA should not place any information in the CCADB which they wish to keep confidential. Stores are not obliged to publish any CCADB information.
 
 All client devices that are used to download Personally Identifiable Information from the CCADB should employ disk-based encryption.
 
 ## 2. Contact Information ##
 
-CA Owners must provide the following information for a Primary Point of Contact (POC), and at least one other POC, who may or may not be a Primary POC:
+CA must provide the following information for a Primary Point of Contact (POC), and at least one other POC, who may or may not be a Primary POC:
 
 * Name
 * Office email address
 
-CA Owners may optionally designate further POCs, supplying an email address for each. CA Owners must also supply at least one non-personal contact email aliases which are more likely to continue working as personnel change; these are maintained as part of the CA’s organizational entry.
+CA may optionally designate further POCs, supplying an email address for each. CA must also supply at least one non-personal contact email aliases which are more likely to continue working as personnel change; these are maintained as part of the CA’s organizational entry.
 
 All Primary POCs should be authorized to speak for and enter into binding commitments on behalf of the CA(s) that they represent. The Primary POC will be issued a [CA Community license](https://www.ccadb.org/cas/request-access#application-for-ccadb-access) and may request additional licenses for other Primary POCs. Primary POCs are responsible for keeping CCADB data accurate for their CA(s).
 
-Notification of security and audit-related issues will be emailed to all Primary POCs and the first non-personal contact email alias. CA Owners are advised to make sure those addresses reach sufficient people such that they can respond to an issue in an appropriate timeframe.
+Notification of security and audit-related issues will be emailed to all Primary POCs and the first non-personal contact email alias. CA are advised to make sure those addresses reach sufficient people such that they can respond to an issue in an appropriate timeframe.
 
 If POC information needs to be updated, the CA Owner must submit an [Add/Update Contacts Case](https://www.ccadb.org/cas/contacts).
 
 ## 3. Root CA Certificates ##
 
-A root CA certificate is a self-signed certificate issued by the root CA to identify itself and to facilitate verification of certificates issued to its subordinate CAs. CA Owners are responsible for maintaining correct and current information about their root CA certificates.
+A root CA certificate is a self-signed certificate issued by the root CA to identify itself and to facilitate verification of certificates issued to its subordinate CAs. CA are responsible for maintaining correct and current information about their root CA certificates.
 
 If root CA certificate information needs to be updated, the CA Owner must submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates).
 
@@ -62,7 +62,7 @@ If a subordinate CA certificate is revoked, the CCADB must be updated to mark it
 
 ## 5. Policies, Audits, and Practices ##
 
-CCADB enables associating Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents in the records for both root CA certificates and subordinate CA certificates. CA Owners must provide English versions of any CP, CPS, or combined CP/CPS which are not originally in English, with version numbers matching the document they are a translation of. The English version is not required to be authoritative in all cases of dispute, but the CA Owner must attest that the translation is not materially different to the original.
+CCADB enables associating Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents in the records for both root CA certificates and subordinate CA certificates. CA must provide English versions of any CP, CPS, or combined CP/CPS which are not originally in English, with version numbers matching the document they are a translation of. The English version is not required to be authoritative in all cases of dispute, but the CA Owner must attest that the translation is not materially different to the original.
 
 CCADB also enables associating statements of attestation of CA Owner conformance to various requirements and other operational criteria (“audits”).
 
@@ -84,9 +84,9 @@ Exceptions to providing audit information:
 * The certificate has expired; or
 * The certificate has been revoked, and the corresponding record in the CCADB has been updated with the correct revocation status.
 
-CA Owners must submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) to add or update audit information for root CA certificates stored in the CCADB.
+CA must submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) to add or update audit information for root CA certificates stored in the CCADB.
 
-CA Owners must add or update audit information for subordinate CA certificates directly on the record in CCADB (unless the exception for “Audits Same as Parent” mentioned above applies).
+CA must add or update audit information for subordinate CA certificates directly on the record in CCADB (unless the exception for “Audits Same as Parent” mentioned above applies).
 
 ### 5.1 Audit Statement Content ###
 
@@ -134,7 +134,7 @@ For hierarchies used to issue S/MIME certificates:
 
 #### 5.1.1 ETSI ####
 
-Audits conducted by an accredited Conformity Assessment Body (CAB) must have their Audit Attestation Letter (AAL) uploaded to the CAB’s website. CA Owners provide the URL to the AAL on the CAB’s website, and ALV will verify those URLs against a list of approved CAB websites. ETSI AALs must follow the latest version of the AAL template on the ACAB'c [website](https://www.acab-c.com/downloads/).
+Audits conducted by an accredited Conformity Assessment Body (CAB) must have their Audit Attestation Letter (AAL) uploaded to the CAB’s website. CA provide the URL to the AAL on the CAB’s website, and ALV will verify those URLs against a list of approved CAB websites. ETSI AALs must follow the latest version of the AAL template on the ACAB'c [website](https://www.acab-c.com/downloads/).
 
 CCADB warns root store operators when the audit periods are not consecutive.
 
@@ -182,7 +182,7 @@ Where splitter must be one of the following:
 
 ## 6. Mailshots ##
 
-From time to time, a Store may use the CCADB to send information to CA Owners. Mailshots will be sent to at least the Primary POC(s) and the email aliases, and may also go to one or more of the other POCs; the exact recipient list is defined by the Store sending the information.
+From time to time, a Store may use the CCADB to send information to CA. Mailshots will be sent to at least the Primary POC(s) and the email aliases, and may also go to one or more of the other POCs; the exact recipient list is defined by the Store sending the information.
 
 -----
 
