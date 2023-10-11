@@ -1,6 +1,6 @@
 # CCADB Policy #
 
-*Version 1.3.0, Effective: September 29, 2023*
+*Version 1.3.0, Effective: October 25, 2023*
 
 ## Introduction
 Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
@@ -24,7 +24,7 @@ This policy does not cover how to obtain write access to the CCADB or how to use
 |[1.2.1](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_1.md)|February 17, 2023|
 |[1.2.2](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_2.md)|May 11, 2023|
 |[1.2.3](https://github.com/mozilla/www.ccadb.org/blob/add-policy-history/policy_archive/version_1_2_3.md)|July 19, 2023|
-|1.3 (current)|September 29, 2023|
+|1.3 (current)|October 25, 2023|
 
 <br>
 
@@ -35,6 +35,8 @@ This policy does not cover how to obtain write access to the CCADB or how to use
 4. [Subordinate CA Certificates](policy#4-subordinate-ca-certificates)
 5. [Policies, Audits, and Audit Practices](policy#5-policies-audits-and-practices) <br>
 5.1 [Audit Statement Content](policy#51-audit-statement-content) <br>
+5.2 [Audit Firm and Auditor Team Qualifications](policy#52-audit-firm-and-auditor-team-qualifications) <br>
+5.3 [Annual CCADB Self-Assessments](policy#53-annual-ccadb-self-assessments) <br>
 6. [Mailshots](policy#6-mailshots)
 
 
@@ -200,34 +202,7 @@ Where splitter must be one of the following:
 
 CA Owners must ensure audits used to comply with this policy are performed by entities licensed or otherwise permitted to provide assurance services in the country(ies) where the assessment is performed, for the entirety of the audit engagement’s duration.
 
-#### 5.2.1 Audit Firm Qualifications ####
-
-For audits conducted under the WebTrust scheme,
-* Firms must:
-    - be enrolled in the WebTrust Program (managed by CPA Canada);
-    - be registered as a legal entity in good standing;
-    - be registered as an accountancy or auditing firm in good standing with a corresponding national accounting body, which is a member of IFAC; and
-    - have no outstanding legal or professional indicators that an audit could not be performed.
-* Signing Partners and QA Partners must:
-    - be members in good standing with a national accounting body, which is a member of IFAC;
-    - have experience in the entire process of CA assessment; and
-    - have up-to-date knowledge in PKI, Information Security Management, and management system assessment.
-* Field staff should be members in good standing with a national accounting body, which is a member of IFAC and must:
-    - maintain IT specialist certification (e.g., CISA, CISM, etc.); and 
-    - be familiar with the requirements established by the CA/Browser Forum and the WebTrust Principles and Criteria associated with the assessment being performed.
-
-For audits conducted under the ETSI scheme, 
-* CABs must be accredited for the certification of trust services according to:
-    - "EN ISO/IEC 17065"; and
-    - "ETSI EN 319 403 V2.2.2 (2015-08)" or "ETSI EN 319 403-1 V.2.3.1 (2020-06)" or later.
-* Audits must be performed and audit reports written taking into consideration:
-    - "ETSI TS 119 403-2 V1.2.4 (2020-11)" or later; and
-    - requirements established by the CA/Browser Forum associated with the assessment being performed.
-* Auditors and all personnel performing audits, reviews, or certification decisions must be:
-    - registered members of the CAB in their specific role; and
-    - familiar with the requirements established by the CA/Browser Forum associated with the assessment being performed.
-
-#### 5.2.2 Audit Team Qualifications ####
+#### 5.2.1 Audit Team Qualifications ####
 
 Each audit statement must be accompanied by documentation of the audit team qualifications sufficient to determine the competence, experience, and independence of the auditor. This documentation may be part of the audit statement, or may be provided as a separate text-searchable PDF file, and must contain the following information:
 
