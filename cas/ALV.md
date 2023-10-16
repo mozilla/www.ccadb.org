@@ -5,7 +5,8 @@ The CCADB uses an Audit Letter Validation (ALV) tool that is provided by Microso
 Table of Contents:
 1. [Root Certificates](ALV#root-certificates)
 2. [Intermediate Certificates](ALV#intermediate-certificates)
-3. [Common ALV Findings](ALV#common-alv-findings)
+3. [Testing Audit Statements with ALV](ALV#testing-audit-statements-with-alv)
+4. [Common ALV Findings](ALV#common-alv-findings)
 
 ## Root Certificates ##
 
@@ -57,7 +58,24 @@ Acceptable remediation:
     * If the certificate has been in existence for past audit periods, then you must also file an [Incident Report](https://www.ccadb.org/cas/incident-report).
     * An Incident Report may not be needed if the certificate is self-signed and has the same Subject + SPKI as other certificates listed in the audit statement. For example, this can happen when a Root Store includes one version of a root certificate, but another version of the root certificate can be part of a valid chain constructed as: leaf --> untrusted root --> trusted root.
 * Revoke the intermediate certificate in accordance with Root Store policies and the BRs.
-    * If your CA decides not to revoke the certificate within the timeline specified by section 4.9 of the BRs, then that is another incident, which must be addressed in a separate [Incident Report](https://www.ccadb.org/cas/incident-report). 
+    * If your CA decides not to revoke the certificate within the timeline specified by section 4.9 of the BRs, then that is another incident, which must be addressed in a separate [Incident Report](https://www.ccadb.org/cas/incident-report).
+ 
+## Testing Audit Statements with ALV ##
+CA Owners may want to test preliminary audit statements to ensure the file will pass ALV before collecting a final copy from their auditor. To test preliminary audit statements a CA Owner should:
+
+1. Create the [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) in the CCADB.
+2. In the ‘AUDITS’ tab of the Case, add [Audit Firm](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.y0j6nqw48aqv) information.
+3. Add [Audit Information](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.fo56qxxtqyjb) to the Case, including a URL to where the preliminary audit statement is located.
+    * These preliminary statements are typically [uploaded](https://www.ccadb.org/cas/fields#uploading-documents) to Bugzilla.
+4. Add a Case Comment to the ‘CASE PROGRESS’ tab of the Case that says: “Preliminary Audit Reports” to inform Root Store Operators of your intent to test the preliminary audit statements.
+5. [Run ALV](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.risbuur7q7a).
+    * Ignore any ALV error related to the audit report not originating from a trusted location.
+    * Work with the auditor to resolve other [common ALV findings](https://www.ccadb.org/cas/alv#common-alv-findings) and errors.
+6. Once the errors are resolved, link to the final audit statements in the Audit Information section of the tab in the existing “Add/Update Root Request” Case.
+
+More detailed steps for testing preliminary audit statements can be found [here](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.x9t1tvycbq18).
+
+Note: These instructions are specific to updating audit information for root CA certificates through a CCADB case. Guidance for managing Intermediate CA certificates (to include audit statements) can be found [here](https://www.ccadb.org/cas/intermediates#updating-audit-statements).
 
 ## Common ALV Findings ##
 ALV formatting requirements are specified in 
