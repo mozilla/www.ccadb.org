@@ -35,7 +35,7 @@ This policy does not cover how to obtain write access to the CCADB or how to use
 4. [Subordinate CA Certificates](policy#4-subordinate-ca-certificates)
 5. [Policies, Audits, and Audit Practices](policy#5-policies-audits-and-practices) <br>
 5.1 [Audit Statement Content](policy#51-audit-statement-content) <br>
-5.2 [Audit Firm and Auditor Team Qualifications](policy#52-audit-firm-and-auditor-team-qualifications) <br>
+5.2 [Audit Firm and Audit Team Qualifications](policy#52-audit-firm-and-audit-team-qualifications) <br>
 5.3 [Annual CCADB Self-Assessments](policy#53-annual-ccadb-self-assessments) <br>
 6. [Mailshots](policy#6-mailshots)
 
@@ -198,7 +198,7 @@ Where splitter must be one of the following:
 * \-
 * \~
 
-### 5.2 Audit Firm and Auditor Team Qualifications ###
+### 5.2 Audit Firm and Audit Team Qualifications ###
 
 CA Owners must ensure audits used to comply with this policy are performed by entities licensed or otherwise permitted to provide assurance services in the country(ies) where the assessment is performed, for the entirety of the audit engagement’s duration.
 
