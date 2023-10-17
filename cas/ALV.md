@@ -8,7 +8,7 @@ Table of Contents:
 3. [Testing Audit Statements with ALV](ALV#testing-audit-statements-with-alv)
 4. [Common ALV Findings](ALV#common-alv-findings)
 
-## Root Certificates ##
+## Root Certificates
 
 CA Owners are required to update the audit, CP, CPS and test website information for their certificate hierarchies at least annually. To provide this information for root certificates, create one [Add/Update Root Request Case](updates#audit-case-workflow) in the CCADB for a particular set of audits (e.g. Standard Audit, BR audit, EV SSL Audit, Code Signing Audit).
 * [Update audit, CP, CPS, and testwebsite information in the CCADB ](updates)
