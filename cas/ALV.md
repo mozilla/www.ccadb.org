@@ -58,7 +58,7 @@ Acceptable remediation:
     * If the certificate has been in existence for past audit periods, then you must also file an [Incident Report](https://www.ccadb.org/cas/incident-report).
     * An Incident Report may not be needed if the certificate is self-signed and has the same Subject + SPKI as other certificates listed in the audit statement. For example, this can happen when a Root Store includes one version of a root certificate, but another version of the root certificate can be part of a valid chain constructed as: leaf --> untrusted root --> trusted root.
 * Revoke the intermediate certificate in accordance with Root Store policies and the BRs.
-    * If your CA decides not to revoke the certificate within the timeline specified by section 4.9 of the BRs, then that is another incident, which must be addressed in a separate [Incident Report](https://www.ccadb.org/cas/incident-report).
+    * If your CA decides not to revoke the certificate within the timeline specified by Section 4.9 of the BRs, then that is another incident, which must be addressed in a separate [Incident Report](https://www.ccadb.org/cas/incident-report).
  
 ## Testing Audit Statements with ALV ##
 CA Owners may want to test preliminary audit statements to ensure the file will pass ALV before collecting a final copy from their auditor. To test preliminary audit statements a CA Owner should:
