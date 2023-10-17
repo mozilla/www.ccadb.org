@@ -71,6 +71,7 @@ CA Owners may want to test preliminary audit statements to ensure the file will 
 5. [Run ALV](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.risbuur7q7a).
     * Ignore any ALV error related to the audit report not originating from a trusted location.
     * Work with the auditor to resolve other [common ALV findings](https://www.ccadb.org/cas/alv#common-alv-findings) and errors.
+    * If you encounter a problem not described on the [common ALV findings](https://www.ccadb.org/cas/alv#common-alv-findings) page, contact support[at]ccadb[dot]org.
 6. Once the errors are resolved, link to the final audit statements in the Audit Information section of the tab in the existing “Add/Update Root Request” Case.
 
 More detailed steps for testing preliminary audit statements can be found [here](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.x9t1tvycbq18).
