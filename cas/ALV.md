@@ -78,7 +78,7 @@ More detailed steps for testing preliminary audit statements can be found [here]
 
 Note: These instructions are specific to updating audit information for root CA certificates through a CCADB case. Guidance for managing Intermediate CA certificates (to include audit statements) can be found [here](https://www.ccadb.org/cas/intermediates#updating-audit-statements).
 
-## Common ALV Findings ##
+## Common ALV Findings
 ALV formatting requirements are specified in 
 [section 5.1 of the CCADB Policy](../policy#51-audit-statement-content).
 
