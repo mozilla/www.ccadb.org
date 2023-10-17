@@ -60,7 +60,7 @@ Acceptable remediation:
 * Revoke the intermediate certificate in accordance with Root Store policies and the BRs.
     * If your CA decides not to revoke the certificate within the timeline specified by Section 4.9 of the BRs, then that is another incident, which must be addressed in a separate [Incident Report](https://www.ccadb.org/cas/incident-report).
  
-## Testing Audit Statements with ALV ##
+## Testing Audit Statements with ALV
 CA Owners may want to test preliminary audit statements to ensure the file will pass ALV before collecting a final copy from their auditor. To test preliminary audit statements a CA Owner should:
 
 1. Create the [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) in the CCADB.
