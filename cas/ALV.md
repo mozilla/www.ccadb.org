@@ -61,7 +61,7 @@ Acceptable remediation:
     * If your CA decides not to revoke the certificate within the timeline specified by Section 4.9 of the BRs, then that is another incident, which must be addressed in a separate [Incident Report](https://www.ccadb.org/cas/incident-report).
  
 ## Testing Audit Statements with ALV
-CA Owners may want to test preliminary audit statements to ensure the file will pass ALV before collecting a final copy from their auditor. To test preliminary audit statements a CA Owner should:
+CA Owners may want to test preliminary audit statements to ensure the file will pass ALV before collecting a final copy from their auditor. CA Owners are encouraged to work with their auditor to coordinate preliminary audit statement testing. To test preliminary audit statements a CA Owner should:
 
 1. Create the [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) in the CCADB.
 2. In the ‘AUDITS’ tab of the Case, add [Audit Firm](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.y0j6nqw48aqv) information.
