@@ -10,7 +10,7 @@ These reports provide lessons learned and transparency about the steps the CA Ow
 |Version|Effective Date|
 |-|-|
 |2.0 (current)|October 17, 2023| 
-|[1.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/version_1_0.md)|February 15, 2023|
+|[1.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_1_0.md)|February 15, 2023|
 
 ## Incident Reports
 
