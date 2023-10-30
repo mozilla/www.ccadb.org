@@ -1,11 +1,16 @@
 # Incidents
-Incidents happen. Things do not always go as planned, and that can be okay. However, when incidents occur, the underlying issue (i.e., root cause) should be identified and remediated to discourage the incident from occurring again. Formally documenting the incident in a report encourages an understanding of all contributing root cause(s), and it presents the opportunity to clearly communicate a remediation plan to reduce the probability of its reoccurrence. 
+Incidents can happen. Things do not always go as planned, and that can be okay. However, when incidents occur, the underlying issue (i.e., root cause) should be identified and remediated to discourage the incident from occurring again. Formally documenting the incident in a report encourages an understanding of all contributing root cause(s), and it presents the opportunity to clearly communicate a remediation plan to reduce the probability of its reoccurrence. 
 
 Depending on the root programs in which a CA Owner participates, it may be required to:
 * create [Audit Incident Reports](incident-report#audit-incident-reports) when audits have non-conformities, qualifications, or modified opinions.
 * create [Incident Reports](incident-report#incident-reports) for all other incidents.
 
 These reports provide lessons learned and transparency about the steps the CA Owner takes to address the immediate issue and prevent future issues. If the underlying problem goes unfixed, then other issues that share the same root cause will subsequently surface. Additionally, incident reports help the Web PKI ecosystem as a whole because they promote continuous improvement, information sharing, and highlight opportunities to define and adopt improved practices, policies, and controls.
+
+|Version|Effective Date|
+|-|-|
+|2.0 (current)|October 17, 2023| 
+|[1.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_1_0.md)|February 15, 2023|
 
 ## Incident Reports
 
