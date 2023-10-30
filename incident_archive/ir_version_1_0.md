@@ -3,6 +3,7 @@
 
 For the latest version of the CCADB Incident Reports, see https://www.ccadb.org/cas/incident-report.
 
+Version 1.0
 ----
 # Incidents # 
 Incidents happen. Things do not always go as planned, and that can be okay. However, when incidents occur, the underlying issue (i.e., root cause) should be identified and remediated to discourage the incident from occurring again. Formally documenting the incident in a report encourages an understanding of all contributing root cause(s), and it presents the opportunity to clearly communicate a remediation plan to reduce the probability of its reoccurrence. 
