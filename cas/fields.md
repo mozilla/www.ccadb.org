@@ -186,17 +186,14 @@ container format defined in RFCs [1421][RFC-1421] to [1424][RFC-1424]. PEM
 actually means Privacy Enhanced Mail, but the container format it uses is a
 Base64 translation of [X.509][X509] [ASN.1][ASN1] keys.
 
-[Certificate Explainer][Certsplainer] may be used to
-convert a certificate in any other format into PEM, as follows:
+For reference, here are a few OpenSSL commands that convert certificates 
+from other formats into PEM.
+* openssl pkcs7 -in certificates.p7b -print_certs -out certificates.pem
+* openssl pkcs12 -in certificates.pfx -out certificates.pem -nodes
+* openssl x509 -inform der -in certificate.der -out certificate.pem
 
-* Visit the [Certificate Explainer][Certsplainer].
-* In the 'Post a certificate' section click on the 'Browse...' button to
-  select a .cer, .crt, .cert, or .pem file.
-* Check the top of the window to make sure there are no errors listed, and
-  that the desired certificate has been found.
-* The data in the text box in the 'Post a certificate' section is the PEM.
-* Copy and paste the entire PEM blob, which starts with "-----BEGIN
-  CERTIFICATE-----" and ends with "-----END CERTIFICATE-----", into the CCADB.
+You may use the [Certificate Viewer][certViewer] to verify that your 
+certificate is in the correct PEM format.
 
 ## Policies and Practices Information ##
 
@@ -313,7 +310,7 @@ the CCADB as follows:
 [RFC-1424]:       https://tools.ietf.org/html/rfc1424
 [X509]:           https://en.wikipedia.org/wiki/X.509
 [ASN1]:           https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
-[Certsplainer]:   https://tls-observatory.services.mozilla.com/static/certsplainer.html
+[certViewer]:   https://certviewer-dot-ccadb-231121.appspot.com/certviewer
 [BZ-Create-Acct]: https://bugzilla.mozilla.org/createaccount.cgi
 [BZ-Doc-Bugs]:    https://bugzilla.mozilla.org/buglist.cgi?&query_format=advanced&component=CA%20Documents&product=CA%20Program
 [BZ-Create-Bug]:  https://bugzilla.mozilla.org/enter_bug.cgi?&component=CA%20Documents&product=CA%20Program
