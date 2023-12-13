@@ -34,14 +34,14 @@ The following fields are set by running ALV on an intermediate certificate recor
     * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the BR audit statement. 
 * EV SSL Audit ALV Found Cert
     * This field will only be set when the [Derived Trust Bits](fields#formula-fields) field has "Server Authentication" in its list, and the [EV SSL Capable](fields#formula-fields) field is set to TRUE. 
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the EV SSL audit statement.
+    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the EV TLS audit statement.
 
 When ALV returns FAIL for "Standard Audit ALV Found Cert", "Code Signing Audit ALV Found Cert", "BR Audit ALV Found Cert", or "EV SSL Audit ALV Found Cert" for one of your CA's intermediate certificate records in the CCADB, do the following.
 
 * Check the corresponding audit statement to make sure the SHA-256 fingerprint of the certificate is correctly listed.
 * If the SHA-256 fingerprint is listed in the audit statement, then make sure that it meets the [format specifications](../policy#51-audit-statement-content), such as no colons, no spaces, no line feeds.
 * Have your auditor provide an updated audit statement that follows the [formatting requirements](../policy#51-audit-statement-content) for the SHA-256 Fingerprints.
-* If you do not agree with the ALV results, add comments to the "Standard Audit ALV Comments", "Code Signing Audit ALV Comments", "TLS BR Audit ALV Comments", or "EV SSL Audit ALV Comments" fields to indicate that the SHA-256 fingerprint is listed correctly in the audit statement.
+* If you do not agree with the ALV results, add comments to the "Standard Audit ALV Comments", "Code Signing Audit ALV Comments", "TLS BR Audit ALV Comments", or "TLS EVG Audit ALV Comments" fields to indicate that the SHA-256 fingerprint is listed correctly in the audit statement.
 * If the audit statement is indeed missing the SHA-256 fingerprint for the certificate, then file an [Incident Report](https://www.ccadb.org/cas/incident-report), and add the link to the Incident Report to one of the "...ALV Comments" fields.
 
 Important clarifications:
