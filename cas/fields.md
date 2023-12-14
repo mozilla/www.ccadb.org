@@ -26,13 +26,14 @@ other fields in this section, then uncheck this box.</td>
 </tr>
 </table>
 <br>
-There are 5 audit statements that may be provided:
+There are 6 audit statements that may be provided:
 <ol>
 <li>Standard Audit</li>
+<li>Network Security Audit</li>
+<li>TLS Baseline Requirements Audit</li> 
+<li>TLS EV Guidelines Audit</li> 
 <li>Code Signing Audit</li>
-<li>BR Audit</li>
-<li>EV SSL Audit</li>
-<li>EV Code Signing Audit</li>
+<li>S/MIME Baseline Requirements Audit</li>
 </ol>
 For each applicable audit, the following information must be provided, and must meet 
 the individual Root Store requirements and the requirements of 
@@ -41,9 +42,10 @@ the individual Root Store requirements and the requirements of
 <tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
 
 <tr valign="top">
-<td>Audit</td>
+<td>Audit Statement (Link)</td>
 <td>URL to the audit statement PDF. <br>
 WebTrust Seals: Enter the WebTrust Seal URL into this field. When you save your changes, the CCADB will automatically convert the Seal URL to the URL of the corresponding audit statement PDF.
+ETSI Auditor's URL: Enter the URL that points to the Audit Attestation Letter (AAL) that is stored on your ETSI auditor's website.
 </td>
 </tr>
 <tr valign="top">
