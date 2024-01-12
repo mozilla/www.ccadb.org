@@ -1,12 +1,5 @@
 ![CCADB](images/big-logo.png){:width="200px" style="float: right" }
 
-The Common CA Database (CCADB) is a repository of information about
-externally operated Certification Authorities (CAs) whose root and
-intermediate certificates are included within 
-the products and services of CCADB Root Store Operators.
-Root Store Operators participate in the CCADB to improve security,
-transparency, and interoperability.
-The CCADB is used by a number of different
-Root Store Operators to manage their root stores, but it is run by
-[Mozilla](https://www.mozilla.org/mission/).
+The Common CA Database (CCADB) is a repository of information about Certification Authorities (CAs) whose root and
+intermediate certificates are included within the products and services of several Root Store Operators. These Root Store Operators use the CCADB to help manage the CAs in their root stores, and they participate in the CCADB to improve security, transparency, and interoperability within this important part of the ecosystem.
 
