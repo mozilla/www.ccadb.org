@@ -208,11 +208,11 @@ Steering Committee Representatives (and Alternates) shall identify, document, an
 
 Steering Committee Representatives (and Alternates) shall also test updates to the CCADB, to ensure that the updates:
 
-*     Perform as expected
-*     Do not break the Member’s use of the CCADB
-*     Do not break the CCADB functionality for CAs in the Member’s program
-*     Do not break reports that the Member uses, publishes, or depends on
-*     Do not break integration between the Member’s systems and the CCADB
+* Perform as expected
+* Do not break the Member’s use of the CCADB
+* Do not break the CCADB functionality for CAs in the Member’s program
+* Do not break reports that the Member uses, publishes, or depends on
+* Do not break integration between the Member’s systems and the CCADB
 
 ### 7.3.3     Maintain CCADB documentation and policies
 
