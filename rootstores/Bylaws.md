@@ -157,13 +157,13 @@ Any Steering Committee Representative or their Alternate can call for a proposed
 ### 6.2.3 Redline Version
 A ballot may include a redline or comparison showing the set of changes from those sections intended to be amended, and need not include a copy of the document. Such redline or comparison shall be made against those section(s) as they exist at the time a ballot is proposed, and need not take into consideration other ballots that may be proposed subsequently. In the event of a conflict between the text presented in the ballot (the “Ballot Version”) and the text in the redline/comparison copy (the “Redline Version”), the Ballot Version shall in all cases take precedence over the Redline Version. If present, the Ballot Version shall be the official text used for implementation should the ballot pass. If a discrepancy between the Redline Version and the Ballot Version is discovered during the discussion or voting periods, a corrected copy of the Redline Version shall be submitted to the Steering Committee Email List for reference; this corrected Redline Version shall not affect the Ballot Version, the discussion period, or the voting period.
 
-### 6.2.3. Voting Period
+### 6.2.4. Voting Period
 Upon commencement of the voting period, Members shall have exactly seven (7) calendar days for voting on the proposed ballot, with the deadline clearly communicated in the ballot and sent to the Steering Committee Email List. A proposer may withdraw a ballot at any point during the voting period. All voting will take place via the Steering Committee Email List. Votes must be submitted by a Steering Committee Representative to such list by the end of the voting period (as specified in the ballot) to be considered valid and counted. Each Member, and not the Steering Committee, will be responsible for taking precautions to make sure such Member's vote is submitted properly and counted. In the event that a Member’s vote on a ballot is not submitted properly, such vote shall not be valid and shall not be counted for any purpose, and there shall be no appeal, re-vote (except in the case of a new ballot submitted to all Members) or other recourse.
 
-### 6.2.4. Voting Criteria for Adoption
+### 6.2.5. Voting Criteria for Adoption
 In order for a ballot to be adopted, the quorum requirements must be met, and three-fifths (3/5) or more of the votes cast by the Members must be in favor of the ballot. Members may vote “yes”, “no”, or “abstain” on a ballot. Only votes that indicate a clear “yes” or “no” response to the ballot question shall be considered (i.e. votes to “abstain” and votes that do not indicate a clear “yes” or “no” response will not figure into calculations). 
 
-### 6.2.5. Tabulation and Announcement of Results
+### 6.2.6. Tabulation and Announcement of Results
 The Chairperson will tabulate and announce the results (by sending email to the Steering Committee Email List) within eight (8) business days of the close of the voting period. The Chairperson may delegate these duties as necessary.
 
 ## 6.3  Quorum Requirements
@@ -316,7 +316,7 @@ Steering Committee Representatives may submit proposed items to add to the agend
 
 Steering Committee Representatives and their Alternates are encouraged to attend each Steering Committee meeting. Each Member may have additional participants (“Observers”) in each Steering Committee meeting, but has only one vote when making decisions.
 
-## 10.6           Observers
+## 10.5           Observers
 
 Each Member shall have the right to designate observers to attend meetings of the Steering Committee, provided that such Member provides prior notice to the Chairperson of the Steering Committee and the Chairperson approves the request. Such a request shall not be unreasonably denied. An observer permitted to attend shall have the right to participate in the meeting, but may not put forth or vote on any motion.
 
