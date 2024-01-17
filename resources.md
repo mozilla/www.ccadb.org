@@ -25,7 +25,7 @@ Examples:
 * https://ccadb.my.salesforce-sites.com/ccadb/AllCertificatePEMsCSVFormat?NotBeforeYear=1999
    * Provides the certificate PEMs for which the CCADB record has a ‘Valid From (GMT)’ field that contains 1999.
 * https://ccadb.my.salesforce-sites.com/ccadb/AllCertificatePEMsCSVFormat?NotBeforeDecade=2010
-   * Provides the certificate PEMs for which the CCADB record has a ‘Valid From (GMT)’ field that contains 201.
+   * Provides the certificate PEMs for which the CCADB record has a ‘Valid From (GMT)’ field that contains 2010.
 
 ### Mozilla ###
 * [Root Program Documentation](https://wiki.mozilla.org/CA)
