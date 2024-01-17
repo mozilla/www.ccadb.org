@@ -14,4 +14,4 @@
 * [Incident Reports](incident-report)
 * [Viewing CCADB Reports](reports)
 * [CCADB Public Discussion](public-group)
-* [CCADB Self Assessment](self-assessment)
+* [CCADB Self-Assessment](self-assessment)
