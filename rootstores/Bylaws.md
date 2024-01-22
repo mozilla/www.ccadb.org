@@ -12,6 +12,11 @@ The CCADB Steering Committee (“Steering Committee”) determines collectively 
 
 The historic goal of all CCADB activities has been to communicate openly and to seek substantial consensus among Members before proceeding or adopting a final work product, and this goal will remain for the future.
 
+## 1.3  CCADB Charter
+
+In the event of inconsistency between these Bylaws and the CCADB Charter, the CCADB Charter takes precedence.
+
+
 # 2.    Membership
 
 ## 2.1  Categories of Membership
@@ -34,7 +39,7 @@ This class of membership shall consist of organizations meeting the following cr
 
 (7) they comply with the [CRM Service Provider Terms](https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_MSA.pdf) governing the usage of the CRM underlying the CCADB.
 
-Membership may be denied if the CCADB Steering Committee is made aware that including or issuing a license to the organization would interfere with the operation or security of the CCADB or its Steering Committee, or would breach the usage terms with the underlying CRM Service Provider.
+Membership may be denied if the CCADB Steering Committee is made aware that including the applicant's organization or issuing CCADB access to the organization's representatives would breach these Bylaws, the CCADB Charter, the CCADB Code of Conduct, or the CRM Service Provider Terms.
 
 ### 2.1.2     Associate Members
 
