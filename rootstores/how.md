@@ -12,7 +12,7 @@ Membership applications may be denied if the CCADB Steering Committee is made aw
 
 ## Membership Application ##
 
-To begin the process, submit your application by sending email to certificates@mozilla.org. Here are the points you should address in your
+To begin the process, submit your application by sending email to [CCADB Membership](mailto: membership@ccadb.org). Here are the points you should address in your
 application:
 
 * Written confirmation that you produce a software product that includes
