@@ -8,7 +8,7 @@ consider joining the CCADB as a Root Store Operator.
 
 Applicants must meet the membership requirements as specified in the [Bylaws of the CCADB](Bylaws).
 
-Membership applications may be denied if the CCADB Steering Committee is made aware that including or issuing a license to the organization would interfere with the operation or security of the CCADB or its Steering Committee; would breach the usage terms with the underlying CRM Service Provider; or would not comply with the CCADB Bylaws, Charter, or Code Of Conduct.
+Membership applications may be denied if the CCADB Steering Committee is made aware that including the applicant's organization or issuing CCADB access to the organization's representatives would breach the [Bylaws of the CCADB](Bylaws), the CCADB Charter, the CCADB Code of Conduct, or the CRM Service Provider Terms.
 
 ## Membership Application ##
 
