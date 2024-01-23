@@ -19,9 +19,7 @@ In the event of inconsistency between these Bylaws and the CCADB Charter, the CC
 
 # 2.    Membership
 
-## 2.1  Categories of Membership
-
-### 2.1.1     Members
+## 2.1  Members
 
 This class of membership shall consist of organizations meeting the following criteria:
 
@@ -41,13 +39,9 @@ This class of membership shall consist of organizations meeting the following cr
 
 Membership may be denied if the CCADB Steering Committee is made aware that including the applicant's organization or issuing CCADB access to the organization's representatives would breach these Bylaws, the CCADB Charter, the CCADB Code of Conduct, or the CRM Service Provider Terms.
 
-### 2.1.2     Associate Members
+## 2.2  Community Guests
 
-An informal relationship may be maintained with Associate Members, by invitation only, if the Steering Committee has determined that maintaining such a relationship will be of benefit to the CCADB. Entities qualifying as Associate Members may include the CRM Consultant, the Accredited Conformity Assessment Bodies' Council (ACAB'c), and the CPA Canada WebTrust Task Force.
-
-### 2.1.3     Interested Parties
-
-Interested Parties may participate in discussions on the CCADB Public Mailing List. In order to join the CCADB Public Mailing List, a party must provide a context for their interest in joining the Mailing List. Requests to join without such information may not be approved.
+An informal relationship may be maintained with Community Guests, by invitation only, if the Steering Committee has determined that maintaining such a relationship will be of benefit to the CCADB. Entities qualifying as Community Guests may include the CRM Consultant, the Accredited Conformity Assessment Bodies' Council (ACAB'c), and the CPA Canada WebTrust Task Force.
 
 ## 2.2  Eligibility Criteria and Admission
 
@@ -63,7 +57,7 @@ All Members enjoy the privileges and undertake the obligations described in thes
 
 Members will be entitled to participate in meetings, initiatives, events, and any other activities organized by the CCADB Steering Committee.
 
-Members shall have the right to vote only on matters and actions that expressly require their vote under these Bylaws; they shall not have any other voting rights, except as required by law. Associate Members and Interested Parties do not have the right to vote on any matter or action requiring the vote of Members under these Bylaws or otherwise.
+Members shall have the right to vote only on matters and actions that expressly require their vote under these Bylaws; they shall not have any other voting rights, except as required by law. Community Guests do not have the right to vote on any matter or action requiring the vote of Members under these Bylaws or otherwise.
 
 ## 2.4  Obligations and Responsibilities
 
@@ -284,7 +278,7 @@ The Chairperson will ensure that:
 *  Work for the CRM Consultant is prioritized and documented;
 *  Feedback and testing results are provided to the CRM Consultant in a timely manner.
 *  CCADB instructions and release notes are kept up to date; and
-*  CCADB updates are provided to CAs, Associate Members, and Interested Parties (e.g. enhancement updates communicated from the Steering Committee itself, on the CCADB Public Mailing List, or presented at the CA/Browser Forum Face-to-Face meetings). 
+*  CCADB updates are provided to CAs and Community Guests (e.g. enhancement updates communicated from the Steering Committee itself, on the CCADB Public Mailing List, or presented at the CA/Browser Forum Face-to-Face meetings). 
 
 ## 9.3   Treasurer
 
@@ -307,7 +301,7 @@ The Chairperson and Treasurer shall be selected by consensus (three-fifths major
 
 Steering Committee meetings shall be scheduled to happen regularly, but may be canceled whenever there are no agenda topics or to avoid conflicts with holidays or other industry events. In addition to discussing priorities, design, and testing, these meetings may also be used for discussing questions and answers about CCADB operations, showing how things can be done in the CCADB, and sharing ideas for improvements both in the CCADB and in regard to CA program management processes.
 
-From time to time, the Steering Committee may hold teleconferences or in-person meetings among Members and Associate Members.
+From time to time, the Steering Committee may hold teleconferences or in-person meetings among Members and Community Guests.
 
 ## 10.2           Notice of Meetings
 
@@ -403,21 +397,19 @@ The Chairperson or their delegee is allowed to make minor editorial changes to i
 
 **Alternate**: An individual appointed by a Member to act as a substitute in the absence or inability of that Member’s Steering Committee Representative. An Alternate may exercise the same rights and responsibilities, including the right to vote, as the Steering Committee Representative during meetings or proceedings where such Representative is not present or is unable to participate.
 
-**Associate Member:** An individual or organization who has been invited by the Steering Committee to participate in one or more CCADB meetings. Associate members do not have the right to vote on any matter or action requiring the vote of Members under these Bylaws or otherwise.
-
 **CCADB Public Mailing List**: [public@ccadb.org](mailto:public@ccadb.org), https://groups.google.com/a/ccadb.org/g/public.
 
 **Chairperson:** A Steering Committee Representative who leads the CCADB Steering Committee as described in these Bylaws.
 
 **Common CA Database (CCADB)**: A repository of information about Certification Authorities (CAs) whose root and intermediate certificates are included within the products and services of CCADB Members. 
 
+**Community Guest:** An individual or organization who has been invited by the Steering Committee to participate in one or more CCADB meetings. Community Guests do not have the right to vote on any matter or action requiring the vote of Members under these Bylaws or otherwise.
+
 **CRM**: Customer relationship management (CRM) is a set of integrated, data-driven software solutions that help manage, track, and store information. For the CCADB, the CRM is the tool that is highly customized to help manage, track, and store information related to CA operators, the certificates that they issue, the processes that they follow, the related audit statements, etc.
 
 **CRM Consultant:** A CRM consultant; otherwise known as a CRM expert or CRM Administrator; is a specialist in CRM software. This consultant performs systems administration, configuration, customizations, and updates on the CRM underlying the CCADB.
 
 **CRM Service Provider:** The company providing the CRM service that is customized and used for the CCADB.
-
-**Interested Party:** An individual or organization who participates in discussions on the CCADB Public Mailing List. Interested Parties do not have the right to vote on any matter or action requiring the vote of Members under these Bylaws or otherwise.
 
 **Member**: An organization that meets all requirements for members of the CCADB as outlined in these Bylaws, has been approved by the Steering Committee as outlined in these Bylaws, has entered into the required agreements, and has provided payment of all applicable amounts. 
 
