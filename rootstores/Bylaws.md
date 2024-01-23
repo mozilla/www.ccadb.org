@@ -43,7 +43,7 @@ Membership may be denied if the CCADB Steering Committee is made aware that incl
 
 An informal relationship may be maintained with Community Guests, by invitation only, if the Steering Committee has determined that maintaining such a relationship will be of benefit to the CCADB. Entities qualifying as Community Guests may include the CRM Consultant, the Accredited Conformity Assessment Bodies' Council (ACAB'c), and the CPA Canada WebTrust Task Force.
 
-## 2.2  Eligibility Criteria and Admission
+## 2.3  Eligibility Criteria and Admission
 
 All Members must comply with these Bylaws, and all applicable antitrust laws and regulations during its CCADB activities. 
 
@@ -51,7 +51,7 @@ Prospective Members shall submit an application via email to the CCADB Steering 
 
 Admission of Members shall be made by a three-fifths majority vote of the CCADB Steering Committee and based upon whether the applicant meets the qualifications established for membership as set forth in these Bylaws and the [Code of Conduct](https://docs.google.com/document/d/1BeP7YJVJlRzXTwDm9r_VJhsuhQ_1tj0g7fDbdk6zk4k/edit?usp=sharing).
 
-## 2.3  Rights and Privileges
+## 2.4  Rights and Privileges
 
 All Members enjoy the privileges and undertake the obligations described in these Bylaws. During the term of their membership, all Members shall comply with the policies described or referenced in these Bylaws, which may be updated by the CCADB Steering Committee with notice to Members.
 
@@ -59,7 +59,7 @@ Members will be entitled to participate in meetings, initiatives, events, and an
 
 Members shall have the right to vote only on matters and actions that expressly require their vote under these Bylaws; they shall not have any other voting rights, except as required by law. Community Guests do not have the right to vote on any matter or action requiring the vote of Members under these Bylaws or otherwise.
 
-## 2.4  Obligations and Responsibilities
+## 2.5  Obligations and Responsibilities
 
 Each Member of the CCADB shall appoint one individual to act as a “Steering Committee Representative” and one “Alternate”, to represent its interests in prioritizing updates to the CCADB, ensure that updates do not impede its use of the CCADB, and vote. The Steering Committee Representative designated by each Member must be a person who actively uses the CCADB for CA program management. At a minimum, the Steering Committee Representative shall be someone who has first-hand knowledge about using the CCADB and can provide reliable input into designing and updating CCADB features.
 
