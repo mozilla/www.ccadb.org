@@ -47,7 +47,7 @@ An informal relationship may be maintained with Community Guests, by invitation 
 
 All Members must comply with these Bylaws, and all applicable antitrust laws and regulations during its CCADB activities. 
 
-Prospective Members shall submit an application via email to the CCADB Steering Committee. An application shall contain information indicating compliance with the criteria set forth in Section 2.1.1.
+Prospective Members shall submit an application via email to the CCADB Steering Committee as described in [https://www.ccadb.org/rootstores/how](https://www.ccadb.org/rootstores/how). An application shall contain information indicating compliance with the criteria set forth in Section 2.1.
 
 Admission of Members shall be made by a three-fifths majority vote of the CCADB Steering Committee and based upon whether the applicant meets the qualifications established for membership as set forth in these Bylaws and the [Code of Conduct](https://docs.google.com/document/d/1BeP7YJVJlRzXTwDm9r_VJhsuhQ_1tj0g7fDbdk6zk4k/edit?usp=sharing).
 
@@ -69,9 +69,9 @@ Each Member shall provide the names and email addresses of its Steering Committe
 
 Members must comply with these Bylaws and
 
-(a) the CRM Service Provider Terms; 
+(a) the [CRM Service Provider Terms](https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_MSA.pdf); 
 
-(b) the Backup Service Provider Terms; 
+(b) the [Backup Service Provider Terms](https://www.owndata.com/legal/msa); 
 
 (c) any usage limits communicated to Member by the Steering Committee in writing; and 
 
@@ -276,7 +276,7 @@ The Chairperson will ensure that:
 *  There is sufficient documentation about decisions made by the CCADB Steering Committee;
 *  Enhancement requests and bugs are recorded and accurately labeled; 
 *  Work for the CRM Consultant is prioritized and documented;
-*  Feedback and testing results are provided to the CRM Consultant in a timely manner.
+*  Feedback and testing results are provided to the CRM Consultant in a timely manner;
 *  CCADB instructions and release notes are kept up to date; and
 *  CCADB updates are provided to CAs and Community Guests (e.g. enhancement updates communicated from the Steering Committee itself, on the CCADB Public Mailing List, or presented at the CA/Browser Forum Face-to-Face meetings). 
 
@@ -364,8 +364,8 @@ The goal of CCADB Steering Committee activities has been to seek substantial con
 CCADB meetings and communications include companies that compete against one another. These meetings and communications are intended to discuss, improve, and use the CCADB without restricting competition. CCADB meetings and communications are not intended to share competitively-sensitive information among competitors, and therefore all participants agree not to discuss or exchange information related to:
 
 1. Pricing policies, pricing formulas, prices or other terms of sale;
-2. Costs, cost     structures, profit margins,
-3. Pending or     planned service offerings,
+2. Costs, cost     structures, profit margins;
+3. Pending or     planned service offerings;
 4. Customers,     business, or marketing plans; or
 5. The allocation of customers, territories, or products in any way.
 
@@ -375,7 +375,7 @@ Members should contact the Chairperson with any concerns relating to these Bylaw
 
 # 16.  Property Rights
 
-Members may develop customizations of the CCADB for their own use and submit them for inclusion into the CCADB.
+Members may develop customizations of the CCADB for their own use and submit them for inclusion into the CCADB. These customizations should not impede any other Member's ability to utilize the CCADB.
 
 Any data or other content uploaded to the CCADB and any suggestion, enhancement request, recommendation, correction or other feedback provided to the CCADB Steering Committee relating to the CCADB shall not include any confidential or proprietary information, and it (excepting personally identifiable information) may be used, copied, stored, disclosed or otherwise exploited by the CRM Service Provider, the Backup Service Provider, and any other participant in the CCADB and the public, without restriction or any form of compensation to such disclosing party.
 
