@@ -12,8 +12,7 @@ Membership applications may be denied if the CCADB Steering Committee is made aw
 
 ## Membership Application ##
 
-To begin the process, submit your application by sending email to membership [at] ccadb [dot] org. Here are the points you should address in your
-application:
+To begin the process, submit your application by sending an email to membership [at] ccadb [dot] org. Here are the points you should address in your application:
 
 * Written confirmation that you produce a software product that includes
   trusted root certificates, and is intended for use by the general public.
@@ -30,6 +29,6 @@ application:
 If there are any questions about your application, we will get back to you.
 Otherwise, once we have received this information, the CCADB Steering Committee 
 will make a determination on whether your organization can be included as a
-Root Store Member and communicate its determination to you, 
+Root Store Operator and communicate its determination to you, 
 along with information about how to complete your membership and 
 begin participation.
