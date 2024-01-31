@@ -12,8 +12,7 @@ Membership applications may be denied if the CCADB Steering Committee is made aw
 
 ## Membership Application ##
 
-To begin the process, submit your application by sending an email to membership [at] ccadb [dot] org. Here are the points you should address in your
-application:
+To begin the process, submit your application by sending an email to membership [at] ccadb [dot] org. Here are the points you should address in your application:
 
 * Written confirmation that you produce a software product that includes
   trusted root certificates, and is intended for use by the general public.
