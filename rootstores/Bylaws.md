@@ -1,4 +1,18 @@
-# DRAFT Bylaws of the CCADB
+<br>
+<table>
+<tr>
+<td><strong>Title</strong></td> 
+<td><strong>Version</strong></td>
+<td><strong>Effective Date</strong></td>
+</tr>
+<tr>
+<td>Bylaws of the CCADB</td>
+<td>1.0</td>
+<td>January 31, 2024</td>
+</tr>
+</table>
+<br>
+# Bylaws of the CCADB
 
 # 1.    Mission and Scope
 
