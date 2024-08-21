@@ -1,8 +1,8 @@
-## Instructions for Auditors 
+# Information for Auditors # 
 
-The purpose of these instructions is to assist Auditors in communicating with CA Owners during the creation of audit statements that will be submitted for processing by the Audit Letter Validation (ALV) module in the Common CA Database (CCADB).
+The purpose of this page is to assist Auditors in communicating with CA Owners during the creation of audit statements that will be submitted for processing by the Audit Letter Validation (ALV) module in the Common CA Database (CCADB).
 
-Audit information for CA Owners can be found [here](https://www.entrust.com/tls-certificate-information-center).
+Audit information for CA Owners can be found [here](https://www.ccadb.org/policy#51-audit-statement-content).
 
 ## 1\. Acquire CSV reports of CA Certificates
 
