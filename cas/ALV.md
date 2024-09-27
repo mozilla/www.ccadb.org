@@ -10,7 +10,7 @@ Table of Contents:
 
 ## Root Certificates
 
-CA Owners are required to update the audit, CP, CPS and test website information for their certificate hierarchies at least annually. To provide this information for root certificates, create one [Add/Update Root Request Case](updates#audit-case-workflow) in the CCADB for a particular set of audits (e.g. Standard Audit, TLS BR audit, EV TLS Audit, Code Signing Audit, S/MIME Audit).
+CA Owners are required to update the audit, CP, CPS and test website information for their certificate hierarchies at least annually. To provide this information for root certificates, create one [Add/Update Root Request Case](updates#audit-case-workflow) in the CCADB for a particular set of audits (e.g. Standard Audit, NetSec Audit, TLS BR Audit, TLS EVG Audit, Code Signing Audit, S/MIME BR Audit).
 * [Update audit, CP, CPS, and test website information in the CCADB ](updates)
 
 ## Intermediate Certificates ##
@@ -25,29 +25,37 @@ CA Owners are required to annually update the audit and CP/CPS for their non-tec
 
 When the audit statements for an intermediate certificate are the same as the certificate that signed it, check the “Audits Same as Parent” checkbox instead of providing separate audit information. When the "Audits Same as Parent" field is checked for an intermediate certificate record, the CCADB will look up the parent chain until audit statements are found, and then run ALV using those audit statements. When the "Audits Same as Parent" field is not checked, the CCADB will directly pass the audit statements in the intermediate certificate record into ALV.
 
-The following fields are set by running ALV on an intermediate certificate record in the CCADB. CA Owners may cause ALV to be run on the record by clicking on the "Audit Letter Validation [ALV]" button. Additionally, CCADB has automated processes that will regularly check for intermediate certificate records that need to have ALV run.
+The following fields are set by running ALV on an intermediate certificate record in the CCADB. CA Owners may cause ALV to be run on the record by clicking on the "Audit Letter Validation [ALV]" button. Additionally, the CCADB has automated processes that will regularly check for intermediate certificate records that need to have ALV run.
 
 * Standard Audit ALV Found Cert
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the standard audit statement.
-* BR Audit ALV Found Cert
+    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the Standard Audit statement.
+* NetSec Audit ALV Found Cert
+    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the NetSec Audit statement.
+* TLS BR Audit ALV Found Cert
     * This field will only be set when the [Derived Trust Bits](fields#formula-fields) field has "Server Authentication" in its list. 
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the BR audit statement. 
-* EV SSL Audit ALV Found Cert
+    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the TLS BR Audit statement. 
+* TLS EVG Audit ALV Found Cert
     * This field will only be set when the [Derived Trust Bits](fields#formula-fields) field has "Server Authentication" in its list, and the [EV SSL Capable](fields#formula-fields) field is set to TRUE. 
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the EV TLS audit statement.
+    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the TLS EVG Audit statement.
+* Code Signing Audit ALV Found Cert
+    * This field will only be set when the [Derived Trust Bits](fields#formula-fields) field has "Code Signing" in its list. 
+    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the Code Signing Audit statement. 
+* S/MIME BR Audit ALV Found Cert
+    * This field will only be set when the [Derived Trust Bits](fields#formula-fields) field has "Secure Email" in its list. 
+    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the S/MIME BR Audit statement. 
 
-When ALV returns FAIL for "Standard Audit ALV Found Cert", "Code Signing Audit ALV Found Cert", "BR Audit ALV Found Cert", or "EV SSL Audit ALV Found Cert" for one of your CA's intermediate certificate records in the CCADB, do the following.
+When ALV returns FAIL for "Standard Audit ALV Found Cert", "NetSec Audit ALV Found Cert", "TLS BR Audit ALV Found Cert", "EVG BR Audit ALV Found Cert", "Code Signing Audit ALV Found Cert", or "S/MIME Audit ALV Found Cert" for one of your CA's intermediate certificate records in the CCADB, do the following.
 
 * Check the corresponding audit statement to make sure the SHA-256 fingerprint of the certificate is correctly listed.
 * If the SHA-256 fingerprint is listed in the audit statement, then make sure that it meets the [format specifications](../policy#51-audit-statement-content), such as no colons, no spaces, no line feeds.
 * Have your auditor provide an updated audit statement that follows the [formatting requirements](../policy#51-audit-statement-content) for the SHA-256 Fingerprints.
-* If you do not agree with the ALV results, add comments to the "Standard Audit ALV Comments", "Code Signing Audit ALV Comments", "TLS BR Audit ALV Comments", or "TLS EVG Audit ALV Comments" fields to indicate that the SHA-256 fingerprint is listed correctly in the audit statement.
+* If you do not agree with the ALV results, add comments to the "Standard Audit ALV Comments", "NetSec Audit ALV Comments", "TLS BR Audit ALV Comments", "EVG BR Audit ALV Comments", "Code Signing Audit ALV Comments", or "S/MIME Audit ALV Comments" fields to indicate that the SHA-256 fingerprint is listed correctly in the audit statement.
 * If the audit statement is indeed missing the SHA-256 fingerprint for the certificate, then file an [Incident Report](https://www.ccadb.org/cas/incident-report), and add the link to the Incident Report to one of the "...ALV Comments" fields.
 
 Important clarifications:
 
 * If the CA Owner has a currently valid audit report at the time of creation of the intermediate certificate, then the current audit statement does not need to be updated and the new certificate must appear on the CA Owner's next periodic audit reports.
-* Intermediate certificates that contain "Server Authentication" in the [Derived Trust Bits](fields#formula-fields) field are considered to be technically capable of issuing TLS certificates, and they must be listed in the CA Owner’s BR audit report.
+* Intermediate certificates that contain "Server Authentication" in the [Derived Trust Bits](fields#formula-fields) field are considered to be technically capable of issuing TLS certificates, and they must be listed in the corresponding CA Owner’s Audit report.
 * If multiple intermediate certificates with the same Subject + SPKI have been issued, each one must have their SHA-256 Fingerprint listed in appropriate audit statements according to the [Derived Trust Bits](fields#formula-fields) field.
 * Cross-Certificates are also considered intermediate certificates, which must also be audited and specifically listed in the applicable audit statements according to the [Derived Trust Bits](fields#formula-fields) field.
 * Self-signed certificates that share a Subject + SPKI with a root certificate that is included in a Root Store are treated by Root Store Operators as intermediate certificates because they chain up to an included root, so these certificates must also be listed in the applicable audit statements according to the [Derived Trust Bits](fields#formula-fields) field. 
