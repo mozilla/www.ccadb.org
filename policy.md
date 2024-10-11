@@ -5,7 +5,7 @@
 ## Introduction
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this policy are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
-Several Web PKI root store operators (“Stores”) have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
+Several Web PKI root store operators ("Stores") have collaborated to create the Common Certification Authority Database (CCADB), a data repository of certificate and Certification Authority (CA) information. CA Owners who wish to be included in participating Stores will need to maintain certain information in the CCADB. This document explains what is required of CA Owners who are required by Store policy to use the CCADB.
 
 Stores MAY have their own additional CCADB-related requirements. For each root certificate, CA Owners MUST comply with the additional requirements pertaining to the Stores which contain that certificate. Additional information on Store requirements can be found [here](https://www.ccadb.org/resources).
 
@@ -74,7 +74,7 @@ If root CA certificate information needs to be updated, the CA Owner MUST submit
 
 ## 4. Subordinate CA Certificates ##
 
-A subordinate CA certificate is a certificate signed by a root CA or another subordinate CA. The CCADB considers the terms “intermediate” and “subordinate” synonymous. To determine which subordinate CA certificates MUST be entered into the CCADB, refer to the individual Store policy. This includes certificates that are revoked. For newly-created subordinate CA certificates, this MUST happen before the certificate begins issuing publicly-trusted certificates.
+A subordinate CA certificate is a certificate signed by a root CA or another subordinate CA. The CCADB considers the terms "intermediate" and "subordinate" synonymous. To determine which subordinate CA certificates MUST be entered into the CCADB, refer to the individual Store policy. This includes certificates that are revoked. For newly-created subordinate CA certificates, this MUST happen before the certificate begins issuing publicly-trusted certificates.
 
 Each instance (i.e. PEM data) of a subordinate CA certificate only needs to be included in the CCADB once.
 
@@ -84,7 +84,7 @@ If a subordinate CA certificate is revoked, the CCADB MUST be updated to mark it
 
 CCADB enables associating Certificate Policy (CP) and/or Certification Practice Statement (CPS) documents in the records for both root CA certificates and subordinate CA certificates. CA Owners MUST provide at least an authoritative English version of any CP, CPS, or combined CP/CPS which are not originally in English, with version numbers matching the document they are a translation of.
 
-CCADB also enables associating statements of attestation of CA Owner conformance to various requirements and other operational criteria (“audits”).
+CCADB also enables associating statements of attestation of CA Owner conformance to various requirements and other operational criteria ("audits").
 
 These documents are hosted elsewhere and the URLs are stored in the CCADB. The URLs to such CP, CPS, CP/CPS, and audits, and any metadata about them such as the name of the auditor or the date of the audit, MUST be updated as new information becomes available. For technical reasons, URLs to audit statements MUST point to a PDF file that conforms to Audit Letter Validation (ALV) and either WebTrust or Accredited Conformity Assessment Bodies’ Council (ACAB'c) formatting standards.
 
@@ -101,7 +101,7 @@ URLs for the following documents are required for each certificate, unless the e
 Exceptions to providing these documents:
 
 * The SHA-256 fingerprint of the certificate is specifically listed as in scope in the audit statements of the parent certificate, and the "Audits Same as Parent" checkbox is checked; or
-* The certificate is issued and managed under the same CP, CPS, or CP/CPS and the "CP Same as Parent", "CPS Same as Parent", and/or “CP/CPS Same as Parent” checkbox is checked; or
+* The certificate is issued and managed under the same CP, CPS, or CP/CPS and the "CP Same as Parent", "CPS Same as Parent", and/or "CP/CPS Same as Parent" checkbox is checked; or
 * The certificate has expired; or
 * The certificate has been revoked, and the corresponding record in the CCADB has been updated with the correct revocation status.
 
@@ -188,7 +188,7 @@ Format Specifications for Dates: The following formats are accepted by ALV:
 * DD Month YYYY example: 7 May 2016
 * YYYY-MM-DD example: 2016-05-07
 * Month names in English
-* No extra text within the date, such as “7th” or “the”
+* No extra text within the date, such as "7th" or "the"
 
 ALV supports the following format for specifying audit period date ranges:
 
@@ -232,9 +232,9 @@ Some Store policies MAY require the completion of an annual [self-assessment](ht
 
 If an annual CCADB self-assessment is required by the individual Store policy, a single self-assessment MAY cover multiple CAs operating under both the same CP and CPS(s), or combined CP/CPS. CAs not operated under the same CP and CPS(s) or combined CP/CPS MUST be covered in a separate self-assessment.
 
-The self-assessment submission date is determined by the earliest appearing “BR Audit Period End Date” field specified in any of the CA Owner’s “CA Owner/Certificate” CCADB root records that are included in one or more Stores. 
+The self-assessment submission date is determined by the earliest appearing "BR Audit Period End Date" field specified in any of the CA Owner’s "CA Owner/Certificate" CCADB root records that are included in one or more Stores. 
 
-An annual self-assessment MUST be completed and submitted to the CCADB within 92 calendar days from the CA Owner's earliest appearing root record “BR Audit Period End Date” that is after December 31, 2023. CA Owners SHOULD submit the self-assessment to the CCADB at the same time as uploading audit reports.
+An annual self-assessment MUST be completed and submitted to the CCADB within 92 calendar days from the CA Owner's earliest appearing root record "BR Audit Period End Date" that is after December 31, 2023. CA Owners SHOULD submit the self-assessment to the CCADB at the same time as uploading audit reports.
 
 CA Owners SHOULD always use the latest available version of the self-assessment template. CA Owners MUST not use a version of the self-assessment template that has been superseded by more than 90 calendar days before their submission.
 
