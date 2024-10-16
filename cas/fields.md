@@ -8,7 +8,7 @@ Table of Contents:
 2. [Auditor Information](fields#auditor-information)
 3. [Formula Fields](fields#formula-fields)
 4. [PEM Data](fields#pem-data)
-5. [Policies and Practices Information](fields#policies-and-practices-information)
+5. [Non-Audit Information](fields#non-audit-information)
 6. [Revocation Information](fields#revocation-information)
 7. [Uploading Documents](fields#uploading-documents)
 
@@ -197,7 +197,7 @@ from other formats into PEM.
 You may use the [Certificate Viewer][certViewer] to verify that your 
 certificate is in the correct PEM format.
 
-## Policies and Practices Information ##
+## Non-Audit Information ##
 
 <table border="1">
 <tr><th>Field Name</th><th>What to Enter</th></tr>
