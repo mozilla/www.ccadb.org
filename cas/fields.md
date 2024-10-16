@@ -234,6 +234,14 @@ certificate is in the correct PEM format.
 <td>Certificate Practice & Policy Stmt URL</td>
 <td>URL to CP/CPS documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
 </tr>
+<tr valign="top" align="left">
+<td>Self-Assessment Same as Parent</td>
+<td>Check this box if this certificate has the same Self-Assessment information as the issuing certificate (or a subset). If you check this box, then do not enter data into the other fields in this Self-Assessment section. If you need to add data to the other fields in this section, then uncheck this box.</td>
+</tr>
+<tr valign="top" align="left">
+<td>Self-Assessment URL</td>
+<td>URL to Self-Assessment documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+</tr>
 </table>
 
 <br>
