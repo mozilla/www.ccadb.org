@@ -101,7 +101,7 @@ URLs for the following documents are required for each certificate, unless the e
 Exceptions to providing these documents:
 
 * The SHA-256 fingerprint of the certificate is specifically listed as in scope in the audit statements of the parent certificate, and the "Audits Same as Parent" checkbox is checked; or
-* The certificate is issued and managed under the same CP, CPS, or CP/CPS and the "CP Same as Parent", "CPS Same as Parent", and/or "CP/CPS Same as Parent" checkbox is checked; or
+* The certificate is issued and managed under the same CP, CPS, or CP/CPS as the parent certificate and the "CP Same as Parent", "CPS Same as Parent", and/or "CP/CPS Same as Parent" checkbox is checked; or
 * The certificate has expired; or
 * The certificate has been revoked, and the corresponding record in the CCADB has been updated with the correct revocation status.
 
