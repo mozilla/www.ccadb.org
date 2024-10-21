@@ -1,6 +1,6 @@
 # CCADB Policy #
 
-*Version 1.3.1, Effective: October 28, 2024*
+*Version 1.3.1, Effective: October 29, 2024*
 
 ## Introduction
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this policy are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
@@ -27,7 +27,7 @@ This policy does not cover how to obtain write access to the CCADB or how to use
 |[1.2.2](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_2_2.md)|May 11, 2023|
 |[1.2.3](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_2_3.md)|July 19, 2023|
 |[1.3](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_3.md)|October 25, 2023|
-|1.3.1 (current)|October 28, 2024|
+|1.3.1 (current)|October 29, 2024|
 
 <br>
 
