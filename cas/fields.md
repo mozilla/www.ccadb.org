@@ -8,7 +8,7 @@ Table of Contents:
 2. [Auditor Information](fields#auditor-information)
 3. [Formula Fields](fields#formula-fields)
 4. [PEM Data](fields#pem-data)
-5. [Policies and Practices Information](fields#policies-and-practices-information)
+5. [Non-Audit Information](fields#non-audit-information)
 6. [Revocation Information](fields#revocation-information)
 7. [Uploading Documents](fields#uploading-documents)
 
@@ -197,34 +197,50 @@ from other formats into PEM.
 You may use the [Certificate Viewer][certViewer] to verify that your 
 certificate is in the correct PEM format.
 
-## Policies and Practices Information ##
+## Non-Audit Information ##
 
 <table border="1">
 <tr><th>Field Name</th><th>What to Enter</th></tr>
 <tr valign="top" align="left">
-<td>CP/CPS Same as Parent</td>
-<td>Check this box if this certificate has the same CP/CPS information as the
-issuing certificate (or a subset). If you check this box, then do not enter
-data into the other fields in this section. If you need to add data to the
-other fields in this section, then uncheck this box.</td>
-</tr>
 <tr valign="top" align="left">
 <td>Policy Documentation</td>
-<td>Notes about the documentation, such as which language the documents are
-in, or additional documents that need to be listed.</td>
+<td>Notes about the documentation, such as which language the documents are in, or additional documents that need to be listed.</td>
 </tr>
 <tr valign="top" align="left">
 <td>CA Document Repository</td>
 <td>URL to the document repository pertaining to this certificate.</td>
 </tr>
 <tr valign="top" align="left">
-<td>Certificate Policy (CP)</td>
-<td>URL to the Certificate Policy (CP) pertaining to this certificate.</td>
+<td>CP Same as Parent</td>
+<td>Check this box if this certificate has the same CP information as the issuing certificate (or a subset). If you check this box, then do not enter data into the other fields in this CP section. If you need to add data to the other fields in this section, then uncheck this box.</td>
 </tr>
 <tr valign="top" align="left">
-<td>Certificate Practice Statement</td>
-<td>URL to the Certificate Practice Statement (CPS) pertaining to this
-certificate.</td>
+<td>Certificate Policy URL</td>
+<td>URL to Certificate Policy documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+</tr>
+<tr valign="top" align="left">
+<td>CPS Same as Parent</td>
+<td>Check this box if this certificate has the same CPS information as the issuing certificate (or a subset). If you check this box, then do not enter data into the other fields in this CPS section. If you need to add data to the other fields in this section, then uncheck this box.</td>
+</tr>
+<tr valign="top" align="left">
+<td>Certification Practice Statement URL</td>
+<td>URL to CPS specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+</tr>
+<tr valign="top" align="left">
+<td>CP/CPS Same as Parent</td>
+<td>Check this box if this certificate has the same CP/CPS information as the issuing certificate (or a subset). If you check this box, then do not enter data into the other fields in this CP/CPS section. If you need to add data to the other fields in this section, then uncheck this box.</td>
+</tr>
+<tr valign="top" align="left">
+<td>Certificate Practice & Policy Stmt URL</td>
+<td>URL to CP/CPS documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+</tr>
+<tr valign="top" align="left">
+<td>Self-Assessment Same as Parent</td>
+<td>Check this box if this certificate has the same Self-Assessment information as the issuing certificate (or a subset). If you check this box, then do not enter data into the other fields in this Self-Assessment section. If you need to add data to the other fields in this section, then uncheck this box.</td>
+</tr>
+<tr valign="top" align="left">
+<td>Self-Assessment URL</td>
+<td>URL to Self-Assessment documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
 </tr>
 </table>
 
