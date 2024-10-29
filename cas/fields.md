@@ -202,7 +202,6 @@ certificate is in the correct PEM format.
 <table border="1">
 <tr><th>Field Name</th><th>What to Enter</th></tr>
 <tr valign="top" align="left">
-<tr valign="top" align="left">
 <td>Policy Documentation</td>
 <td>Notes about the documentation, such as which language the documents are in, or additional documents that need to be listed.</td>
 </tr>
