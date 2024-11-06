@@ -3,6 +3,21 @@
 
 @import "{{ site.theme }}";
 
+.header-bar {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.sub-header-bar {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
 td {
   text-align: left;
   padding: 0.5em 1em 0.5em 1em;
