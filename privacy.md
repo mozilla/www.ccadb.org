@@ -1,5 +1,5 @@
 <div class="header-bar">
-    ![LF-Logo-White.svg](LF-Logo-White.svg)
+    <img src="images/LF-Logo-White.svg" alt="Linux Foundation Logo">
 </div>
 
 <div class="sub-header-bar">
