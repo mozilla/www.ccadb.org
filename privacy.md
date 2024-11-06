@@ -1,4 +1,11 @@
-## Privacy Policy Addendum
+<div class="header-bar">
+    ![LF-Logo-White.svg](LF-Logo-White.svg)
+</div>
+
+<div class="sub-header-bar">
+    Privacy Policy Addendum
+</div>
+## 
 
 *Last updated: November 6, 2024*
 
