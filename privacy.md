@@ -5,7 +5,7 @@
 <div class="sub-header-bar">
     Privacy Policy Addendum
 </div>
-## 
+
 
 *Last updated: November 6, 2024*
 
