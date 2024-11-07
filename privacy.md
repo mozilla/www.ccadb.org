@@ -1,3 +1,5 @@
+<br>
+<br>
 <div class="header-bar">
     <img src="images/LF-Logo-White.svg" alt="Linux Foundation Logo">
 </div>
@@ -11,7 +13,7 @@
 
 This Privacy Policy Addendum (the “Addendum”) to the [Privacy Policy of The Linux Foundation](https://www.linuxfoundation.org/legal/privacy-policy?hsLang=en) (the “Privacy Policy”) provides additional specific details regarding the Common Certification Authority Database project community (the “CCADB”), an open source project hosted and supported by [The Linux Foundation](https://www.linuxfoundation.org/), and its collection, processing and sharing of personal information. Applicable terms used and not defined herein have the meanings and other provisions set forth in the Privacy Policy.
 
-The CCADB is a repository (“Repository”) of information about Certification Authorities (“CA”) whose certificates are included within the products and services of several Root Store Operators. The CCADB is used to improve the security, transparency, and interoperability of publicly-trusted certificates.
+The CCADB is a repository (“Repository”) of information about Certification Authorities (“CAs”) whose certificates are included within the products and services of several Root Store Operators. The CCADB is used to improve the security, transparency, and interoperability of publicly-trusted certificates.
 
 **Personal Information Collection, Use and Sharing**
 
@@ -37,7 +39,7 @@ The CCADB utilizes third party service providers in the course of operating the 
 
 - **Salesforce, USA**:
 
-- - *Contact information*: **privacy@salesforce.com**
+  - *Contact information*: **privacy@salesforce.com**
   - *Personal information shared*: personal information described in the “Personal Information Collection, Use and Sharing” section of this Addendum.
   - *Jurisdiction of transfer*: **United States**
   - *Period of transfer, possession and use*: From time to time, through operation of hosting servers.
