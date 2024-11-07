@@ -1,4 +1,4 @@
-# Useful Resources #
+# Useful Resources
 
 ### CCADB Support ###
 * For problems or questions when using the CCADB, please contact support [at] ccadb [dot] org.
