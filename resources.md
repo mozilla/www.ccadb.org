@@ -1,6 +1,6 @@
 # Useful Resources
 
-### CCADB Support ###
+### CCADB Support
 * For problems or questions when using the CCADB, please contact support [at] ccadb [dot] org.
 * You can record enhancements, bugs, and API access requests in the 'Common CA Database' [component](https://bugzilla.mozilla.org/enter_bug.cgi?product=CA%20Program&component=Common%20CA%20Database) under the 'CA Program' in Bugzilla.
 
