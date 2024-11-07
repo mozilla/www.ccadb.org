@@ -1,5 +1,4 @@
 <br>
-<br>
 <div class="header-bar">
     <img src="images/LF-Logo-White.svg" alt="Linux Foundation Logo">
 </div>
