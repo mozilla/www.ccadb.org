@@ -32,13 +32,13 @@ The CCADB does not share your personal information publicly, except (1) where yo
 
 The CCADB does not sell the personal information that we collect.
 
-## **Third Party Service Providers**
+**Third Party Service Providers**
 
 The CCADB utilizes third party service providers in the course of operating the Repository, the CCADB project and the CCADB’s other offerings. The following information describes the CCADB’s service providers who may process your personal information on the CCADB’s behalf.
 
 - **Salesforce, USA**:
 
-  - *Contact information*: **privacy@salesforce.com**
+  - *Contact information*: **privacy [at] salesforce [dot] com**
   - *Personal information shared*: personal information described in the “Personal Information Collection, Use and Sharing” section of this Addendum.
   - *Jurisdiction of transfer*: **United States**
   - *Period of transfer, possession and use*: From time to time, through operation of hosting servers.
@@ -56,4 +56,4 @@ This Addendum is current as of the effective date set forth above. If we change 
 
 **Contact Us**
 
-If you have questions about the CCADB, your CCADB Account, or the Repository (including questions regarding unsubscribing from emails sent by the CCADB), please contact the CCADB at **[privacy@ccadb.org](mailto:privacy@ccadb.org).**
+If you have questions about the CCADB, your CCADB Account, or the Repository (including questions regarding unsubscribing from emails sent by the CCADB), please contact the CCADB at **privacy [at] ccadb [dot] org.**
