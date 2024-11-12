@@ -236,7 +236,7 @@ The self-assessment submission date is determined by the earliest appearing "BR 
 
 An annual self-assessment MUST be completed and submitted to the CCADB within 92 calendar days from the CA Owner's earliest appearing root record "BR Audit Period End Date" that is after December 31, 2023. CA Owners SHOULD submit the self-assessment to the CCADB at the same time as uploading audit reports.
 
-CA Owners SHOULD always use the latest available version of the self-assessment template. CA Owners MUST not use a version of the self-assessment template that has been superseded by more than 90 calendar days before their submission.
+CA Owners SHOULD always use the latest available version of the self-assessment template. CA Owners MUST NOT use a version of the self-assessment template that has been superseded by more than 90 calendar days before their submission.
 
 ## 6. Mailshots ##
 
