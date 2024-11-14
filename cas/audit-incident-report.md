@@ -12,7 +12,7 @@
 
 **Note:** The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" on this page are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
-When audits are performed, an audit statement may document qualifications or non-conformities (i.e., findings) that were identified during the audit. In some cases, each finding disclosed in the audit statement may have been self-reported by a CA Owner or third party in a previous [Incident Report](incident-report). In cases where **each** finding was *not* previously recorded in an Incident Report, CA Owners MUST create a new Bugzilla issue by filling out the "Summary" and "Description" fields of [this form](https://bugzilla.mozilla.org/enter_bug.cgi?format=__default__&product=CA%20Program&component=CA%20Certificate%20Compliance&bug_type=task). The Summary field MUST include the CA Owner name, a colon, and "Findings in 20XX Audit", where XX is the year the audit period or point-in-time ended (e.g., "CA ABC: Findings in 2023 Audit").
+When audits are performed, an audit statement may document qualifications or non-conformities (i.e., findings) that were identified during the audit. In some cases, each finding disclosed in the audit statement may have been self-reported by a CA Owner or third party in a previous [Incident Report](incident-report). In cases where **each** finding was *not* previously recorded in an Incident Report, CA Owners MUST create a new Bugzilla issue by filling out the "Summary" and "Description" fields of [this form](https://bugzilla.mozilla.org/enter_bug.cgi?format=__default__&product=CA%20Program&component=CA%20Certificate%20Compliance&bug_type=task). The Summary field MUST include the CA Owner name, a colon, and "Findings in 20XX Audit", where XX is the year the audit period or point-in-time ended (e.g., "CA ABC: Findings in 2024 Audit").
 
 To create the audit incident report, copy the Markdown template below and fill out each section according to the following instructions and requirements.
 
@@ -38,7 +38,7 @@ If the audit includes multiple findings, the audit incident report MUST include 
 
 **Expectations:**
 
-- A root cause is defined as a factor that caused a nonconformance and SHOULD be permanently eliminated through process improvement.
+- A root cause is defined as a factor that caused a nonconformance and should be permanently eliminated through process improvement.
 - This section MUST contain a detailed analysis of the conditions which combined to give rise to the issue.
 - It is unusual for an incident to have a single root cause; often there is a confluence of several issues such as a software bug, insufficient checks, and a malformed request.
 - Make sure that all contributing causes are identified and described, including noting when they first arose and how they avoided detection until they were discovered or identified. 
