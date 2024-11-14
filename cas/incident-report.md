@@ -140,7 +140,7 @@ An ongoing commitment is a formal pledge made by a CA Owner to address underlyin
 
 Effective ongoing commitments consist of the following:
 
-1. **Specificity**. The commitment clearly outlines what the CA Owner will do, including the intended outcome, target completion timeframe, and any relevant metrics or indicators.
+1. **Specificity**: The commitment clearly outlines what the CA Owner will do, including the intended outcome, target completion timeframe, and any relevant metrics or indicators.
  
 2. **Actionability**: The commitment describes concrete steps the CA Owner will take, ensuring it's not merely a statement of intent or a vague promise.
  
