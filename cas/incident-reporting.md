@@ -1,5 +1,5 @@
 # Incidents
-Incidents can happen. Things do not always go as planned, and that can be okay. However, when incidents occur, the underlying issues (i.e., root causes) must be identified and remediated to discourage the incident from occurring again. Formally documenting the incident in a report encourages an understanding of all contributing root causes, and it presents the opportunity to clearly communicate a remediation plan to reduce the probability of reoccurrence. 
+Incidents can happen. Things do not always go as planned, and that can be okay. However, when incidents occur, the underlying issues (i.e. root causes) must be identified and remediated to discourage the incident from occurring again. Formally documenting the incident in a report encourages an understanding of all contributing root causes, and it presents the opportunity to clearly communicate a remediation plan to reduce the probability of recurrence. 
 
 ## Objectives and Expectations
 
