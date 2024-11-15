@@ -135,7 +135,8 @@ Effective Root Cause Analysis (RCA) considers the following points:
 
 9. **Continuously improve the process**. RCA is an iterative process. Organizations should continuously refine their RCA approaches based on lessons learned from previous incidents and evolving best practices.
 
-### What is considered an ongoing commitment? 
+### What is considered an ongoing commitment?
+
 An ongoing commitment is a formal pledge made by a CA Owner to address underlying issues and improve practices in response to an incident. These commitments extend beyond immediate incident remediation and demonstrate a sustained effort to enhance security, transparency, and/or accountability within the Web PKI ecosystem.
 
 Effective ongoing commitments consist of the following:
