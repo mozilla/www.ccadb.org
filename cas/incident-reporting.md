@@ -49,7 +49,7 @@ CA Incident Reports are expected to:
 6. **Engage with the Community**:
    - Participate in Web PKI forums and email distributions (e.g., public@ccadb.org) to both learn from and contribute to community knowledge.
    - Share incident learnings in a way that respects confidentiality but helps other organizations prevent similar issues.
-   - Read and adopt best practices found in the Bugzilla Incident Reports filed by other CA Owners (i.e., the "[CA Certificate Compliance](https://bugzilla.mozilla.org/buglist.cgi?product=CA%20Program&component=CA%20Certificate%20Compliance&bug_status=__open__&list_id=17075089)" component in Bugzilla).  
+   - Read and adopt best practices found in the [Bugzilla Incident Reports filed by other CA Owners](https://bugzilla.mozilla.org/buglist.cgi?product=CA%20Program&component=CA%20Certificate%20Compliance&bug_status=__open__&list_id=17075089).  
 
 7. **Share Iterative Updates**:
    - Provide an initial response, followed by regular updates as new information becomes available or as fixes are deployed.
