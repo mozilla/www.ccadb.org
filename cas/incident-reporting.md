@@ -33,7 +33,7 @@ CA Incident Reports are expected to:
 2. **Respond Promptly**:
    - Acknowledge receipt of the incident report quickly.
    - Provide initial assessments and expected timelines for resolution to keep stakeholders informed.
-   - Respond to comments or questions within 24 hours.
+   - Respond to comments or questions within one business day.
   
 3. **Be Candid, Transparent, and Objective**:
    - Doing so allows community members to better understand report content, while also promoting integrity and transparency.
