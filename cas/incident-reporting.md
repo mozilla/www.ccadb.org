@@ -6,7 +6,7 @@ Incidents can happen. Things do not always go as planned, and that can be okay. 
 The purpose of Incident Reporting is to help us work together to build a more secure web. 
 
 Depending on the root programs in which a CA Owner participates, it may be required to:
-* create [Audit Incident Reports](audit-incident-report) when audits have non-conformities, qualifications, or modified opinions.
+* create [Audit Incident Reports](audit-incident-report) when audits have non-conformities, qualifications, or modified opinions; and/or
 * create [Incident Reports](incident-report) for all other incidents.
 
 These reports provide lessons learned and transparency about the steps the CA Owner takes to address the immediate issue and prevent future issues. If the underlying problem goes unfixed, then other issues that share the same root cause will subsequently surface. Additionally, Incident Reports help the Web PKI ecosystem as a whole because they promote continuous improvement, information sharing, and highlight opportunities to define and adopt improved practices, policies, and controls.
