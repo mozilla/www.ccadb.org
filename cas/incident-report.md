@@ -330,10 +330,11 @@ The templates below describe the expected contents of an Incident Report. When r
      - **Kind** [A classification of whether the action will help Prevent future incidents, Mitigate the impact of future incidents, or Detect future incidents. CA Owners are encouraged to propose action items in all three categories, with an emphasis on Prevent and Mitigate.] 
      - **Corresponding Root Cause(s)** [The specific Root Cause that the Action intends to remediate (i.e., each problem/issue identified in the "Root Cause Analysis" and "What didn't go well" Sections MUST be mapped to at least one specific action item)]
      - **Due Date** [A date by which the action item will be complete.]
+     - **Status** [Describe the status of the action item using either "Ongoing", "Complete", "Delayed", or "Canceled".]
 
-| Action Item | Kind    | Corresponding Root Cause(s) | Due Date   |
-| ----------- | ----    | --------------------------- | ---------- |
-| Example     | Prevent | Root Cause # 1              | 2025-01-19 |
+| Action Item | Kind    | Corresponding Root Cause(s) | Due Date   | Status |
+| ----------- | ----    | --------------------------- | ---------- | -------|
+| Example     | Prevent | Root Cause # 1              | 2025-01-19 | Value  |
 
 -->
 
