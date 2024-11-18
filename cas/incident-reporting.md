@@ -56,7 +56,7 @@ CA Incident Reports are expected to:
    - Close the loop with a final summary once the issue is fully resolved, detailing the lessons learned and future prevention strategies.
   
 8. **Respect External Reporter Privacy**:
-   - If notified of an incident by an external, third party reporter, please respect their privacy by *only* disclosing their name if affirmativley approved to do so (i.e., use "We received a report from a community member" instead of explicitly naming individuals).
+   - If notified of an incident by an external, third party reporter, please respect their privacy by *only* disclosing their name if affirmatively approved to do so (e.g. say "we received a report from a community member" instead of explicitly naming individuals).
 
 ###  Incident Reporting: Bad Practices
 
