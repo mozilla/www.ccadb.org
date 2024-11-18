@@ -69,7 +69,7 @@ CA Incident Reports are expected to:
    - Resist downplaying the severity or implications of the incident.
 
 3. **Claims that are Subjective, Unqualified Opinions, Speculative, or Impossible to Substantiate**:
-   - Avoid making claims that are speculative or that cannot be corroborated (i.e., "there is no security impact due to this issue.")
+   - Avoid making claims that are speculative or that cannot be corroborated (e.g. "there is no security impact due to this issue.")
 
 4. **Non-acknowledgment of Responsibility**:
    - Clearly accept responsibility where and when due, which helps in rebuilding trust and demonstrating accountability.
