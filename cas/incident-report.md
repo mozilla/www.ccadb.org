@@ -17,6 +17,7 @@
 The public Incident Reporting process is important because it promotes continuous improvement, information sharing, and highlights opportunities to define and adopt improved practices, policies, and controls. Together, these activities help build a more secure web.
 
 ### Who can submit an Incident Report?
+
 Anyone should feel encouraged to submit an Incident Report that’s founded upon credible and well-substantiated evidence.
 
 Some Root Store Operator policies require CA Owners to submit an Incident Report as described on this page after self-discovering or being made aware of an Incident (e.g., receiving and corroborating an issue described in a [Certificate Problem Report](https://cabforum.org/working-groups/server/baseline-requirements/requirements/#161-definitions)).
