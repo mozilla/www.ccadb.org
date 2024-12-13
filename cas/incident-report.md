@@ -243,7 +243,7 @@ In the case of Incident Reports with a Whiteboard field of "revocation-delay", r
 
 #### How are reports closed?
 
-If (1) all Action Items are marked as complete and (2) there are no outstanding comments or questions that need to be addressed, CA Owners MUST clearly communicate in a Bugzilla comment when they believe the report can be closed. This is accomplished by writing a short-summary that includes:
+If (1) all Action Items are marked as complete and (2) there are no outstanding comments or questions that need to be addressed, CA Owners MUST clearly communicate in a Bugzilla comment when they believe the report can be closed. This is accomplished by writing a short summary that includes:
 - a description of the incident, its root cause(s), and remediation;
 - a summary of all ongoing commitments made in response to the incident, if any; and
 - an attestation that all Action Items have been completed.
