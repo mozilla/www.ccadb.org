@@ -92,7 +92,7 @@ The public reporting process is important because it promotes continuous improve
 
 Reports are expected to:
 - be candid (i.e., focusing on honesty and forthrightness, even when revealing uncomfortable truths), timely (i.e., released without undue delay), and transparent (i.e., emphasizing open accessibility of information);
-- clearly (e.g., avoiding jargon, defining technical terms, adding useful background information) and objectively (e.g., supporting claims with data) communicate the scope, impact, and severity of an incident;
+- clearly (i.e., avoiding jargon, defining technical terms, adding useful background information) and objectively (i.e., supporting claims with data) communicate the scope, impact, and severity of an incident;
 - help community members understand the relevant architectures, implementations, operations, and external dependencies surrounding an incident;
 - demonstrate a detailed understanding of the root cause(s) of an incident;
 - unambiguously explain how systems, processes, and/or policies failed; 
