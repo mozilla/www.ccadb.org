@@ -148,13 +148,13 @@ Audit Finding Reports are expected to be submitted by either:
 #### Are there other ways to become involved in the reporting process?
 
 Absolutely! There are many ways to participate in the Incident and Audit Finding reporting processes beyond submitting new reports. Everyone is encouraged to actively contribute by commenting on existing reports and engaging in constructive discussions. This can include, but is not limited to:
-- Providing additional information,
-- Asking clarifying questions,
-- Discussing technical aspects of the incident,
-- Suggesting corrective actions,
-- Highlighting opportunities for improvement,
-- Contributing lints to open source linting projects to promote improved future issue detection/prevention, and
-- Sharing lessons learned from past experiences.
+- providing additional information,
+- asking clarifying questions,
+- discussing technical aspects of the incident,
+- suggesting corrective actions,
+- highlighting opportunities for improvement,
+- contributing lints to open source linting projects to promote improved future issue detection/prevention, and
+- sharing lessons learned from past experiences.
 
 Individuals representing CA Owners are especially encouraged to participate broadly in the reporting processes, extending their contributions beyond incidents involving only their own organization. Sharing insights and perspectives across organizational boundaries fosters a collaborative learning environment and strengthens the overall security posture of the Web PKI ecosystem.
 
