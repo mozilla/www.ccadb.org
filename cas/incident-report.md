@@ -142,7 +142,7 @@ Some Root Store Operator policies require CA Owners to submit an Incident Report
 #### Who can submit an Audit Finding Report?
 
 Audit Finding Reports are expected to be submitted by either:
-- the CA Owner organization whose corresponding root CA certificate is included in the applicable Root Store(s)
+- the CA Owner organization whose corresponding root CA certificate is included in the applicable Root Store(s); or
 - the CA Owner organization whose corresponding subordinate CA certificate is subject of the report (e.g., issued the problematic certificate(s)).
   
 #### Are there other ways to become involved in the reporting process?
