@@ -60,10 +60,10 @@ This page describes the CCADB Incident and Audit Finding Reporting Framework and
 #### What is considered an incident?
 
 Minimally, a failure to meet the commitments described in any of the following policies is considered an incident:
-- A CA Owner's own policies (e.g., CP, CPS, or combined CP/CPS);
-- Applicable requirements promulgated by the CA/Browser Forum;
-- The CCADB Policy; or
-- Any applicable Root Store Operator policy.
+- a CA Owner's own policies (e.g., CP, CPS, or combined CP/CPS);
+- applicable requirements promulgated by the CA/Browser Forum;
+- the CCADB Policy; or
+- any applicable Root Store Operator policy.
 
 Root Store Operator policies may further describe what those individual programs consider incidents, and/or additional incident reporting expectations.
 
