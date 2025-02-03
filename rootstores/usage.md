@@ -2,23 +2,16 @@
 
 ## CCADB Data Usage Terms ##
 
-Redistribution and use of this data is permitted provided that neither the name 
-and trademarks of the Common CA Database (CCADB) nor the names and trademarks of any 
-CCADB contributor may be used to endorse or promote products derived from this data.
+The data in this repository is licensed under the **Community Data License Agreement – Permissive, Version 2.0 (CDLA-2.0 Permissive)**.
 
-THIS DATA IS PROVIDED BY COMMON CA 
-DATABASE CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED 
-WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
-OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
-DISCLAIMED. IN NO EVENT SHALL COMMON 
-CA DATABASE CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE 
-GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
-WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
-OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DATA, EVEN 
-IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+**Key Terms:**
+
+1. You may use, modify, and redistribute the data freely, provided that you comply with the terms of the CDLA-2.0 Permissive license.
+2. Attribution to the Common CA Database (CCADB) is required when redistributing or using this data in derived works.
+3. The names and trademarks of the CCADB or any contributors may not be used to endorse or promote products derived from this data without prior written permission.
+
+For the full license text, visit the [CDLA website](https://cdla.dev/permissive-2-0/).
+
 
 ## CCADB Root Store Operator Usage Terms ##
 As permitted by the [Bylaws of the CCADB](Bylaws.md), 
