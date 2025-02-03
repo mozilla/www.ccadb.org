@@ -8,7 +8,7 @@ The data in this repository is licensed under the **Community Data License Agree
 
 1. You may use, modify, and redistribute the data freely, provided that you comply with the terms of the CDLA-2.0 Permissive license.
 2. Attribution to the Common CA Database (CCADB) is required when redistributing or using this data in derived works.
-3. The names and trademarks of the Common CA Database (CCADB) or any contributors may not be used to endorse or promote products derived from this data without prior written permission.
+3. The names and trademarks of the CCADB or any contributors may not be used to endorse or promote products derived from this data without prior written permission.
 
 For the full license text, visit the [CDLA website](https://cdla.dev/permissive-2-0/).
 
