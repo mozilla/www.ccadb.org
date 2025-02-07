@@ -417,7 +417,7 @@ Expected Timeline elements:
 | **Due date** | A date by which the action item will be complete. |
 | **Status** | Describe the status of the action item using either "Ongoing", "Complete", "Delayed", or "Canceled". |
 
-**Appendix:** The Appendix section is for all supporting data: log files, graphs and charts, etc. In the case of incidents that directly impact certificates (i.e., not only precertificates), the Appendix MUST disclose details related to the time-valid certificates affected by the incident.
+**Appendix:** The Appendix section is for all supporting data: log files, graphs and charts, etc. In the case of incidents that directly impact certificates (i.e., not only precertificates), the Appendix MUST disclose details related to the time-valid, including revoked, certificates affected by the incident.
 
 For incidents affecting less than 10,000 certificates, a CA Owner MUST attach a comma separated listing of certificate details including the following fields for each:
 
