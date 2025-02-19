@@ -33,7 +33,7 @@ Optionally, a smaller font may be used if desired to get everything in one line.
 
 ## 3\. Save the Preliminary Audit Statement for Review by ALV
 
-Here are [instructions](https://docs.google.com/document/d/12U4az-hjYDC\_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit\#bookmark=id.n8g8lgkwb4co) for how to upload a preliminary audit statement for testing with ALV.
+Here are [instructions](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit?usp=sharing) for how to upload a preliminary audit statement for testing with ALV.
 
 CA Owners have the ability to open an “Add/Update Root Request” case in the CCADB. Instructions for opening this type of case are found at [https://www.ccadb.org/cas/updates](https://www.ccadb.org/cas/updates). 
 
