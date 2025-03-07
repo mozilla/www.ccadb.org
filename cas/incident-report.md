@@ -289,7 +289,7 @@ Learn more about expected report content and a description of the fields include
 
 ### Root Cause Analysis
 
-** Contributing Factor #: title**
+**Contributing Factor #: title**
 - **Description:** 
 - **Timeline:** 
 - **Detection:** 
