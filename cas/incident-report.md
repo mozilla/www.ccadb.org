@@ -249,7 +249,7 @@ When all Action Items are complete and no outstanding comments or questions rema
 The following templates MUST be used when submitting incident reports or requesting report closures.
 - [Preliminary Incident Report Template](#preliminary-incident-report)
 - [Full Incident Report Template](#full-incident-report)
-- [Report Closure Template](#closure-report)
+- [Closure Report Template](#closure-report)
 
 CA Owners submitting reports MUST complete all applicable fields in the relevant template.  Fields that are not applicable MUST still be included and marked 'N/A'.
 
