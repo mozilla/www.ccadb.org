@@ -137,19 +137,12 @@ CA Owners MUST:
 
 Unless the exceptions below apply, CA policy disclosures for each certificate disclosed to the CCADB MUST be consistent with the following guidance:
 
-If the parent certificate record discloses a CP:
-- A) It MUST disclose a CPS
+If the parent certificate record discloses a CP or CPS:
+- A) It MUST disclose both a CP and a CPS
 - B) It MUST NOT disclose a CP/CPS
 - C) All child certificate records MUST either:
      - (1) disclose a combined CP/CPS; or
      - (2) disclose (a) a CP (either select "Same as Parent" checkbox or a different CP) and (b) a CPS (either select "Same as Parent" checkbox or a different CPS).
-
-If the parent certificate record discloses a CPS:
-- A) It MUST disclose a CP
-- B) It MUST NOT disclose a CP/CPS
-- C) All child certificate records MUST either:
-     - (1) disclose a combined CP/CPS; or
-     - (2) disclose (a) a CPS (either select "Same as Parent" checkbox or a different CPS) and (b) a CP (either select "Same as Parent" checkbox or a different CP).
 
 If the parent certificate record discloses a combined CP/CPS:
 - A) It MUST NOT disclose a CP
