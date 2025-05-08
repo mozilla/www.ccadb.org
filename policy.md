@@ -8,7 +8,7 @@ Several Public Root Store Operators have collaborated to create the Common Certi
 
 CA Owners who wish to be included in a CCADB-participating Root Store ("Root Store") need to disclose and maintain certain information in the CCADB. This policy describes common Root Store Operator requirements related to CA Owner use of the CCADB. This policy does not cover how to obtain write access to the CCADB or how to use the CCADB’s web interface. Additional information covering these topics is available [here](https://www.ccadb.org/cas/).
 
-Root Store Operators MAY have additional CCADB-related requirements defined in their own Root Store policies. These policies MAY strengthen the requirements described in this policy. Additional information on the policies belonging to the individual Root Store Operators participating in the CCADB can be found [here](https://www.ccadb.org/resources). Questions related to an individual Root Store Operator Policy SHOULD be directed to the operator of that policy using the contact address designated for that policy.
+Root Store Operators MAY have additional CCADB-related requirements defined in their own Root Store policies. Those policies MAY strengthen the requirements described in this policy. Additional information on the policies belonging to the individual Root Store Operators participating in the CCADB can be found [here](https://www.ccadb.org/resources). Questions related to an individual Root Store Operator Policy SHOULD be directed to the operator of that policy using the contact address designated for that policy.
 
 ## Change History
 
