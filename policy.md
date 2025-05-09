@@ -104,7 +104,9 @@ CA Owners MUST disclose:
 - all subordinate CA certificates capable of validating to a certificate included in a Root Store or associated with a CCADB Root Inclusion Request. Disclosure MUST take place within 7 calendar days of issuance and before the subject CA represented in the certificate begins issuing publicly-trusted certificates.
 - revocation of all subordinate CA certificates capable of validating to a certificate included in a Root Store or associated with a CCADB Root Inclusion Request within 7 calendar days of revocation.
 
-CA certificates created by cross-signing are considered subordinate CA certificates by Root Store Operators and MUST be disclosed to both the issuer and subject CA Owner PKI hierarchies in the CCADB. 
+Cross-certificates (i.e., where the same subject and public key of an existing CA certificate appears in at least one additional certificate issued by a _different_ CA Owner) are considered subordinate CA certificates by Root Store Operators and MUST be disclosed to the issuing CA Owner’s PKI hierarchy in the CCADB. 
+
+Ultimately, this means the subject CA certificate may appear in two distinct CA Owner PKI hierarchies, but it MUST minimally appear in the issuing CA Owner’s.
 
 For any revoked subordinate CA certificate, each corresponding revocation entry published to a CRL MUST include a reasonCode extension. If the revocation is due to a security concern, the CA Owner MUST file a secure (i.e., "confidential") [Incident Report](https://www.ccadb.org/cas/incident-report#how-do-i-submit-a-security-sensitive-incident-report) in Bugzilla, with the expectation that a public Incident Report will eventually be filed.
 
