@@ -192,7 +192,7 @@ The presence of qualifications in an audit statement is not, by itself, generall
 
 ### 5.1 Scope of Certificates Covered by an Audit
 
-CA certificates MUST appear in the Issuer’s annual audit statement, beginning with the statement corresponding to the audit period when the certificate was issued. Those certificates MUST continue to appear in audit statements until having appeared on at least one audit statement following revocation or key destruction (observed and reported by a Qualified Auditor).
+CA certificates MUST appear in the Issuer’s annual audit statement, beginning with the statement corresponding to the audit period when the certificate was issued. Those certificates MUST continue to appear in audit statements until having appeared on at least one audit statement following revocation, expiration, or key destruction (observed and reported by a Qualified Auditor).
 Self-signed certificates that share a Subject + SPKI with a root certificate that is, or was, included in a Root Store are treated by Root Store Operators as subordinate CA certificates because they chain up to an included root, so these certificates MUST also be listed in the applicable audit statements according to the [Derived Trust Bits](https://www.ccadb.org/cas/fields#formula-fields) field.
 CA certificates created by cross-signing are also considered subordinate CA certificates by Root Store Operators and MUST be included in all relevant audit statements of the entity that possesses the private key that performed the cross-signing.
 
