@@ -127,9 +127,8 @@ To promote simplicity and clarity, all CA policy documents SHOULD be:
 
 CA Owners MUST strictly adhere to their policy document(s) as disclosed within the CCADB (and not marked as “Superseded”). This extends to all policy documents the CA Owner publishes in relation to its CAs included in a Root Store, such as TSPS documents.
 
-Before corresponding policy changes are put into practice, CA Owners:
-- MUST minimally ensure the updated versions of a CA's policy document(s) are uploaded to their own publicly accessible repository, and
-- SHOULD ensure the updated versions of a CA's policy document(s) are submitted to the CCADB within 7 calendar days of the policy document's effective date, but MUST do so within 14 calendar days.
+CA Owners MUST ensure that updated versions of a CA's policy document(s) are uploaded to their own publicly accessible repository before the corresponding policy changes are put into practice. Corresponding policy changes are considered to be put into practice on the effective date specified in the policy document(s), unless individual requirements are explicitly future dated.
+Separately, CA Owners SHOULD ensure these updated policy document(s) are submitted to the CCADB within 7 calendar days of the policy document's effective date, and MUST ensure they are submitted within 14 calendar days of that effective date.
 
 CA Owners MUST:
 - submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) to add or update policy documents for root CA certificates stored in the CCADB.
