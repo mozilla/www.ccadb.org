@@ -241,7 +241,7 @@ In the case of Incident Reports with a Whiteboard field of "revocation-delay", r
 
 #### How are reports closed?
 
-When all Action Items are complete and no outstanding comments or questions remain, CA Owners MUST (1) request closure in a Bugzilla comment using the template [below](#incident-closure-summary) and (2) select the "Request information from" checkbox and add incident-reporting [at] ccadb [dot] org. Upon doing so, a final call for comments will be made by a Bugzilla moderator, and the report will be closed accordingly.
+When all Action Items are complete and no outstanding comments or questions remain, CA Owners MUST (1) request closure in a Bugzilla comment using the template [below](#incident-closure-summary) and (2) select the "Request information from" checkbox and add incident-reporting [at] ccadb [dot] org. Upon doing so, a final call for comments will be made by a Bugzilla moderator, and the report will be closed accordingly. After an Incident Closure Summary has been posted, CA Owners are not required to continue updating the incident report unless further questions are asked.
 
 ### Report Templates
 
