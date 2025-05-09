@@ -350,9 +350,9 @@ Beginning June 15, 2025, when new cross-certificates are issued across PKI hiera
 | TLS server authentication | MUST | Only 1.3.6.1.5.5.7.3.1                       |
 | TLS client authentication | MUST | Only 1.3.6.1.5.5.7.3.2                       |
 | TLS (generic)             | MUST | Only 1.3.6.1.5.5.7.3.1 and 1.3.6.1.5.5.7.3.2 |
+| S/MIME                    | MUST | Only 1.3.6.1.5.5.7.3.4                       |
 | S/MIME (generic)             | MUST | Only 1.3.6.1.5.5.7.3.4 and 1.3.6.1.5.5.7.3.2 |
 | Code signing              | MUST | Only 1.3.6.1.5.5.7.3.3                       |
-| S/MIME                    | MUST | Only 1.3.6.1.5.5.7.3.4                       |
 
 In cases where both the Issuer and the Subject hierarchies are capable of issuing Extended Validation (EV) certificates, the cross-certificate MUST include the EV CA/Browser Forum Reserved Certificate Policy Identifier of 2.23.140.1.1 as a policyIdentifier. Additional policyIdentifiers MAY be present.
 
