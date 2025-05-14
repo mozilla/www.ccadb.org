@@ -318,7 +318,9 @@ Each audit statement MUST be accompanied by documentation of the audit team qual
 
 ### 6.1 Disclosing and Responding to Incidents
 
-The CCADB [Incident Reporting Guidelines (IRGs)](https://www.ccadb.org/cas/incident-report) intend to present a common format for publicly disclosing incidents. CA Owners who are required to publicly disclose incidents MUST adhere to the CCADB IRGs. Those CA Owners MUST update the incidents and respond to questions in accordance with the IRGs until closure.
+The CCADB [Incident Reporting Guidelines (IRGs)](https://www.ccadb.org/cas/incident-report) intend to present a common format for publicly disclosing incidents. CA Owners who are required to publicly disclose incidents:
+- SHOULD always use the latest available version of the CCADB IRG templates, and
+- MUST NOT use a version of an IRG template that has been superseded by more than 30 calendar days before the corresponding report (i.e., preliminary, full, or closure) is posted.
 
 ### 6.2 Certificate Revocation List Disclosures
 
