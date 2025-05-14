@@ -186,7 +186,9 @@ _**Under the heading "Security", make sure that the "CA Program Security" checkb
 
 After opening a security-sensitive incident in Bugzilla, also email incident-reporting [at] ccadb [dot] org.
 
-Following the submission of a security-sensitive incident in Bugzilla, the corresponding CA Owner MUST file a public incident report once they have determined that the associated security risk is closed.
+Following the submission of a security-sensitive incident in Bugzilla, and once the associated security risk is mitigated, the corresponding CA Owner MUST either: 
+- file a new public incident report for the event, or
+- send an email to incident-reporting [at] ccadb [dot] org and request the existing security-sensitive incident be converted to a public incident report.
 
 #### How are reports scoped?
 
