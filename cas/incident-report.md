@@ -103,7 +103,7 @@ Reports are expected to:
 - describe the circumstances that prevented the problem(s) from being detected earlier;
 - describe a clear timeline of a CA Owner's actions while responding to and remediating an incident;
 - include a detailed and measurable explanation of actions taken or planned by the CA Owner that demonstrate a substantive commitment of how the CA Owner's systems, policies, and/or processes will be made more robust (i.e., demonstrate continuous improvement); and
-- share lessons learned that could be helpful to all CA Owners in building better systems policies, and/or processes.
+- share lessons learned that could be helpful to all CA Owners in building better systems, policies, and/or processes.
 
 #### What does Root Cause Analysis consider?
 
