@@ -16,12 +16,13 @@ To **create an 'Add/Update Root Request' case** in the CCADB:
 
 The 'Add/Update Root Request' case contains the following tabs, and you may choose which tabs to make updates in. For example, if you are providing policy document updates inbetween annual audits, then you may only want to update the POLICY DOCUMENTS tab. 
 
-Note: New required fields were added to Root Certificate records on September 15, 2022, and those fields will have to be filled in the next time an 'Add/Update Root Request' case is used to update a pre-existing Root Certificate record. Those fields are in the 'ROOT INFORMATION' tab.
 * CA OWNER
 * AUDITS
 * POLICY DOCUMENTS
 * ROOT INFORMATION
 * TEST WEBSITES
+
+Note: New required fields were added to Root Certificate records on September 15, 2022, and those fields will have to be filled in the next time an 'Add/Update Root Request' case is used to update a pre-existing Root Certificate record. Those fields are in the 'ROOT INFORMATION' tab.
 
 To **add a Root Certificate record to the CCADB**, view the instructions for the 'ROOT INFORMATION' tab. High level instructions:
 1. Go to the 'ROOT INFORMATION' tab.
