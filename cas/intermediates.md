@@ -66,7 +66,7 @@ Owner name in the upper left corner of the page.
 5. If the cert check is successful, then click on the 'Update Intermediate
    Cert' button. If the cert check was not successful, then click on the
    'Cancel' button. Check that the PEM data is correct and try again.
-   If it still fails, then send email to support@ccadb.org with the PEM data.
+   If it still fails, then send email to support [at] ccadb [dot] org with the PEM data.
 6. In the intermediate certificate record you will find the certificate data
    in the 'Certificate Data...' section. Review the information to ensure it is 
    the data you expected. If the data is not what you expected, then check 
