@@ -11,7 +11,7 @@ Table of Contents:
 ## Root Certificates
 
 CA Owners are required to update the audit, policy document, and test website information for their certificate hierarchies at least annually. To provide this information for root certificates, create one [Add/Update Root Request Case](updates#audit-case-workflow) in the CCADB for a particular set of audits (e.g. Standard Audit, NetSec Audit, TLS BR Audit, TLS EVG Audit, Code Signing Audit, S/MIME BR Audit).
-* [Update audit, CP, CPS, and test website information in the CCADB ](updates)
+* [Update audit, policy document, and test website information in the CCADB ](updates)
 
 ## Intermediate Certificates ##
 
@@ -21,7 +21,7 @@ Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
 
 To help enforce the rules at the intermediate certificate level, some CCADB Root Store Operators require [disclosure of intermediate certificates](/policy#4-intermediate-certificates). CCADB automatically runs ALV on the intermediate certificate records and reports the results to CA Owners and Root Store Operators in their CCADB home pages.
 
-CA Owners are required to annually update the audit and CP/CPS for their non-technically-constrained intermediate certificates chaining to root certificates included in a Root Store. To provide this information for intermediate certificates, directly [update the corresponding record](intermediates#updating-audit-statements) in the CCADB then click on the "Audit Letter Validation [ALV]" button. 
+CA Owners are required to annually update the audit and policy documents for their non-technically-constrained intermediate certificates chaining to root certificates included in a Root Store. To provide this information for intermediate certificates, directly [update the corresponding record](intermediates#updating-audit-statements) in the CCADB then click on the "Audit Letter Validation [ALV]" button. 
 
 When the audit statements for an intermediate certificate are the same as the certificate that signed it, check the “Audits Same as Parent” checkbox instead of providing separate audit information. When the "Audits Same as Parent" field is checked for an intermediate certificate record, the CCADB will look up the parent chain until audit statements are found, and then run ALV using those audit statements. When the "Audits Same as Parent" field is not checked, the CCADB will directly pass the audit statements in the intermediate certificate record into ALV.
 
@@ -52,12 +52,12 @@ When ALV returns FAIL for "Standard Audit ALV Found Cert", "NetSec Audit ALV Fou
 * If you do not agree with the ALV results, add comments to the "Standard Audit ALV Comments", "NetSec Audit ALV Comments", "TLS BR Audit ALV Comments", "EVG BR Audit ALV Comments", "Code Signing Audit ALV Comments", or "S/MIME Audit ALV Comments" fields to indicate that the SHA-256 fingerprint is listed correctly in the audit statement.
 * If the audit statement is indeed missing the SHA-256 fingerprint for the certificate, then file an [Incident Report](https://www.ccadb.org/cas/incident-report), and add the link to the Incident Report to one of the "...ALV Comments" fields.
 
-Important clarifications:
+**Important**:
 
 * If the CA Owner has a currently valid audit report at the time of creation of the intermediate certificate, then the current audit statement does not need to be updated and the new certificate must appear on the CA Owner's next periodic audit reports.
 * Intermediate certificates that contain "Server Authentication" in the [Derived Trust Bits](fields#formula-fields) field are considered to be technically capable of issuing TLS certificates, and they must be listed in the corresponding CA Owner’s Audit report.
 * If multiple intermediate certificates with the same Subject + SPKI have been issued, each one must have their SHA-256 Fingerprint listed in appropriate audit statements according to the [Derived Trust Bits](fields#formula-fields) field.
-* Cross-Certificates are also considered intermediate certificates, which must also be audited and specifically listed in the applicable audit statements according to the [Derived Trust Bits](fields#formula-fields) field.
+* Cross-certificates are also considered intermediate certificates, which must also be audited and specifically listed in the applicable audit statements according to the [Derived Trust Bits](fields#formula-fields) field.
 * Self-signed certificates that share a Subject + SPKI with a root certificate that is included in a Root Store are treated by Root Store Operators as intermediate certificates because they chain up to an included root, so these certificates must also be listed in the applicable audit statements according to the [Derived Trust Bits](fields#formula-fields) field. 
     * An example of this situation is when an older version of a root certificate exists and a newer version of the root certificate is created. In this case, a valid chain may be constructed as: leaf --> untrusted root --> trusted root. In other words, that "untrusted" root is technically trusted by the Root Store Operator because it chains to a trusted root, so it's SHA256 fingerprint must also be listed in the applicable audit statements.
 
@@ -72,19 +72,19 @@ Acceptable remediation:
 CA Owners may want to test preliminary audit statements to ensure the file will pass ALV before collecting a final copy from their auditor. CA Owners are encouraged to work with their auditor to coordinate preliminary audit statement testing. To test preliminary audit statements a CA Owner should:
 
 1. Create the [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) in the CCADB.
-2. In the ‘AUDITS’ tab of the Case, add [Audit Firm](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.y0j6nqw48aqv) information.
+2. In the 'AUDITS' tab of the Case, add [Audit Firm](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.y0j6nqw48aqv) information.
 3. Add [Audit Information](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.fo56qxxtqyjb) to the Case, including a URL to where the preliminary audit statement is located.
     * These preliminary statements are typically [uploaded](https://www.ccadb.org/cas/fields#uploading-documents) to Bugzilla.
-4. Add a Case Comment to the ‘CASE PROGRESS’ tab of the Case that says: “Preliminary Audit Reports” to inform Root Store Operators of your intent to test the preliminary audit statements.
+4. Add a Case Comment to the 'CASE PROGRESS' tab of the Case that says: “Preliminary Audit Reports” to inform Root Store Operators of your intent to test the preliminary audit statements.
 5. [Run ALV](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.risbuur7q7a).
     * Ignore any ALV error related to the audit report not originating from a trusted location.
     * Work with the auditor to resolve other [common ALV findings](https://www.ccadb.org/cas/alv#common-alv-findings) and errors.
-    * If you encounter a problem not described on the [common ALV findings](https://www.ccadb.org/cas/alv#common-alv-findings) page, contact support[at]ccadb[dot]org.
+    * If you encounter a problem not described on the [common ALV findings](https://www.ccadb.org/cas/alv#common-alv-findings) page, contact support [at] ccadb [dot] org.
 6. Once the errors are resolved, link to the final audit statements in the Audit Information Section of the tab in the existing “Add/Update Root Request” Case.
 
 More detailed steps for testing preliminary audit statements can be found [here](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.x9t1tvycbq18).
 
-Note: These instructions are specific to updating audit information for root CA certificates through a CCADB case. Guidance for managing Intermediate CA certificates (to include audit statements) can be found [here](https://www.ccadb.org/cas/intermediates#updating-audit-statements).
+Note: These instructions are specific to updating audit information for root certificates through a CCADB Case. Guidance for managing intermediate certificates (to include audit statements) can be found [here](https://www.ccadb.org/cas/intermediates#updating-audit-statements).
 
 ## Common ALV Findings
 ALV formatting requirements are specified in 
