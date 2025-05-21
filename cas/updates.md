@@ -14,11 +14,11 @@ To **create an 'Add/Update Root Request' case** in the CCADB:
 
 * Detailed Instructions: [Create an Add/Update Root Request](https://docs.google.com/document/d/1AUbwbyqCq3jR7wP0fSWjL1us9s4sZIbXGRyo_ko77QM/edit)
 
-The 'Add/Update Root Request' case contains the following tabs, and you may choose which tabs to make updates in. For example, if you are providing policy document updates inbetween annual audits, then you may only want to update the POLICY DOCUMENTS tab. 
+The 'Add/Update Root Request' case contains the following tabs, and you may choose which tabs to make updates in. For example, if you are providing policy document updates inbetween annual audits, then you may only want to update the NON-AUDIT DOCUMENTS tab. 
 
 * CA OWNER
 * AUDITS
-* POLICY DOCUMENTS
+* NON-AUDIT DOCUMENTS
 * ROOT INFORMATION
 * TEST WEBSITES
 
@@ -37,6 +37,6 @@ CAs in the CCADB are organized into hierarchies. Each CA Owner has children node
 
 Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
 
-All CAs are required to update the audit, CP, CPS and test website information for their certificate hierarchies at least annually. CAs are expected to maintain their [**intermediate**](intermediates) certificate records themselves and to directly enter the corresponding [updated audit statements](fields#audit-information). However, **root** certificate data cannot be self-maintained, because Root Store Operators must verify the data before the CA Owner or Root Certificate records are modified.
+All CAs are required to update the audit, policy document, and test website information for their certificate hierarchies at least annually. CAs are expected to maintain their [**intermediate**](intermediates) certificate records themselves and to directly enter the corresponding [updated audit statements](fields#audit-information). However, **root** certificate data cannot be self-maintained, because Root Store Operators must verify the data before the CA Owner or Root Certificate records are modified.
 
 CA Owners may want to [test preliminary audit statements](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#bookmark=id.n8g8lgkwb4co) before receiving and uploading the final audit statements from their auditor to ensure the documents will pass ALV.
