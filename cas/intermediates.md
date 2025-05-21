@@ -79,7 +79,7 @@ Owner name in the upper left corner of the page.
 7. Fill in the information in the '[Audit Information](fields#audit-information)' and '[Non-Audit
    Information](fields#non-audit-information)' sections. The
    audits and policies must cover the intermediate certificate.
-    * IMPORTANT: If the information is the **same as for the issuing (parent)
+    * **Important:** If the information is the **same as for the issuing (parent)
       certificate** (or a subset), then check 'Audits Same as Parent', 'CP Same as Parent', 'CPS Same as Parent', and or 'CP/CPS Same as Parent'.
     * If the information **has some differences from the issuing (parent)
       certificate**, then click on the 'Edit' button to enter the audit and
