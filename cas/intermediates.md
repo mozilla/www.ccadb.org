@@ -22,7 +22,7 @@ Table of Contents:
 
 ## Updating Audit Statements ##
 
-All CA Owners are required to update the audit and CP/CPS information for their 
+All CA Owners are required to update the audit and policy document information for their 
 certificate hierarchies at least annually. CA Owners are expected to maintain their 
 intermediate certificate records themselves and to directly enter the 
 corresponding updated audit statements via the following instructions. 
