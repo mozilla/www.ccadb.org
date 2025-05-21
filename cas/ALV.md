@@ -10,7 +10,7 @@ Table of Contents:
 
 ## Root Certificates
 
-CA Owners are required to update the audit, CP, CPS and test website information for their certificate hierarchies at least annually. To provide this information for root certificates, create one [Add/Update Root Request Case](updates#audit-case-workflow) in the CCADB for a particular set of audits (e.g. Standard Audit, NetSec Audit, TLS BR Audit, TLS EVG Audit, Code Signing Audit, S/MIME BR Audit).
+CA Owners are required to update the audit, policy document, and test website information for their certificate hierarchies at least annually. To provide this information for root certificates, create one [Add/Update Root Request Case](updates#audit-case-workflow) in the CCADB for a particular set of audits (e.g. Standard Audit, NetSec Audit, TLS BR Audit, TLS EVG Audit, Code Signing Audit, S/MIME BR Audit).
 * [Update audit, CP, CPS, and test website information in the CCADB ](updates)
 
 ## Intermediate Certificates ##
