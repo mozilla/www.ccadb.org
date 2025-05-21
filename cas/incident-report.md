@@ -233,7 +233,7 @@ CA Owners SHOULD respond promptly to comments and questions, and MUST respond wi
 Unless a [Closure Report](#closure-report) has been posted and no further questions have been raised, open incident reports MUST be updated:
 - on or before the "Next update" date in the "Whiteboard" field of the bug (note: CA Owners MAY request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item.);
 - within 7 days, if a "Next update" date is not recorded; or
-- when Action Items are changed, completed, or delayed.
+- within 3 days of an Action Item being changed, completed, or delayed.
 
 In the case of Incident Reports with a Whiteboard field of "revocation-delay", reports SHOULD be updated every 3 days and MUST be updated no less frequently than every 7 days to describe a summary of: 
 - the number of certificates that have been revoked;
