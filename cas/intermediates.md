@@ -22,7 +22,7 @@ Table of Contents:
 
 ## Updating Audit Statements ##
 
-All CA Owners are required to update the audit and CP/CPS information for their 
+All CA Owners are required to update the audit and policy document information for their 
 certificate hierarchies at least annually. CA Owners are expected to maintain their 
 intermediate certificate records themselves and to directly enter the 
 corresponding updated audit statements via the following instructions. 
@@ -66,7 +66,7 @@ Owner name in the upper left corner of the page.
 5. If the cert check is successful, then click on the 'Update Intermediate
    Cert' button. If the cert check was not successful, then click on the
    'Cancel' button. Check that the PEM data is correct and try again.
-   If it still fails, then send email to support@ccadb.org with the PEM data.
+   If it still fails, then send email to support [at] ccadb [dot] org with the PEM data.
 6. In the intermediate certificate record you will find the certificate data
    in the 'Certificate Data...' section. Review the information to ensure it is 
    the data you expected. If the data is not what you expected, then check 
@@ -79,7 +79,7 @@ Owner name in the upper left corner of the page.
 7. Fill in the information in the '[Audit Information](fields#audit-information)' and '[Non-Audit
    Information](fields#non-audit-information)' sections. The
    audits and policies must cover the intermediate certificate.
-    * IMPORTANT: If the information is the **same as for the issuing (parent)
+    * **Important:** If the information is the **same as for the issuing (parent)
       certificate** (or a subset), then check 'Audits Same as Parent', 'CP Same as Parent', 'CPS Same as Parent', and or 'CP/CPS Same as Parent'.
     * If the information **has some differences from the issuing (parent)
       certificate**, then click on the 'Edit' button to enter the audit and

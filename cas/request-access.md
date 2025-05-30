@@ -2,7 +2,7 @@
 
 CCADB licenses are intended for Root Store Operators and the Certification Authorities (CAs) who are in their programs, with the intention of jointly maintaining overlapping data about the CAs in their programs. A license should not generally be required to view CCADB data, because most of the non-personally-identifying information in the CCADB is published via URLs provided on [this website](https://ccadb.org/resources) as well as on the Root Store Operator websites.
 
-[Root Store Operators](https://ccadb.org/rootstores/how) of the CCADB share the cost in the maintenance of the CRM service, customization, and license fees. CAs are not currently charged a fee to have a CCADB CA Community License, because those licenses are paid for by the Root Store Operators.
+[Root Store Operators](https://ccadb.org/rootstores/how) of the CCADB share the cost in the maintenance of the CRM service, customization, and license fees. CA Owners are not currently charged a fee to have a CCADB CA Community license, because those licenses are paid for by the Root Store Operators.
 
 The Root Store Operators of the CCADB reserve the right to not provide CCADB access to an organization for any reason or no reason at all.
 
