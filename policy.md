@@ -1,6 +1,6 @@
 # CCADB Policy
 
-*Version 2.0, Effective: June 15, 2025*
+*Version 2.0, Effective: July 15, 2025*
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Root Store Operators MAY have additional CCADB-related requirements defined in t
 
 |Version|Effective Date|
 |-|-|
-|2.0 (current)|June 15, 2025|
+|2.0 (current)|July 15, 2025|
 |[1.3.1](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_3_1.md)|October 29, 2024|
 |[1.3](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_3.md)|October 25, 2023|
 |[1.2.3](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_2_3.md)|July 19, 2023|
@@ -355,7 +355,7 @@ Beginning June 15, 2025, when new cross-certificates are issued across PKI hiera
 | TLS client authentication | MUST | Only 1.3.6.1.5.5.7.3.2                       |
 | TLS (generic)             | MUST | Only 1.3.6.1.5.5.7.3.1 and 1.3.6.1.5.5.7.3.2 |
 | S/MIME                    | MUST | Only 1.3.6.1.5.5.7.3.4                       |
-| S/MIME (generic)             | MUST | Only 1.3.6.1.5.5.7.3.4 and 1.3.6.1.5.5.7.3.2 |
+| S/MIME (generic)          | MUST | Only 1.3.6.1.5.5.7.3.4 and 1.3.6.1.5.5.7.3.2 |
 | Code signing              | MUST | Only 1.3.6.1.5.5.7.3.3                       |
 
 In cases where both the Issuer and the Subject hierarchies are capable of issuing Extended Validation (EV) certificates, the cross-certificate MUST include the EV CA/Browser Forum Reserved Certificate Policy Identifier of 2.23.140.1.1 as a policyIdentifier. Additional policyIdentifiers MAY be present.
