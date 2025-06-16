@@ -4,7 +4,7 @@
 
 |Version|Effective Date|
 |-|-|
-|3.1 (current)|June  15, 2025| 
+|3.1 (current)|July 15, 2025| 
 |[3.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_3_0.md)|March 1, 2025| 
 |[2.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_2_0.md)|October 17, 2023| 
 |[1.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_1_0.md)|February 15, 2023|
