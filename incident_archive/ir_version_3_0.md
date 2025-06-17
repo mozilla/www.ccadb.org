@@ -4,8 +4,7 @@
 
 |Version|Effective Date|
 |-|-|
-|3.1 (current)|July 15, 2025| 
-|[3.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_3_0.md)|March 1, 2025| 
+|3.0 (current)|March 1, 2025| 
 |[2.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_2_0.md)|October 17, 2023| 
 |[1.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_1_0.md)|February 15, 2023|
 
@@ -37,7 +36,6 @@ Unless otherwise stated, "certificate" on this page refers to a final certificat
 
 [**Report lifecycle management**](#report-lifecycle-management)
 - [How do I submit a report?](#how-do-i-submit-a-report)
-- [How do I submit a security-sensitive incident report?](#how-do-i-submit-a-security-sensitive-incident-report)
 - [How are reports scoped?](#how-are-reports-scoped)
 - [What format is used?](#what-format-is-used)
 - [When are reports expected?](#when-are-reports-expected)
@@ -103,7 +101,7 @@ Reports are expected to:
 - describe the circumstances that prevented the problem(s) from being detected earlier;
 - describe a clear timeline of a CA Owner's actions while responding to and remediating an incident;
 - include a detailed and measurable explanation of actions taken or planned by the CA Owner that demonstrate a substantive commitment of how the CA Owner's systems, policies, and/or processes will be made more robust (i.e., demonstrate continuous improvement); and
-- share lessons learned that could be helpful to all CA Owners in building better systems, policies, and/or processes.
+- share lessons learned that could be helpful to all CA Owners in building better systems policies, and/or processes.
 
 #### What does Root Cause Analysis consider?
 
@@ -176,20 +174,6 @@ Create a new Bugzilla issue by filling out [this form](https://bugzilla.mozilla.
 - The "Summary" field in Bugzilla (i.e., "Subject line") MUST begin with the CA Owner’s name, followed by a colon, and a brief title that highlights the type of incident being reported (e.g., "EXAMPLE CA OWNER: Incorrect Subject RDN Encoding"). The CA Owner's name SHOULD match exactly with the CA Owner value in the CCADB.
 - The "Description" field MAY contain a Preliminary or Full Incident Report (copied and pasted from the corresponding Markdown template, as explained [below](#report-templates)).
 
-#### How do I submit a security-sensitive incident report?
-
-For additional context on what might be considered a "security-sensitive" incident, see [here](https://wiki.mozilla.org/CA/Vulnerability_Disclosure).
-
-Sensitive security incidents and vulnerabilities can be reported in Bugzilla by filling out [this form](https://bugzilla.mozilla.org/enter_bug.cgi?bug_type=task&component=CA%20Security%20Vulnerability&groups=ca-program-security&product=CA%20Program). Under the heading "People", be sure to add incident-reporting [at] ccadb [dot] org to the report's CC list.
-
-_**Under the heading "Security", make sure that the "CA Program Security" checkbox is ticked -- leaving all security boxes unchecked makes it a public bug.**_
-
-After opening a security-sensitive incident in Bugzilla, also email incident-reporting [at] ccadb [dot] org.
-
-Following the submission of a security-sensitive incident in Bugzilla, and once the associated security risk is mitigated, the corresponding CA Owner MUST either: 
-- file a new public incident report for the event, or
-- send an email to incident-reporting [at] ccadb [dot] org and request the existing security-sensitive incident be converted to a public incident report.
-
 #### How are reports scoped?
 
 There SHOULD be a single Incident Report for each distinct matter, and CA Owners MUST submit an additional, separate Incident Report when:
@@ -228,12 +212,13 @@ While Full Incident Reports SHOULD be posted as soon as possible, they MUST be p
 
 #### When are reports updated?
 
-CA Owners SHOULD respond promptly to comments and questions, and MUST respond within 7 days, even if only to acknowledge the request and provide a timeline for a full response.
+CA Owners should respond promptly to comments and questions, and MUST respond within 7 days, even if only to acknowledge the request and provide a timeline for a full response.
 
-Unless a [Closure Report](#closure-report) has been posted and no further questions have been raised, open incident reports MUST be updated:
+Open reports MUST be updated:
 - on or before the "Next update" date in the "Whiteboard" field of the bug (note: CA Owners MAY request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item.);
-- within 7 days, if a "Next update" date is not recorded; or
-- within 3 days of an Action Item being changed, completed, or delayed.
+- within 7 days, if a "Next update" date is not recorded;
+- in response to community questions or comments as described above; or
+- when Action Items are changed, completed, or delayed.
 
 In the case of Incident Reports with a Whiteboard field of "revocation-delay", reports SHOULD be updated every 3 days and MUST be updated no less frequently than every 7 days to describe a summary of: 
 - the number of certificates that have been revoked;
@@ -243,14 +228,14 @@ In the case of Incident Reports with a Whiteboard field of "revocation-delay", r
 
 #### How are reports closed?
 
-When all Action Items are complete and no outstanding comments or questions remain, CA Owners MUST (1) request closure in a Bugzilla comment using the template [below](#incident-closure-summary) and (2) select the "Request information from" checkbox and add incident-reporting [at] ccadb [dot] org. Upon doing so, a final call for comments will be made by a Bugzilla moderator, and the report will be closed accordingly. After an Incident Closure Summary has been posted, CA Owners are not required to continue updating the incident report unless further questions are asked.
+When all Action Items are complete and no outstanding comments or questions remain, CA Owners MUST request closure in a Bugzilla comment using the template [below](#incident-closure-summary). Upon doing so, a final call for comments will be made by a Bugzilla moderator, and the report will be closed accordingly.
 
 ### Report Templates
 
 The following templates MUST be used when submitting incident reports or requesting report closures.
 - [Preliminary Incident Report Template](#preliminary-incident-report)
 - [Full Incident Report Template](#full-incident-report)
-- [Closure Report Template](#closure-report)
+- [Report Closure Template](#closure-report)
 
 CA Owners submitting reports MUST complete all applicable fields in the relevant template.  Fields that are not applicable MUST still be included and marked 'N/A'.
 
