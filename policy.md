@@ -63,7 +63,7 @@ This policy considers a "CA Owner" to be the organization or legal entity that i
 
 When required by a Root Store Operator policy, CA Owners MUST adhere to the current version of this policy. Failure to adhere to this policy MAY result in a Root Store Operator disabling a CA Owner’s root certificates, removing them from the corresponding Root Store, or the application of other technical or policy restrictions.
 
-Regardless of more specific provisions in these requirements, CA Owners have an overarching responsibility to keep the information in the CCADB about themselves, their operations and their certificates accurate, and to make updates in a timely fashion. Minimally, CA Owners with certificates included in a Root Store MUST ensure their information stored in the CCADB is kept up to date as changes occur. When a timeline is not defined for a requirement specified in this policy, updates MUST be submitted to the CCADB within 14 calendar days of an activity being completed.
+Regardless of more specific provisions in these requirements, CA Owners have an overarching responsibility to keep the information in the CCADB about themselves, their operations and their certificates accurate, and to make updates in a timely fashion. Minimally, CA Owners with certificates included in a Root Store MUST ensure their information stored in the CCADB is kept up to date as changes occur. This responsibility includes the timely population of new data fields or values added to the CCADB. When a timeline is not defined for a requirement specified in this policy, updates MUST be submitted to the CCADB within 14 calendar days of an activity being completed.
 
 All CCADB disclosures MUST be made freely available and without additional requirements, including, but not limited to, registration, legal agreements, or restrictions on redistribution of the certificates in whole or in part.
 
@@ -190,7 +190,7 @@ CA Owners MUST:
 
 If an audit or audit statement disclosed to the CCADB does not meet the requirements of this policy, then a Root Store Operator MAY require that the CA Owner obtain a new audit, at the CA Owner's expense, for the period of time in question. Additionally, depending on the nature of concerns with the audit, a Root Store Operator MAY require that the CA Owner obtain such an audit from a new auditor.
 
-The presence of qualifications in an audit statement is not, by itself, generally considered a reason to remove a CA Owner from a Root Store. The purpose of audits is to honestly and thoroughly assess a CA Owner’s compliance with requirements which are necessary to assure a secure and stable ecosystem. Audit findings, including qualifications, can help to identify opportunities for improvement, whether for individual CAR Owners or for the wider industry as a whole.
+The presence of qualifications in an audit statement is not, by itself, generally considered a reason to remove a CA Owner from a Root Store. The purpose of audits is to honestly and thoroughly assess a CA Owner’s compliance with requirements which are necessary to assure a secure and stable ecosystem. Audit findings, including qualifications, can help to identify opportunities for improvement, whether for individual CA Owners or for the wider industry as a whole.
 
 ### 5.1 Scope of Certificates Covered by an Audit
 
@@ -326,20 +326,29 @@ The CCADB [Incident Reporting Guidelines (IRGs)](https://www.ccadb.org/cas/incid
 
 For each unexpired and unrevoked CA certificate record disclosed to the CCADB and within 7 days of the corresponding CA issuing its first certificate, CA Owners MUST disclose either:
 - the URL of a full and complete Certificate Revocation List (CRL); or
-- a JSON Array of Partitioned CRL URLs.
+- a JSON array of partitioned CRL URLs.
 
-URLs:
-- MUST match exactly as they appear in the certificates issued by the corresponding CA.
+Unless one of the temporary exceptions in Section 6.2.1  applies, URLs:
+- MUST match exactly as they appear in the certificates issued by the corresponding CA, if URLs are included in certificates.
 
-If populating a full and complete CRL URL: 
+If populating a full and complete CRL URL:
 - the corresponding CRL SHOULD NOT contain an 'Issuing Distribution Point' extension.
-- the JSON Array of Partitioned CRL URLs field MUST be empty.
+- the JSON Array of Partitioned CRL URLs field MUST be empty, unless one of the temporary exceptions in Section 6.2.1 applies.
 
-If populating a JSON Array of Partitioned CRL URLs: 
+If populating a JSON array of partitioned CRL URLs:
 - CA Owners MUST ensure that each corresponding CRL contains a critical 'Issuing Distribution Point' extension and the 'distributionPoint' field of the extension MUST include a 'UniformResourceIdentifier'. The value of the UniformResourceIdentifier MUST exactly match a URL, from which the CRL was accessed, present in the CCADB record associated with the CA certificate.
-- the full and complete CRL URL MUST be empty.
+- the full and complete CRL URL MUST be empty, unless one of the temporary exceptions in Section 6.2.1 applies.
 
 Under normal operating conditions, the CRL URLs provided by CAs in accordance with this section MUST be available such that relying parties are able to successfully retrieve the current CRL every 4 hours.
+
+#### 6.2.1 Transitions Between CRL URLs
+
+When a CA Owner transitions from a previously disclosed CRL URL (“legacy URL”) to a new URL (e.g., from “crl.repository.acme.com/crl-1.crl” to “crl.acme.com/crl-1.crl”), and at least one unexpired certificate references the legacy URL, the following requirements apply for the duration of the transition:
+- The CA Owner MUST disclose either the legacy URL(s) or the new URL(s).
+- When transitioning between a full CRL and partitioned CRLs (or vice versa), the CA Owner SHOULD disclose the full and complete CRL URL during the transition period.
+- The CA Owner MUST ensure a valid CRL remains retrievable from the legacy URL until it is no longer included in any unexpired certificates.
+- The complete set of revocation information available from the legacy URL(s) MUST be identical to the set available from the new URL(s). 
+- The CCADB disclosure MUST be updated to reflect only the new URL(s) once all certificates containing the legacy URL(s) have expired. 
 
 ### 6.3 Cross-certification across PKI Hierarchies
 
