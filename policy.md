@@ -190,7 +190,7 @@ CA Owners MUST:
 
 If an audit or audit statement disclosed to the CCADB does not meet the requirements of this policy, then a Root Store Operator MAY require that the CA Owner obtain a new audit, at the CA Owner's expense, for the period of time in question. Additionally, depending on the nature of concerns with the audit, a Root Store Operator MAY require that the CA Owner obtain such an audit from a new auditor.
 
-The presence of qualifications in an audit statement is not, by itself, generally considered a reason to remove a CA Owner from a Root Store. The purpose of audits is to honestly and thoroughly assess a CA Owner’s compliance with requirements which are necessary to assure a secure and stable ecosystem. Audit findings, including qualifications, can help to identify opportunities for improvement, whether for individual CAR Owners or for the wider industry as a whole.
+The presence of qualifications in an audit statement is not, by itself, generally considered a reason to remove a CA Owner from a Root Store. The purpose of audits is to honestly and thoroughly assess a CA Owner’s compliance with requirements which are necessary to assure a secure and stable ecosystem. Audit findings, including qualifications, can help to identify opportunities for improvement, whether for individual CA Owners or for the wider industry as a whole.
 
 ### 5.1 Scope of Certificates Covered by an Audit
 
