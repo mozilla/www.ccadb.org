@@ -6,7 +6,8 @@ Some Root Store policies may require the completion of a self-assessment using t
 
 |Version|Effective Date|
 |-|-|
-|[1.5 (Latest)](https://docs.google.com/spreadsheets/d/1mpfEncXEb9Dqx0qXD3YT7jp7QKcBZkIKdq9O69N6KcM/edit?usp=sharing)|February 26, 2025|
+|[1.6 (Latest)](https://docs.google.com/spreadsheets/d/1SM8I0tgpCaNpoZfq2y_w5XlTEH7sMjr2OlGmxnu9kjA/edit?usp=sharing)|July 15, 2025|
+|[1.5](https://docs.google.com/spreadsheets/d/1mpfEncXEb9Dqx0qXD3YT7jp7QKcBZkIKdq9O69N6KcM/edit?usp=sharing)|February 26, 2025|
 |[1.4.2](https://docs.google.com/spreadsheets/d/1giNu8-CWG3KQZ4rH53F5O0g_2VVAE_SgOiFY5jwbsGY/edit?usp=sharing)|November 12, 2024|
 |[1.4.1](https://docs.google.com/spreadsheets/d/1nInlBLAqnhdQWwgyBZrAmCdqDKMm176QPO_Tcr4NvFA/edit?usp=sharing)|September 5, 2024|
 |[1.4](https://docs.google.com/spreadsheets/d/1GJXha85NjU33aEP6tGS90a5JG30yyxRJ9t7OO4l3la0/edit?usp=sharing)|August 26, 2024|
