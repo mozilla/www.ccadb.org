@@ -215,7 +215,7 @@ certificate is in the correct PEM format.
 </tr>
 <tr valign="top" align="left">
 <td>Certificate Policy URL</td>
-<td>URL to Certificate Policy documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+<td>URL to Certificate Policy documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
 </tr>
 <tr valign="top" align="left">
 <td>CPS Same as Parent</td>
@@ -223,7 +223,7 @@ certificate is in the correct PEM format.
 </tr>
 <tr valign="top" align="left">
 <td>Certification Practice Statement URL</td>
-<td>URL to CPS specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+<td>URL to CPS specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
 </tr>
 <tr valign="top" align="left">
 <td>CP/CPS Same as Parent</td>
@@ -231,7 +231,15 @@ certificate is in the correct PEM format.
 </tr>
 <tr valign="top" align="left">
 <td>Certificate Practice & Policy Stmt URL</td>
-<td>URL to CP/CPS documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+<td>URL to CP/CPS documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
+</tr>
+<tr valign="top" align="left">
+<td>MD/AsciiDoc CP/CPS Same as Parent</td>
+<td>Check this box if this certificate has the same Markdown or AsciiDoc formatted CP/CPS information as the issuing certificate (or a subset). If you check this box, then do not enter data into the other fields in this MD/AsciiDoc CP/CPS section. If you need to add data to the other fields in this section, then uncheck this box.</td>
+</tr>
+<tr valign="top" align="left">
+<td>MD/AsciiDoc CP/CPS URL</td>
+<td>URL to the Markdown or AsciiDoc formatted CP/CPS documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
 </tr>
 <tr valign="top" align="left">
 <td>Self-Assessment Same as Parent</td>
@@ -239,7 +247,7 @@ certificate is in the correct PEM format.
 </tr>
 <tr valign="top" align="left">
 <td>Self-Assessment URL</td>
-<td>URL to Self-Assessment documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+<td>URL to Self-Assessment documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
 </tr>
 </table>
 
@@ -290,7 +298,25 @@ Example:
 <br>
 &#91; "http://cdn.example/crl-1.crl", "http://cdn.example/crl-2.crl" &#93;
 <br>
- </td>
+</td>
+</tr>
+<tr valign="top">
+<td>CA/B Forum Certificate Policy Identifier</td>
+<td> Select all of the CA/Browser Forum Certificate Policy Identifiers that may be included in certificates issued by this CA.
+</td>
+</tr>
+<tr valign="top">
+<td>ACME Direcotry URL(s)</td>
+<td> If TLS server authentication certificates are issued by this CA and ACME is applicable, enter one or more ACME Endpoint URLs (i.e., directory URL) separated by a semicolon “;”.
+</td>
+</tr>
+<td>Other Automated Solution Description</td>
+<td> If this CA supports a non-ACME automated solution for TLS server authentication certificate issuance, enter one or more URLs to publicly available documentation that describes the capability and how a Subscriber can leverage its benefits. If multiple URLs are provided, separate them by a semicolon “;”.
+</td>
+</tr>
+<td>Automation Test Certificate Website</td>
+<td> Enter the URL of the automation test certificate website with a valid, actively-hosted TLS certificate issued via your ACME or non-ACME automation solution for each type of CA/Browser Forum certificate issued by this CA. If multiple URLs are provided for the same type of certificate, separate them by a semicolon “;”.
+</td>
 </tr>
 </table>
 
