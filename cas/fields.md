@@ -310,10 +310,12 @@ Example:
 <td> If TLS server authentication certificates are issued by this CA and ACME is applicable, enter one or more ACME Endpoint URLs (i.e., directory URL) separated by a semicolon “;”.
 </td>
 </tr>
+<tr valign="top">
 <td>Other Automated Solution Description</td>
 <td> If this CA supports a non-ACME automated solution for TLS server authentication certificate issuance, enter one or more URLs to publicly available documentation that describes the capability and how a Subscriber can leverage its benefits. If multiple URLs are provided, separate them by a semicolon “;”.
 </td>
 </tr>
+<tr valign="top">
 <td>Automation Test Certificate Website</td>
 <td> Enter the URL of the automation test certificate website with a valid, actively-hosted TLS certificate issued via your ACME or non-ACME automation solution for each type of CA/Browser Forum certificate issued by this CA. If multiple URLs are provided for the same type of certificate, separate them by a semicolon “;”.
 </td>
