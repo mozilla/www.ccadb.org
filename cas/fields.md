@@ -215,7 +215,7 @@ certificate is in the correct PEM format.
 </tr>
 <tr valign="top" align="left">
 <td>Certificate Policy URL</td>
-<td>URL to Certificate Policy documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+<td>URL to Certificate Policy documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
 </tr>
 <tr valign="top" align="left">
 <td>CPS Same as Parent</td>
@@ -223,7 +223,7 @@ certificate is in the correct PEM format.
 </tr>
 <tr valign="top" align="left">
 <td>Certification Practice Statement URL</td>
-<td>URL to CPS specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+<td>URL to CPS specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
 </tr>
 <tr valign="top" align="left">
 <td>CP/CPS Same as Parent</td>
@@ -231,7 +231,7 @@ certificate is in the correct PEM format.
 </tr>
 <tr valign="top" align="left">
 <td>Certificate Practice & Policy Stmt URL</td>
-<td>URL to CP/CPS documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+<td>URL to CP/CPS documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
 </tr>
 <tr valign="top" align="left">
 <td>MD/AsciiDoc CP/CPS Same as Parent</td>
@@ -239,7 +239,7 @@ certificate is in the correct PEM format.
 </tr>
 <tr valign="top" align="left">
 <td>MD/AsciiDoc CP/CPS URL</td>
-<td>URL to the Markdown or AsciiDoc formatted CP/CPS documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+<td>URL to the Markdown or AsciiDoc formatted CP/CPS documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
 </tr>
 <tr valign="top" align="left">
 <td>Self-Assessment Same as Parent</td>
@@ -247,7 +247,7 @@ certificate is in the correct PEM format.
 </tr>
 <tr valign="top" align="left">
 <td>Self-Assessment URL</td>
-<td>URL to Self-Assessment documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described here https://www.ccadb.org/cas/fields#uploading-documents.</td>
+<td>URL to Self-Assessment documentation specific to this cert. Documents may be attached to Bugzilla Bugs as described <a href="https://www.ccadb.org/cas/fields#uploading-documents">here</a>.</td>
 </tr>
 </table>
 
