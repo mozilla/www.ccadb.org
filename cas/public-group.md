@@ -23,7 +23,7 @@ For those Root Stores that have public discussion, public@ccadb.org enables a si
 Prior to a Root Store Operator initiating a CCADB root inclusion public discussion, the following must occur:
 
 1. A CA Owner must have an account in CCADB.
-2. A completed 'Add/Update Root Request' case must exist in CCADB for the root CA certificate(s). A completed case must include all required information set forth in each of the following tabs in the case: CA OWNER, AUDITS, POLICY DOCUMENTS, ROOT INFORMATION, and if applicable, TEST WEBSITES. Specifically, required 'ROOT INFORMATION' is:
+2. A completed 'Add/Update Root Request' Case must exist in the CCADB for the root CA certificate(s). A completed Case must include all required information set forth in each of the following tabs in the Case: CA OWNER, AUDITS, NON-AUDIT DOCUMENTS, ROOT INFORMATION, and if applicable, TEST WEBSITES. Specifically, required 'ROOT INFORMATION' is:
     * Background information that identifies why the CA needs to be considered for inclusion and the unique function of the CA.
     * The full CRL issued by the CA, or when there is no full CRL for the certificates issued by this CA, a JSON array whose elements are URLs of partial CRLs that when combined are the equivalent of a full CRL for the certificates issued by the CA.
     * All 'PKI Hierarchy Information', which details:
@@ -34,12 +34,11 @@ Prior to a Root Store Operator initiating a CCADB root inclusion public discussi
         * The intended use cases (i.e. EKUs) to be served under the CA hierarchy,
         * The CA/Browser Forum Certificate Policy Identifiers included in certificates below the CA (if applicable), and
         * The TLS certificate validation methods that are available for use for certificates below the CA (if applicable).
-    * A link to a completed [self assessment](https://www.ccadb.org/cas/self-assessment) for the CA.
     * A link to a Key Generation Audit Report for the CA.
-3. A 'Root Inclusion Request' case must have been submitted in CCADB, and one or more Root Store Programs must be selected for inclusion.
+3. A 'Root Inclusion Request' Case must have been submitted in CCADB, and one or more Root Store Programs must be selected for inclusion.
 
 ### Initiation ###
-No more than three concurrent CCADB root inclusion public discussions shall take place at any given time. If more than three 'Root Inclusion Request' cases have been submitted in CCADB, any requests for replacing an existing root CA certificate in CCADB will be prioritized for public discussion. Otherwise, CCADB public discussion will generally occur on a first-ready, first-out basis (to be ready for discussion). 
+No more than three concurrent CCADB root inclusion public discussions shall take place at any given time. If more than three 'Root Inclusion Request' Cases have been submitted in CCADB, any requests for replacing an existing root CA certificate in CCADB will be prioritized for public discussion. Otherwise, CCADB public discussion will generally occur on a first-ready, first-out basis (to be ready for discussion). 
 
 A Root Store Operator will initiate a six-week CCADB root inclusion public discussion in the public@ccadb.org group and provide information about the inclusion request from CCADB. The discussion period will be carried out over six contiguous weeks and will not be paused at any point.
 
