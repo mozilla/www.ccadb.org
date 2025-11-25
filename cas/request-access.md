@@ -14,7 +14,7 @@ Some of the Root Store Operators of the CCADB require contractual agreements wit
 
 ## Application for CCADB Access ##
 
-If your CA is new to the CCADB, then [submit this form](https://ccadb-public.secure.force.com/ccadb/AccessRequestForm) to request access.
+If your CA is new to the CCADB, then [submit this form](https://ccadb.my.salesforce-sites.com/ccadb/AccessRequestForm) to request access.
 
 The CCADB is a highly customized instance of Salesforce, so in the access request form you must confirm that you can abide by the [Salesforce Terms of Service](https://www.salesforce.com/company/legal/sfdc-website-terms-of-service/). Note that Salesforce prevents access in some global regions as indicated in the “Export Compliance” section of the [Salesforce Master Subscription Agreement](https://a.sfdcstatic.com/content/dam/www/ocms-backup/assets/pdf/misc/salesforce_MSA.pdf).
 
