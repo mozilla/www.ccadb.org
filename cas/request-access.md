@@ -8,7 +8,7 @@ The Root Store Operators of the CCADB reserve the right to not provide CCADB acc
 
 To get access to the CCADB the organization must be sponsored by a Root Store Operator of the CCADB. To be sponsored, the CA will either have a root certificate included in one or more of the Root Store Operators’ programs, or be in the process of requesting root certificate inclusion into one or more of the Root Store Operators’ programs. 
 
-The CCADB is a highly customized instance of the Salesforce CRM, so as part of your application for CCADB access, you must review the [Salesforce Terms of Service](https://www.salesforce.com/company/legal/sfdc-website-terms-of-service/) and state that you can abide by it. CCADB CA Community licenses may only be issued to individuals who officially represent the CA.
+The CCADB is a highly customized instance of the Salesforce CRM, so as part of your application for CCADB access, you must review the [Salesforce Terms of Service](https://www.salesforce.com/company/legal/sfdc-website-terms-of-service/) and state that you can abide by it. CCADB CA Community licenses may only be issued to individuals who officially represent the CA. Further, these accounts may be disabled if the Community license holder has never logged into CADDB and the account was created more than 4 months ago, or if the Community license holder has not logged into the CCADB in the past 32 months. 
 
 Some of the Root Store Operators of the CCADB require contractual agreements with the CAs in their program. Therefore, your CA organization must be capable of entering into a contractual agreement with a [US-based](https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx) company.
 
