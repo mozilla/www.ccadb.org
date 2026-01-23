@@ -4,7 +4,8 @@
 
 |Version|Effective Date|
 |-|-|
-|3.1 (current)|July 15, 2025| 
+|3.2 (current)|June 15, 2026|
+|[3.1](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_3_1.md)|July 15, 2025| 
 |[3.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_3_0.md)|March 1, 2025| 
 |[2.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_2_0.md)|October 17, 2023| 
 |[1.0](https://github.com/mozilla/www.ccadb.org/blob/master/incident_archive/ir_version_1_0.md)|February 15, 2023|
@@ -33,6 +34,7 @@ Unless otherwise stated, "certificate" on this page refers to a final certificat
 [**Community participation in the reporting process**](#community-participation-in-the-reporting-process)
 - [Who can submit an Incident Report?](#who-can-submit-an-incident-report)
 - [Are there other ways to become involved in the reporting process?](#are-there-other-ways-to-become-involved-in-the-reporting-process)
+- [Can Auditors participate in the reporting process?](#can-auditors-participate-in-the-reporting-process)
 - [What Bugzilla account can I use?](#what-bugzilla-account-can-i-use)
 
 [**Report lifecycle management**](#report-lifecycle-management)
@@ -79,12 +81,15 @@ For publicly-trusted CA Owners, the number of incident reports filed in Bugzilla
 
 Qualifications, non-conformities, and other deviations or omissions identified during audits are considered "findings."
 
-These items are commonly, but not exclusively, presented as either:
-- major non-conformities,
-- minor non-conformities,
+The WebTrust Audit scheme commonly, but not exclusively, presents these as:
 - qualifications,
 - qualified opinions, or
-- other matters.
+- other matters
+
+The ETSI Audit scheme commonly, but not exclusively, presents these as:
+- non-conformities (sometimes prefaced by "major" or "minor")
+  
+As described later in these guidelines, an audit finding MUST be subject of an incident report.
 
 #### Why is public reporting important?
 
@@ -156,6 +161,14 @@ Absolutely! There are many ways to participate in the incident reporting process
 Individuals representing CA Owners are especially encouraged to participate broadly in the reporting processes, extending their contributions beyond incidents involving only their own organization. Sharing insights and perspectives across organizational boundaries fosters a collaborative learning environment and strengthens the overall security posture of the Web PKI ecosystem.
 
 Please keep all comments constructive, relevant, and in line with the [CCADB Code of Conduct](https://docs.google.com/document/d/19ALqEvHtTE6OUTz2FaOXrU9gruIdvia5EDh3hXeGpZA/edit#heading=h.cumc0pgd1s7c) to ensure productive dialogue.
+
+#### Can Auditors participate in the reporting process?
+
+Yes. Auditors are very much encouraged to participate in the incident reporting process.
+
+The [CCADB Policy](https://www.ccadb.org/policy) states that Auditors SHOULD opine on incidents that occurred or were open during the audit period. This includes confirming that:
+1. The scope, impact, and root cause of incidents are accurately and fairly stated in the publicly-disclosed incident reports; and
+2. The corresponding actions taken by the CA Owner satisfactorily address those root causes and meaningfully reduce the likelihood of the issue’s recurrence.
 
 #### What Bugzilla account can I use?
 
@@ -231,7 +244,7 @@ While Full Incident Reports SHOULD be posted as soon as possible, they MUST be p
 CA Owners SHOULD respond promptly to comments and questions, and MUST respond within 7 days, even if only to acknowledge the request and provide a timeline for a full response.
 
 Unless a [Closure Report](#closure-report) has been posted and no further questions have been raised, open incident reports MUST be updated:
-- on or before the "Next update" date in the "Whiteboard" field of the bug (note: CA Owners MAY request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item.);
+- on or before the "Next update" date in the "Whiteboard" field of the bug and CA Owners SHOULD request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item;
 - within 7 days, if a "Next update" date is not recorded; or
 - within 3 days of an Action Item being changed, completed, or delayed.
 
@@ -449,6 +462,8 @@ For incidents affecting less than 10,000 certificates, a CA Owner MUST attach a 
 | **Is revoked?** | "Yes", "Planned","Delayed", or "N/A" (for expired) |
 | **Revocation date** | Actual Date, Planned Date, or "N/A" |
 | **Revocation reason** | The reasonCode corresponding with the certificate's entry on the CRL. |
+
+CA Owners MAY append additional fields to this list to provide further context or data relevant to the incident. However, to ensure automated parsing tools function correctly, the standard fields defined above MUST appear first and in the order listed. Any additional, custom fields MUST be appended as new columns to the right of the "Revocation reason" field.
 
 For incidents affecting 10,000 or more certificates, a CA Owner MAY instead attach a text file where each line is of the form https://crt.sh/?sha256=[sha256 fingerprint of the certificate].
 
