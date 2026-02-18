@@ -103,7 +103,7 @@ A subordinate CA certificate is a certificate signed by a root CA or another sub
 
 CA Owners MUST disclose:
 - all subordinate CA certificates capable of validating to a certificate included in a Root Store or associated with a CCADB Root Inclusion Request. Disclosure MUST take place within 7 calendar days of issuance and before the subject CA represented in the certificate begins issuing publicly-trusted certificates.
-- subordinate CA ownership using the "Subordinate CA Owner" field. This is the subordinate CA Owner's name as it appears in the provided audit statements. CA Owners MUST leave this field blank if and only if both control of the private key and domain/IP control validation activities are performed by the organization listed in the audit statement of the parent certificate.
+- subordinate CA ownership using the "Subordinate CA Owner" field. This is the subordinate CA Owner's name as it appears in the provided audit statements. CA Owners MUST NOT leave this field blank unless both control of the private key and domain/IP control validation activities are performed by the organization listed in the audit statement of the parent certificate.
 - revocation of all subordinate CA certificates capable of validating to a certificate included in a Root Store or associated with a CCADB Root Inclusion Request within 7 calendar days of revocation.
 
 Cross-certificates (i.e., where the same subject and public key of an existing CA certificate appears in at least one additional certificate issued by a _different_ CA Owner) are considered subordinate CA certificates by Root Store Operators and MUST be disclosed to the issuing CA Owner’s PKI hierarchy in the CCADB. 
