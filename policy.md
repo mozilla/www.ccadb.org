@@ -1,6 +1,6 @@
 # CCADB Policy
 
-*Version 2.1, Effective: June 15, 2026*
+*Version 2.1, Effective: March 20, 2026*
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Root Store Operators MAY have additional CCADB-related requirements defined in t
 
 |Version|Effective Date|
 |-|-|
-|2.1 (current)|June 15, 2026|
+|2.1 (current)|March 20, 2026|
 |[2.0](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_2_0.md)|July 15, 2025|
 |[1.3.1](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_3_1.md)|October 29, 2024|
 |[1.3](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_3.md)|October 25, 2023|
@@ -129,9 +129,10 @@ Effective September 15, 2026, CA policy documents MUST:
 - explicitly and clearly describe the relationship between the document and any other applicable policy documents within the hierarchy (e.g., a superior CA's CP/CPS), including the order of precedence in the event of a conflict.
 
 To promote simplicity and clarity, all CA policy documents SHOULD:
-- be focused on one specific PKI use case (e.g., TLS server authentication, TLS client authentication, S/MIME, Code Signing, etc.), rather than combining multiple use cases into a single document or set of documents.
-- be comprehensive and consolidated, whenever possible, such that there are not multiple sets of similar yet slightly different policy and practice statements supporting the same PKI use case.
-- be available in Markdown or AsciiDoc.
+- be focused on one specific PKI use case (e.g., TLS server authentication, TLS client authentication, S/MIME, Code Signing, etc.), rather than combining multiple use cases into a single document or set of documents;
+- be comprehensive and consolidated, whenever possible, such that there are not multiple sets of similar yet slightly different policy and practice statements supporting the same PKI use case;
+- be publicly available from the CA Owner’s publicly accessible repository in a format that facilitates transparency and change tracking (e.g., Markdown or AsciiDoc), and remain archived when superseded;
+- ensure that the official text remains identical across publication formats, where multiple formats are provided, and clearly identify which format is considered authoritative in the event of a discrepancy; and
 - clearly define the scope of applicability for externally-operated subordinate CAs, specifying which provisions of the Root CA’s CP/CPS apply to the subordinate and which are superseded by the subordinate’s own CP/CPS.
 
 CA Owners MUST strictly adhere to their policy document(s) as disclosed within the CCADB (and not marked as “Superseded”). This extends to all policy documents the CA Owner publishes in relation to its CAs included in a Root Store, such as TSPS documents.
