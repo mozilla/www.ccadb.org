@@ -355,6 +355,7 @@ If the CA certificate is revoked, no `crlDistributionPoints` disclosures are req
 
 If populating a full and complete CRL URL: 
 - values MUST be stored in the "JSON Array of all Full CRL URIs" field as a properly formatted JSON array.
+- all Full CRL URIs stored MUST reference an identical CRL.
 - the corresponding CRL SHOULD NOT contain an `IssuingDistributionPoint` extension.
 
 If populating a JSON Array of Partitioned CRL URLs: 
