@@ -177,7 +177,7 @@ The entry for each subordinate CA certificate has checkboxes to indicate "Audits
 
 URLs for the following audit statements are required for each CA certificate, depending upon the purposes for which the certificate and those it issues are trusted. 
 
-| Trust Purpose | Description | Audits Required |  
+| Purpose | Description | Audits Required |  
 |---|---|---|
 | Server Authentication  | Any certificate issued by the CA (directly or transitively) contains an EKU value of: <br><br> (1) either 1.3.6.1.5.5.7.3.1 (id-kp-serverAuth) or 1.3.6.1.5.5.7.3.0 (anyExtendedKeyUsage), or <br><br> (2) No EKU | (1) Standard Audit <br><br> (2) NetSec Audit <br><br> (3) TLS BR Audit <br><br> (4) TLS EVG Audit (_only if issuing certificates that contain the CA/Browser Forum EV Certificate Policy Identifier (2.23.140.1.1)_) |
 | Client Authentication | Any certificate issued by the CA (directly or transitively) contains an EKU value of: <br><br> (1) either 1.3.6.1.5.5.7.3.2 (id-kp-clientAuth) or 1.3.6.1.5.5.7.3.0 (anyExtendedKeyUsage), or <br><br> (2) No EKU  | (1) Standard Audit <br><br> (2) NetSec Audit <br><br> (3) TLS BR Audit <br><br> (4) TLS EVG Audit (_only if issuing certificates that contain the CA/Browser Forum EV Certificate Policy Identifier (2.23.140.1.1)_) |
