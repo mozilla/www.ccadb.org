@@ -125,9 +125,9 @@ CA Owners with either (1) a certificate included in a Root Store or (2) a CA cer
     - sufficiently detailed to assess the operations of the CA(s) and the compliance with the expectations set forth in this Policy, the applicable CA/Browser Forum Baseline Requirements, and any applicable Root Store Operator policies, and MUST NOT conflict with any of the requirements specified therein.
 
 Effective September 15, 2026, CA policy documents MUST:
-- state adherence to this CCADB Policy and to any other applicable policies or requirements governing the PKI hierarchy, including, where applicable, Root Store Operator policies and CA/Browser Forum Requirements;
-- explicitly and clearly describe the relationship between the document and any other applicable policy documents within the hierarchy (e.g., a superior CA’s CP/CPS, cross-certified hierarchy documentation, or applicable external requirements), including how conflicts are resolved and the order of precedence among such documents; and
-- ensure that the CP/CPS does not contain language that subordinates applicable external requirements to the CA Owner’s own policy documents.
+- state adherence to this CCADB Policy;
+- identify any applicable external requirements that apply to the CA Owner's operations; and
+- not conflict or limit compliance with such applicable external requirements.
 
 To promote simplicity and clarity, all CA policy documents SHOULD:
 - be focused on one specific PKI use case (e.g., TLS server authentication, TLS client authentication, S/MIME, Code Signing, etc.), rather than combining multiple use cases into a single document or set of documents;
