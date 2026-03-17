@@ -258,11 +258,6 @@ For hierarchies used to issue S/MIME certificates:
 - 2.23.140.1.5.4.2
 - 2.23.140.1.5.4.3
 
-15. For any audit period beginning on or after January 15, 2027, a disclosure of the sampling methodology used by the auditor, including:
-- The total population size(s) of the period;
-- The absolute number of items sampled; and
-- A detailed description of the methodology used to determine the sample size(s) (e.g., statistical sampling parameters).
-
 Reports uploaded to the CCADB MUST address only the CA's conformity with the stated criteria.
 - Reports MUST NOT characterize non-conformities with the applicable criteria (e.g., Baseline Requirements) as "recommendations," "observations," or "opportunities for improvement."
 - Reports SHOULD NOT include recommendations, opportunities for improvement, or advisory commentary that does not represent a non-conformity with the stated criteria.
