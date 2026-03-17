@@ -124,9 +124,7 @@ CA Owners with either (1) a certificate included in a Root Store or (2) a CA cer
     - available in an authoritative English language version; and
     - sufficiently detailed to assess the operations of the CA(s) and compliance with the expectations set forth in this Policy, the applicable CA/Browser Forum Baseline Requirements, and any applicable Root Store Operator policies, and MUST NOT conflict with any of the requirements specified therein.
 
-Effective September 15, 2026, CA policy documents MUST:
-- state adherence to this CCADB Policy; and
-- identify any applicable external requirements that apply to the CA Owner's operations.
+Effective September 15, 2026, CA policy documents MUST state adherence to this CCADB Policy.
 
 To promote simplicity and clarity, all CA policy documents SHOULD:
 - be focused on one specific PKI use case (e.g., TLS server authentication, TLS client authentication, S/MIME, Code Signing, etc.), rather than combining multiple use cases into a single document or set of documents;
