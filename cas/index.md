@@ -11,7 +11,7 @@
 * [Field Types and Valid Values](fields)
 * [Managing Intermediate Certificates](intermediates)
 * [Audit Letter Validation (ALV)](ALV)
-* [Incident Reports](incident-report)
 * [Viewing CCADB Reports](reports)
+* [CCADB Incident Reporting Guidelines](incident-report)
 * [CCADB Public Discussion](public-group)
 * [CCADB Self-Assessment](self-assessment)
