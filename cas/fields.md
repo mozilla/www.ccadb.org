@@ -308,6 +308,8 @@ Example:
 <br>
 ["http://cdn.example/crl-1.crl","http://cdn.example/crl-2.crl"]
 <br>
+<br>
+If the intermediate certificate has not issued any certificates, you must put [""] into the 'JSON Array of Partitioned CRL URLs' field until it starts issuing certificates. 
 </td>
 </tr>
 <tr valign="top">
