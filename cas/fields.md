@@ -287,16 +287,26 @@ certificate is in the correct PEM format.
 <tr valign="top"><th>Field Name</th><th>What to Enter</th></tr>
 <tr valign="top">
 <td>Full CRL Issued By This CA</td>
-<td> Enter the URL to the full CRL for certificates issued by this CA.
+<td> This field is not editable. It is automatically populated by a program that reads from the “JSON Array of All Full CRL URLs” and collects the first URL presented in the JSON array.
+</td>
+</tr>
+<tr valign="top">
+<td>JSON Array of All Full CRL URLs</td>
+<td> Provide a JSON array whose elements are the set of distinct full CRLDP URLs appearing in time-valid certificates issued by the CA. The first URL presented in the JSON array will be automatically parsed by the CCADB and used to populate the non-editable “Full CRL Issued By This CA” field.
+<br><br>
+Example: 
+<br> 
+["http://example.com/1.crl","http://example.com/2.crl"]
+<br>
 </td>
 </tr>
 <tr valign="top">
 <td>JSON Array of Partitioned CRLs</td>
-<td> When there is no full CRL for certificates issued by this CA, provide a JSON array whose elements are URLs of partitioned, DER-encoded CRLs that when combined are the equivalent of a full CRL for certificates issued by this CA. The JSON array may omit obsolete partitioned CRLs whose scopes only include expired certificates.
+<td> When there is no full CRL for certificates issued by this CA, leave the “JSON Array of All Full CRL URLs” field blank and provide a JSON array whose elements are URLs of partial CRLs that when combined are the equivalent of a full CRL for the certificates issued by this CA.
 <br><br>
 Example:
 <br>
-&#91; "http://cdn.example/crl-1.crl", "http://cdn.example/crl-2.crl" &#93;
+["http://cdn.example/crl-1.crl","http://cdn.example/crl-2.crl"]
 <br>
 </td>
 </tr>
