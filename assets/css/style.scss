@@ -11,7 +11,7 @@
 }
 
 .sub-header-bar {
-    background-color: #0073e6;
+    background-color: #0560B7;
     color: #fff;
     font-family: "Roboto Slab", serif;
     padding: 0.5em 1em;
@@ -45,4 +45,14 @@ li {
 
 ol ul, ul ul {
   margin-bottom: 0px;
+}
+
+/* Link styling */
+a {
+  color: #0560B7;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #04358D;
 }
