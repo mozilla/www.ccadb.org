@@ -24,7 +24,7 @@
 <br>  **These two reports--V4a and V4b--are mutually exclusive partitions of the full dataset for V4 and can be combined to reconstruct the complete list.**
 
 * **Version 5** - [V5 All Certificate Information (root and intermediate) in CCADB (CSV)](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatV5)
-* **Version 6** - REST API - to be released May 2026
+* **Version 6** - REST API - work in progress
    
 * [All Included Root Certificate Trust Bit Settings](https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV) (CSV)
 * [List of CA problem reporting mechanisms (email, etc.)](https://ccadb.my.salesforce-sites.com/ccadb/AllProblemReportingMechanismsReport) (use this to report a certificate problem directly to the CA)
