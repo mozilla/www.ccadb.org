@@ -1,3 +1,3 @@
 [build]
-  command = "bundle exec jekyll build"
+  command = "bundle install && bundle exec jekyll build"
   publish = "_site"
