@@ -328,7 +328,7 @@ Learn more about expected report content and a description of the fields include
 
 - **What went well:** 
 - **What didn’t go well:** 
-- **Where we got lucky:** 
+- **Fortuitous circumstances:** 
 - **Additional:** 
 
 ### Action Items
@@ -431,7 +431,7 @@ Expected Timeline elements:
 |---------------------------------|------------------------------------------| 
 | **What went well?** | A list of things that caused the incident to have less impact than it otherwise could have, such as early detection, rapid response, or good safety mechanisms. This section provides an opportunity for others to learn from the good practices of this CA Owner. |
 | **What didn’t go well?** | A list of things that caused the incident to have more impact than it otherwise would have, such as missing checks or unclear documentation. Each item here MUST have at least one corresponding Action Item below and SHOULD provide opportunities for others to ensure they make similar improvements if they haven’t already. |
-| **Where we got lucky?** | A list of things that went well, but which cannot be relied upon, such as early detection by an external security researcher or limited impact simply due to a small number of requests. Items here SHOULD generally also have corresponding Action Items, so that the CA Owner doesn’t have to rely on luck in the future. |
+| **Fortuitous circumstances** | Any beneficial circumstances that reduced the severity, scope, or likelihood of harm from the incident, but which were incidental, temporary, external, or otherwise not reliable controls that can be depended upon in the future. Examples may include early detection by an external researcher, low issuance volume, timing-related factors, or limited subscriber adoption. Items identified in this section SHOULD generally result in corresponding Action Items to reduce future reliance on such circumstances. |
 | **Other** | Any other type of "lesson learned" that does not otherwise fit in the above categories, e.g., internal/external circumstances or environmental conditions; discovery of problematic processes, policies, or workflows; communication gaps; resource challenges; task ownership; overlooked warning signs; underutilized tools; etc. Each item mentioned here MUST have at least one corresponding Action Item. |
 
 **Action Items:** The Action Items section contains a list of remediation items that will be undertaken to ensure that similar incidents do not reoccur in the future. For example, if the Whiteboard field contains ‘revocation-delay’, the Action Items list MUST include steps reasonably calculated to prevent or reduce future revocation delays. Note that it is not sufficient for these action items to simply stop this incident, they MUST create additional protections to prevent future incidents.
