@@ -129,20 +129,7 @@ ALV formatting requirements are specified in
 <tr valign="top">
 <td>Failed to validate EKU ... because the standard names and standard policies are not found in the audit letters </td>
 <td>ALV was unable to find the specific text (case insensitive) that it looks for for each EKU. For example, "319 411-1 v1.1.1, dvcp;ovcp;ptc-br" </td>
-<td>Make sure that the audit statement correctly indicates the audit criteria that was used, and that it satisfies root store requirements.
-The following are examples of the policy information that ALV looks for, depending on the EKU's or Trust Bits that each root store has applied to the root certifiate, and the "Derived Trust Bits" for an intermediate certificate.
-<ul>
-<li> ETSI EN 319 411-1 V1.2.2, LCP;DVCP </li>
-<li> ETSI EN 319 411-1 V1.2.2, LCP;OVCP;EVCP </li>
-<li> ETSI EN 319 411-1 V1.2.2, NCP;EVCP </li>
-<li> ETSI EN 319 411-1 V1.2.2, NCP;NCP+ </li>
-<li> ETSI EN 319 411-2 V2.2.2, QCP-w </li>
-<li> ETSI EN 319 411-2 V2.2.2, QCP-w; EVCP </li>
-<li> ETSI EN 319 411-2 V2.2.2, QCP-l;QCP-l-qscd;QCP-n;QCP-n-qscd </li>
-<li> Principles and Criteria for Certification Authorities - Version 2.2.2 </li>
-<li> WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security v2.5 </li>
-<li> WebTrust Principles and Criteria for Certification Authorities - Extended Validation SSL v1.7.3 </li>
-</ul>
+<td>Make sure that the audit statement correctly indicates the audit criteria that were used, and that they satisfy root store requirements.
 </td> 
 </tr>
 <tr valign="top">
@@ -188,6 +175,11 @@ The following are examples of the policy information that ALV looks for, dependi
 <td>Audit Letter Not PDF </td>
 <td>ALV was unable to download and parse the document retrieved from the audit statement URL.</td>
 <td>Update the Audit Statement links in the record to point to a valid PDF file. </td> 
+</tr>
+<tr valign="top">
+<td>Audit statement is not text-searchable</td>
+<td>ALV was unable to locate required information because some or all of the audit statement appears to be stored as images rather than searchable text.</td>
+<td>Ensure the audit statement PDF is text-searchable and that the auditor name, CA Owner name, audit period, statement date, audit criteria, and certificate fingerprints are represented as text rather than images.</td>
 </tr>
 </table>
  <br>
