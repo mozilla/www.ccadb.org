@@ -122,27 +122,14 @@ ALV formatting requirements are specified in
 <li> Check that the audit period dates in the audit statement match the format requirements. </li>
 <li> If the dates in the audit statement follow the format requirements, then this error can also be the result of the audit period being stated in various locations throughout the document or separately in different rows within a table, etc. </li>
 <li>It helps ALV for the audit period to be stated towards the top of the document </li>
-<li> You may see this error if there are other problems with the audit period, such as it being less than one month -- point-in-time audits have to be manually reviewed. </li>
+<li> You may see this error if there are other problems with the audit report date or the audit period, such as it being less than one month -- point-in-time audits have to be manually reviewed. </li>
 </ul>
 </td> 
 </tr>
 <tr valign="top">
 <td>Failed to validate EKU ... because the standard names and standard policies are not found in the audit letters </td>
 <td>ALV was unable to find the specific text (case insensitive) that it looks for for each EKU. For example, "319 411-1 v1.1.1, dvcp;ovcp;ptc-br" </td>
-<td>Make sure that the audit statement correctly indicates the audit criteria that was used, and that it satisfies root store requirements.
-The following are examples of the policy information that ALV looks for, depending on the EKU's or Trust Bits that each root store has applied to the root certifiate, and the "Derived Trust Bits" for an intermediate certificate.
-<ul>
-<li> ETSI EN 319 411-1 V1.2.2, LCP;DVCP </li>
-<li> ETSI EN 319 411-1 V1.2.2, LCP;OVCP;EVCP </li>
-<li> ETSI EN 319 411-1 V1.2.2, NCP;EVCP </li>
-<li> ETSI EN 319 411-1 V1.2.2, NCP;NCP+ </li>
-<li> ETSI EN 319 411-2 V2.2.2, QCP-w </li>
-<li> ETSI EN 319 411-2 V2.2.2, QCP-w; EVCP </li>
-<li> ETSI EN 319 411-2 V2.2.2, QCP-l;QCP-l-qscd;QCP-n;QCP-n-qscd </li>
-<li> Principles and Criteria for Certification Authorities - Version 2.2.1 </li>
-<li> WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security v2.5 </li>
-<li> WebTrust Principles and Criteria for Certification Authorities - Extended Validation SSL v1.7.3 </li>
-</ul>
+<td>Make sure that the audit statement correctly indicates the audit criteria that were used, and that they satisfy root store requirements.
 </td> 
 </tr>
 <tr valign="top">
@@ -168,17 +155,17 @@ The following are examples of the policy information that ALV looks for, dependi
 </tr>
 <tr valign="top">
 <td>Download Audit Letter Fail </td>
-<td>The provided link to the audit statement did not work. </td>
+<td>The provided link to the audit statement did not work. (E.g. "The remote name could not be resolved: ")</td>
 <td>Correct and test the audit statement links in the CCADB record then try again.</td> 
 </tr>
 <tr valign="top">
-<td>Audit Letter Not Found In Certain Location </td>
-<td>ALV contains a list of known audit locations, such as auditor websites and cpacanada.ca. This error will be given when the URL to the audit statement does not match any of the URLs in the known audit locations. </td>
+<td>Audit Letter Not Found In Certified Location: Audit letter should be hosted at an ALV-recognized trusted audit letter location.</td>
+<td>ALV contains a list of known audit locations, such as auditor websites and cpacanada.ca. This error will be given when the URL to the audit statement does not match any of the URLs in the list of known audit locations. </td>
 <td>
 <ul>
 <li> If you are testing the preliminary audit statement, then you may ignore this error. </li>
 <li> Make sure that the URL that you entered into the CCADB is https. </li>
-<li> If you are running ALV on the final audit statement, then this error should not happen unless the audit statement is qualified (WebTrust) or the ETSI Certificate was not issued. </li>
+<li> If you are running ALV on the final audit statement, then this error should not happen unless the audit statement is not retrievable from a trusted location. </li>
 <li> In those situations the Root Store Operator will need to contact the auditor, so it will help if you provide the auditor's contact information in a Case Comment. </li>
 <li> If the audit statement is on the auditor's website and you are still receiving this error, then ask a Root Store Operator to add the auditor's website to the list of known audit locations for ALV. </li>
 </ul>
@@ -186,8 +173,13 @@ The following are examples of the policy information that ALV looks for, dependi
 </tr>
 <tr valign="top">
 <td>Audit Letter Not PDF </td>
-<td>ALV was unable to download and parse the document at the audit statement URL.</td>
+<td>ALV was unable to download and parse the document retrieved from the audit statement URL.</td>
 <td>Update the Audit Statement links in the record to point to a valid PDF file. </td> 
+</tr>
+<tr valign="top">
+<td>Audit statement is not text-searchable</td>
+<td>ALV was unable to locate required information because some or all of the audit statement appears to be stored as images rather than searchable text.</td>
+<td>Ensure the audit statement PDF is text-searchable and that the auditor name, CA Owner name, audit period, statement date, audit criteria, and certificate fingerprints are represented as text rather than images.</td>
 </tr>
 </table>
  <br>
