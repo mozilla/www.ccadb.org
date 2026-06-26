@@ -22,7 +22,7 @@ An expandable list of all POCs for your organization is presented in alphabetica
 
 If a CA Owner wants to stop receiving all communications from the CCADB, they can have a Primary POC log in and:
 
-1. Create a `Add/Update Contacts` case and select `Yes` for the ‘Is this Contact Obsolete?’ field for each Primary POC and POC.  
-2. Create an `Add/Update Root Request` case and on the `CA Owner` tab, remove the values for `CA Email Alias 1` and `CA Email Alias 2`.
+1. Create a ‘Add/Update Contacts’ case and select ‘Yes’ for the ‘Is this Contact Obsolete?’ field for each Primary POC and POC.  
+2. Create an ‘Add/Update Root Request’ case and on the ‘CA Owner’ tab, remove the values for ‘CA Email Alias 1’ and ‘CA Email Alias 2’.
 
 Once a Root Store Operator reviews and syncs these cases to the CCADB, all system emails will stop.
