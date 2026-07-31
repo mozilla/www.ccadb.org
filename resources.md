@@ -25,6 +25,7 @@
 
 * **Version 5** - [V5 All Certificate Information (root and intermediate) in CCADB (CSV)](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatV5)
    
+* [NEW] [AllCertificateRecords REST API](https://github.com/mozilla/CCADB-Tools/blob/master/API_AllCertificateRecords/README.md)
 * [All Included Root Certificate Trust Bit Settings](https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV) (CSV)
 * [List of CA problem reporting mechanisms (email, etc.)](https://ccadb.my.salesforce-sites.com/ccadb/AllProblemReportingMechanismsReport) (use this to report a certificate problem directly to the CA)
     * [CSV List of CA problem reporting mechanisms (email, etc.)](https://ccadb.my.salesforce-sites.com/ccadb/AllProblemReportingMechanismsCSV) 
