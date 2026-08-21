@@ -34,6 +34,8 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 | S/MIME                    | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=AppleSMIMECSV) |            |
 | Timestamping              | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=AppleTimestampingCSV) |            |
 
+<br>
+
 #### Cisco
 
 **Policy:** [Cisco PKI: Trusted Root Stores](https://www.cisco.com/security/pki/trs/readme.html)
@@ -47,6 +49,8 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 **Root Store Reports:** 
 
 - See the [bundles](https://www.cisco.com/security/pki/trs/readme.html) offered by Cisco.
+
+<br>
 
 #### Google Chrome
 
@@ -63,6 +67,8 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 | PKI Use Case              | Downloads         | Note       |
 | ------------------------- | ----------------- | ---------- |
 | TLS Server Authentication | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=ChromeTLSServerAuthenticationCSV) | This download includes certificates that are [constrained](https://chromium.googlesource.com/chromium/src/+/main/net/cert/root_store.proto#13) for various reasons. |
+
+<br>
 
 #### Microsoft
 
@@ -90,6 +96,8 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 | IP Security Tunnel Termination | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftIPSecurityTunnelTerminationCSV) |            |
 | IP Security User               | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftIPSecurityUserCSV) |            |
 
+<br>
+
 #### Mozilla  
 
 **Policy:** [Mozilla Root Store Policy](https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/)
@@ -108,6 +116,8 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 | ------------------------- | ----------------- | ---------- |
 | TLS Server Authentication | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MozillaTLSServerAuthenticationCSV) |            |
 | S/MIME                    | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MozillaSMIMECSV) |            |
+
+<br>
 
 ### Community Reports
 
@@ -129,6 +139,8 @@ The following reports contain any root Certification Authority (CA) certificate 
 | IP Security Tunnel Termination | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=IPSecurityTunnelTerminationCSV) | Trust Bits for Root Cert INCLUDES IP Security Tunnel Termination AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
 | IP Security User               | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=IPSecurityUserCSV) | Trust Bits for Root Cert INCLUDES IP Security User AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
 
+<br>
+
 #### Additional Reports
 
 | Description                    | Downloads         | Note       |
@@ -146,6 +158,8 @@ The following reports contain any root Certification Authority (CA) certificate 
 | Accepted Roots for Test Certificate Transparency Logs| [CSV](https://ccadb.my.salesforce-sites.com/ccadb/RootCACertificatesInclusionReportCSV) | Includes CAs that have applied to at least one of the CCADB root stores. |
 | All Certificate PEMs Year| [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificatePEMsCSVFormat?NotBeforeYear=1999) | Provides the certificate PEMs for which the CCADB record has a ‘Valid From (GMT)’ field that contains 1999. Change "1999" in the URL to a year of your choosing. |
 | All Certificate PEMs Decade| [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificatePEMsCSVFormat?NotBeforeDecade=2010) | Provides the certificate PEMs for which the CCADB record has a ‘Valid From (GMT)’ field that contains 2010. Change "2010" in the URL to a decade of your choosing. |
+
+<br>
 
 ### Additional Resources ###
 - [crt.sh Certificate Search](https://crt.sh/)
