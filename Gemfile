@@ -8,3 +8,7 @@ gem "webrick", "~> 1.8"
 gem "csv"
 gem "logger"
 
+
+gem "base64", "~> 0.3.0"
+
+gem "bigdecimal", "~> 4.1"
