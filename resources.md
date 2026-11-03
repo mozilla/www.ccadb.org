@@ -19,7 +19,7 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 #### Apple 
 
-**Policy:** [Apple Root Certificate Program](https://www.apple.com/certificateauthority/ca_program.html) 
+**Policy:** [Apple Root Certificate Program](https://github.com/apple/apple-root-program/blob/main/policy.md) 
 
 **Additional Resources:** 
      
