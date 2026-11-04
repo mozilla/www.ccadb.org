@@ -8,7 +8,7 @@
 * [Managing CA Owner and Root Certificate Records (Add/Update Root Request)](updates)
 * [Submitting a Root Inclusion Request](inclusion)
 * [Managing Points of Contact (Add/Update Contacts)](contacts)
-* [Field Types and Valid Values](fields)
+* [CCADB Field Reference and Valid Values](fields)
 * [Managing Intermediate Certificates](intermediates)
 * [Audit Letter Validation (ALV)](ALV)
 * [Viewing CCADB Reports](reports)
