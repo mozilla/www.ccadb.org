@@ -57,7 +57,7 @@ Publicly available English-language audit statements must be submitted to the CC
 
 | Field Name | What to Enter |
 |---|---|
-| `Audits Same as Parent` *(Intermediate records only)* | Check this box if the intermediate certificate is covered by (and its SHA-256 fingerprint is explicitly listed in) the current, or, if newly issued after the parent's latest audit period, next—audit statements of its issuing parent certificate. When checked, leave all other audit fields on the intermediate record blank. Uncheck if providing separate audit statements. |
+| `Audits Same as Parent` *(Intermediate records only)* | Check this box if the intermediate certificate is covered by (and its SHA-256 fingerprint is explicitly listed in) the current (or, if newly issued after the parent's latest audit period, next) audit statements of its issuing parent certificate. When checked, leave all other audit fields on the intermediate record blank. Uncheck if providing separate audit statements. |
 | `Audit Statement (Link)` / `* Audit URL` | Direct HTTPS URL to a text-searchable PDF conforming to [ALV formatting rules](../policy#523-alv-formatting):<br>• **WebTrust Seals:** Enter the CPA Canada WebTrust Seal URL; upon saving, CCADB automatically converts it to the corresponding CPA Canada PDF URL. (For qualified WebTrust reports without a Seal, host the PDF on your website or [attach it to Bugzilla](#uploading-documents).)<br>• **ETSI Audits:** Enter the direct PDF URL to the Audit Attestation Letter (AAL) hosted on the Conformity Assessment Body's (CAB's) website following the latest [ACAB'c AAL template](https://www.acab-c.com/downloads/). |
 | `Audit Type` | Select the option that matches the audit criteria performed (typically `WebTrust` or `ETSI EN 319 411`, or an approved equivalent). |
 | `Audit Statement Date` | Date the audit report was signed/issued (`report date` for WebTrust; `issuing date` for ETSI AALs).<br>• **Revised / Corrected Reports:** Per [CCADB Policy Section 5.2(11)](../policy#52-audit-statement-content), if an audit report is reissued solely to fix formatting, omissions, or errors without changing the audit scope or period, you may retain the initial issuance date (ensure the PDF states both dates, link to the latest PDF, and explain the revision date/reason in a Case Comment). |
@@ -132,7 +132,6 @@ These fields appear under **Pertaining to Certificates Issued by This CA** on in
 ---
 
 <a id="formula-fields"></a>
-<a id="system-generated-fields"></a>
 ## System-Generated Fields
 
 The fields below are calculated automatically by CCADB triggers or daily batch jobs and **cannot be manually edited**. Root Store Operators and [ALV](ALV#intermediate-certificates) use these fields to determine which audits and disclosures are required for each certificate in a hierarchy:
