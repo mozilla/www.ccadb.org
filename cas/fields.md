@@ -80,12 +80,7 @@ Auditor qualifications are verified and maintained in the CCADB by Root Store Op
 
 Policy disclosures are governed by [CCADB Policy Section 4](../policy#4-policy-disclosures), and annual self-assessments by [Section 6.4](../policy#64-annual-ccadb-self-assessments) (see [CCADB Self-Assessment](self-assessment)). Updated policy documents should be submitted to the CCADB within **7 calendar days** (and **must** be submitted within **14 calendar days**) of their effective date.
 
-> **CP + CPS vs. Combined CP/CPS Consistency Rule ([Policy Section 4](../policy#4-policy-disclosures)):**
-> - A certificate record disclosing separate policies **must** provide **both** a `CP` and a `CPS`, and **must not** simultaneously disclose a combined `CP/CPS`.
-> - A certificate record disclosing a combined `CP/CPS` **must not** simultaneously disclose a separate `CP` or `CPS`.
-> - All policy URLs must resolve **directly** to the document without login prompts, redirects, or `.zip` archives. GitHub-hosted Markdown/AsciiDoc policies must use the raw file URL (`https://raw.githubusercontent.com/...`) ending in `.md` or `.adoc`.
-
-On **Root Certificate** records, policy documents and self-assessments are added and superseded on the [NON-AUDIT DOCUMENTS](updates#non-audit-documents) tab of an `Add/Update Root Request` case. On **Intermediate Certificate** records (which are neither expired nor revoked), populate the fields below:
+On **Root Certificate** records, policy documents and self-assessments are added and superseded on the [NON-AUDIT DOCUMENTS](updates#non-audit-documents) tab of an **Add/Update Root Request** case. On **Intermediate Certificate** records (which are neither expired nor revoked), populate the fields below:
 
 | Field Name | What to Enter |
 |---|---|
