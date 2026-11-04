@@ -6,7 +6,7 @@
     * [Usage Guidelines](usage-guidelines)
     * [Getting Started](getting-started)
 * [Managing CA Owner and Root Certificate Records (Add/Update Root Request)](updates)
-* [Submit a Root Inclusion Request](inclusion)
+* [Submitting a Root Inclusion Request](inclusion)
 * [Add or Update Contacts](contacts)
 * [Field Types and Valid Values](fields)
 * [Managing Intermediate Certificates](intermediates)
