@@ -24,9 +24,9 @@ This reference explains how certificate, audit, policy, revocation, automation, 
 
 | Field Name | Applies To | What to Enter |
 |---|---|---|
-| **`Certificate Name`** | Root & Intermediate | Defaults to the certificate's Subject Common Name (`CN`), or Subject Organization (`O`) if `CN` is absent. CA Owners may edit this field on intermediate certificate records. |
-| **`Parent CA Owner/Certificate`** | Intermediate | Must identify the issuing root or intermediate CA certificate record in the CCADB. |
-| **`Subordinate CA Owner`** | Intermediate | Per [CCADB Policy Section 3.2](../policy#32-subordinate-ca-certificates), enter the subordinate CA Owner's exact organization name **as it appears in the provided audit statements**. **Do not leave this field blank** unless *both* private key control and domain/IP validation activities are performed by the organization named in the parent certificate's audit statement. *(Mismatches here cause `CA Owner Not Found` errors in [ALV](ALV#common-alv-findings).)* |
+| `Certificate Name` | Root & Intermediate | Defaults to the certificate's Subject Common Name (`CN`), or Subject Organization (`O`) if `CN` is absent. CA Owners may edit this field on intermediate certificate records. |
+| `Parent CA Owner/Certificate` | Intermediate | Must identify the issuing root or intermediate CA certificate record in the CCADB. |
+| `Subordinate CA Owner` | Intermediate | Per [CCADB Policy Section 3.2](../policy#32-subordinate-ca-certificates), enter the subordinate CA Owner's exact organization name **as it appears in the provided audit statements**. **Do not leave this field blank** unless *both* private key control and domain/IP validation activities are performed by the organization named in the parent certificate's audit statement. *(Mismatches here cause `CA Owner Not Found` errors in [ALV](ALV#common-alv-findings).)* |
 
 ---
 
@@ -57,7 +57,7 @@ Publicly available English-language audit statements must be submitted to the CC
 
 | Field Name | What to Enter |
 |---|---|
-| `Audits Same as Parent` *(Intermediate records only)* | Check this box if the intermediate certificate is covered by (and its SHA-256 fingerprint is explicitly listed in) the current—or, if newly issued after the parent's latest audit period, next—audit statements of its issuing parent certificate. When checked, leave all other audit fields on the intermediate record blank. Uncheck if providing separate audit statements. |
+| `Audits Same as Parent` *(Intermediate records only)* | Check this box if the intermediate certificate is covered by (and its SHA-256 fingerprint is explicitly listed in) the current, or, if newly issued after the parent's latest audit period, next—audit statements of its issuing parent certificate. When checked, leave all other audit fields on the intermediate record blank. Uncheck if providing separate audit statements. |
 | `Audit Statement (Link)` / `* Audit URL` | Direct HTTPS URL to a text-searchable PDF conforming to [ALV formatting rules](../policy#523-alv-formatting):<br>• **WebTrust Seals:** Enter the CPA Canada WebTrust Seal URL; upon saving, CCADB automatically converts it to the corresponding CPA Canada PDF URL. (For qualified WebTrust reports without a Seal, host the PDF on your website or [attach it to Bugzilla](#uploading-documents).)<br>• **ETSI Audits:** Enter the direct PDF URL to the Audit Attestation Letter (AAL) hosted on the Conformity Assessment Body's (CAB's) website following the latest [ACAB'c AAL template](https://www.acab-c.com/downloads/). |
 | `Audit Type` | Select the option that matches the audit criteria performed (typically `WebTrust` or `ETSI EN 319 411`, or an approved equivalent). |
 | `Audit Statement Date` | Date the audit report was signed/issued (`report date` for WebTrust; `issuing date` for ETSI AALs).<br>• **Revised / Corrected Reports:** Per [CCADB Policy Section 5.2(11)](../policy#52-audit-statement-content), if an audit report is reissued solely to fix formatting, omissions, or errors without changing the audit scope or period, you may retain the initial issuance date (ensure the PDF states both dates, link to the latest PDF, and explain the revision date/reason in a Case Comment). |
@@ -72,7 +72,7 @@ Auditor qualifications are verified and maintained in the CCADB by Root Store Op
 
 | Field Name | What to Enter |
 |---|---|
-| `Auditor` & `Auditor Location` | View recognized audit firms and office locations via the **Auditors** / **List All Audit Firms** report link on any root, intermediate, or case page.<br>• To populate either field, click the **pencil icon**, type two or more characters of the firm name or office location, press **Return**, select the matching entry, and click **Save**.<br>• If your audit firm or office location is missing from the list, contact `support@ccadb.org` or your reviewing Root Store Operator. |
+| `Auditor` & `Auditor Location` | View recognized audit firms and office locations via the **Auditors** / **List All Audit Firms** report link on any root, intermediate, or case page.<br>• To populate either field, click the **pencil icon**, type two or more characters of the firm name or office location, press **Return**, select the matching entry, and click **Save**.<br>• If your audit firm or office location is missing from the list, contact `support [at] ccadb [dot] org` or your reviewing Root Store Operator. |
 
 ---
 
