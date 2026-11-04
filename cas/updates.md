@@ -20,7 +20,7 @@ Use the table below to confirm you are using the right CCADB workflow before sta
 | **Root CA certificates** (new root PEMs, root metadata, root audit statements, root policy documents, or test websites) | Submit an **Add/Update Root Request** case (instructions on this page) |
 | **Intermediate / Subordinate CA certificates** (new PEMs, CRLs, intermediate audits, intermediate policy documents, or revocations) | Edit the certificate record directly; see [Managing Intermediate Certificates](intermediates) |
 | **Individual Points of Contact (POCs) or CCADB login licenses** | Submit an **Add/Update Contacts** case; see [Add or Update Contacts](contacts) |
-| **Root Store inclusion** (requesting trust in participating Root Store Programs) | First add the root via an **Add/Update Root Request** case, then submit a separate **Root Inclusion Request** case; see [Submit a Root Inclusion Request](inclusion) |
+| **Root Store inclusion** (requesting trust in participating Root Store Programs) | First add the root via an **Add/Update Root Request** case, then submit a separate **Root Inclusion Request** case—see [Submitting a Root Inclusion Request](inclusion) |
 
 All CA Owners must update audit, policy document, [self-assessment](self-assessment), and test website information for their certificate hierarchies **at least annually**, and keep CCADB records current within the timelines required by the [CCADB Policy](../policy).
 
@@ -150,7 +150,7 @@ Use this tab to manage and track your case before and after submission:
 ### Submitting to Root Store Operators
 Once you have verified your changes across all applicable tabs, click the **Submit to Root Store** button in the upper-right corner of the case page. This places your case into the Root Store Operators' review queue.
 
-*(Reminder: Clicking **Submit to Root Store** only submits your data updates for verification. It does **not** request root inclusion. See [Submit a Root Inclusion Request](inclusion) for the inclusion process.)*
+*(Reminder: Clicking **Submit to Root Store** only submits your data updates for verification—it does **not** request root inclusion. See [Submitting a Root Inclusion Request](inclusion) for the inclusion process.)*
 
 ### Troubleshooting `Submit to Root Store` Errors
 If required fields are missing for any root certificate in the case, clicking **Submit to Root Store** displays the error banner:
