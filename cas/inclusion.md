@@ -129,7 +129,7 @@ Provide direct links to externally hosted documents for the first four fields, p
 #### Per-Root Fields (`[R########]`)
 - **`Replacing a Certificate?`**, **`SHA-256 Hash of the Cert being Replaced`**, and **`Certificate Replacement Date`:** Check the box if this root replaces a root currently in the Apple Root Program, and provide the replaced root's SHA-256 hash and past or planned replacement date.
 - **`Apple Trust Bits`:** Select the requested certificate purposes (`serverAuth`, `clientAuth`, `emailProtection`, `timeStamping`, `codeSigning`, `BrandIndicatorforMessageIdentification`), ensuring the selected combination is permitted under Section 2.1.3 of the Apple Root Certificate Program Policy.
-- **`Apple EV TLS Enabled`** and **`Apple EV TLS Policy OID(s)`:** Check the box if planning to issue EV TLS certificates under this root, and enter `2.23.140.1.1` along with your CA's EV TLS policy OID(s) required by EV Guidelines Section 7.1.4.3, Item 2.
+- **`Apple EV TLS Enabled`** and **`Apple EV TLS Policy OID(s)`:** Check the box if planning to issue EV TLS certificates under this root, and enter `2.23.140.1.1` along with any CA-specific EV TLS policy OID(s) asserted per Section 7.1.6 of the EV Guidelines.
 - **[Shared Per-Root Fields](#shared-per-root-fields):** `CA Owner Operating?`, `Revocation Tested`, `CA/Browser Forum Lint Test`, and (if applicable) `EV Tested`.
 
 ---
@@ -157,7 +157,7 @@ Complete the fields below in accordance with the [Microsoft Trusted Root Program
 - **`Friendly Name`:** Optionally provide a user-defined friendly name for the root certificate.
 - **`Replacing an existing Cert in TRP?`**, **`SHA-256 Hash of the Cert being Replaced`**, and **`Certificate Replacement Date`:** Select if replacing an existing root in the Microsoft Trusted Root Program, and enter the replaced root's SHA-256 hash and replacement date.
 - **`Are you a Qualified TSP?`:** Select `Yes` if the CA Owner is a Qualified Trust Service Provider (qTSP) under EU regulations; otherwise select `No`.
-- **`Microsoft EV TLS Enabled`** and **`Microsoft EV TLS Policy OID(s)`:** Check if planning to issue EV TLS certificates, and enter your CA-specific EV policy OID(s) required by EV Guidelines Section 7.1.4.3, Item 2 (`2.23.140.1.1` is added automatically).
+- **`Microsoft EV TLS Enabled`** and **`Microsoft EV TLS Policy OID(s)`:** Check if planning to issue EV TLS certificates, and enter any CA-specific EV policy OID(s) asserted per Section 7.1.6 of the EV Guidelines (`2.23.140.1.1` is added automatically).
 - **`Microsoft TLD Restriction`:** Specify any applicable top-level domain (TLD) restriction.
 - **[Shared Per-Root Fields](#shared-per-root-fields):** `Does the CA Owner operate this CA?`, `Revocation Tested`, `CA/Browser Forum Lint Test`, and (if applicable) `EV Tested`.
 
