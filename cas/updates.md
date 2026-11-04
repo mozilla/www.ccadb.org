@@ -19,7 +19,7 @@ Use the table below to confirm you are using the right CCADB workflow before sta
 | **CA Owner organization details** (name, website, address, or CA email aliases) | Submit an **Add/Update Root Request** case (instructions on this page) |
 | **Root CA certificates** (new root PEMs, root metadata, root audit statements, root policy documents, or test websites) | Submit an **Add/Update Root Request** case (instructions on this page) |
 | **Intermediate / Subordinate CA certificates** (new PEMs, CRLs, intermediate audits, intermediate policy documents, or revocations) | Edit the certificate record directly; see [Managing Intermediate Certificates](intermediates) |
-| **Individual Points of Contact (POCs) or CCADB login licenses** | Submit an **Add/Update Contacts** case; see [Add or Update Contacts](contacts) |
+| **Individual Points of Contact (POCs) or CCADB login licenses** | Submit an **Add/Update Contacts** case; see [Managing Points of Contact](contacts) |
 | **Root Store inclusion** (requesting trust in participating Root Store Programs) | First add the root via an **Add/Update Root Request** case, then submit a separate **Root Inclusion Request** case—see [Submitting a Root Inclusion Request](inclusion) |
 
 All CA Owners must update audit, policy document, [self-assessment](self-assessment), and test website information for their certificate hierarchies **at least annually**, and keep CCADB records current within the timelines required by the [CCADB Policy](../policy).
