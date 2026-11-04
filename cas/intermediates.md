@@ -4,7 +4,7 @@ CA Owners can view root and intermediate certificate records across the CCADB, a
 
 > **Note:** The CCADB considers the terms **intermediate** and **subordinate** synonymous. To add or update CA Owner or root certificate records (which require Root Store Operator case review), see [Managing CA Owner and Root Certificate Records](updates).
 
-## Disclosure Scope and Deadlines
+## Disclosure Scope
 
 Per [CCADB Policy Section 3.2](../policy#32-subordinate-ca-certificates), CA Owners must maintain accurate records for all subordinate CA certificates capable of validating to a certificate included in a Root Store or associated with a [Root Inclusion Request](inclusion).
 
