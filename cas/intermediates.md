@@ -10,8 +10,7 @@ CA Owners should consult the [CCADB Policy](/policy#4-intermediate-certificates)
 about the requirements for disclosing intermediate certificate data 
 in the CCADB.
 
-Instructions for updating CA Owner or root certificate data in the CCADB are 
-[here](updates).
+For instructions on updating CA Owner or root certificate data in the CCADB, see [Managing CA Owner and Root Certificate Records](updates).
 
 Table of Contents:
 1. [Updating Audit Statements](intermediates#updating-audit-statements)
