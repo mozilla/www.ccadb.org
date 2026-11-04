@@ -114,7 +114,7 @@ Use this tab to disclose, update, or supersede policy and practice documents ass
 ### ROOT INFORMATION
 Use this tab to add new root certificates and maintain root-level metadata across four editable sections for each selected root certificate:
 - **Root CA Background:** `Explanation and Role` (why the root should be considered for public trust and its unique function), `Root Certificate Download URL` (direct PEM or DER link), and optional `Public Comments`.
-- **CA CRL:** `Full CRL Issued By This CA` or `JSON Array of Partitioned CRLs` (see [CCADB Policy Section 6.2](../policy#62-certificate-revocation-list-disclosures)).
+- **CA CRL:** `JSON Array of All Full CRL URLs` or `JSON Array of Partitioned CRLs` (`Full CRL Issued By This CA` is populated automatically from the first URL in `JSON Array of All Full CRL URLs`; see [CCADB Policy Section 6.2](../policy#62-certificate-revocation-list-disclosures)).
 - **PKI Hierarchy:** Yes/No disclosures for cross-signing, externally operated subordinate CAs, and external RAs (and whether permitted by the CP/CPS); `Description of PKI Hierarchy`; `Intended Use Case(s) Served` (EKUs); `CA/B Forum Certificate Policy Identifiers`; and `TLS Certificate Domain Validation Method` values.
 - **Key Generation:** `Key Generation Date`, `Key Generation Audit Report Date`, and `Key Generation Audit Report (Link)`.
 
