@@ -5,7 +5,7 @@
     * [New User & Password Reset](https://docs.google.com/document/d/1MuszDO2o-es_6-FwNCDWZ2TC979F8eil5bBQGKjaWRc/edit#heading=h.q7a023qr7pxz)
     * [Usage Guidelines](usage-guidelines)
     * [Getting Started](getting-started)
-* [Add or Update Roots, Audit Statements, Policy Documents, or Other Data](updates)
+* [Managing CA Owner and Root Certificate Records (Add/Update Root Request)](updates)
 * [Submit a Root Inclusion Request](inclusion)
 * [Add or Update Contacts](contacts)
 * [Field Types and Valid Values](fields)
