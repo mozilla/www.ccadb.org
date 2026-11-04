@@ -85,7 +85,7 @@ The **NON-AUDIT DOCUMENTS**, **ROOT INFORMATION**, and **TEST WEBSITES** tabs re
 
 ## 3. Case Tabs Reference
 
-An `Add/Update Root Request` case contains six tabs. You only need to make changes in the tabs relevant to your request, for instance, a mid-year CP/CPS update typically only requires updating **NON-AUDIT DOCUMENTS** (provided **ROOT INFORMATION** has already been completed for the selected roots).
+An `Add/Update Root Request` case contains seven tabs. You only need to make changes in the tabs relevant to your request, for instance, a mid-year CP/CPS update typically only requires updating **NON-AUDIT DOCUMENTS** (provided **ROOT INFORMATION** has already been completed for the selected roots).
 
 ### CA OWNER
 Use this tab to update high-level organizational information for the CA Owner, organized into three sections:
@@ -161,6 +161,8 @@ Open the **ROOT INFORMATION** tab, check the warning message beneath each root c
 
 ### Root Store Operator Review & Follow-Up
 - **Responding to Returned Cases (`CA Providing Data`):** If the reviewing Root Store Operator needs additional information or corrections, they will post a comment in **CASE PROGRESS** and set `Case Request Status` back to **CA Providing Data**. Make the requested updates, add a reply comment if helpful, and click **Submit to Root Store** again to re-submit.
+
+---
 
 ## 5. Obsoleting Root Records
 
