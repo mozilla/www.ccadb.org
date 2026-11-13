@@ -106,6 +106,6 @@ CA Owners with root certificates included in one or more CCADB Root Stores may a
 - **`AddUpdateIntermediateCertAPI`:** Adds a new intermediate certificate record or updates an existing intermediate certificate record in the CCADB.
 
 ### API Access and Usage Rules
-- **Requesting Access:** Request API credentials or sandbox accounts by filing a ticket in the Mozilla Bugzilla [Common CA Database component](https://bugzilla.mozilla.org/enter_bug.cgi?product=CA%20Program&component=Common%20CA%20Database) or contacting `support [at] ccadb [dot] org`.
+- **Requesting Access:** Request API credentials or sandbox accounts by filing a ticket in the Mozilla Bugzilla [Common CA Database component](https://bugzilla.mozilla.org/enter_bug.cgi?product=CA%20Program&component=Common%20CA%20Database) or contacting support [at] ccadb [dot] org.
 - **Account & License Limits:** Production API access is limited to **one API account per CA Owner**, and authenticating to the production API counts toward your organization's [daily-unique-login allotment](usage-guidelines#api-credentials).
 - **Mandatory Sandbox Testing:** All API integration development and testing must be performed in the **CCADB Sandbox** environment rather than production (see [CCADB Usage Guidelines](usage-guidelines#sandbox-environment-accounts)).
