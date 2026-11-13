@@ -85,7 +85,7 @@ The **NON-AUDIT DOCUMENTS**, **ROOT INFORMATION**, and **TEST WEBSITES** tabs re
 
 ## 3. Case Tabs Reference
 
-An `Add/Update Root Request` case contains seven tabs. You only need to make changes in the tabs relevant to your request, for instance, a mid-year CP/CPS update typically only requires updating **NON-AUDIT DOCUMENTS** (provided **ROOT INFORMATION** has already been completed for the selected roots).
+An **Add/Update Root Request** case contains seven tabs. You only need to make changes in the tabs relevant to your request, for instance, a mid-year CP/CPS update typically only requires updating **NON-AUDIT DOCUMENTS** (provided **ROOT INFORMATION** has already been completed for the selected roots).
 
 ### CA OWNER
 Use this tab to update high-level organizational information for the CA Owner, organized into three sections:
@@ -98,7 +98,7 @@ Use this tab to update high-level organizational information for the CA Owner, o
 <a id="audit-case-workflow"></a>
 ### AUDITS
 Use this tab when submitting new or revised audit statements for root CA certificates:
-1. **Audit Firm & Location:** Edit the **Audit Firm** section and search/select your auditor and office location as listed in the **List All Audit Firms** report link at the top of the tab. (Contact `support [at] ccadb [dot] org` if your auditor or location is missing; any *"Re-Verify this audit firm qualifications"* warning is handled by the reviewing Root Store Operator.)
+1. **Audit Firm & Location:** Edit the **Audit Firm** section and search/select your auditor and office location as listed in the **List All Audit Firms** report link at the top of the tab. (Contact support [at] ccadb [dot] org if your auditor or location is missing; any *"Re-Verify this audit firm qualifications"* warning is handled by the reviewing Root Store Operator.)
 2. **Audit Team Qualifications:** If qualification details ([CCADB Policy Section 5.3.1](../policy#531-audit-team-qualifications)) are not embedded inside the audit report PDF itself, upload the separate Audit Team Qualifications PDF using the file upload icon.
 3. **Audit Information Sections:** Populate each applicable section (**Standard**, **NetSec**, **TLS BR**, **TLS EVG**, **Code Signing**, **S/MIME BR** and **VMC**) per [Field Types: Audit Information](fields#audit-information) and select the **Applicable root certificates** for each. WebTrust Seal URLs entered into `Audit Statement (Link)` are automatically mapped to the CPA Canada PDF URL upon saving.
 4. **Run Audit Letter Validation (ALV):** Click **Validate Audits [ALV]** and check **ALV Results Summary** at the bottom of the tab. Remediate any errors using [Common ALV Findings](ALV#common-alv-findings).
@@ -118,7 +118,7 @@ Use this tab to add new root certificates and maintain root-level metadata acros
 - **PKI Hierarchy:** Yes/No disclosures for cross-signing, externally operated subordinate CAs, and external RAs (and whether permitted by the CP/CPS); `Description of PKI Hierarchy`; `Intended Use Case(s) Served` (EKUs); `CA/B Forum Certificate Policy Identifiers`; and `TLS Certificate Domain Validation Method` values.
 - **Key Generation:** `Key Generation Date`, `Key Generation Audit Report Date`, and `Key Generation Audit Report (Link)`.
 
-> **Important (Submission and Inclusion Requirements):** You **cannot** click **Submit to Root Store** on an **Add/Update Root Request** case until all required fields on the **ROOT INFORMATION** tab are populated for **every** root certificate included in the case (both newly added and pre-existing roots). In addition, a root certificate **cannot be selected** in a **[Root Inclusion Request](inclusion)** case until an **Add/Update Root Request** case populating its **ROOT INFORMATION** fields has been reviewed and synced. Once populated for a root certificate, these fields only need to be updated when the underlying information changes.
+> **Important (Submission and Inclusion Requirements):** You cannot click **Submit to Root Store** on an **Add/Update Root Request** case until all required fields on the **ROOT INFORMATION** tab are populated for *every* root certificate included in the case (both newly added and pre-existing roots). In addition, a root certificate cannot be selected in a **[Root Inclusion Request](inclusion)** case until an **Add/Update Root Request** case populating its **ROOT INFORMATION** fields has been reviewed and synced. Once populated for a root certificate, these fields only need to be updated when the underlying information changes.
 
 ### TEST WEBSITES
 Use this tab when updating valid, expired, or revoked test website URLs, or when submitting updated audit statements for root certificates trusted for TLS server authentication:
@@ -152,7 +152,7 @@ Once you have verified your changes across all applicable tabs, click the **Subm
 
 *(Reminder: Clicking **Submit to Root Store** only submits your data updates for verification—it does **not** request root inclusion. See [Submitting a Root Inclusion Request](inclusion) for the inclusion process.)*
 
-### Troubleshooting `Submit to Root Store` Errors
+### Troubleshooting "Submit to Root Store" Errors
 If required fields are missing for any root certificate in the case, clicking **Submit to Root Store** displays the error banner:
 
 > `Error! Please check the warning message on "ROOT INFORMATION" tab before submitting the case to the Root Store.`
