@@ -68,3 +68,25 @@ h2 {
 h3 {
   color: #0560B7;   /* medium blue */
 }
+
+/* Callout / Note blockquotes */
+blockquote {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #303030;
+  background-color: #f4f8fc;
+  border-left: 4px solid #0560B7;
+  padding: 12px 16px;
+  margin: 16px 0 20px 0;
+}
+
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+
+blockquote p + ul,
+blockquote p + ol {
+  margin-top: -10px;
+}
