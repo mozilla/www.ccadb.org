@@ -2,7 +2,7 @@
 
 CA Owners use a **Root Inclusion Request** case in the CCADB to request that one or more of their root CA certificates be included in one or more participating Root Store Programs (**Apple**, **Google Chrome**, **Microsoft**, and **Mozilla**).
 
-Submitting a `Root Inclusion Request` case does not guarantee inclusion. Each Root Store Operator evaluates requests independently according to its own [Root Store Program policy and timeline](../resources#root-store-information).
+Submitting a **Root Inclusion Request** case does not guarantee inclusion. Each Root Store Operator evaluates requests independently according to its own [Root Store Program policy and timeline](../resources#root-store-information).
 
 > **Ongoing Record Maintenance vs. Inclusion Requests:** Use a **Root Inclusion Request** case only to apply for root inclusion or update program-specific fields for that inclusion request. Continue using an [Add/Update Root Request](updates) case for all ongoing updates to CA Owner details, annual audit statements, policy documents, example certificates, and test websites.
 
@@ -17,7 +17,7 @@ Submitting a `Root Inclusion Request` case does not guarantee inclusion. Each Ro
    - [Google Chrome](#google-chrome)
    - [Microsoft](#microsoft)
    - [Mozilla](#mozilla)
-5. [Submitting and Tracking Your Request (`CASE PROGRESS`)](#5-submitting-and-tracking-your-request-case-progress)
+5. [Submitting and Tracking Your Request (CASE PROGRESS)](#5-submitting-and-tracking-your-request-case-progress)
 
 ---
 
@@ -26,13 +26,13 @@ Submitting a `Root Inclusion Request` case does not guarantee inclusion. Each Ro
 Before you can select a root CA certificate in a **Root Inclusion Request** case (or enter a [Root Inclusion Public Discussion](public-group#root-inclusion-public-discussion)), ensure the following prerequisites are complete:
 
 1. **CCADB Account Access:** Your organization must have an active CCADB account (see [Request Access](request-access) and [Getting Started](getting-started)).
-2. **Completed `Add/Update Root Request` Case:** You must first add the root CA certificate to the CCADB and have a Root Store Operator approve and sync one or more [Add/Update Root Request](updates) cases containing all required disclosures across:
+2. **Completed "Add/Update Root Request" Case:** You must first add the root CA certificate to the CCADB and have a Root Store Operator approve and sync one or more [Add/Update Root Request](updates) cases containing all required disclosures across:
    - **CA OWNER** (organization details and email aliases)
    - **AUDITS** (audit statements and ALV validation)
    - **NON-AUDIT DOCUMENTS** (CP/CPS and [CCADB Self-Assessment](self-assessment))
    - **ROOT INFORMATION** (Root CA Background, Full/Partitioned CRLs, complete **PKI Hierarchy** disclosures, and **Key Generation** audit report)
    - **TEST WEBSITES** and **EXAMPLE CERTIFICATES** (where applicable to the hierarchy's intended use cases)
-3. **Subordinate CA Disclosures:** All subordinate (intermediate) CA certificates chaining to a root certificate associated with a `Root Inclusion Request` must be disclosed in the CCADB per [CCADB Policy Section 3.2](../policy#32-subordinate-ca-certificates) (see [Managing Intermediate Certificates](intermediates)).
+3. **Subordinate CA Disclosures:** All subordinate (intermediate) CA certificates chaining to a root certificate associated with a **Root Inclusion Request** must be disclosed in the CCADB per [CCADB Policy Section 3.2](../policy#32-subordinate-ca-certificates) (see [Managing Intermediate Certificates](intermediates)).
 4. **Root Store Policy Review:** Review the specific inclusion requirements for each target program on [Useful Resources: Root Store Information](../resources#root-store-information).
 
 ---
@@ -59,7 +59,7 @@ When the case opens, the leftmost **INSTRUCTIONS** tab displays a brief checklis
 
 ## 3. Selecting Root Certificates and Root Store Programs
 
-You can apply to one or multiple Root Store Programs within a single `Root Inclusion Request` case:
+You can apply to one or multiple Root Store Programs within a single **Root Inclusion Request** case:
 
 1. Click any Root Store Program tab (**Apple**, **Google Chrome**, **Microsoft**, or **Mozilla**).
 2. Click the **Add/Select Root Certificates** button at the top of the tab.
@@ -70,7 +70,7 @@ You can apply to one or multiple Root Store Programs within a single `Root Inclu
 > **Why Are Some Root Certificate Checkboxes Grayed Out?**
 > If a root certificate row appears shaded with italicized text and disabled **Root Store Applying To** checkboxes, its **PKI Hierarchy** section has not yet been fully populated on the root certificate record. Create an [Add/Update Root Request](updates) case, complete all required fields on the [ROOT INFORMATION](updates#root-information) tab, and wait for a Root Store Operator to process and sync that case before selecting the root here.
 
-### How Selected Roots Appear (`Root Case` Records)
+### How Selected Roots Appear ("Root Case" Records)
 Once selected, each root certificate appears on the applicable Root Store Program tab(s) inside its own collapsible **Root Case** subsection labeled `[R########] <Root Certificate Name>` beneath the main `Case Number [########]` section.
 
 To change your root or program selections before submitting:
@@ -178,7 +178,7 @@ Complete the fields below in accordance with the [Mozilla Root Store Policy](htt
 
 ---
 
-## 5. Submitting and Tracking Your Request (`CASE PROGRESS`)
+## 5. Submitting and Tracking Your Request ("CASE PROGRESS")
 
 ### Submitting to Root Store Operators
 Once all required sections across your selected Root Store Program tabs are complete, click the **Submit to Root Store** button in the upper-right corner of the case page.
@@ -186,7 +186,7 @@ Once all required sections across your selected Root Store Program tabs are comp
 ### Tracking Status on `CASE PROGRESS`
 The **CASE PROGRESS** tab displays a consolidated view of your inclusion request across all selected Root Store Programs. Because each Root Store Operator evaluates requests on its own timeline, CCADB tracks both an **overall case status** (in the top highlight panel) and an **independent Case-level request status** for each selected Root Store Program:
 
-| Case Stage / Trigger | Overall `Case Request Status` (Highlight Panel) | Selected Program Statuses (Case Level) |
+| Case Stage / Trigger | Overall Case Request Status (Highlight Panel) | Selected Program Statuses (Case Level) |
 |---|---|---|
 | **Case created** *(automatic)* | `Initial Request Created` | `Not Applicable` |
 | **Root certificate(s) selected** *(automatic)* | `CA Providing Data` | `CA Providing Data` |
