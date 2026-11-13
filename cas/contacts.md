@@ -15,7 +15,7 @@ Per [CCADB Policy Section 2](../policy#2-contact-information-disclosures), every
 
 CCADB automatically sets each individual contact's **Type** based on how you answer `Is a CCADB Login Required?` and `Is this Contact Obsolete?`:
 
-| Contact `Type` | Login & Notification Access | Key Field & License Rules |
+| Contact Type | Login & Notification Access | Key Field & License Rules |
 |---|---|---|
 | **Primary POC** | **Can log in** to the CCADB to manage records and cases, and **receives** CCADB notifications. Should be authorized to speak for and enter into binding commitments on behalf of the CA. | • Triggered when `Is a CCADB Login Required?` = `Yes`.<br>• Requires **Name**, **CA Owner-affiliated Email**, and **Phone Number**.<br>• Requires **Bugzilla Username** if the contact holds a Bugzilla account for responding to [Incident Reports](incident-report).<br>• **Maximum of 5 Primary POCs per CA Owner** (each consumes a CCADB license; see [Usage Guidelines](usage-guidelines)). Requesting more than 5 requires written justification in the case. |
 | **POC** | **Cannot log in** to the CCADB, but **receives** CCADB system notifications and security/audit communications. | • Triggered when `Is a CCADB Login Required?` = `No` and `Is this Contact Obsolete?` = `No`.<br>• Requires **Name** and **CA Owner-affiliated Email** (plus **Bugzilla Username** if applicable).<br>• **No limit** on the number of email-only POCs. |
@@ -53,7 +53,7 @@ Inside the case, all contacts for your organization are displayed in an expandab
 
 ## 2. Managing Contacts Within Your Case
 
-You can perform one or multiple contact updates in the same `Add/Update Contacts` case before clicking **Submit to Root Store**.
+You can perform one or multiple contact updates in the same **Add/Update Contacts** case before clicking **Submit to Root Store**.
 
 ### Adding a New Contact
 1. Click the **Add Contact** button inside the case.
