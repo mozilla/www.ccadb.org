@@ -1,159 +1,111 @@
-# Managing Intermediate Certificates #
+# Managing Intermediate Certificates
 
-CA Owners can view root and intermediate certificate data for all of the CAs in
-CCADB. However, CA Owners may only directly modify the intermediate certificate
-records for certificates chaining up to root certificates they own.
+CA Owners can view root and intermediate certificate records across the CCADB, and can **directly add and edit** intermediate certificate records that chain up to root certificates they own without opening a review case.
 
-Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
+> **Note:** The CCADB considers the terms **intermediate** and **subordinate** synonymous. To add or update CA Owner or root certificate records (which require Root Store Operator case review), see [Managing CA Owner and Root Certificate Records](updates).
 
-CA Owners should consult the [CCADB Policy](/policy#4-intermediate-certificates)
-about the requirements for disclosing intermediate certificate data 
-in the CCADB.
+## Disclosure Scope
 
-Instructions for updating CA Owner or root certificate data in the CCADB are 
-[here](updates).
+Per [CCADB Policy Section 3.2](../policy#32-subordinate-ca-certificates), CA Owners must maintain accurate records for all subordinate CA certificates capable of validating to a certificate included in a Root Store or associated with a [Root Inclusion Request](inclusion).
 
-Table of Contents:
-1. [Updating Audit Statements](intermediates#updating-audit-statements)
-2. [Adding Intermediate Certificate Data](intermediates#adding-intermediate-certificate-data)
-3. [API](intermediates#api)
-4. [Mass Update of Audit/Non-Audit Info](intermediates#mass-update-of-audit-non-audit-info)
-5. [Marking An Intermediate Certificate As Revoked](intermediates#marking-an-intermediate-certificate-as-revoked)
+## Table of Contents
 
-## Updating Audit Statements ##
+1. [Adding Intermediate Certificate Data](#adding-intermediate-certificate-data)
+   - [Cloning an Existing Intermediate Record](#clone)
+2. [Updating Audit and Policy Information](#updating-audit-statements)
+   - [Mass Update of Audit/Non-Audit Info](#mass-update-of-audit-non-audit-info)
+3. [Marking an Intermediate Certificate as Revoked](#marking-an-intermediate-certificate-as-revoked)
+4. [Automating Updates via the CCADB API](#api)
 
-All CA Owners are required to update the audit and policy document information for their 
-certificate hierarchies at least annually. CA Owners are expected to maintain their 
-intermediate certificate records themselves and to directly enter the 
-corresponding updated audit statements via the following instructions. 
-Audit information for root certificate records must be provided via an 
-[Add/Update Root Request Case](updates).
+---
 
-**Important:** If the audit statements for an intermediate certificate are the 
-same as the certificate that signed it, then check the 'Audits Same as Parent' 
-checkbox instead of providing separate audit information.
+<a id="adding-intermediate-certificate-data"></a>
+## 1. Adding Intermediate Certificate Data
 
-1. [Login to the CCADB](getting-started).
-2. Navigate to the intermediate certificate record. Here are some ways to do that:
-* The CA Task List on your CCADB home page has a report called "Intermediate
-Certificates with Outdatated Audit Statements". You can click on the certificate link
-to browse to each record listed within that report.
-* Click on the 'My CA' tab, then click on the 'CA HIERARCHY' tab underneath the CA
-Owner name in the upper left corner of the page.
-* Click on the magnifying glass icon next to your name in the upper right corner
-   of the page, and enter the SHA-1 or SHA-256 fingerprint of the intermediate certificate,
-   then hit return.
-3. In the intermediate certificate page click on the 'Edit' button and enter the 
-[audit and CP/CPS information](fields), then click on the 'Save' button.
-4. Optional: Click on the [Mass Update Audit/Non-Audit Info](intermediates#mass-update-of-audit-non-audit-info) button to apply changes to other intermediate certificates in the same hierarchy, if applicable.
+1. [Log in to the CCADB](https://ccadb.my.site.com/CustomLogin) (see [Getting Started](getting-started) if needed).
+2. Locate and open the **issuing (parent)** root or intermediate certificate record that signed the new intermediate certificate using either method:
+   - Click the **My CA** tab, then click the **CA HIERARCHY** sub-tab under your CA Owner's name in the upper-left corner.
+   - Click the **magnifying glass** search icon in the upper-right corner, enter the SHA-1 or SHA-256 fingerprint of the parent certificate, and press **Return**.
+3. Click the **New Intermediate Cert** button near the upper-right corner of the parent certificate page.
+4. Paste the intermediate certificate's [PEM data](fields#pem-data) (`-----BEGIN CERTIFICATE-----` to `-----END CERTIFICATE-----`) into the dialog window, ensuring there are no extra characters, headers, or blank lines.
+5. Click **Validate PEM Info** to parse and verify the certificate:
+   - If validation succeeds, click **Update Intermediate Cert**.
+   - If validation fails, click **Cancel**, verify the [PEM formatting](fields#pem-data), and try again. If valid PEM data continues to fail, email `support [at] ccadb [dot] org` with the PEM attached.
+6. On the newly created intermediate certificate record, verify the parsed values in the **Certificate Data** section. (If you ever need to re-upload the PEM, open the **`▼`** button overflow menu in the upper-right corner and select **Add/Update PEM Info**.)
+7. Click **Edit**, populate all required disclosure sections (see [CCADB Field Reference and Valid Values](fields)), and click **Save**:
+   - **Subordinate CA Owner:** Populate `Subordinate CA Owner` with the exact organization name from the subordinate CA's audit statements, unless *both* private key control and domain/IP validation are performed by the organization listed in the parent certificate's audit statement ([Field Reference](fields#certificate-ownership-and-hierarchy-fields)).
+   - **[Audit Information](fields#audit-information):** If the intermediate certificate is covered by the issuing parent certificate's current (or next periodic) audit statements, check `Audits Same as Parent`. Otherwise, leave it unchecked, enter the subordinate-specific audit URLs and dates, save, and click `Audit Letter Validation [ALV]`.
+   - **[Non-Audit Information](fields#non-audit-information):** If the intermediate certificate uses the exact same policy and self-assessment documents as its issuing parent (or a subset), check the applicable **`* Same as Parent`** boxes (`CP Same as Parent` and `CPS Same as Parent`, `CP/CPS Same as Parent`, `MD/AsciiDoc CP/CPS Same as Parent`, and `Self-Assessment Same as Parent`). Otherwise, enter the subordinate-specific document URLs and Effective Dates.
+   - **[CRL Disclosures](fields#pertaining-to-certificates-issued-by-this-ca):** If the intermediate CA has **not yet issued any certificates**, enter `[""]` into `JSON Array of Partitioned CRLs`. Once issuance begins, update `JSON Array of All Full CRL URLs` or `JSON Array of Partitioned CRLs` within 7 days of first issuance (or within 4 hours of first revocation).
+   - **[Policy Identifiers and Automation](fields#issuance-policy-identifier-and-automation-fields):** Select applicable `CA/B Forum Certificate Policy Identifier` values and populate `ACME Directory URL(s)`, `Other Automated Solution Description`, and `Automation Test Certificate Website` where applicable.
 
-## Adding Intermediate Certificate Data ##
+<a id="clone"></a>
+### Cloning an Existing Intermediate Record
 
-1. Find the root or intermediate certificate that signed the new intermediate
-   certificate, using one of the following methods:
-   * Click on the 'My CA' tab, then click on the 'CA HIERARCHY' tab underneath the CA
-   Owner name in the upper left corner of the page.
-   * Click on the magnifying glass icon next to your name in the upper right corner
-      of the page, and enter the SHA-1 or SHA-256 fingerprint of the certificate,
-      then hit return.
-2. Click on the 'New Intermediate Cert' button towards the upper right corner
-   of the page. 
-3. Copy and paste the [PEM data](fields#pem-data) for the intermediate
-   certificate into the resulting window. PEM data starts with
-   ''-----BEGIN CERTIFICATE-----'' and ends with ''-----END CERTIFICATE-----''.
-4. Click on 'Validate PEM Info' button. This will invoke a program that will
-   try to parse the PEM data and extract certain information.
-5. If the cert check is successful, then click on the 'Update Intermediate
-   Cert' button. If the cert check was not successful, then click on the
-   'Cancel' button. Check that the PEM data is correct and try again.
-   If it still fails, then send email to support [at] ccadb [dot] org with the PEM data.
-6. In the intermediate certificate record you will find the certificate data
-   in the 'Certificate Data...' section. Review the information to ensure it is 
-   the data you expected. If the data is not what you expected, then check 
-   that you have the correct PEM data for the certificate you intended to add
-   by checking the section titled 'PEM Information...'. There should
-   not be extra characters before or after the PEM, and the PEM data should not
-   have extra line feeds in it. If you need to update the PEM, use the 
-   button called 'Add/Update PEM Info' which may be found in the button overflow
-   (upside down triangle) in the upper right corner of the page.
-7. Fill in the information in the '[Audit Information](fields#audit-information)' and '[Non-Audit
-   Information](fields#non-audit-information)' sections. The
-   audits and policies must cover the intermediate certificate.
-    * **Important:** If the information is the **same as for the issuing (parent)
-      certificate** (or a subset), then check 'Audits Same as Parent', and 'CP Same as Parent' and 'CPS Same as Parent', or 'CP/CPS Same as Parent', or 'MD/AsciiDoc CP/CPS Same as Parent'.
-    * If the information **has some differences from the issuing (parent)
-      certificate**, then click on the 'Edit' button to enter the audit and
-      policy information. Be sure to click on the 'Save' button afterward. 
+If you are adding multiple intermediate certificates that share the same CP/CPS and audit statements, you can use the **Clone** button to avoid re-entering those sections:
 
-### Clone ###
+1. Create and save one intermediate certificate record following Steps 1 through 7 above, confirming its **Audit Information** and **Non-Audit Information** sections (or `* Same as Parent` checkboxes) are complete.
+2. Click the **Clone** button on that record. CCADB creates a new intermediate certificate record copying the `Parent CA Owner/Certificate` field, **Audit Information**, and **Non-Audit Information**.
+3. On the cloned record, click **Add/Update PEM Info** (in the upper-right button bar or **`▼`** overflow menu) and paste the new intermediate certificate's [PEM data](fields#pem-data).
+4. Click **Validate PEM Info**, then click **Update Intermediate Cert** to populate the parsed certificate fields.
+5. Verify (and update via **Edit** → **Save**, if different) the `Parent CA Owner/Certificate`, `Subordinate CA Owner`, CRL URLs, and Policy Identifier / Automation fields for the new certificate.
 
-When you are entering intermediate certificate data, and you have intermediate
-certificates that share the same CP, CPS, or CP/CPS, and audit statements, then you can
-use the 'Clone' button to save time. The recommended procedure is as follows:
+---
 
-1. Enter the data for one intermediate certificate following the instructions
-   above.
-2. Make sure the 'Audit Information' and 'Policies and Practices Information'
-   sections are completely and correctly filled in and saved, or that the
-   'CP Same as Parent', 'CPS Same as Parent', or 'CP/CPS Same as Parent' and 'Audits Same as Parent' checkboxes are set.
-3. Click on the 'Clone' button. This will create a new intermediate
-   certificate record, copying the 'Parent CA Owner/Certificate' field and the
-   'Audit Information' and 'Non-Audit Information' sections.
-4. Click on the 'Add/Update PEM info' button, and enter the PEM data for the
-   intermediate certificate data you are adding.
-5. Click on the 'Validate PEM Info' and 'Update Intermediate Cert' buttons.
-   The data for the intermediate certificate will be automatically filled in.
-6. If the intermediate certificate has a different Issuer than the cert you
-   had cloned, then click on the 'Edit' button, change the 'Parent CA
-   Owner/Certificate' to the correct value, and click on the 'Save' button.
+<a id="updating-audit-statements"></a>
+## 2. Updating Audit and Policy Information
 
-## API ##
+While root certificate audits and policy documents are submitted via an [Add/Update Root Request](updates) case, CA Owners directly update intermediate certificate records whenever new annual audit statements, policy documents, or self-assessments are published (within 14 calendar days of policy effective dates and within 92 calendar days of audit period end dates).
 
-[CCADB APIs](https://github.com/mozilla/CCADB-Tools/tree/master/API_AddUpdateIntermediateCert) 
-have been developed to enable CA Owners to automate retrieving and updating intermediate 
-certificate data in the CCADB. This service is only available 
-to CA Owners whose root certificates are included within the root stores 
-of CCADB Root Store Operators.
-* GetCertificateIdAPI: Returns the root or intermediate certificate record Id (Salesforce Id) in the CCADB.
-* AddUpdateIntermediateCertAPI: Add or update an intermediate certificate record in the CCADB.
+> **Important:** Whenever an intermediate certificate shares the same audit statements or policy documents as the parent certificate that signed it, check **`Audits Same as Parent`** and the applicable **`* Same as Parent`** policy checkboxes rather than duplicating URLs across child records. Note that checking `Audits Same as Parent` still requires the intermediate certificate's SHA-256 fingerprint to be explicitly listed in scope in the parent certificate's audit statement ([CCADB Policy Section 5](../policy#5-audit-disclosures)).
 
+1. [Log in to the CCADB](https://ccadb.my.site.com/CustomLogin).
+2. Navigate to the intermediate certificate record using any of the following methods:
+   - On your CCADB **Home** page under **CA Task List**, open **Intermediate Certificates with Outdated Audit Statements**, **Intermediate Certificates with Missing Information**, or **Intermediate Certificates with Failed ALV Results**, and click the certificate link.
+   - Click **My CA** → **CA HIERARCHY** and select the intermediate certificate.
+   - Click the **magnifying glass** search icon in the upper-right corner and search by SHA-1 or SHA-256 fingerprint.
+3. Click **Edit**, update the [Audit Information](fields#audit-information) and/or [Non-Audit Information](fields#non-audit-information) fields, and click **Save**.
+4. If you entered or updated audit statement URLs directly on the intermediate record (i.e., `Audits Same as Parent` is unchecked), click the `Audit Letter Validation [ALV]` button to validate the audit letters and confirm there are no [ALV errors](ALV#intermediate-certificates).
+5. *(Optional)* If sibling intermediate certificates under the same parent need the exact same Audit or Non-Audit updates, use **Mass Update Audit/Non-Audit Info** below.
 
-## Mass Update of Audit/Non-Audit Info ##
+<a id="mass-update-of-audit-non-audit-info"></a>
+### Mass Update of Audit/Non-Audit Info
 
-The 'Mass Update Audit/Non-Audit Info' button may be used to apply a particular
-set of changes to all intermediate certificates signed by the same parent
-certificate. The certificate you are viewing when you click on the Mass Update
-button will be treated as the "source", and you will have an opportunity to
-make some or all of the certificates signed by the same parent match it.
+The **Mass Update Audit/Non-Audit Info** button copies Audit and Non-Audit values from one intermediate certificate (**Source**) to other intermediate certificates signed by the **same parent certificate** (**Targets**):
 
-To use this facility, choose an intermediate certificate to be the source, and
-click on the 'Mass Update Audit/Non-Audit Info' button. This button will look for
-all of the certificates signed by the same parent certificate, and do the
-following:
+1. Open the updated intermediate certificate record you want to use as the **Source** and click **Mass Update Audit/Non-Audit Info**.
+2. CCADB checks all sibling intermediate certificates signed by the same parent certificate and displays a side-by-side comparison whenever a **Target** certificate has different Audit or Non-Audit values (differences are highlighted in **blue text**).
+3. Click **Yes** in each section you want to overwrite on the Target certificate so it matches the Source, or click **Next Target Cert** to skip to the next sibling certificate.
+4. Click **Exit** at any time to pause; re-clicking **Mass Update Audit/Non-Audit Info** later automatically skips sibling certificates that already match the Source.
 
-* If the "Target" certificate has different Audit or Non-Audit information than
-  the Source, then a window will display the Audit and Non-Audit information for
-  both certificates side-by-side, and the differences will be shown in blue
-  text.
-* If you want to update the Target certificate to have the same Audit or
-  Non-Audit information as the Source, then click on the 'Yes' button in each
-  section. Otherwise, click on the 'Next Target Cert' button to continue to the
-  next certificate.
-* If you click on the 'Exit' button, you can re-start the process later
-  without having to go through all of the certs that you already updated. Each
-  time you click on the Mass Update button, it will only show the sibling
-  certificates with different Audit and Non-Audit information.
+---
 
-## Marking An Intermediate Certificate As Revoked ##
+<a id="marking-an-intermediate-certificate-as-revoked"></a>
+## 3. Marking an Intermediate Certificate as Revoked
 
-The best way to add revoked intermediate certificate data to the CCADB is to
-first add the intermediate certificate record as above, and then mark the
-record as Revoked, as follows:
+Per [CCADB Policy Section 3.2](../policy#32-subordinate-ca-certificates), revoked subordinate CA certificates must be marked as `Revoked` in the CCADB **within 7 calendar days of revocation** (if the certificate is not yet in the CCADB, [add the intermediate certificate record](#adding-intermediate-certificate-data) first, then mark it as revoked):
 
-1. Find the intermediate certificate record, if you are not already viewing it.
-2. Click 'Edit'.
-3. Click the 'Revocation Status' field and select 'Revoked'.
-4. Enter the 'Date of Revocation'.
-5. Click the 'RFC 5280 Revocation Reason Code' field and select the
-   corresponding revocation reason.
-6. Click the 'Save' button.
+1. Open the intermediate certificate record in the CCADB and click **Edit**.
+2. Set `Revocation Status` to `Revoked`.
+3. Enter `Date of Revocation`, matching the exact revocation date in the issuing CA's CRL.
+4. Select `RFC 5280 Revocation Reason Code`, matching the `reasonCode` extension published in the issuing CA's CRL (every CRL entry for a revoked subordinate CA certificate must include a `reasonCode` extension).
+5. Click **Save**.
+
+> **Post-Revocation Requirements:**
+> - **Security-Related Revocations:** If a subordinate CA certificate is revoked due to a security concern, the CA Owner must also file a confidential [Incident Report](incident-report#how-do-i-submit-a-security-sensitive-incident-report) in Bugzilla.
+> - **Audit Coverage After Revocation:** Although revoked records no longer require ongoing CRL or policy URL updates in CCADB, the revoked subordinate CA certificate **must still appear in scope on at least one periodic audit statement** following revocation ([CCADB Policy Section 5.1](../policy#51-scope-of-certificates-covered-by-an-audit)).
+
+---
+
+<a id="api"></a>
+## 4. Automating Updates via the CCADB API
+
+CA Owners with root certificates included in one or more CCADB Root Stores may automate retrieving and updating intermediate certificate records using the [CCADB Intermediate Certificate APIs](https://github.com/mozilla/CCADB-Tools/tree/master/API_AddUpdateIntermediateCert):
+
+- **`GetCertificateIdAPI`:** Returns the CCADB Salesforce record ID for a root or intermediate certificate.
+- **`AddUpdateIntermediateCertAPI`:** Adds a new intermediate certificate record or updates an existing intermediate certificate record in the CCADB.
+
+### API Access and Usage Rules
+- **Requesting Access:** Request API credentials or sandbox accounts by filing a ticket in the Mozilla Bugzilla [Common CA Database component](https://bugzilla.mozilla.org/enter_bug.cgi?product=CA%20Program&component=Common%20CA%20Database) or contacting `support [at] ccadb [dot] org`.
+- **Account & License Limits:** Production API access is limited to **one API account per CA Owner**, and authenticating to the production API counts toward your organization's [daily-unique-login allotment](usage-guidelines#api-credentials).
+- **Mandatory Sandbox Testing:** All API integration development and testing must be performed in the **CCADB Sandbox** environment rather than production (see [CCADB Usage Guidelines](usage-guidelines#sandbox-environment-accounts)).

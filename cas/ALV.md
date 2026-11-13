@@ -1,185 +1,112 @@
-# Audit Letter Validation (ALV) #
+# Audit Letter Validation (ALV)
 
-The CCADB uses an Audit Letter Validation (ALV) tool that is provided by Microsoft to automatically parse and validate audit statements. The ALV eliminates manual processing, but it requires audit statements to follow some basic rules in order to function properly. If an audit statement fails to meet any of the [Audit Statement Requirements and Format Rules](../policy#51-audit-statement-content), the CA Owner will be asked to work with their auditor to provide an audit statement that passes ALV.
+The CCADB uses an Audit Letter Validation (ALV) tool provided by Microsoft to automatically parse and validate audit statements. ALV eliminates manual processing, which requires audit statements to follow specific content and formatting rules to function properly. If an audit statement fails to meet any of the [Audit Statement Content](../policy#52-audit-statement-content) or [ALV Formatting](../policy#523-alv-formatting) requirements, the CA Owner must work with their auditor to provide an audit statement that passes ALV.
 
-Table of Contents:
-1. [Root Certificates](ALV#root-certificates)
-2. [Intermediate Certificates](ALV#intermediate-certificates)
-3. [Testing Audit Statements with ALV](ALV#testing-audit-statements-with-alv)
-4. [Common ALV Findings](ALV#common-alv-findings)
+## Table of Contents
+
+1. [Root Certificates](#root-certificates)
+2. [Intermediate Certificates](#intermediate-certificates)
+3. [Testing Audit Statements with ALV](#testing-audit-statements-with-alv)
+4. [Common ALV Findings](#common-alv-findings)
+
+---
 
 ## Root Certificates
 
-CA Owners are required to update the audit, policy document, and test website information for their certificate hierarchies at least annually. To provide this information for root certificates, create one [Add/Update Root Request Case](updates#audit-case-workflow) in the CCADB for a particular set of audits (e.g. Standard Audit, NetSec Audit, TLS BR Audit, TLS EVG Audit, Code Signing Audit, S/MIME BR Audit).
-* [Update audit, policy document, and test website information in the CCADB ](updates)
+CA Owners are required to update the audit, policy document, [self-assessment](self-assessment), and test website information for their certificate hierarchies at least annually. To provide audit statements for root certificates, create an [Add/Update Root Request](updates#audits) case in the CCADB for each distinct set of audits (including **Standard Audit**, **NetSec Audit**, **TLS BR Audit**, **TLS EVG Audit**, **Code Signing Audit**, **S/MIME BR Audit**, and **VMC Audit**, as applicable).
 
-## Intermediate Certificates ##
+* [Managing CA Owner and Root Certificate Records (Add/Update Root Request)](updates)
 
-Subordinate CA Owners who operate non-technically-constrained intermediate certificates have the keys to the internet just as much as the CAs who have root certificates directly included in a Root Store. Meaning that such subordinate CA Owners can also issue TLS certificates for any website or domain, so it is imperative that the same rules are being followed by all subordinate CA Owners operating non-technically-constrained intermediate certificates. There are currently about 150 root certificates in the Root Stores of CCADB Root Store Operators, which leads to about 3,000 intermediate certificates that are trusted.
+---
 
-Note: The CCADB considers the terms "intermediate" and "subordinate" synonymous.
+## Intermediate Certificates
 
-To help enforce the rules at the intermediate certificate level, some CCADB Root Store Operators require [disclosure of intermediate certificates](/policy#4-intermediate-certificates). CCADB automatically runs ALV on the intermediate certificate records and reports the results to CA Owners and Root Store Operators in their CCADB home pages.
+Subordinate CA Owners who operate non-technically-constrained intermediate certificates have the same technical issuance capability as CA Owners with root certificates directly included in a Root Store. Because such subordinate CA Owners can issue certificates for any website or domain, the same compliance and audit rules apply to all subordinate CA Owners operating non-technically-constrained intermediate certificates.
 
-CA Owners are required to annually update the audit and policy documents for their non-technically-constrained intermediate certificates chaining to root certificates included in a Root Store. To provide this information for intermediate certificates, directly [update the corresponding record](intermediates#updating-audit-statements) in the CCADB then click on the "Audit Letter Validation [ALV]" button. 
+> **Note:** The CCADB considers the terms **intermediate** and **subordinate** synonymous.
 
-When the audit statements for an intermediate certificate are the same as the certificate that signed it, check the “Audits Same as Parent” checkbox instead of providing separate audit information. When the "Audits Same as Parent" field is checked for an intermediate certificate record, the CCADB will look up the parent chain until audit statements are found, and then run ALV using those audit statements. When the "Audits Same as Parent" field is not checked, the CCADB will directly pass the audit statements in the intermediate certificate record into ALV.
+To enforce compliance across the certificate hierarchy, [CCADB Policy Section 3.2](../policy#32-subordinate-ca-certificates) requires disclosure of subordinate CA certificates capable of validating to an included root certificate or a root associated with a [Root Inclusion Request](inclusion). The CCADB automatically runs ALV on intermediate certificate records and surfaces results to CA Owners and Root Store Operators on their CCADB **Home** pages.
 
-The following fields are set by running ALV on an intermediate certificate record in the CCADB. CA Owners may cause ALV to be run on the record by clicking on the "Audit Letter Validation [ALV]" button. Additionally, the CCADB has automated processes that will regularly check for intermediate certificate records that need to have ALV run.
+CA Owners must annually update audit and policy documents for non-technically-constrained intermediate certificates chaining to root certificates included in a Root Store. To provide this information for intermediate certificates, directly [update the corresponding intermediate certificate record](intermediates#updating-audit-statements) in the CCADB and click the **Audit Letter Validation [ALV]** button.
 
-* Standard Audit ALV Found Cert
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the Standard Audit statement.
-* NetSec Audit ALV Found Cert
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the NetSec Audit statement.
-* TLS BR Audit ALV Found Cert
-    * This field will only be set when the [Derived Trust Bits](fields#formula-fields) field has "Server Authentication" in its list. 
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the TLS BR Audit statement. 
-* TLS EVG Audit ALV Found Cert
-    * This field will only be set when the [Derived Trust Bits](fields#formula-fields) field has "Server Authentication" in its list, and the [EV SSL Capable](fields#formula-fields) field is set to TRUE. 
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the TLS EVG Audit statement.
-* Code Signing Audit ALV Found Cert
-    * This field will only be set when the [Derived Trust Bits](fields#formula-fields) field has "Code Signing" in its list. 
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the Code Signing Audit statement. 
-* S/MIME BR Audit ALV Found Cert
-    * This field will only be set when the [Derived Trust Bits](fields#formula-fields) field has "Secure Email" in its list. 
-    * This field will be set to PASS when ALV finds the SHA-256 Fingerprint for that certificate in the S/MIME BR Audit statement. 
+When the audit statements for an intermediate certificate are the same as the parent certificate that signed it, check the `Audits Same as Parent` checkbox instead of duplicating audit URLs on the child record. When `Audits Same as Parent` is checked, the CCADB traverses up the parent chain until audit statements are found and runs ALV against those parent audit statements. When `Audits Same as Parent` is unchecked, the CCADB passes the audit statements entered directly on the intermediate certificate record into ALV.
 
-When ALV returns FAIL for "Standard Audit ALV Found Cert", "NetSec Audit ALV Found Cert", "TLS BR Audit ALV Found Cert", "EVG BR Audit ALV Found Cert", "Code Signing Audit ALV Found Cert", or "S/MIME Audit ALV Found Cert" for one of your CA's intermediate certificate records in the CCADB, do the following.
+### Intermediate ALV Result Fields
 
-* Check the corresponding audit statement to make sure the SHA-256 fingerprint of the certificate is correctly listed.
-* If the SHA-256 fingerprint is listed in the audit statement, then make sure that it meets the [format specifications](../policy#51-audit-statement-content), such as no colons, no spaces, no line feeds.
-* Have your auditor provide an updated audit statement that follows the [formatting requirements](../policy#51-audit-statement-content) for the SHA-256 Fingerprints.
-* If you do not agree with the ALV results, add comments to the "Standard Audit ALV Comments", "NetSec Audit ALV Comments", "TLS BR Audit ALV Comments", "EVG BR Audit ALV Comments", "Code Signing Audit ALV Comments", or "S/MIME Audit ALV Comments" fields to indicate that the SHA-256 fingerprint is listed correctly in the audit statement.
-* If the audit statement is indeed missing the SHA-256 fingerprint for the certificate, then file an [Incident Report](https://www.ccadb.org/cas/incident-report), and add the link to the Incident Report to one of the "...ALV Comments" fields.
+Clicking **Audit Letter Validation [ALV]** on an intermediate certificate record (or waiting for CCADB's automated background checks) populates the following fields:
 
-**Important**:
+* **`Standard Audit ALV Found Cert`:** Set to `PASS` when ALV finds the certificate's SHA-256 fingerprint in the Standard Audit statement.
+* **`NetSec Audit ALV Found Cert`:** Set to `PASS` when ALV finds the certificate's SHA-256 fingerprint in the NetSec Audit statement.
+* **`TLS BR Audit ALV Found Cert`:** Evaluated only when [Derived Trust Bits](fields#system-generated-fields) includes `Server Authentication`; set to `PASS` when ALV finds the certificate's SHA-256 fingerprint in the TLS BR Audit statement.
+* **`TLS EVG Audit ALV Found Cert`:** Evaluated only when [Derived Trust Bits](fields#system-generated-fields) includes `Server Authentication` and [EV SSL Capable](fields#system-generated-fields) is `TRUE`; set to `PASS` when ALV finds the certificate's SHA-256 fingerprint in the TLS EVG Audit statement.
+* **`Code Signing Audit ALV Found Cert`:** Evaluated only when [Derived Trust Bits](fields#system-generated-fields) includes `Code Signing`; set to `PASS` when ALV finds the certificate's SHA-256 fingerprint in the Code Signing Audit statement.
+* **`S/MIME BR Audit ALV Found Cert`:** Evaluated only when [Derived Trust Bits](fields#system-generated-fields) includes `Secure Email`; set to `PASS` when ALV finds the certificate's SHA-256 fingerprint in the S/MIME BR Audit statement.
 
-* If the CA Owner has a currently valid audit report at the time of creation of the intermediate certificate, then the current audit statement does not need to be updated and the new certificate must appear on the CA Owner's next periodic audit reports.
-* Intermediate certificates that contain "Server Authentication" in the [Derived Trust Bits](fields#formula-fields) field are considered to be technically capable of issuing TLS certificates, and they must be listed in the corresponding CA Owner’s Audit report.
-* If multiple intermediate certificates with the same Subject + SPKI have been issued, each one must have their SHA-256 Fingerprint listed in appropriate audit statements according to the [Derived Trust Bits](fields#formula-fields) field.
-* Cross-certificates are also considered intermediate certificates, which must also be audited and specifically listed in the applicable audit statements according to the [Derived Trust Bits](fields#formula-fields) field.
-* Self-signed certificates that share a Subject + SPKI with a root certificate that is included in a Root Store are treated by Root Store Operators as intermediate certificates because they chain up to an included root, so these certificates must also be listed in the applicable audit statements according to the [Derived Trust Bits](fields#formula-fields) field. 
-    * An example of this situation is when an older version of a root certificate exists and a newer version of the root certificate is created. In this case, a valid chain may be constructed as: leaf --> untrusted root --> trusted root. In other words, that "untrusted" root is technically trusted by the Root Store Operator because it chains to a trusted root, so it's SHA256 fingerprint must also be listed in the applicable audit statements.
+### Resolving `FAIL` Results on Intermediate Records
 
-Acceptable remediation:
-* Have your auditor issue a revised report that includes the intermediate certificate.
-    * If the certificate has been in existence for past audit periods, then you must also file an [Incident Report](https://www.ccadb.org/cas/incident-report).
-    * An Incident Report may not be needed if the certificate is self-signed and has the same Subject + SPKI as other certificates listed in the audit statement. For example, this can happen when a Root Store includes one version of a root certificate, but another version of the root certificate can be part of a valid chain constructed as: leaf --> untrusted root --> trusted root.
-* Revoke the intermediate certificate in accordance with Root Store policies and the BRs.
-    * If your CA decides not to revoke the certificate within the timeline specified by Section 4.9 of the BRs, then that is another incident, which must be addressed in a separate [Incident Report](https://www.ccadb.org/cas/incident-report).
- 
+When ALV returns `FAIL` for `Standard Audit ALV Found Cert`, `NetSec Audit ALV Found Cert`, `TLS BR Audit ALV Found Cert`, `EVG BR Audit ALV Found Cert`, `Code Signing Audit ALV Found Cert`, or `S/MIME Audit ALV Found Cert` on one of your intermediate certificate records:
+
+1. Check the corresponding audit statement to confirm whether the certificate's SHA-256 fingerprint is listed in scope.
+2. If the SHA-256 fingerprint is listed, verify that it meets the [ALV formatting specifications](../policy#523-alv-formatting) (uppercase hex, text-searchable PDF, no colons, no spaces, and no line feeds). If not, have your auditor provide an updated audit statement that meets the [formatting requirements](../policy#523-alv-formatting).
+3. If the SHA-256 fingerprint is listed and formatted properly and you believe ALV produced a false negative, explain the discrepancy in the corresponding `...ALV Comments` field (`Standard Audit ALV Comments`, `NetSec Audit ALV Comments`, `TLS BR Audit ALV Comments`, `EVG BR Audit ALV Comments`, `Code Signing Audit ALV Comments`, or `S/MIME Audit ALV Comments`).
+4. If the audit statement is genuinely missing the SHA-256 fingerprint for the certificate, file a public [Incident Report](incident-report) in Bugzilla and paste the link to the Incident Report into the applicable `...ALV Comments` field.
+
+**Important Audit Scope Rules ([CCADB Policy Section 5.1](../policy#51-scope-of-certificates-covered-by-an-audit)):**
+
+* **Newly Issued Intermediate Certificates:** If the CA Owner holds a currently valid audit report when a new intermediate certificate is created, the current audit statement does not need to be reissued immediately; the new certificate must appear in scope on the CA Owner's next periodic audit statements.
+* **Capability Determines Audit Scope:** Intermediate certificates containing `Server Authentication` in [Derived Trust Bits](fields#system-generated-fields) are technically capable of issuing TLS certificates and must be listed in the corresponding TLS BR Audit statement regardless of whether they actively issue TLS certificates.
+* **Duplicate `Subject + SPKI` Intermediate Certificates:** If multiple intermediate certificates share the same Subject and Subject Public Key Info (SPKI), **every** distinct certificate's SHA-256 fingerprint must be listed in the applicable audit statements according to its [Derived Trust Bits](fields#system-generated-fields).
+* **Cross-Certificates:** Cross-certificates are treated as intermediate certificates and must be disclosed and explicitly listed by SHA-256 fingerprint in all applicable audit statements of the issuing CA Owner according to [Derived Trust Bits](fields#system-generated-fields).
+* **Self-Signed Certificates Sharing `Subject + SPKI` with an Included Root:** Self-signed certificates that share a Subject + SPKI with a root certificate that is (or was) included in a Root Store are treated as subordinate CA certificates because a valid chain can be constructed (`leaf -> older/newer root -> included root`). Their SHA-256 fingerprints must also be listed in the applicable audit statements according to [Derived Trust Bits](fields#system-generated-fields).
+
+**Acceptable Remediation for Missing Fingerprints:**
+
+* **Obtain a Revised Audit Report:** Have your auditor issue a revised audit statement that includes the intermediate certificate's SHA-256 fingerprint (see [Audit Statement Date rules for revised reports](fields#audit-information)).
+  * If the certificate existed during past audit periods without being listed, you must also file an [Incident Report](incident-report).
+  * An Incident Report may not be required if the omitted certificate is self-signed and shares the same Subject + SPKI as another root certificate already listed in the audit statement.
+* **Revoke the Intermediate Certificate:** Revoke the intermediate certificate in accordance with applicable Root Store policies and CA/Browser Forum Baseline Requirements, and [mark the record as Revoked](intermediates#marking-an-intermediate-certificate-as-revoked) in the CCADB.
+  * Failing to complete revocation within the timeline required by Section 4.9 of the Baseline Requirements constitutes a separate compliance violation requiring its own [Incident Report](incident-report#how-are-reports-scoped).
+
+---
+
 ## Testing Audit Statements with ALV
-CA Owners may want to test preliminary audit statements to ensure the file will pass ALV before collecting a final copy from their auditor. CA Owners are encouraged to work with their auditor to coordinate preliminary audit statement testing. To test preliminary audit statements a CA Owner should:
 
-1. Create the [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) in the CCADB.
-2. In the 'AUDITS' tab of the Case, add [Audit Firm](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.y0j6nqw48aqv) information.
-3. Add [Audit Information](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.fo56qxxtqyjb) to the Case, including a URL to where the preliminary audit statement is located.
-    * These preliminary statements are typically [uploaded](https://www.ccadb.org/cas/fields#uploading-documents) to Bugzilla.
-4. Add a Case Comment to the 'CASE PROGRESS' tab of the Case that says: “Preliminary Audit Reports” to inform Root Store Operators of your intent to test the preliminary audit statements.
-5. [Run ALV](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.risbuur7q7a).
-    * Ignore any ALV error related to the audit report not originating from a trusted location.
-    * Work with the auditor to resolve other [common ALV findings](https://www.ccadb.org/cas/alv#common-alv-findings) and errors.
-    * If you encounter a problem not described on the [common ALV findings](https://www.ccadb.org/cas/alv#common-alv-findings) page, contact support [at] ccadb [dot] org.
-6. Once the errors are resolved, link to the final audit statements in the Audit Information Section of the tab in the existing “Add/Update Root Request” Case.
+CA Owners are encouraged to coordinate with their auditors and test preliminary audit statements with ALV before final sign-off to confirm all formatting and fingerprint checks pass:
 
-More detailed steps for testing preliminary audit statements can be found [here](https://docs.google.com/document/d/12U4az-hjYDC_aWsVn8-Y5vVmJ10inVziAxrQoxP-hfI/edit#heading=h.x9t1tvycbq18).
+1. **Upload the Preliminary PDF(s) to a Temporary HTTPS URL:** Use any of the following options:
+   * **Bugzilla Attachment:** Attach the preliminary PDF to your CA's `CA Documents` bug in Bugzilla (see [Uploading Documents](fields#uploading-documents)) and copy the direct attachment URL (e.g., `https://bugzilla.mozilla.org/attachment.cgi?id=...`).
+   * **Auditor or CA Website:** Host the preliminary PDF at a temporary `https://` URL on the audit firm's or CA Owner's website.
+   * **Google Drive:** Share the PDF with *"Anyone with the link"* and format the URL for direct download: `https://drive.google.com/uc?export=download&id=<FILE_ID>`.
+2. **Create or Open an Add/Update Root Request Case:** Follow [Creating an Add/Update Root Request Case](updates#1-creating-an-addupdate-root-request-case) and open the **AUDITS** tab.
+3. **Enter Auditor and Preliminary Audit Details:**
+   * Populate the **Audit Firm** section per [Auditor Information](fields#auditor-information).
+   * Populate each applicable section (`Standard`, `NetSec`, `TLS BR`, etc.) per [Audit Information](fields#audit-information), pasting the temporary HTTPS URL into `Audit Statement (Link)` and selecting the **Applicable root certificates**.
+4. **Flag the Case as Preliminary Testing:** On the **CASE PROGRESS** tab, click **Add Comment** and enter `"Preliminary Audit Reports"` so Root Store Operators know you are only testing preliminary files (do **not** click **Submit to Root Store** yet).
+5. **Run ALV:** Return to the **AUDITS** tab and click **Validate Audits [ALV]** (if testing only a subset of expected audits for a root, click **Proceed Anyways** when prompted). After the results window appears, click **Go Back** and expand **ALV Results Summary** at the bottom of the tab:
+   * Ignore `Audit Letter Not Found In Certified Location` if testing via Bugzilla, Google Drive, or an uncertified temporary host (Bugzilla and Google Drive are not accepted as trusted locations for final WebTrust/ETSI reports when standard CPA Canada or CAB hosting applies).
+   * Work with your auditor to resolve any other errors using [Common ALV Findings](#common-alv-findings). For issues not covered below, contact `support [at] ccadb [dot] org`.
+6. **Replace with Final Audit Statements:** Once all errors are resolved and final signed reports are published:
+   * Remove any temporary preliminary files from public test locations.
+   * Update `Audit Statement (Link)` in the existing **Add/Update Root Request** case with the final production URLs (or WebTrust Seal URLs) and click **Validate Audits [ALV]** again.
+   * Add a comment on the **CASE PROGRESS** tab stating `"Final Audit Reports"`, then click **Submit to Root Store**.
 
-Note: These instructions are specific to updating audit information for root certificates through a CCADB Case. Guidance for managing intermediate certificates (to include audit statements) can be found [here](https://www.ccadb.org/cas/intermediates#updating-audit-statements).
+> **Note:** The steps above apply to testing root certificate audit statements in a CCADB Case. To validate audit statements entered directly on an intermediate certificate record, see [Managing Intermediate Certificates: Updating Audit and Policy Information](intermediates#updating-audit-statements).
+
+---
 
 ## Common ALV Findings
-ALV formatting requirements are specified in 
-[section 5.1 of the CCADB Policy](../policy#51-audit-statement-content).
 
-<table border="1">
-<tr valign="top"><th>ALV Error</th><th>Meaning</th><th>Recommended Action</th></tr>
-<tr valign="top">
-<td>Thumbprint not found </td>
-<td>SHA-256 Fingerprint of the certificate not found in the audit statement. </td>
-<td>
-<ul>
-<li> Check that the SHA-256 fingerprint for the certificate is clearly listed in in the audit  statement and follows the format requirements; e.g. the fingerprint contains no colons, no spaces, no line feeds. </li>
-<li> Request an updated audit statement from your auditor that clearly specifies the SHA-256 Fingerprints of each root and intermediate certificate that was in scope of the audit, using the correct format for the fingerprints. </li>
-</ul>
-</td> 
-</tr>
-<tr valign="top">
-<td>Statement Date Not Found</td>
-<td>The audit statement date was not found in the audit statement. </td>
-<td>
-<ul>
-<li>Check that the date that the audit statement was issued is clearly indicated in the audit statement and follows the format requirements for dates.</li>
-<li> If needed, request an updated audit statement from your auditor. </li>
-<li>Sometimes ALV gives false alerts for dates, so if needed you may add a comment about that in one of the "...ALV Comments" fields.
-</li> 
-</ul>
-</td> 
-</tr>
-<tr valign="top">
-<td>Audit Period Not Found </td>
-<td>ALV was unable to find the audit period start and end dates in the audit statement. </td>
-<td>
-<ul>
-<li> Check that the audit period dates in the audit statement match the format requirements. </li>
-<li> If the dates in the audit statement follow the format requirements, then this error can also be the result of the audit period being stated in various locations throughout the document or separately in different rows within a table, etc. </li>
-<li>It helps ALV for the audit period to be stated towards the top of the document </li>
-<li> You may see this error if there are other problems with the audit report date or the audit period, such as it being less than one month -- point-in-time audits have to be manually reviewed. </li>
-</ul>
-</td> 
-</tr>
-<tr valign="top">
-<td>Failed to validate EKU ... because the standard names and standard policies are not found in the audit letters </td>
-<td>ALV was unable to find the specific text (case insensitive) that it looks for for each EKU. For example, "319 411-1 v1.1.1, dvcp;ovcp;ptc-br" </td>
-<td>Make sure that the audit statement correctly indicates the audit criteria that were used, and that they satisfy root store requirements.
-</td> 
-</tr>
-<tr valign="top">
-<td>Auditor Not Found </td>
-<td>ALV was unable to find the specified auditor name in the audit statement. </td>
-<td>
-<ul>
-<li> Ensure the correct Auditor is selected in the record and that it matches the auditor name recorded in your audit statement. </li> 
-<li> If both look correct ask a root store manager to update the auditor's information in the CCADB. </li>
-</ul>
-</td> 
-</tr>
-<tr valign="top">
-<td>CA Owner Not Found </td>
-<td>ALV was unable to find the CA Owner's name (as specified in the CCADB) in the audit statement. For intermediate certificate records with their own audit statements this will be the value in the "Subordinate CA Owner" field. </td>
-<td>
-<ul>
-<li> Check that your CA Name in the CCADB is correct and that your CA Name specified in the Audit Letter is correct. </li>
-<li> For Audit Cases with this problem, you may ask a root store manager to update your CA Owner Name. </li>
-<li> For intermediate certificates with their own audit statements, you should update the "Subordinate CA Owner" field directly to match the CA name in the audit statement. </li>
-</ul>
-</td> 
-</tr>
-<tr valign="top">
-<td>Download Audit Letter Fail </td>
-<td>The provided link to the audit statement did not work. (E.g. "The remote name could not be resolved: ")</td>
-<td>Correct and test the audit statement links in the CCADB record then try again.</td> 
-</tr>
-<tr valign="top">
-<td>Audit Letter Not Found In Certified Location: Audit letter should be hosted at an ALV-recognized trusted audit letter location.</td>
-<td>ALV contains a list of known audit locations, such as auditor websites and cpacanada.ca. This error will be given when the URL to the audit statement does not match any of the URLs in the list of known audit locations. </td>
-<td>
-<ul>
-<li> If you are testing the preliminary audit statement, then you may ignore this error. </li>
-<li> Make sure that the URL that you entered into the CCADB is https. </li>
-<li> If you are running ALV on the final audit statement, then this error should not happen unless the audit statement is not retrievable from a trusted location. </li>
-<li> In those situations the Root Store Operator will need to contact the auditor, so it will help if you provide the auditor's contact information in a Case Comment. </li>
-<li> If the audit statement is on the auditor's website and you are still receiving this error, then ask a Root Store Operator to add the auditor's website to the list of known audit locations for ALV. </li>
-</ul>
-</td> 
-</tr>
-<tr valign="top">
-<td>Audit Letter Not PDF </td>
-<td>ALV was unable to download and parse the document retrieved from the audit statement URL.</td>
-<td>Update the Audit Statement links in the record to point to a valid PDF file. </td> 
-</tr>
-<tr valign="top">
-<td>Audit statement is not text-searchable</td>
-<td>ALV was unable to locate required information because some or all of the audit statement appears to be stored as images rather than searchable text.</td>
-<td>Ensure the audit statement PDF is text-searchable and that the auditor name, CA Owner name, audit period, statement date, audit criteria, and certificate fingerprints are represented as text rather than images.</td>
-</tr>
-</table>
- <br>
+ALV formatting specifications for SHA-256 fingerprints and dates are defined in [Section 5.2.3 of the CCADB Policy](../policy#523-alv-formatting).
+
+| ALV Error | Meaning | Recommended Action |
+|---|---|---|
+| `Thumbprint not found` | The SHA-256 fingerprint of the certificate was not found in the audit statement. | • Verify that the certificate's SHA-256 fingerprint is explicitly listed in the audit statement and follows [Section 5.2.3 formatting rules](../policy#523-alv-formatting) (uppercase hex, no colons, no spaces, and no line feeds).<br>• Request an updated audit statement from your auditor listing the properly formatted SHA-256 fingerprints of every in-scope root and intermediate certificate. |
+| `Statement Date Not Found` | The audit statement issuance date was not found in the audit statement. | • Check that the date the audit statement was signed/issued is clearly stated and follows accepted [date formats](../policy#523-alv-formatting).<br>• Request an updated audit statement from your auditor if needed.<br>• If the date is properly formatted and ALV raised a false alert, add an explanatory note in the Case Comment or `...ALV Comments` field. |
+| `Audit Period Not Found` | ALV could not parse the audit period start and end dates in the audit statement. | • Confirm the audit period dates match an accepted `<date> <splitter> <date>` format (`May 7, 2025 to May 6, 2026`, `2025-05-07 - 2026-05-06`, etc.) with no ordinal suffixes like `"7th"`.<br>• Place the audit period near the top of the document on a single contiguous line rather than split across separate table rows.<br>• Note that point-in-time readiness audits (or periods shorter than one month) trigger this message and are reviewed manually by Root Store Operators. |
+| `Failed to validate EKU ... because the standard names and standard policies are not found in the audit letters` | ALV could not locate the expected audit criteria text (case-insensitive) for an applicable EKU (for example, `319 411-1 v1.1.1, dvcp;ovcp;ptc-br`). | Confirm that the audit statement explicitly cites the full names and version numbers of the audit standards and criteria used, and that they satisfy Root Store requirements. |
+| `Auditor Not Found` | ALV could not find the selected auditor name in the audit statement. | • Confirm the `Auditor` selected on the CCADB record/case matches the audit firm name written in the audit statement.<br>• If both are accurate, add a Case Comment asking a Root Store Operator to update the recognized auditor name aliases in the CCADB. |
+| `CA Owner Not Found` | ALV could not find the CA Owner's name (or, for intermediate records with separate audits, the `Subordinate CA Owner` value) in the audit statement. | • Confirm your `CA Owner` name in the CCADB matches the exact legal organization name stated in the audit letter (request an organizational name update on the [CA OWNER tab](updates#ca-owner) if needed).<br>• For intermediate certificates with their own audit statements, edit the `Subordinate CA Owner` field directly on the intermediate record to match the organization name in the audit statement. |
+| `Download Audit Letter Fail` | The URL provided for the audit statement could not be reached or resolved. | Correct and verify the `Audit Statement (Link)` / `* Audit URL` field so it retrieves the PDF directly without authentication or broken redirects, then re-run ALV. |
+| `Audit Letter Not Found In Certified Location: Audit letter should be hosted at an ALV-recognized trusted audit letter location.` | The audit statement URL does not match CCADB's list of recognized audit hosting domains (such as `cpacanada.ca` and accredited CAB websites). | • **Ignore this error** while testing preliminary audit statements hosted on Bugzilla or Google Drive.<br>• Confirm the URL uses `https://`.<br>• For final audit statements hosted on an accredited auditor/CAB domain that still trigger this message, ask the reviewing Root Store Operator in a Case Comment (including auditor contact details if authentication is needed) to add the auditor's domain to ALV's known locations. |
+| `Audit Letter Not PDF` | ALV could not parse the file retrieved from the audit statement URL as a valid PDF document. | Update the audit statement URL to link directly to the raw `.pdf` file (not an HTML wrapper page or `.zip` archive). |
+| `Audit statement is not text-searchable` | Some or all of the audit statement is stored as scanned images rather than searchable text. | Obtain a text-searchable PDF from your auditor in which the auditor name, CA Owner name, audit period, statement date, audit criteria, and SHA-256 certificate fingerprints are encoded as selectable text rather than images. |
